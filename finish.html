@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 Quinn Olore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/ico" href="./img/icon.png"/>
+    <title>Finish Line | The Midnight Ride</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="The Midnight Ride" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themidnightride.github.io/" />
+    <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">The Midnight Ride</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout 4 Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
+            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="coretitle">Finish Line</h1>   
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./core.html">General Information</a></li>
+            <li><a href="./installation.html">Installation</a></li>
+            <li><a href="./tools.html">Tools</a></li>
+            <li><a href="./mo2config.html">Mod Organizer 2</a></li>
+            <li><a href="./initweaks.html">INI Tweaks</a></li>
+            <li><a href="./utilities.html">Utilities</a></li>
+            <li><a href="./bugfix.html">Bug Fixes/QOL</a></li>
+            <li><a href="./hud.html">HUD/UI</a></li>
+            <li><a href="./gameplay.html">Gameplay</a></li>
+            <li>Finish Line</li>
+        </ul>
+        <hr>
+    </div>
+    <div>
+        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
+            <ul class="specialinstructions">
+                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Input <strong>Finish Line</strong> into the pop-up and select OK</li>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/The-Midnight-Ride-Patch-Emporium/blob/main/The%20Midnight%20Ride%20Load%20Order.7z" target="_blank">Load Order.txt</a></h2>
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Extract <strong>loadorder.txt</strong> from the download archive to <strong>Mod Organizer 2/profiles/The Midnight Ride</strong> and overwrite when prompted</li>
+                    <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
+                </ul>
+            <p class="moddesc"> - Automatically ensures your load order is correct for the guide. This will still work if you didn't install certain mods, but if you added your own mods they will be sorted to the bottom of the load order and should be manually moved back to their proper position </p>  
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/33983">Ruddy88's Simple Sorter</a></h2> 
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the <strong>R88SimpleSorter_XML</strong> main file normally through MO2</li>
+                    <li>Download the <strong>R88SimpleSorter_SCRIPT</strong> main file manually</li>
+                    <li>From the <strong>R88SimpleSorter_SCRIPT</strong> archive, extract the <strong>Edit Scripts</strong> folder to where you have <strong>FO4Edit</strong> installed</li>
+                        <ul>
+                            <li>The <strong>Edit Scripts</strong> from the archive should align with the <strong>Edit Scripts</strong> folder already in the FO4Edit folder</li>
+                        </ul>
+                    <li>Once the folder is extracted, run FO4Edit through MO2</li>
+                    <li>At the <strong>Module Selection</strong> pop-up, just hold down left shift and click <strong>OK</strong></li>
+                    <li>At the <strong>ModGroups</strong> pop-up, just select <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Right-click anywhere in the right pane and select <strong>Apply Script...</strong></li>
+                        <img id="FOMODImg" src="./img/apply script.png" alt="Right-click -> Apply Script..." style="width:100%;max-width:300px">
+                            <div id="FOMODModal" class="modal">
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                    <li>In the pop-up, select <strong>R88_SimpleSorter</strong> from the <strong>Script</strong> drop-down then select <strong>OKs</strong></li>
+                        <img id="FOMODImg2" src="./img/apply script dropdown.png" alt="R88_SimpleSorter" style="width:100%;max-width:300px">
+                            <div id="FOMODModal2" class="modal">
+                                <img class="modal-content" id="img02">
+                                <div id="caption2"></div>
+                            </div>
+                    <li>In the <strong>Options</strong> pop-up, select the following options then select <strong>New Patch</strong>:</li>
+                        <img id="FOMODImg3" src="./img/r88 options.png" alt="Uncheck everything, 50:1 ratio" style="width:100%;max-width:300px">
+                            <div id="FOMODModal3" class="modal">
+                                <img class="modal-content" id="img03">
+                                <div id="caption3"></div>
+                                <span class="close">&times;</span>
+                            </div>
+                    <li>In the next pop-up, make sure every plugin is checked then select <strong>OK</strong></li>
+                    <li>In the next pop-up, name the file <strong>Ruddy's Simple Sorter</strong> then select <strong>OK</strong></li>
+                    <li>Click <strong>OK</strong> again to let the script run (may take a few minutes)</li>
+                    <li>Wait for the message <strong>Done: Applying script "R88_SimpleSorter"</strong> to appear in the right pane</li>
+                    <li>Press control+s to save the changes, and then exit the program</li>
+                    <li>Once you have exited the program, double-click on the <strong>Overwrite</strong> mod at the bottom of the left pane of MO2</li>
+                    <li>Drag <strong>Ruddy's Simple Sorter.esp</strong> from the <strong>Overwrite</strong> to the <strong>Ruddy88's Simple Sorter</strong> mod in the left pane of MO2</li>
+                    <li>Check <strong>Ruddy's Simple Sorter.esp</strong> in the right pane of MO2</li>
+                </ul>
+            <p class="moddesc"> - Adds an automatically-compatible item sorting method</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/48120" target="_blank">Roll-Up Menus for Ruddy88's Simple Sorter</a></h2>
+            <p class="normalinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Improves the sorting catagories for Ruddy's Simple Sorter</p>
+        <h2 class="modhead">Configuring The Mod Configuration Menu</h2>
+            <p class="moddesc">The MCM can be accessed through the pause menu in-game. Any settings you change will be consistent across all saves</p>
+                <ul class="specialinstructions">
+                    <li>Crafting Highlight Fix: Leave default</li>
+                    <li>Faster Workshop: Adjust to personal preference (I personally use the <strong>B</strong> key)</li>
+                    <li>Better Explosives Redux: Adjust to personal preference (I personally keep all the settings default)</li>
+                    <li>XDI: Adjust to personal preference (I personally disable both <strong>Dialogue Cues</strong> options</li>
+                </ul>
+        <h2 class="modhead">Congratulations!</h2>
+            <p class="moddesc">
+                Congratulations, you are now done with your modding journey! Remember to stop by the <a class="modsublink" href="https://discord.gg/DhX5S27" target="_blank">Discord</a> if you have any questions/comments/concerns.
+                One thing to note, it is only recommended to add your own mods if you are an experienced modder and can figure out what is/isn't compatible and what is safe or not. Fallout 4 can 
+                be very fickle, especially with the pre-combined meshes and the save-baked papyrus scripts. 
+            </p>
+    <div>
+        <hr>
+        <a class="arrows" href="./gameplay.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+    </div>
+</body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal3');
+
+var img = document.getElementById('FOMODImg3');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>
