@@ -92,7 +92,6 @@ SOFTWARE.
                             <div id="FOMODModal3" class="modal">
                                 <img class="modal-content" id="img03">
                                 <div id="caption3"></div>
-                                <span class="close">&times;</span>
                             </div>
                             <ul>
                                 <li>If you are using an aspect ratio other than 16:9, you can select whatever aspect ratio you use in the FOMOD. However, this will require extra tweaking later</li>
@@ -134,6 +133,20 @@ SOFTWARE.
                     <li>Main file - <strong>PA HoloHUD</strong></li>
                 </ul>
             <p class="moddesc"> - Cleans up the HUD while in power armor</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/1215" target="_blank">Improved Map</a></h2>
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the main file, the <strong>IMVR - Far Harbor (Default)</strong> optional file, and the <strong>IMVR - Nuka World (Default)</strong> optional file</li>
+                    <li>In the FOMOD installer for the main file, select the <strong>Default</strong> option and then <strong>Install</strong></li>
+                        <img id="FOMODImg4" src="./img/maps fomod.png" alt="Default" style="width:100%;max-width:300px">
+                            <div id="FOMODModal4" class="modal">
+                                <img class="modal-content" id="img04">
+                                <div id="caption4"></div>
+                                <span class="close">&times;</span>
+                            </div>
+                    <li>Install the other two downloaded files normally</li>
+                </ul>
+            <p class="moddesc"> - Makes the road lines on the Pip-Boy map more visible</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/13400" target="_blank">Small Map Markers</a></h2>
             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
@@ -190,6 +203,24 @@ span.onclick = function() {
 var img = document.getElementById('FOMODImg3');
 var modalImg = document.getElementById("img03");
 var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal4');
+
+var img = document.getElementById('FOMODImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption4");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
