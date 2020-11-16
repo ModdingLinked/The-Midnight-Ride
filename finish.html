@@ -76,7 +76,14 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/The-Midnight-Ride-Patch-Emporium/blob/main/The%20Midnight%20Ride%20Load%20Order.7z" target="_blank">Load Order.txt</a></h2>
             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Extract <strong>loadorder.txt</strong> from the download archive to <strong>Mod Organizer 2/profiles/The Midnight Ride</strong> and overwrite when prompted</li>
+                    <li>Click the <img class="mo2setting" src="./img/mo2folders.png" alt="mo2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong></li>
+                        <img id="FOMODImg4" src="./img/mo2 open profiles folder.png" alt="Open Profiles folder" style="width:100%;max-width:300px">
+                            <div id="FOMODModal4" class="modal">
+                                <img class="modal-content" id="img04">
+                                <div id="caption4"></div>
+                                <span class="close">&times;</span>
+                            </div>
+                    <li>Extract the <strong>loadorder.txt</strong> from the archive to opened folder and overwrite when prompted</li>
                     <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 </ul>
             <p class="moddesc"> - Automatically ensures your load order is correct for the guide. This will still work if you didn't install certain mods, but if you added your own mods they will be sorted to the bottom of the load order and should be manually moved back to their proper position. If you do not know how to check where any mods you have added should go in the load order, it may be best to not add any mods not in the guide. </p>  
@@ -110,7 +117,6 @@ SOFTWARE.
                             <div id="FOMODModal3" class="modal">
                                 <img class="modal-content" id="img03">
                                 <div id="caption3"></div>
-                                <span class="close">&times;</span>
                             </div>
                     <li>In the next pop-up, make sure every plugin is checked then select <strong>OK</strong></li>
                     <li>In the next pop-up, name the file <strong>Ruddy's Simple Sorter</strong> then select <strong>OK</strong></li>
@@ -189,6 +195,24 @@ span.onclick = function() {
 var img = document.getElementById('FOMODImg3');
 var modalImg = document.getElementById("img03");
 var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal4');
+
+var img = document.getElementById('FOMODImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption4");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
