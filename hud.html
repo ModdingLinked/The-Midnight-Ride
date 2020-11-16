@@ -77,7 +77,8 @@ SOFTWARE.
             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Download both main files through MO2</li>
-                    <li>Start the installation for the <strong>Def_ui 1.5.1</strong> file and select the following options in the FOMOD:</li>
+                    <li>Being the installation for the <strong>Def_ui 1.5.1</strong> file normally, and you will be prompted with a FOMOD installer</li>
+                    <li>Select the following options from it:</li>
                         <img id="FOMODImg" src="./img/def fomod 1.png" alt="Select DEF_HUD, DEF_INV, English (EN), 16:9" style="width:100%;max-width:300px">
                             <div id="FOMODModal" class="modal">
                                     <img class="modal-content" id="img01">
@@ -92,6 +93,7 @@ SOFTWARE.
                             <div id="FOMODModal3" class="modal">
                                 <img class="modal-content" id="img03">
                                 <div id="caption3"></div>
+                                <span class="close">&times;</span>
                             </div>
                             <ul>
                                 <li>If you are using an aspect ratio other than 16:9, you can select whatever aspect ratio you use in the FOMOD. However, this will require extra tweaking later</li>
@@ -99,8 +101,10 @@ SOFTWARE.
                     <li>After the installation is complete, hide the following from the <strong>Def_ui 1.5.1</strong> file:</li>
                         <ul>
                             <li><strong>interface/Translate_en.txt</strong></li>
+                                <ul>
+                                    <li>If you do not know what "<strong>Hide the following</strong>" means, read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section from the <a class="modsublink" href="./mo2config.html" target="_blank">Mod Organizer 2</a> page</li>
+                                </ul>
                         </ul>
-                        <p class="moddesc">NOTE: If you do not know what <strong>Hide the following</strong> means, read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section from the <a class="modsublink" href="./mo2config.html" target="_blank">Mod Organizer 2</a> page</p> 
                     <li>Install the <strong>def_ui_translations 1.10.163.0</strong> main file normally</li>
                 </ul>   
             <p class="moddesc"> - Modernizes and improves many aspects of the HUD and UI</p>
@@ -136,14 +140,9 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/1215" target="_blank">Improved Map</a></h2>
             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Download the main file, the <strong>IMVR - Far Harbor (Default)</strong> optional file, and the <strong>IMVR - Nuka World (Default)</strong> optional file</li>
-                    <li>In the FOMOD installer for the main file, select the <strong>Default</strong> option and then <strong>Install</strong></li>
-                        <img id="FOMODImg4" src="./img/maps fomod.png" alt="Default" style="width:100%;max-width:300px">
-                            <div id="FOMODModal4" class="modal">
-                                <img class="modal-content" id="img04">
-                                <div id="caption4"></div>
-                                <span class="close">&times;</span>
-                            </div>
+                    <li>Download the <strong>Improved Map with Visible Roads 2.0</strong> main file, the <strong>IMVR - Far Harbor (Default)</strong> optional file, and the <strong>IMVR - Nuka World (Default)</strong> optional file</li>
+                    <li>Being the installation for the <strong>Improved Map with Visible Roads 2.0</strong> file normally, and you will be prompted with a FOMOD installer</li>
+                    <li>Select the <strong>Default</strong> option in the FOMOD then select <strong>Install</strong></li>
                     <li>Install the other two downloaded files normally</li>
                 </ul>
             <p class="moddesc"> - Makes the road lines on the Pip-Boy map more visible</p>
@@ -151,7 +150,7 @@ SOFTWARE.
             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Download the main file through MO2 and begin the installation normally</li>
-                    <li>In the FOMOD installer, you can select whatever size option you prefer (I use the <strong>50%</strong> version)</li>
+                    <li>You will be prompted with a FOMOD installer, in which you can select whatever size option you prefer (I use the <strong>50%</strong> version) then select <strong>Install</strong></li>
                 </ul>
             <p class="moddesc"> - Shrinks the map marker icons to avoid clutter on the world map</p>
     </div>
@@ -203,24 +202,6 @@ span.onclick = function() {
 var img = document.getElementById('FOMODImg3');
 var modalImg = document.getElementById("img03");
 var captionText = document.getElementById("caption3");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal4');
-
-var img = document.getElementById('FOMODImg4');
-var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption4");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
