@@ -3,7 +3,7 @@
 <!-- 
 MIT License
 
-Copyright (c) 2020 Quinn Olore
+Copyright (c) 2020 VivaNewVegas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,144 +28,162 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-     <link rel="icon" type="image/ico" href="./img/logo.png"/>
-    <title>Bug Fixes/QOL | The Midnight Ride</title>
-    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied.">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Bug Fixes | The Midnight Ride</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="The Midnight Ride" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://themidnightride.github.io/" />
     <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
 </head>
 <body>
-    <div>
-        <h1 class="maintitle">The Midnight Ride</h1>
-        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout 4 Modding Guide</em></h4>
-        <hr class="line">
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE MIDNIGHT RIDE</h1></a>
         <ul class="navbar">
-            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
-            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
-            <li class="navbarli"><a href="index.html">Home</a></li>
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
         </ul>
     </div>
-    <div>
-        <h1 class="coretitle">Bug Fixes/Quality of Life Improvements</h1>   
-        <ul class="breadcrumb">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./core.html">General Information</a></li>
-            <li><a href="./installation.html">Installation</a></li>
-            <li><a href="./tools.html">Tools</a></li>
-            <li><a href="./mo2config.html">Mod Organizer 2</a></li>
-            <li><a href="./initweaks.html">INI Tweaks</a></li>
-            <li><a href="./utilities.html">Utilities</a></li>
-            <li>Bug Fixes/QOL</li>
-            <li><a href="./hud.html">HUD/UI</a></li>
-            <li><a href="./gameplay.html">Gameplay</a></li>
-            <li><a href="./finish.html">Finish Line</a></li>
-        </ul>
-        <hr>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html"><span style="color:#DCDCDC">Bug Fixes</span></a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
     </div>
-    <div>
-        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
-            <ul class="specialinstructions">
-                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
-                <li>Input <strong>Bug Fixes + QOL</strong> into the pop-up and select OK</li>
+    <div class="sidenavright">
+        <a href="./bugfix.html">Bug Fixes</a>
+            <ul>
+                <a href="./bugfix.html#separator"><span style="font-size:.9vw;">Separator</span></a></a>
+                <a href="./bugfix.html#patch"><span style="font-size:.9vw;">UF4P</span></a></a>
+                <a href="./bugfix.html#mcm"><span style="font-size:.9vw;">MCM</span></a>
+                <a href="./bugfix.html#fps_fix"><span style="font-size:.9vw;">FPS Fix</span></a>
+                <a href="./bugfix.html#fps_fix_patch"><span style="font-size:.9vw;">FPS Fix Patch</span></a>
+                <a href="./bugfix.html#bcr"><span style="font-size:.9vw;">Bullet Counted Reload System</span></a>
+                <a href="./bugfix.html#flicker"><span style="font-size:.9vw;">Flicker Fixer</span></a>
+                <a href="./bugfix.html#canary"><span style="font-size:.9vw;">Canary Monitor</span></a>
+                <a href="./bugfix.html#input"><span style="font-size:.9vw;">Raw Input</span></a>
+                <a href="./bugfix.html#aggro"><span style="font-size:.9vw;">No Aggro Impact Landing</span></a>
+                <a href="./bugfix.html#unlimited_survival"><span style="font-size:.9vw;">Unlimited Survival Mode</span></a>
             </ul>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/4598" target="_blank">Unofficial Fallout 4 Patch</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-                <ul class="specialinstructions">
-                    <li>If you do not know what "<strong>Install normally</strong>" means, or how to install mods through MO2, read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section from the <a class="modsublink" href="./mo2config.html" target="_blank">Mod Organizer 2</a> page</li>
-                </ul>
-                <p class="moddesc"></p>
-            <p class="moddesc"> - Comprehensive bug fix mod that fixes many issues previously left unresolved by the developers</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/21497" target="_blank">Mod Configuration Menu</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Adds an easy way to configure mods through the in-game pause menu</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/26286" target="_blank">Boston FPS Fix</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main file - <strong>Boston FPS Fix - AIO</strong></li>
-                    <li>Optional file - <strong>PaladinBaileyRedRocket</strong></li>
-                        <ul>
-                            <li>If you do not know what to do when installing multiple files from the same page through MO2, read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section from the <a class="modsublink" href="./mo2config.html" target="_blank" target="_blank">Mod Organizer 2</a> page</li>
-                        </ul>
-                </ul>
-            <p class="moddesc"> - Greatly improves FPS in downtown Boston and the Concord area by rebuilding pre-combine data</p>
-        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/The-Midnight-Ride-Patch-Emporium/blob/main/F4UP%20-%20Boston%20FPS%20Fix%20Patch.7z" target="_blank">Unofficial Fallout 4 Patch - Boston FPS Fix Patch</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-                <ul class="specialinstructions">
-                    <li>If you do not know what to do when you can't download a file directly through MO2, read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section from the <a class="modsublink" href="./mo2config.html">Mod Organizer 2</a> page</li>
-                </ul>
-            <p class="moddesc"> - Forwards fixes from UF4P that were overwritten by Boston FPS Fix</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">Bullet Count Reload System</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file manually</li>
-                    <li>Extract the <strong>F4SE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
-                    <li>Download the optional file normally through MO2</li>
-                </ul>
-            <p class="moddesc"> - Fixes the infamous reload bug with lever action weapons</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/35720" target="_blank">Flicker Fixer</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes many LOD flickering issues (also known as z-fighting) without modifying any pre-combine data</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/44949" target="_blank">Canary Save Manager</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Monitors your save file and warns you if it detects any irreversible data loss</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/27019" target="_blank">Raw Input</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file through MO2 and begin the installation normally</li>
-                    <li>You will be prompted with a FOMOD installer to choose which ADS sensitivity percent you prefer</li>
-                    <li>This is completely up to personal preference, but I use the <strong>100%</strong> option</li>
-                </ul>
-            <p class="moddesc"> - Disables mouse acceleration, normalizes sensitivity, and more</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/9019">No Aggro Impact Landing</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Prevents the impact landing in Power Armor from turning friendly NPCs hostile</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/23102" target="_blank">Laser Weapons 1st Person Reposition</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main file - <strong>Institute and standard lasers</strong></li>
-                </ul>
-            <p class="moddesc"> - Makes the laser weapons take up less of the first person camera</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/31991" target="_blank">Clarity</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download and install the <strong>Clarity 4.3 BETA</strong> main file normally through MO2</li>
-                    <li>Once the mod is installed, double-click on it in the left pane of MO2</li>
-                    <li>In the <strong>INI Files</strong> tab, select <strong>Clarity.ini</strong></li>
-                    <li>Add a <strong>;</strong> (semi-colon) in-front of the <strong>sStartingConsoleCommand=cl rim .002; </strong> line (line 2)</li>
-                    <li>Ctrl+S to save the changes and then exit</li>
-                        <ul>
-                            <li>This change comments out code that would overwrite the .BAT file that was installed in the INI Tweaks step</li>
-                        </ul>
-                </ul>
-            <p class="moddesc"> - Removes and fixes many vision-obscuring effects</p>
-    </div> 
+    </div>
     <div>
+        <h2 class="fullheader">
+           Bug Fixes and Quality of Life Improvements
+        </h2>
+            <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                    <li>Name the separator <strong>Bug Fix + QOL</strong></li>
+                </ol>
+            <a class="internallink" href="#patch"><h2 class="smallheader" id="patch"><a href="https://www.nexusmods.com/fallout4/mods/4598" target="_blank">Unofficial Fallout 4 Patch</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li><b>Main File - Unofficial Fallout 4 Patch 2.1.2b</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Fixes thousands of bugs with both the base game and DLCs</p>
+            <a class="internallink" href="#mcm"><h2 class="smallheader" id="mcm"><a href="https://www.nexusmods.com/fallout4/mods/21497" target="_blank">Mod Configuration Menu</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Mod Configuration Menu 1.39</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds an easy way to configure mods through the in-game pause menu</p> 
+            <a class="internallink" href="#fps_fix"><h2 class="smallheader" id="fps_fix"><a href="https://www.nexusmods.com/fallout4/mods/26286" target="_blank">Boston FPS Fix</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Boston FPS Fix - AIO .32</b></li>
+                        <li><b>Optional File - PaladinBaileyRedRocket .1</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Greatly improves FPS in downtown Boston and the Concord area by safely rebuilding pre-combine data</p>
+            <a class="internallink" href="#fps_fix_patch"><h2 class="smallheader" id="fps_fix_patch"><a href="https://github.com/VivaNewVegas/The-Midnight-Ride-Patch-Emporium/blob/main/F4UP%20-%20Boston%20FPS%20Fix%20Patch.7z" target="_blank">Unofficial Fallout 4 Patch - Boston FPS Fix Patch</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li>Download the mod using the download button pictured below</li>
+                        <li>Finish the install normally through MO2</li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"><img style="width:90%;" src="./img/fpsfixpatchinstall.png" alt="fps fix patch install"></p>
+                    <blockquote class="blockquote">
+                        If you do not know how to download mods that do not have a <strong>Mod Manager Download</strong> button, read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page
+                    </blockquote>
+                <p class="subparagraph"> - Forwards fixes from UF4P that were overwritten by Boston FPS Fix</p>
+            <a class="internallink" href="#bcr"><h2 class="smallheader" id="bcr"><a href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">Bullet Counted Reload System</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Bullet Counted Reload - v.1.05b</b></li>
+                        <li><b>Optional File - BCR- Lever Action Rifle v1.02</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Fixes the infamous reload bug with lever action weapons</p>
+            <a class="interallink" href="#flicker"><h2 class="smallheader" id="flicker"><a href="https://www.nexusmods.com/fallout4/mods/35720" target="_blank">Flicker Fixer</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Flicker Fixer ESL v5.6</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Fixes many LOD flickering issues (also known as z-fighting) without modifying any pre-combine data</p>
+            <a class="interallink" href="#canary"><h2 class="smallheader" id="canary"><a href="https://www.nexusmods.com/fallout4/mods/44949" target="_blank">Canary Save File Monitor</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Canary v 1.0.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Monitors your save file and warns you if it detects any irreversible data loss</p>
+            <a class="interallink" href="#input"><h2 class="smallheader" id="input"><a href="https://www.nexusmods.com/fallout4/mods/27019" target="_blank">Raw Input</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Download the <strong>Main File - RAW INPUT - NMM Installer 2.4</strong> and begin the installation normally through MO2</li>
+                        <li>You will be prompted with a FOMOD installer, where you should select the ADS sensitivity percent you prefer</li>
+                            <ul>
+                                <li>This is completely up to personal preference, but I use the <strong>100%</strong> option</li>
+                            </ul>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Disables mouse acceleration, normalizes sensitivity, and more input-related fixes</p>
+            <a class="interallink" href="#aggro"><h2 class="smallheader" id="aggro"><a href="https://www.nexusmods.com/fallout4/mods/9019" target="_blank">No Aggro Impact Landing</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - No Aggro Impact Landing 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Prevents the impact landing in Power Armor from turning friendly NPCs hostile</p>
+            <a class="interallink" href="#unlimited_survival"><h2 class="smallheader" id="unlimited_survival"><a href="https://www.nexusmods.com/fallout4/mods/26163" target="_blank">Unlimited Survival Mode</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Unlimited Survival Mode - F4SE v1.4.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Restores the game features disabled in Survival mode, such as fast travel and saving. It's all fully configurable and can be skipped without problems if you consider it "cheaty"</p>
+    </div>
+    <div>
+        <br> <br>
         <hr>
-        <a class="arrows" href="./utilities.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./hud.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <br>
+        <a href="./utilities.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./hud.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
     </div>
 </body>
-<script>
-var modal = document.getElementById('FOMODModal');
-
-var img = document.getElementById('FOMODImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
 </html>

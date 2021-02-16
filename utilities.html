@@ -3,7 +3,7 @@
 <!-- 
 MIT License
 
-Copyright (c) 2020 Quinn Olore
+Copyright (c) 2020 VivaNewVegas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,156 +28,151 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-     <link rel="icon" type="image/ico" href="./img/logo.png"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
     <title>Utilities | The Midnight Ride</title>
-    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied.">
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="The Midnight Ride" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://themidnightride.github.io/" />
     <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
 </head>
 <body>
-    <div>
-        <h1 class="maintitle">The Midnight Ride</h1>
-        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout 4 Modding Guide</em></h4>
-        <hr class="line">
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE MIDNIGHT RIDE</h1></a>
         <ul class="navbar">
-            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
-            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
-            <li class="navbarli"><a href="index.html">Home</a></li>
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
         </ul>
     </div>
-    <div>
-        <h1 class="coretitle">Utilities</h1>   
-        <ul class="breadcrumb">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./core.html">General Information</a></li>
-            <li><a href="./installation.html">Installation</a></li>
-            <li><a href="./tools.html">Tools</a></li>
-            <li><a href="./mo2config.html">Mod Organizer 2</a></li>
-            <li><a href="./initweaks.html">INI Tweaks</a></li>
-            <li>Utilities</li>
-            <li><a href="./bugfix.html">Bug Fixes/QOL</a></li>
-            <li><a href="./hud.html">HUD/UI</a></li>
-            <li><a href="./gameplay.html">Gameplay</a></li>
-            <li><a href="./finish.html">Finish Line</a></li>
-        </ul>
-        <hr>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html"><span style="color:#DCDCDC">Utilities</span></a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
+    </div>
+    <div class="sidenavright">
+        <a href="./utilities.html">Utilities</a>
+            <ul>
+                <a href="./utilities.html#f4se"><span style="font-size:.9vw;">F4SE</span></a>
+                <a href="./utilities.html#preloader"><span style="font-size:.9vw;">Plugin Preloader</span></a>
+                <a href="./utilities.html#library"><span style="font-size:.9vw;">Address Library</span></a>
+                <a href="./utilities.html#redirector"><span style="font-size:.9vw;">Profile Redirector</span></a>
+                <a href="./utilities.html#buffout"><span style="font-size:.9vw;">Buffout 4</span></a>
+                <a href="./utilities.html#physics"><span style="font-size:.9vw;">Physics Fix</span></a>
+                <a href="./utilities.html#sprint"><span style="font-size:.9vw;">Sprint Stutter Fix</span></a>
+                <a href="./utilities.html#crafting"><span style="font-size:.9vw;">Crafting Highlight Fix</span></a>
+            </ul>
     </div>
     <div>
-        <h2 class="modhead">A Note About Testing the Game</h2> 
-            <p class="moddesc">
-                After each section in every module, you should launch the game and load a save/start a new game just to make sure the game loads properly.
-            </p>
-        <h2 class="modhead"><a class="modlink" href="https://f4se.silverlock.org/" target="_blank">Fallout 4 Script Extender</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Click the topmost download link next to <strong>Fallout 4 runtime 1.10.163 - build: 0.6.21</strong></li>
-                    <li>Extract the 2 files from the archive ending with <strong>.dll</strong> and the file ending with <strong>.exe</strong> to the game's <strong>Root</strong> folder</li>
-                        <ul>
-                            <li>If you do not know what the <strong>Root</strong> folder is, read the <strong>Common Terminology</strong> section from the <a class="modsublink" href="./installation.html">Installation</a> page</li>
-                        </ul>
-                </ul>
-            <p class="moddesc"> - Extends the scripting capabilities Fallout 4 <br>
-                                NOTE: In order for the script extender to work, you need to launch the game using the <strong>f4se_loader.exe</strong> file. It will automatically be added to Mod Organizer 2 upon restarting it
-            </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/47327" target="_blank">Address Library for F4SE Plugins</a></h2>
-            <p class="specialinstall"><strong>Install instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file using the <strong>Manual Download</strong> button (this will be referred to as "downloading manually" from now on)</li>
-                    <li>Extract the <strong>F4SE</strong> folder from the downloaded archive to the game's <strong>Data</strong> folder</li>
-                        <ul>
-                            <li>If you do not know what the <strong>Data</strong> folder is, read the <strong>Common Terminology</strong> section from the <a class="modsublink" href="./installation.html">Installation</a> page</li>
-                        </ul>
-                    <li>The files from the mod, and the rest of the F4SE plugins in this section (unless instructed otherwise), should end up here:</li>
-                        <img id="FOMODImg" src="./img/F4SE filepath.png" alt="'Fallout 4/Data/F4SE/Plugins'" style="width:100%;max-width:300px">
-                        <div id="FOMODModal" class="modal">
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                            <span class="close">&times;</span>
-                        </div>
-                </ul>
-            <p class="moddesc"> - Resource required for F4SE plugins that dynamically relocates offsets upon</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">F4SE Plugin Preloader</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file manually</li>
-                    <li>Extract the two files from the downloaded archive to the game's <strong>Root</strong> folder</li>
-                    <li>Once the files have been extracted, open <strong>xSE PluginPreloader.xml</strong></li>
-                    <li>Change <strong>&lt;LoadMethod Name="OnProcessAttach"&gt;</strong> (line 14) to <strong>&lt;LoadMethod Name="OnThreadAttach"&gt;</strong></li>
-                </ul>
-            <p class="moddesc"> - Allows F4SE plugins to be loaded before the game initializes <br>
-            </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/47359" target="_blank">Buffout 4</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download both main files manually</li>
-                    <li>From the <strong>Buffout 4</strong> archive, extract the <strong>F4SE</strong> folder to the game's <strong>Data</strong> folder</li>
-                    <li>From the <strong>TBB Redistributables</strong> archive, extract the <strong>tbbmalloc.dll</strong> file to the <strong>Root</strong> folder</li>
-                </ul>
-            <p class="moddesc"> - Fixes many bugs with the game's engine <br>
-                                NOTE: The reason that these F4SE plugins are installed directly into the data folder and not through Mod Organizer 2 is that MO2's virtual file system can rarely fail to hook the .DLLs in time when launching the game, and therefore they will not work in-game (and this problem can be magnified by F4SE Plugin Preloader)
-            </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank">High FPS Physics Fix</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the <strong>High FPS Physics Fix</strong> main file manually</li>
-                    <li>Extract the <strong>F4SE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
-                    <li>Once the folder has been extracted, navgiate to <strong>Data/F4SE/Plugins</strong> and open <strong>HighFPSPhysicsFix.ini</strong></li>
-                    <li>In the .INI, change the following:</li>
-                        <ul>
-                            <li>Set <strong>DisableBlackLoadingScreens</strong> to <strong>true</strong> (line 13)</li>
-                            <li>Set <strong>DisableAnimationOnLoadingScreens</strong> to <strong>true</strong> (line 17)</li>
-                        </ul>
-                </ul>
-            <p class="moddesc"> - Allows for playing at framerates over 60 and reduces load times</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/47760" target="_blank">Sprint Stuttering Fix</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the top main file manually (the one with the description simply reading <strong>Requires F4SE</strong>)</li>
-                    <li>Extract the <strong>F4SE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
-                </ul>
-            <p class="moddesc"> - Fixes camera stuttering while sprinting on uneven surfaces</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/35382" target="_blank">Faster Workshop</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file manually</li>
-                    <li>Extract the <strong>Data</strong> folder from the archive to the game's <strong>Root</strong> folder</li>
-                </ul>
-            <p class="moddesc"> - Speeds up the time it takes to open the workshop menu, especially if you have mods that add settlement items</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/27479" target="_blank">Crafting Highlight Fix</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file manually</li>
-                    <li>Extract the <strong>Data</strong> folder from the archive to the game's <strong>Root</strong> folder</li>
-                </ul>
-            <p class="moddesc"> - Replaces the full opacity item highlight during crafting with a much more clear outline</p>
+        <h2 class="fullheader">
+           Utilities
+        </h2>
+            <a class="internallink" href="#f4se"><h2 class="smallheader" id="f4se"><a href="https://f4se.silverlock.org/" target="_blank">Fallout 4 Script Extender</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Click the topmost download link next to <strong>Fallout 4 runtime 1.10.163 - build: 0.6.21</strong></li>
+                        <li>From the downloaded archive, extract all the files ending in <strong>.dll</strong> and <strong>.exe</strong> (3 total files) to the game's <strong>Root</strong> folder</li>
+                            <img src="#" alt="placeholder">
+                    </ol>
+                        <blockquote class="blockquote">
+                            If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.
+                        </blockquote>
+                    <p class="subparagraph"> - Extends the scripting capabilities of the game</p>
+                        <blockquote class="blockquote">
+                            In order for the script extender to work, you need to launch the game using the <strong>f4se_loader.exe</strong> file. It will automatically be added to Mod Organizer 2 upon restarting it.
+                        </blockquote>
+            <a class="internallink" href="preloader"><h2 class="smallheader" id="preloader"><a href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">PluginPreloader</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Download the <strong>Main File - xSE PluginPreloader F4 0.2.4</strong> using the <strong>Manual Download</strong> button</li>
+                        <li>From the download archive, extract the two files to the game's <strong>Root</strong> folder</li>
+                        <li>Once the files have been extracted, open <strong>xSE PluginPreloader.xml</strong> in a text editor</li>
+                        <li>Change <strong>&lt;LoadMethod Name="OnProcessAttach"&gt;</strong> (line 14) to <strong>&lt;LoadMethod Name="OnThreadAttach"&gt;</strong></li>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Allows F4SE plugins to be loaded before the game initializes</p>
+            <a class="internallink" href="#library"><h2 class="smallheader" id="library"><a href="https://www.nexusmods.com/fallout4/mods/47327" target="_blank">Address Library for F4SE Plugins</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Address Library 1.10.163.0</b></li>
+                    </ul>
+                    <blockquote class="blockquote">
+                        If you do not know what these instructions mean, or how to install mods with MO2, read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page
+                    </blockquote>
+                    <p class="subparagraph"> - Resource required for other F4SE plugins</p>
+            <a class="internallink" href="redirector"><h2 class="smallheader" id="redirector"><a href="https://www.nexusmods.com/fallout4/mods/33947" target="_blank">PrivateProfileRedirector</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - PrivateProfileRedirector F4 0.5</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Speeds up the launch process by storing INI files in memory</p>
+            <a class="internallink" href="buffout"><h2 class="smallheader" id="buffout"><a href="https://www.nexusmods.com/fallout4/mods/47359" target="_blank">Buffout 4</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>    
+                    <ol class="standard_ol">
+                        <li>Download and install the <strong>Main File - Buffout 4 1.20.3</strong> normally through MO2</li>
+                        <li>Download the <strong>Main File - TBB Redistributables 2020.3</strong> file using the <strong>Manual Download</strong> button</li>
+                        <li>From the downloaded archive, extract <strong>tbbmalloc.dll</strong> to the game's <strong>Root</strong> folder</li>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Fixes numerous bugs within the game's engine</p>
+            <a class="internallink" href="#physics"><h2 class="smallheader" id="physics"><a href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank">High FPS Physics Fix</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>    
+                    <ol class="standard_ol">
+                        <li>Download and install the <strong>Main File - High FPS Physics Fix  0.7.7</strong> normally through MO2</li>
+                        <li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
+                        <li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
+                        <li>Change the following options:</li>
+                            <ul>
+                                <li>Set <strong>DisableBlackLoadingScreens=</strong> to <strong>true</strong> (line 36)</li>
+                                <li>Set <strong>DisableAnimationOnLoadingScreens=</strong> to <strong>true</strong> (line 41)</li>
+                            </ul>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Allows for playing at framerates over 60, mitigates stutter, and reduces load times</p>
+            <a class="internallink" href="#sprint"><h2 class="smallheader" id="sprint"><a href="https://www.nexusmods.com/fallout4/mods/47760" target="_blank">Sprint Stutter Fix</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>    
+                    <ul class="standard_ul">
+                        <li><b>Main File - Sprint Stuttering Fix 1.2</b> (the top one)</li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Stops the camera from stuttering while sprinting on uneven surfaces</p>
+            <a class="internallink" href="#crafting"><h2 class="smallheader" id="crafting"><a href="https://www.nexusmods.com/fallout4/mods/27479" target="_blank">Crafting Highlight Fix</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>    
+                    <ul class="standard_ul">
+                        <li><b>Main File - Crafting Highlight Fix 1.8.8</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Replaces the full opacity item highlight during crafting with a much more clear outline</p>
     </div>
     <div>
+        <br> <br>
         <hr>
-        <a class="arrows" href="./tools.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./bugfix.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <br>
+        <a href="./mo2.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./bugfix.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
     </div>
 </body>
-<script>
-var modal = document.getElementById('FOMODModal');
-
-var img = document.getElementById('FOMODImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
 </html>
+ 

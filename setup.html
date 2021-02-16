@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Initial Setup | The Midnight Ride</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="The Midnight Ride" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://themidnightride.github.io/" />
+    <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE MIDNIGHT RIDE</h1></a>
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
+        </ul>
+    </div>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html"><span style="color:#DCDCDC">Initial Setup</span></a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
+    </div>
+    <div class="sidenavright">
+        <a href="./setup.html#location">Location</a>
+        <a href="./setup.html#uninstall">Uninstall</a>
+        <a href="./setup.html#steam_library">Steam Library</a>
+        <a href="./setup.html#install">Install</a>
+        <a href="./setup.html#terms">Key Terms</a>
+        <a href="/setup.html#post_installation">Post-Install</a>
+            <ul>
+                <a href="./setup.html#file_extensions"><span style="font-size:.9vw;">File Extensions</span></a>
+                <a href="./setup.html#generating_inis"><span style="font-size:.9vw;">INI Files</span></a>
+                <a href="./setup.html#fo4edit"><span style="font-size:.9vw;">FO4Edit</span></a>
+            </ul>
+    </div>
+    <div>
+        <h2 class="fullheader">
+            Initial Setup
+                <p>In this step, we will do a clean installation and configuration of the game, which is required for the guide.</p>
+        </h2>
+            <a class="internallink" href="#location"><h2 class="subheader" id="location">Recommended Installation Location</h2></a>
+                <p class="subparagraph">
+                    A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location.
+                    Here is what you need to know when choosing where to install your game:
+                    <br> <br>
+                        <ul class="standard_ul">
+                            <li>
+                                <b>Avoid any default Windows folders:</b> 
+                                This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, 
+                                your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects
+                                these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code>.
+                            </li>
+                            <br>
+                            <li>
+                                <b>Install on an SSD if possible:</b>
+                                Having the game on an SSD will drastically improve load times and decrease stuttering. The game plus the guide should only 
+                                take up about 12GB of space, but the importance of having extra free space on your drive should not be understated. 
+                                Drives will generally performance worse as they get more full, so you won't see as much of an improvement with load times and stuttering with a full drive.
+                            </li>
+                        </ul>
+                </p>
+            <a class="internallink" href="#uninstall"><h2 class="subheader" id="uninstall">Uninstalling the Game</h2></a>
+                <blockquote class="blockquote">
+                    If you do not have the game installed yet, skip this step.
+                </blockquote>
+                    <ol class="standard_ol">
+                        <li>Open Steam and go to your <strong>Library</strong></li>
+                        <li>Find <strong>Fallout 4</strong> in the list</li>
+                        <li>Right-click on it and select <strong>Manage -> Uninstall</strong></li>
+                    </ol>
+            <a class="internallink" href="#steam_library"><h2 class="subheader" id="steam_library">Making a New Steam Library</h2></a>
+                <blockquote class="blockquote">
+                    If you already have a Steam library set up outside of any default Windows folder, skip this step.
+                </blockquote>
+                    <p class="subparagraph">
+                        A new Steam library needs to be set up to install the game on, as the default library is in a default Windows UAC-protected folder (<code>C:\Program Files x86\Steam</code>).
+                    </p>
+                    <br> <br>
+                    <ol class="standard_ol">
+                        <li>Open Steam and select <strong>Steam -> Settings</strong> in the top left</li>
+                        <li>In the <strong>Downloads</strong> tab, select <strong>Steam Library Folders</strong></li>
+                        <li>Select <strong>Add Library Folder</strong> and select a location outside of any default Windows folders</li>
+                            <ul>
+                                <li>For example, <code>C:/Games/Steam</code></li>
+                            </ul>
+                    </ol>
+                    <blockquote class="blockquote">
+                        IMPORTANT: By default, Steam only allows one library per drive, but there is a workaround. If for example you already have the default Steam library at <code>C:\Program Files x86\Steam</code>,
+                        but still want your game on your C:\ drive, you will need to follow <a href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these</a>
+                        instructions to do so.
+                    </blockquote>
+                    <ol class="standard_ol" start="4">
+                        <li>Exit out of the settings when you are finished</li>
+                    </ol>
+            <a class="internallink" href="#install"><h2 class="subheader" id="install">Installing the Game</h2></a>
+                    <ol class="standard_ol">
+                        <li>Open Steam and go to your <strong>Library</strong></li>
+                        <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong></li>
+                        <li>From the install pop-up, set the location for install to the Steam library you just created in the previous step</li>
+                        <li>Select <strong>Next</strong> then wait for the install to finish</li>
+                    </ol>
+                <a class="internallink" href="#terms"><p class="subheader" id="terms">Key Terminology</p></a>
+                    <p class="subparagraph">Now that the game is installed, there are two folders from it that will be referred to in the guide often: </p>
+                        <ul class="standard_ul">
+                            <li><b>Root</b> folder (where the game is installed): <code>Steam\steamapps\common\Fallout 4</code></li>
+                            <li><b>Data</b> folder (where all of the game's assets are located): <code>Steam\steamapps\common\Fallout 4\Data</code></li>
+                        </ul>
+            <a class="internallink" href="#post_install"><h2 class="subheader" id="post_install">Post-Installation</h2></a>
+                <a class="internallink" href="#file_extensions"><p class="smallheader" id="file_extensions">Enabling File Extensions</p></a>
+                    <p class="subparagraph">
+                        By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide,
+                        so it is highly recommended to enable file extensions:
+                    </p>
+                    <br>
+                    <ol class="standard_ol">
+                        <li>Open Windows Explorer</li>
+                        <li>Select the <strong>View</strong> tab at the top</li>
+                        <li>Check the box next to <strong>File name extensions</strong></li>
+                        <img src="./img/show file extensions.png" alt="show file extensions">
+                    </ol>
+                <a class="internallink" href="#generating_inis"><p class="smallheader" id="generating_inis">Generating Fresh .INI Files</p></a>
+                    <ol class="standard_ol">
+                        <li>Run <strong>Fallout4Launcher.exe</strong> from the game's <strong>Root</strong> folder</li>
+                            <ul>
+                                <li>If you do not know what the game's <strong>Root</strong> folder is, read the <a class="sublink" href="./setup.html#terms">Key Terminology</a> section above</li>
+                            </ul>
+                        <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong></li>
+                            <ul>
+                                <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\Fallout4</code> and delete all the files ending in <strong>.INI</strong> then retry</li>
+                            </ul>
+                        <li>Select <strong>Options</strong> then select the <strong>High</strong> preset option</li>
+                            <ul>
+                                <li>
+                                    The high preset is used over the ultra preset because the ultra preset has options that can severely tank FPS without much visual improvement. 
+                                    You can choose a lower preset if you have a lower-end PC, or want to squeeze as much performance out of the game as possible.
+                                </li>
+                            </ul>
+                        <li>Click <strong>OK</strong> then <strong>Exit</strong></li>
+                    </ol>
+                <a class="internallink" href="#fo4edit"><p class="smallheader" id="fo4edit">Installing FO4Edit</p></a>
+                    <ol class="standard_ol">
+                        <li>FO4Edit: Download the main file from <a href="https://www.nexusmods.com/fallout4/mods/2737?tab=files" target="_blank">here</a> manually</li>
+                        <li>Extract the contents of the archive to a new folder called <strong>FO4Edit</strong> outside of any default Windows folders</li>
+                    </ol>
+                    <blockquote class="blockquote">
+                        If you do know what is meant by "default Windows folders", read the <a href="./setup.html#location">Installation Location</a> section above.
+                    </blockquote>
+                    <ol class="standard_ol" start="3">
+                        <li>Mator's xEdit Patching Framework: Download the main file from <a href="https://www.nexusmods.com/skyrim/mods/68617/?tab=files" target="_blank">here</a> manually</li>
+                        <li>Extract the <strong>Edit Scripts</strong> folder from the downloaded archive to the same folder that you extracted the above archive to</li>
+                    </ol>
+                    <blockquote class="blockquote">
+                        The <strong>Edit Scripts</strong> folder from the archive should align with the <strong>Edit Scripts</strong> folder already in the FO4Edit folder.
+                    </blockquote>
+
+    </div>
+    <div>
+        <br> <br>
+        <hr>
+        <br>
+        <a href="./intro.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./mo2.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

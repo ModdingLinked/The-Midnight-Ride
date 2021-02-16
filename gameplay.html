@@ -3,7 +3,7 @@
 <!-- 
 MIT License
 
-Copyright (c) 2020 Quinn Olore
+Copyright (c) 2020 VivaNewVegas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,107 +28,126 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-     <link rel="icon" type="image/ico" href="./img/logo.png"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
     <title>Gameplay | The Midnight Ride</title>
-    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied.">
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="The Midnight Ride" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://themidnightride.github.io/" />
     <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
 </head>
 <body>
-    <div>
-        <h1 class="maintitle">The Midnight Ride</h1>
-        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout 4 Modding Guide</em></h4>
-        <hr class="line">
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE MIDNIGHT RIDE</h1></a>
         <ul class="navbar">
-            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
-            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
-            <li class="navbarli"><a href="index.html">Home</a></li>
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
         </ul>
     </div>
-    <div>
-        <h1 class="coretitle">Gameplay</h1>   
-        <ul class="breadcrumb">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./core.html">General Information</a></li>
-            <li><a href="./installation.html">Installation</a></li>
-            <li><a href="./tools.html">Tools</a></li>
-            <li><a href="./mo2config.html">Mod Organizer 2</a></li>
-            <li><a href="./initweaks.html">INI Tweaks</a></li>
-            <li><a href="./utilities.html">Utilities</a></li>
-            <li><a href="./bugfix.html">Bug Fixes/QOL</a></li>
-            <li><a href="./hud.html">HUD/UI</a></li>
-            <li>Gameplay</li>
-            <li><a href="./finish.html">Finish Line</a></li>
-        </ul>
-        <hr>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html"><span style="color:#DCDCDC">Gameplay</span></a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
     </div>
-    <div>
-        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
-            <ul class="specialinstructions">
-                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
-                <li>Input <strong>Gameplay</strong> into the pop-up and select OK</li>
+    <div class="sidenavright">
+        <a href="./gameplay.html">Gameplay</a>
+            <ul>
+                <a href="./gameplay.html#separator"><span style="font-size:.9vw;">Separator</span></a>
+                <a href="./gameplay.html#equilibrium"><span style="font-size:.9vw;">Equilibrium</span></a>
+                <a href="./gameplay.html#recalc"><span style="font-size:.9vw;">Encounter Zone Recalculation</span></a>
+                <a href="./gameplay.html#automatron"><span style="font-size:.9vw;">Decreased Automatron Encounters</span></a>
+                <a href="./gameplay.html#loot"><span style="font-size:.9vw;">Loot Logic Reduction</span></a>
+                <a href="./gameplay.html#vendors"><span style="font-size:.9vw;">Complex Vendors</span></a>
+                <a href="./gameplay.html#lbpac"><span style="font-size:.9vw;">Power Armor Changes</span></a>
+                <a href="./gameplay.html#beacons"><span style="font-size:.9vw;">Salvage Beacons</span></a>
             </ul>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/27046" target="_blank">Equilibrium</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Mass weapon balance project for both the base game and the DLCs</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/45674" target="_blank">Encounter Zone Recalculation</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file manually</li>
-                    <li>Extract the <strong>F4SE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
-                </ul>
-            <p class="moddesc"> - Allows previously-visited encounter zones to update the levels of the enemies in them as the player levels up</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/28891" target="_blank">Decreased Automatron Encounters</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Lowers the rate of Automatron's random encounters to be that of vanilla random encounters</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/21366" target="_blank">Loot Logic and Reduction</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main file - <strong>Loot Logic and Reduction 1.5.3.1</strong></li>
-                    <li>Optional file - <strong>Loot Logic Scrounger and Fortune Finder v2</strong></li>
-                </ul>
-            <p class="moddesc"> - Reduces the amount of valuable loot and diversifies the type of loot in generic containers</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/47364" target="_blank">Complex Vendors</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Makes most vendors only buy items related to what they sell (Doctors only buy medical supplies, farmers only buy food, etc.)</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/36251" target="_blank">Lore-Based Power Armor Changes</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Balances Power Armor by making it more difficult to acquire and maintain</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/36374" target="_blank">RobCo Recon Scope Replacer</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Gives Recon Scopes a much sleeker and less obnoxious look</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/18757" target="_blank">Salvage Beacons</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Adds a lore friendly and balanced way to send loot back to settlements while exploring <br>
-                                NOTE: Make sure you read the description to know how to craft and use the beacons
-            </p>
+    </div>
     <div>
+        <h2 class="fullheader">
+           Gameplay
+        </h2>
+            <a class="internallink" href="#equilibrium"><h2 class="smallheader" id="equilibrium"><a href="https://www.nexusmods.com/fallout4/mods/27046" target="_blank">Equilibrium</a></h2></a>
+                <h2 class="install">Installation instructions:</h2> 
+                    <ul class="standard_ul">
+                        <li><b>Main File - EquilibriumWeapons 1.5</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Mass weapon balance project for both the base game and the DLCs</p>
+            <a class="internallink" href="#recalc"><h2 class="smallheader" id="recalc"><a href="https://www.nexusmods.com/fallout4/mods/45674" target="_blank">Encounter Zone Recalculation</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Encounter Zone Recalculation 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Allows previously-visited encounter zones to update the levels of the enemies in them as the player levels up</p>
+            <a class="internallink" href="#automatron"><h2 class="smallheader" id="automatron"><a href="https://www.nexusmods.com/fallout4/mods/28891" target="_blank">Decreased Automatron Encounters</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Rust Devil Redux .1</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Lowers the rate of Automatron's random encounters to be that of vanilla random encounters</p>
+            <a class="internallink" href="#loot"><h2 class="smallheader" id="loot"><a href="https://www.nexusmods.com/fallout4/mods/21366" target="_blank">Loot Logic and Reduction</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Loot Logic and Reduction 1.5.3.1</b></li>
+                        <li><b>Optional File - Loot Logic Scrounger and Fortune Finder v2</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Reduces the amount of valuable loot and diversifies the type of loot in generic containers</p>
+            <a class="internallink" href="#vendors"><h2 class="smallheader" id="vendors"><a href="https://www.nexusmods.com/fallout4/mods/47364" target="_blank">Complex Vendors</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Complex Vendors 0.1.3</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Makes most vendors only buy items related to what they sell (doctors only buy medical supplies, farmers only buy food, etc.)</p>
+            <a class="internallink" href="lbpac"><h2 class="smallheader" id="lbpac"><a href="https://www.nexusmods.com/fallout4/mods/36251" target="_blank">Lore-Based Power Armor Changes</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Lore-Based Power Armor Changes 1.53</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Balances Power Armor by making it more difficult to acquire and maintain</p>
+            <a class="internallink" href="#beacons"><h2 class="smallheader" id="beacons"><a href="https://www.nexusmods.com/fallout4/mods/18757" target="_blank">Salvage Beacons</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Salvage Beacons 1.0.4</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds a lore friendly and balanced way to send loot back to settlements while exploring</p>
+                <blockquote class="blockquote">
+                    Make sure you read the description to know how to craft and use the beacons
+                </blockquote>
+    </div>
+    <div>
+        <br> <br>
         <hr>
-        <a class="arrows" href="./hud.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <br>
+        <a href="./hud.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
     </div>
 </body>
-<script>
-    var modal = document.getElementById('FOMODModal');
-    
-    var img = document.getElementById('FOMODImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-    
-    var span = document.getElementsByClassName("close")[0];
-    
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
-    </script>
 </html>

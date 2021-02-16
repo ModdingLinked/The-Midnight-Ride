@@ -31,7 +31,7 @@ SOFTWARE.
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
     <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
-    <title>Changelog | The Midnight Ride</title>
+    <title>FAQ | The Midnight Ride</title>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="The Midnight Ride" />
@@ -60,29 +60,35 @@ SOFTWARE.
         <a href="./gameplay.html">Gameplay</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
-        <a href="./changelog.html"><span style="color:#DCDCDC">Changelog</span></a>
+        <a href="./faq.html"><span style="color:#DCDCDC">FAQ</span></a>
     </div>
     <div class="sidenavright">
-
+        <a href="./faq.html">FAQ</a>
+            <ul>
+                <a href="./faq.html#dlc"><span style="font-size:.9vw;">High-Res DLC</span></a>
+                <a href="./faq.html#textures"><span style="font-size:.9vw;">Visual Mods</span></a>
+                <a href="./faq.html#dlc"><span style="font-size:.9vw;">DEF_UI Hotkeys</span></a>
+                <a href="./faq.html#mo2_popup"><span style="font-size:.9vw;">MO2 Pop-Up</span></a>
+            </ul>
     </div>
     <div>
         <h2 class="fullheader">
-           Changelog
+           Frequently-Asked Questions
         </h2>
-            <h2 class="subparagraph"><strong>Time formatted in mm/dd/yy</strong></h2>
-                <h2 class="install">2/16/21</h2>
-                    <p class="subparagraph"> - Sexy new site redesign (sorry for being too lazy to port over the old changelogs, they didn't contain anything important anyways since this guide hasn't changed too much</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <a class="internallink" href="#dlc"><p class="smallheader" id="dlc"><b>Q: Why should I not use the High Resolution Texture Pack DLC?</b></p></a>
+            <p class="subparagraph">A: The texture pack DLC provides a very marginal visual increase for a potentially major performance decrease. It is simply not worth the trade off</p>
+        <a class="internallink" href="#textures"><p class="smallheader" id="textures"><b>Q: Why are there no big visual mods in the guide? Can I add my own?</b></p></a>
+            <p class="subparagraph">
+                SA: The simple answer is because I don't use texture mods. I don't believe they are necessary and I prefer the consistent visuals/performance without them. 
+                Fallout 4 also already has a great weather system that works perfectly. Plus modded weather mods can potentially have FPS drops during more intense weather effects like thunder storms. Interior lighting mods also usually damage performance due to the new lighting effects and dynamic shadows they may add.
+                It is only recommended to add your own mods if you are an experienced modder. If you are an experienced modder, I would recommend using the texture optimization step from <a href="https://www.nexusmods.com/fallout4/mods/23556" target="_blank">BiRaitBec's guide</a> (but don't use the Quality addon or any other parts of the guide). </p>
+        <a class="internallink" href="#def"><p class="smallheader" id="def"><b>Q: I've changed a hotkey, but the HUD still shows the previous hotkey! How can I fix this?</b></p></a>
+            <p class="subparagraph">
+                A: Open up <code>Interface/DEF_CONF/DEF_INV.xml</code> from <strong>Ruddy88's Simple Sorter</strong>. From lines 14-27, you can change the HUD to show the new hotkey. 
+                For example, if you changed the activate key from E to F, change <code>&lt;E&gt;</code> to <code>&lt;F&gt;</code>
+            </p>
+        <a class="internallink" href="#mo2_popup"><p class="smallheader" id="mo2_popup"><b>Q: When installing multiple mods from the same page through MO2, should I select Merge, Rename, or Replace?</b></p></a>
+            <p class="subparagraph">A: Read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page.</p>
     </div>
     <div>
         <br> <br>

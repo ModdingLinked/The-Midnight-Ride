@@ -3,7 +3,7 @@
 <!-- 
 MIT License
 
-Copyright (c) 2020 Quinn Olore
+Copyright (c) 2020 VivaNewVegas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,190 +28,128 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-     <link rel="icon" type="image/ico" href="./img/logo.png"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
     <title>HUD/UI | The Midnight Ride</title>
-    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied.">
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="The Midnight Ride" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://themidnightride.github.io/" />
     <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide for Fallout 4 that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
 </head>
 <body>
-    <div>
-        <h1 class="maintitle">The Midnight Ride</h1>
-        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout 4 Modding Guide</em></h4>
-        <hr class="line">
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE MIDNIGHT RIDE</h1></a>
         <ul class="navbar">
-            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
-            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
-            <li class="navbarli"><a href="index.html">Home</a></li>
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
+            <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
         </ul>
     </div>
-    <div>
-        <h1 class="coretitle">HUD/UI</h1>   
-        <ul class="breadcrumb">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./core.html">General Information</a></li>
-            <li><a href="./installation.html">Installation</a></li>
-            <li><a href="./tools.html">Tools</a></li>
-            <li><a href="./mo2config.html">Mod Organizer 2</a></li>
-            <li><a href="./initweaks.html">INI Tweaks</a></li>
-            <li><a href="./utilities.html">Utilities</a></li>
-            <li><a href="./bugfix.html">Bug Fixes/QOL</a></li>
-            <li>HUD/UI</li>
-            <li><a href="./gameplay.html">Gameplay</a></li>
-            <li><a href="./finish.html">Finish Line</a></li>
-        </ul>
-        <hr>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html"><span style="color:#DCDCDC">HUD/UI</span></a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
     </div>
-    <div>
-        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
-            <ul class="specialinstructions">
-                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
-                <li>Input <strong>HUD + UI</strong> into the pop-up and select OK</li>
+    <div class="sidenavright">
+        <a href="./hud.html">HUD/UI</a>
+            <ul>
+                <a href="./hud.html#separator"span style="font-size:.9vw;">Separator</span></a>
+                <a href="./hud.html#def"><span style="font-size:.9vw;">DEF_UI</span></a>
+                <a href="./hud.html#def_icons"><span style="font-size:.9vw;">DEF_UI Icons</span></a>
+                <a href="./hud.html#hud_preset"><span style="font-size:.9vw;">HUD Preset</span></a>
+                <a href="./hud.html#xdi"><span style="font-size:.9vw;">XDI</span></a>
+                <a href="./hud.html#pa_hud"><span style="font-size:.9vw;">Power Armor HoloHUD</span></a>
             </ul>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/10654" target="_blank">DEF_UI</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download both main files through MO2</li>
-                    <li>Being the installation for the <strong>Def_ui 1.5.1</strong> file normally, and you will be prompted with a FOMOD installer</li>
-                    <li>Select the following options from it:</li>
-                        <img id="FOMODImg" src="./img/def fomod 1.png" alt="Select DEF_HUD, DEF_INV, English (EN), 16:9" style="width:100%;max-width:300px">
-                            <div id="FOMODModal" class="modal">
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
-                                </div>
-                        <img id="FOMODImg2" src="./img/def fomod 2.png" alt="Select Use Sorting Mod Component Tags and Vanilla HUD" style="width:100%;max-width:300px">
-                            <div id="FOMODModal2" class="modal">
-                                <img class="modal-content" id="img02">
-                                <div id="caption2"></div>
-                            </div>
-                        <img id="FOMODImg3" src="./img/def fomod 3.png" alt="Select No Sorting Mod" style="width:100%;max-width:300px">
-                            <div id="FOMODModal3" class="modal">
-                                <img class="modal-content" id="img03">
-                                <div id="caption3"></div>
-                                <span class="close">&times;</span>
-                            </div>
-                            <ul>
-                                <li>If you are using an aspect ratio other than 16:9, you can select whatever aspect ratio you use in the FOMOD. However, this will require extra tweaking later</li>
-                            </ul>
-                    <li>After the installation is complete, hide the following from the <strong>Def_ui 1.5.1</strong> file:</li>
-                        <ul>
-                            <li><strong>interface/Translate_en.txt</strong></li>
-                                <ul>
-                                    <li>If you do not know what "<strong>Hide the following</strong>" means, read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section from the <a class="modsublink" href="./mo2config.html" target="_blank">Mod Organizer 2</a> page</li>
-                                </ul>
-                        </ul>
-                    <li>Install the <strong>def_ui_translations 1.10.163.0</strong> main file normally</li>
-                </ul>   
-            <p class="moddesc"> - Modernizes and improves many aspects of the HUD and UI</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/31088" target="_blank">DEF_UI Iconlibs Rescaled and Fixed</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main file - <strong>DEF_UI Iconlibs Rescaled and Fixed - Uncolored</strong></li>
-                </ul>
-            <p class="moddesc"> - Improved icons for DEF_UI</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/35672" target="_blank">Yet Another HUD Preset</a></h2>
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Rearranges the HUD to feel more modern and comfortable <br>
-                                NOTE: This is just my personal favorite preset, you can use any DEF_UI HUD preset you like, such as <a class="modsublink" href="https://www.nexusmods.com/fallout4/mods/25433" target="_blank">Vanilla Taste Redesign</a> or <a class="modsublink" href="https://www.nexusmods.com/fallout4/mods/32627" target="_blank">Aesthetic UI</a>
-            </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/20309" target="_blank">HUD Framework</a></h2> 
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main file - <strong>HUDFramework 1.0f</strong></li>
-                    <li>Optional file - <strong>01. DEF_UI Compatibility Patch</strong></li>
-                </ul>
-            <p class="moddesc"> - Ensures HUD extensions work flawlessly with one another <br>
-                                NOTE: The DEF_UI patch on this page only works for 16:9 aspect ratios. If you use a different aspect ratio, you will need to use the <strong>Auto-Patcher</strong> optional file to make it compatible
-            </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/27216" target="_blank">Extended Dialogue Interface</a></h2>   
-            <p class="normalinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Brings back the dialogue menu style from Fallout 3 and New Vegas</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/29969" target="_blank">Power Armor HoloHUD</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main file - <strong>PA HoloHUD</strong></li>
-                </ul>
-            <p class="moddesc"> - Cleans up the HUD while in power armor</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/1215" target="_blank">Improved Map</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the <strong>Improved Map with Visible Roads 2.0</strong> main file, the <strong>IMVR - Far Harbor (Default)</strong> optional file, and the <strong>IMVR - Nuka World (Default)</strong> optional file</li>
-                    <li>Being the installation for the <strong>Improved Map with Visible Roads 2.0</strong> file normally, and you will be prompted with a FOMOD installer</li>
-                    <li>Select the <strong>Default</strong> option in the FOMOD then select <strong>Install</strong></li>
-                    <li>Install the other two downloaded files normally</li>
-                </ul>
-            <p class="moddesc"> - Makes the road lines on the Pip-Boy map more visible</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/13400" target="_blank">Small Map Markers</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the main file through MO2 and begin the installation normally</li>
-                    <li>You will be prompted with a FOMOD installer, in which you can select whatever size option you prefer (I use the <strong>50%</strong> version) then select <strong>Install</strong></li>
-                </ul>
-            <p class="moddesc"> - Shrinks the map marker icons to avoid clutter on the world map</p>
     </div>
     <div>
+        <h2 class="fullheader">
+           HUD/UI
+        </h2>
+            <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                    <li>Name the separator <strong>HUD + UI</strong></li>
+                </ol>
+            <a class="internallink" href="#def"><h2 class="smallheader" id="def"><a href="https://www.nexusmods.com/fallout4/mods/10654" target="_blank">DEF_UI</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Download both the <strong>Def_ui 1.5.1</strong> and <strong>def_ui_translations 1.10.163.0</strong> main files</li>
+                        <li>Begin the installation of the <strong>Def_ui 1.5.1</strong> file, and you will be prompted with a FOMOD Installer</li>
+                        <li>Select the following options:</li>
+                            <img style="width: 70%;" src="./img/def fomod 1.png" alt="DEF_UI FOMOD">
+                            <img style="width: 70%;" src="./img/def fomod 2.png" alt="DEF_UI FOMOD">
+                            <img style="width: 70%;" src="./img/def fomod 3.png" alt="DEF_UI FOMOD">
+                            <ul>
+                                <li>If you are using an aspect ratio other than 16:9, can select it in the FOMOD instead of 16:9</li>
+                            </ul>
+                        <li>After the installation is complete, double-click on the <strong>DEF_UI</strong> mod in the left pane of MO2</li>
+                        <li>In the <strong>Filetree</strong> tab, right-click on <code>interface/Translate_en.txt</code> and select <strong>Hide</strong></li>
+                        <li>Install the <strong>def_ui_translations 1.10.163.0</strong> file normally</li>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Automatically ensures that multiple HUD extensions work together</p>
+            <a class="internallink" href="#def_icons"><h2 class="smallheader" id="def_icons"><a href="https://www.nexusmods.com/fallout4/mods/31088" target="_blank">DEF_UI Iconlibs Rescaled and Fixed</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - DEF_UI Iconlibs Rescaled and Fixed - Uncolored 1.6</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Improved icons for DEF_UI</p>
+            <a class="internallink" href="#hud_preset"><h2 class="smallheader" id="hud_preset"><a href="https://www.nexusmods.com/fallout4/mods/35672" target="_blank">Yet Another HUD Preset</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Yet Another HUD Preset 1.4</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Rearranges the HUD to feel more modern and comfortable</p>
+                <blockquote class="blockquote">
+                    This is just my personal favorite preset. You can use any DEF_UI HUD preset you like, such as <a href="https://www.nexusmods.com/fallout4/mods/32627" target="_blank">Aesthetic UI</a>
+                </blockquote>
+            <a class="internallink" href="#xdi" target="_blank"><h2 class="smallheader" id="xdi"><a href="https://www.nexusmods.com/fallout4/mods/27216" target="_blank">Extended Dialogue Interface</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Extended Dialogue Interface 1.3.6</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Brings back the dialogue menu style from Fallout 3 and New Vegas</p>
+            <a class="internallink" href="#pa_hud" target="_blank"><h2 class="smallheader" id="pa_hud"><a href="https://www.nexusmods.com/fallout4/mods/29969" target="_blank">Power Armor HoloHUD</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - PA HoloHUD 1.1</b></li>
+                    </ul>
+                    <blockquote class="blockquote">
+                        If you plan in an ultra-wide aspect ratio, use the <strong>PA HoloHUD - Ultrawide</strong> file instead
+                    </blockquote>
+                <p class="subparagraph"> - Cleans up the HUD while in power armor</p>
+
+    </div>
+    <div>
+        <br> <br>
         <hr>
-        <a class="arrows" href="./bugfix.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./gameplay.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <br>
+        <a href="./bugfix.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./visuals.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
     </div>
 </body>
-<script>
-var modal = document.getElementById('FOMODModal');
-
-var img = document.getElementById('FOMODImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal2');
-
-var img = document.getElementById('FOMODImg2');
-var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption2");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal3');
-
-var img = document.getElementById('FOMODImg3');
-var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption3");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
 </html>
