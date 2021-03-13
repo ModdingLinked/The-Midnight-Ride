@@ -69,7 +69,9 @@ SOFTWARE.
                 <a href="./faq.html#dlc"><span style="font-size:.8vw;">High-Res DLC</span></a>
                 <a href="./faq.html#textures"><span style="font-size:.8vw;">Visual Mods</span></a>
                 <a href="./faq.html#dlc"><span style="font-size:.8vw;">DEF_UI Hotkeys</span></a>
+                <a href="./faq.html#beth"><span style="font-size:.8vw;">BethINI/Cleaning DLCs</span></a>
                 <a href="./faq.html#mo2_popup"><span style="font-size:.8vw;">MO2 Pop-Up</span></a>
+                <a href="./faq.html#app_error"><span style="font-size:.8vw;">Application Load Error</span></a>
             </ul>
     </div>
     <div>
@@ -81,15 +83,22 @@ SOFTWARE.
         <a class="internallink" href="#textures"><p class="smallheader" id="textures"><b>Q: Why are there no big visual mods in the guide? Can I add my own?</b></p></a>
             <p class="subparagraph">
                 SA: The simple answer is because I don't use texture mods. I don't believe they are necessary and I prefer the consistent performance and visual style without them. 
-                Fallout 4 also already has a great weather system that works perfectly. Interior lighting mods also usually damage performance due to the new lighting effects and dynamic shadows they may add.
+                Fallout 4 also already has a great weather system that works perfectly. Interior lighting mods also usually damage performance due to the new lighting effects and dynamic shadows they may add (Interiors Enhanced does not damage performance, as it does not add shadows/lighting effects).
                 It is only recommended to add your own mods if you are an experienced modder. If you are an experienced modder, I would recommend using the texture optimization step from <a href="https://www.nexusmods.com/fallout4/mods/23556" target="_blank">BiRaitBec's guide</a> (but don't use the Quality addon or any other parts of the guide). </p>
         <a class="internallink" href="#def"><p class="smallheader" id="def"><b>Q: I've changed a hotkey, but the HUD still shows the previous hotkey! How can I fix this?</b></p></a>
             <p class="subparagraph">
                 A: Open up <code>Interface/DEF_CONF/DEF_INV.xml</code> from <strong>Ruddy88's Simple Sorter</strong>. From lines 14-27, you can change the HUD to show the new hotkey. 
                 For example, if you changed the activate key from E to F, change <code>&lt;E&gt;</code> to <code>&lt;F&gt;</code>
             </p>
+        <a class="internallink" href="#beth"><p class="smallheader" id="beth"><b>Why does the guide not use BethINI or clean the DLC masters?</b></p></a>
+            <p class="subparagraph">
+                Cleaning DLC masters is <i>not</i> necessary, and it won't lead to any performance/stability gains. BethINI makes many undocumented/untested INI changes that can be placebo at best and dangerous at worse.
+                Your game will be perfectly stable and performance-friendly with this guide.
+            </p>
         <a class="internallink" href="#mo2_popup"><p class="smallheader" id="mo2_popup"><b>Q: When installing multiple mods from the same page through MO2, should I select Merge, Rename, or Replace?</b></p></a>
             <p class="subparagraph">A: Read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page.</p>
+        <a class="internallink" href="#app_error"><p class="smallheader" id="app_error"><b>Q: Why do I get a <code>Application Load Error 5:0000065434</code> message when I try to launch the game?</b></p></a>
+            <p class="subparagraph">A: Run your game directly through Steam once. You may also need to restart Steam and/or your PC.</p>
     </div>
     <div>
         <br> <br>
