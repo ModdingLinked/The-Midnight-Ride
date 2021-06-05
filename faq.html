@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
+<!--
 MIT License
 
 Copyright (c) 2020 VivaNewVegas
@@ -32,12 +32,12 @@ SOFTWARE.
     <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
     <title>FAQ | The Midnight Ride</title>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
-    <meta name="twitter:card" value="summary"> 
+    <meta name="twitter:card" value="summary">
     <meta property="og:title" content="The Midnight Ride" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://themidnightride.github.io/" />
     <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." />
 </head>
 <body>
     <div class="titlecontainer">
@@ -68,6 +68,7 @@ SOFTWARE.
                 <a href="./faq.html#dlc"><span style="font-size:.8vw;">High-Res DLC</span></a>
                 <a href="./faq.html#textures"><span style="font-size:.8vw;">Visual Mods</span></a>
                 <a href="./faq.html#sim_settlements"><span style="font-size:.8vw;">Sim Settlements 2</span></a>
+                <a href="./faq.html#previs_repair"><span style="font-size:.8vw;">Invisible Interiors</span></a>
                 <a href="./faq.html#dlc"><span style="font-size:.8vw;">DEF_UI Hotkeys</span></a>
                 <a href="./faq.html#beth"><span style="font-size:.8vw;">BethINI/Cleaning DLCs</span></a>
                 <a href="./faq.html#mo2_popup"><span style="font-size:.8vw;">MO2 Pop-Up</span></a>
@@ -82,7 +83,7 @@ SOFTWARE.
             <p class="subparagraph">A: The texture pack DLC provides a very marginal visual increase for a potentially major performance decrease. It is simply not worth the trade off</p>
         <a class="internallink" href="#textures"><p class="smallheader" id="textures"><b>Q: Why are there no big visual mods in the guide? Can I add my own?</b></p></a>
             <p class="subparagraph">
-                SA: The simple answer is because I don't use texture mods. I don't believe they are necessary and I prefer the consistent performance and visual style without them. 
+                SA: The simple answer is because I don't use texture mods. I don't believe they are necessary and I prefer the consistent performance and visual style without them.
                 Fallout 4 also already has a great weather system that works perfectly. Interior lighting mods also usually damage performance due to the new lighting effects and dynamic shadows they may add (Interiors Enhanced does not damage performance, as it does not add shadows/lighting effects).
                 It is only recommended to add your own mods if you are an experienced modder. If you are an experienced modder, I would recommend using the texture optimization step from <a href="https://www.nexusmods.com/fallout4/mods/23556" target="_blank">BiRaitBec's guide</a> (but don't use the Quality addon or any other parts of the guide). </p>
         <a class="internallink" href="#sim_settlements"><p class="smallheader" id="sim_settlements"><b>Can I safely add Sim Settlements 2 to the guide?</b></p></a>
@@ -91,9 +92,24 @@ SOFTWARE.
                 instead of the original. The script has been kindly provided by Nexus user <a href="https://www.nexusmods.com/fallout4/users/2874279" target="_blank">IDontEvenKnow</a>.
                 Details can be found in their <a href="https://www.nexusmods.com/fallout4/mods/33983?tab=posts" target="_blank">pinned comment</a> on the Ruddy88's Simple Sorter page.
             </p>
+        <a class="internallink" href="#previs_repair"><p class="smallheader" id="previs_repair"><b>Q: Why do interiors have invisible walls/floors?</b></p></a>
+                <p class="subparagraph">
+                    A: This means that something is overwriting the <a href="./bugfix.html#previs_repair">Previs Repair Pack</a> mod. Make sure the bottom mods in your load order (the <b>right</b> pane of MO2) are as follows: <br>
+                      <ul class="standard_ol">
+                        <code>
+                          PrevisPackInt.esp <br>
+                          PrevisPackInt-Hotfix.esp <br>
+                          Clarity.esp <br>
+                          Clarity - Darker Nights.esp <br>
+                          PrevisPackInt-Clarity.esp <br>
+                          InteriorsEnhanced-All-In-One.esp <br>
+                          Interiors Enhanced - Previs Repair Pack Patch.esp <br>
+                        </code>
+                      </ul>
+                </p>
         <a class="internallink" href="#def"><p class="smallheader" id="def"><b>Q: I've changed a hotkey, but the HUD still shows the previous hotkey! How can I fix this?</b></p></a>
             <p class="subparagraph">
-                A: Open up <code>Interface/DEF_CONF/DEF_INV.xml</code> from <strong>Ruddy88's Simple Sorter</strong>. From lines 14-27, you can change the HUD to show the new hotkey. 
+                A: Open up <code>Interface/DEF_CONF/DEF_INV.xml</code> from <strong>Ruddy88's Simple Sorter</strong>. From lines 14-27, you can change the HUD to show the new hotkey.
                 For example, if you changed the activate key from E to F, change <code>&lt;E&gt;E&lt;/E&gt;</code> to <code>&lt;E&gt;F&lt;/E&gt;</code>
             </p>
         <a class="internallink" href="#beth"><p class="smallheader" id="beth"><b>Why does the guide not use BethINI or clean the DLC masters?</b></p></a>
