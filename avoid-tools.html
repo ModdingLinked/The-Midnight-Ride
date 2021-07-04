@@ -2,19 +2,15 @@
 <html lang="en">
 <!--
 MIT License
-
-Copyright (c) 2021 VivaNewVegas
-
+Copyright (c) 2020 VivaNewVegas
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -30,7 +26,7 @@ SOFTWARE.
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
     <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
-    <title>Resources | The Midnight Ride</title>
+    <title>Tools to Avoid | The Midnight Ride</title>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary">
     <meta property="og:title" content="The Midnight Ride" />
@@ -55,40 +51,38 @@ SOFTWARE.
         <a href="./mo2.html">MO2</a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
-        <a href="./hud.html">User Interface</a>
+        <a href="./hud.html">HUD/UI</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
-        <a href="./resources.html"><span style="color:#DCDCDC">Resources</span></a>
+        <a href="./avoid-tools.html"><span style="color:#DCDCDC">Tools to Avoid</span></a>
     </div>
     <div class="sidenavright">
 
     </div>
     <div>
         <h2 class="fullheader">
-           Resources
+            Tools to Avoid
         </h2>
-            <h2 class="smallheader"><a href="./avoid-tools.html" target="_blank">Tools to Avoid</a></h2>
-                <p class="subparagraph">List of many outdated/dangerous tools</p>
-            <h2 class="smallheader"><a href="./avoid-mods.html" target="_blank">Mods to Avoid</a></h2>
-                <p class="subparagraph">List of many outdated/dangerous mods</p>
-            <h2 class="smallheader"><a href="./sorter.html" target="_blank">Using Ruddy88's Simple Sorter</a></h2>
-                <p class="subparagraph">Instructions for how to run the Ruddy88 Simple Sorter yourself, necessary if you added your own mods</p>
-            <h2 class="smallheader"><a href="https://tes5edit.github.io/docs/" target="_blank">Tome of xEdit</a></h2>
-                <p class="subparagraph">Most comprehensive tutorial for xEdit, which is an essential tool if you plan on adding any mods</p>
-            <h2 class="smallheader"><a href="https://www.youtube.com/watch?v=1naNojdx0ek&list=PL2g2oK5KhZT0WUOw0Y_8HFudZbgfmcdEl" target="_blank">Bethesda Modding School</a></h2>
-                <p class="subparagraph">Comprehensive tutorials on how to make various types of mod in the Creation Kit, made by the author of Sim Settlements</p>
-            <h2 class="smallheader"><a href="https://www.youtube.com/watch?v=Ipgx3xmzEaw&list=PL2g2oK5KhZT3L25H0FqJzSnFib9VmymQS" target="_blank">Creation Kit Tutorials</a></h2>
-                <p class="subparagraph">Playlist of many YouTube videos from various mod authors that explain how to use the Creation Kit. Use only if the above link doesn't have the information you need</p>
+            <p class="subparagraph"><strong>Vortex:</strong> Lacks many essential features, such as manual load order control or a virtual file system</p>
+            <br>
+            <p class="subparagraph"><strong>Nexus Mod Manager/Fallout Mod Manager:</strong> Outdated/abandoned, have no virtual file system or even dynamic movement of mods with loose files </p>
+            <br>
+            <p class="subparagraph"><strong>LOOT:</strong> As LOOT is automated, it will never fully be able to account for all the nuances of a load order, especially a large one. Incorrect load order can lead to overwriting or breaking features from mods</p>
+            <br>
+            <p class="subparagraph"><strong>Wrye Bash/Flash and Mator Smash:</strong> Similarly to LOOT, these programs are fully automated and will never be fully accurate. They will solve things that they may see as conflicts, but it reality they are intentional overwrites. They will also often miss critical conflicts</p>
+            <br>
+            <p class="subparagraph"><strong>zEdit/zClean:</strong> Neither have any real advantages over <a href="https://www.nexusmods.com/newvegas/mods/34703" target="_blank">xEdit</a>, and lack some essential features/support than xEdit has</p>
+            <br>
+            <p class="subparagraph"><strong>Merge Plugins Standalone/zMerge:</strong>  Automated merging can potentially cause major breakage in mods, especially heavily-scripted ones. If you are so close to the 255 plugin cap that you need to merge to get below it, you should look to remove mods instead. Odds are that many mods are not fully compatible with one another. And if for some reason you do need to merge, the safest way of merging is <a  href="https://tes5edit.github.io/docs/8-managing-mod-files.html#MergingaPluginintoanotherPluginorMaster" target="_blank">manually merging with xEdit</a></p>
+            <br>
+            <p class="subparagraph"><strong>Ordenador/other texture optimization tools:</strong> Breaks many textures by needlessly converting/adding/resizing alpha channels, cubemaps, and mipmaps. You should not be using textures mods over 2k anyways, so nothing should even need resizing</p>
+            <br>
+            <p class="subparagraph"><strong>BethINI/Fallout 4 Configuration Tool:</strong> Makes many undocumented INI changes that are placebo at best, dangerous at worst. You won't need any INI tweaks other than the ones in the guide</p>
+            <br>
+            <hr>
     </div>
-    <div>
-        <br> <br>
-        <hr>
-        <br>
-        <a href="./appendix.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
-        </div>
     <div class="footer">
         <div class="inner_footer">
             <div class="footer_third">
