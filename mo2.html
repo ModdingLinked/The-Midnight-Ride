@@ -55,6 +55,7 @@ SOFTWARE.
         <a href="./mo2.html"><span style="color:#DCDCDC">MO2</span></a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
+<a href="./tweaks.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
@@ -71,8 +72,6 @@ SOFTWARE.
         <a href="./mo2.html#profiles">Profiles</a>
         <a href="./mo2.html#ini_tweaks">INI Tweaks</a>
             <ul>
-                <a href="./mo2.html#custom_ini"><span style="font-size:.8vw;">Custom INI</span></a>
-                <a href="./mo2.html#bat"><span style="font-size:.8vw;">BAT File</span></a>
                 <a href="./mo2.html#ini_notes"><span style="font-size:.8vw;">Notes</span></a>
             </ul>
         <a href="./mo2.html#advice">Install Advice</a>
@@ -86,15 +85,7 @@ SOFTWARE.
                 <ol class="standard_ol">
                     <li>Download the <strong>Mod Organizer 2</strong> file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
                     <li>Once the download has finished, run the installer</li>
-                    <li>When prompted to choose an install location, pick any location outside of any default Window folders and outside of the game's <strong>Root</strong> folder</li>
-                        <ul>
-                            <li>Although it doesn't technically have to be installed on the same drive as the game, it is still recommended to install on an SSD if possible</li>
-                        </ul>
-                </ol>
-                <blockquote class="blockquote">
-                    If you do know what is meant by "default Windows folders", read the <strong>Installation Location</strong> section from the <a href="./setup.html#location">Initial Setup</a> page.
-                </blockquote>
-                <ol class="standard_ol" start="4">
+                    <li>When prompted to choose an install location, pick any location outside of any default Window folders (like <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder</li>
                     <li>Click <strong>Next</strong> until the installer finishes</li>
                     <li>When the installer has finished, navigate to where Mod Organizer 2 is installed, right-click on <strong>ModOrganizer.exe</strong> and select <strong>Properties</strong></li>
                     <li>In the <strong>Compatibility</strong> tab, check the box next to <strong>Run this program as an administrator</strong></li>
@@ -162,7 +153,6 @@ SOFTWARE.
                         <img src="./img/mo2 profile select.png" alt="profile select">
                 </ol>
             <a class="internallink" href="#ini_tweaks"><h2 class="subheader" id="ini_tweaks">INI Tweaks</h2></a>
-                <a class="internallink" href="#custom_ini"><p class="smallheader" id="custom_ini">Tweaking Fallout4Custom.ini</p></a>
                     <p class="subparagraph">
                         In this step, we will configure the game's INI files to increase performance/stability at minimal visual cost.
                     </p>
@@ -178,8 +168,13 @@ SOFTWARE.
                               Set <strong>uiOrthoShadowFilter</strong> to <b>2</b><br>
                               Set <strong>iMaxFocusShadowsDialogue</strong> to <b>3</b><br>
                               Set <strong>iMaxFocusShadows</strong> to <b>3</b><br>
-                              Set <strong>fBlendSplitDirShadow</strong> to <b>96</b><br>
+                              Set <strong>fBlendSplitDirShadow</strong> to <b>96.0000</b><br>
                             </p>
+                    </ol>
+                        <blockquote class="blockquote">
+                            These settings tweak shadows to drastically improve performance without much visual cost.
+                        </blockquote>
+                    <ol class="standard_ol" start="5">
                         <li>Save your changes, but stay in the INI editor</li>
                         <li>Select the <strong>Fallout4Custom.ini</strong> tab, which should be blank</li>
                         <li>Paste in the following:</li>
@@ -192,18 +187,8 @@ SOFTWARE.
                                     sResourceDataDirsFinal=<br><br>
                                 </p>
                     </ol>
-                <a class="internallink" href="#bat"><p class="smallheader" id="bat">.BAT File</p></a>
-                    <p class="subparagraph">
-                        In this step, we will install a .BAT file that will automatically execute some console commands when the game loads.
-                        These console commands will improve performance and improve some quality of life features.
-                    </p>
-                    <br>
-                    <ol class="standard_ol">
-                        <li>Download the .BAT file from <a href="https://github.com/VivaNewVegas/The-Midnight-Ride-Patch-Emporium/blob/main/TMR%20Bat%20File.7z" target="_blank">here</a></li>
-                        <li>Extract the <strong>.txt</strong> file from the downloaded archive to the game's <strong>Root</strong> folder</li>
-                    </ol>
                     <blockquote class="blockquote">
-                        If you do not know what the game's <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a>
+                        These settings allow for files from mods to be loaded in-game. It is intentional that the bottom setting does not have anything after the <b>=</b>
                     </blockquote>
                 <a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
                     <p class="subparagraph">
