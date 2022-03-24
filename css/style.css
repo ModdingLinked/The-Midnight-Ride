@@ -381,7 +381,7 @@ body {
 .blockquote a {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(10px + .45vw);
+    font-size: calc(10px + .3vw);
 }
 
 .blockquote a:hover {
