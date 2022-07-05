@@ -21,6 +21,7 @@ No Aggro Impact Landing.esp
 Fortune Finder 4 Fix.esp
 RAW INPUT.esp
 M8rDisablePipboyEffects.esp
+M8rDisableCreationClub.esp
 Thrive Redone.esp
 Some Assembly Required.esp
 Some_Assembly_Required_Repair_Kits.esp
