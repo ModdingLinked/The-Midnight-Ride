@@ -143,7 +143,7 @@ body {
 
 .navbarli a {
     display: block;
-    color:#bcbcbc;
+    color:#cacaca;
     text-align: center;
     padding:1em;
     font-size: .75vw;
@@ -151,7 +151,7 @@ body {
 }
 
 .navbarli a:hover {
-   color:#DCDCDC;
+   color:#ffffff;
 }
 
 .navbar {
@@ -359,6 +359,24 @@ body {
     pointer-events: none;
 }
 
+.smallheaderoptional {
+    margin: 1vw 12vw;
+    margin-top:1.4vw;
+    color:#DCDCDC;
+    font-size: calc(15px + .45vw);
+    word-wrap: break-word;
+    line-height:1.75em;
+}
+
+.smallheaderoptional::before {
+    display: block;
+    content: " ";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .internallink {
     text-decoration: none;
 }
@@ -422,6 +440,16 @@ body {
 }
 
 .smallheader a:hover {
+    text-decoration: underline;
+}
+
+.smallheaderoptional a {
+    padding-top: 1vw;
+    color:#fffb00;
+    text-decoration: none;
+}
+
+.smallheaderoptional a:hover {
     text-decoration: underline;
 }
 
