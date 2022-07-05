@@ -1,0 +1,4 @@
+gr quality 3
+gr grid 8
+gr scale .4
+gr maxcascade 1

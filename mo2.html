@@ -57,8 +57,8 @@ SOFTWARE.
         <a href="./bugfix.html">Bug Fixes</a>
         <a href="./tweaks.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
-        <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
+        <a href="./visuals.html">Visuals</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
     </div>
@@ -83,7 +83,7 @@ SOFTWARE.
         </h2>
             <a class="internallink" href="#installing_mo2"><h2 class="subheader" id="installing_mo2">Installing Mod Organizer 2</h2></a>
                 <ol class="standard_ol">
-                    <li>Download the <strong>Mod Organizer 2</strong> file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
+                    <li>Download the <strong>Mod Organizer 2</strong> installer from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
                     <li>Once the download has finished, run the installer</li>
                     <li>When prompted to choose an install location, pick any location outside of any default Window folders (like <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder</li>
                     <li>Click <strong>Next</strong> until the installer finishes</li>
@@ -113,6 +113,7 @@ SOFTWARE.
                     </ol>
                 <a class="internallink" href="#settings"><p class="smallheader" id="settings">Configuring Settings</p></a>
                     <ol class="standard_ol">
+                        <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window</li>
                         <li>Select the <img src="./img/mo2 settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
                         <li>In the <strong>Theme</strong> tab, you can select a different style from the drop-down menu at the top</li>
                             <ul>
@@ -137,7 +138,7 @@ SOFTWARE.
                     <li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
                     <li>Select the <strong>Default</strong> profile, then select <strong>Copy</strong></li>
                     <li>Name the new profile <strong>The Midnight Ride</strong></li>
-                    <li>Select the <strong>The Midnight Ride</strong> profile and make sure <strong>Use profile-specific Game INI Files</strong> is checked at the bottom</li>
+                    <li>Select the <strong>The Midnight Ride</strong> profile and make sure <strong>Use profile-specific Game INI Files</strong> is disabled at the bottom</li>
                 </ol>
                 <blockquote class="blockquote">
                     You may get a pop-up called <strong>INI file is read-only</strong> when attempting to make/select a new profile. If so then
@@ -148,47 +149,28 @@ SOFTWARE.
                     <li>Exit out of the profiles menu and select the <strong>The Midnight Ride</strong> profile from the drop-down above the left pane</li>
                         <img src="./img/mo2 profile select.png" alt="profile select">
                 </ol>
-            <a class="internallink" href="#ini_tweaks"><h2 class="subheader" id="ini_tweaks">INI Tweaks</h2></a>
-                    <p class="subparagraph">
-                        In this step, we will configure the game's INI files to increase performance/stability at minimal visual cost.
-                    </p>
-                    <br>
-                    <ol class="standard_ol">
-                        <li>Make sure the <strong>The Midnight Ride</strong> profile is active</li>
-                        <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
-                        <li>Select the <strong>Fallout4Prefs.ini</strong> tab</li>
-                        <li>Use ctrl+f to find and change the following options:</li>
-                            <p class="smalllist">
-                              Set <strong>fDirShadowDistance</strong> to <b>5000</b> <br>
-                              Set <strong>fShadowDistance</strong> to <b>5000</b><br>
-                              Set <strong>uiOrthoShadowFilter</strong> to <b>2</b><br>
-                              Set <strong>iMaxFocusShadowsDialogue</strong> to <b>3</b><br>
-                              Set <strong>iMaxFocusShadows</strong> to <b>3</b><br>
-                              Set <strong>fBlendSplitDirShadow</strong> to <b>96.0000</b><br>
-                            </p>
-                    </ol>
-                        <blockquote class="blockquote">
-                            These settings tweak shadows to drastically improve performance without much visual cost.
-                        </blockquote>
-                    <ol class="standard_ol" start="5">
-                        <li>Save your changes, but stay in the INI editor</li>
-                        <li>Select the <strong>Fallout4Custom.ini</strong> tab</li>
-                        <li>Paste in the following:</li>
-                                <p class="smalllist">
-                                    [Archive]<br>
-                                    bInvalidateOlderFiles=1<br>
-                                    sResourceDataDirsFinal=<br><br>
-                                </p>
-                    </ol>
-                    <blockquote class="blockquote">
-                        These settings allow for files from mods to be loaded in-game. It is intentional that the bottom setting does not have anything after the <b>=</b>
-                    </blockquote>
-                <a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
-                    <p class="subparagraph">
-                        It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using tools like BethINI.
-                        The changes these mods make are largely undocumented and range from placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
-                        already in the guide.
-                    </p>
+                <a class="internallink" href="#ini_tweaks"><h2 class="subheader" id="ini_tweaks">INI Tweaks</h2></a>
+                <p class="subparagraph">
+                    In this step, we will configure the game's INI files to increase performance/stability at minimal visual cost.
+                </p>
+                <br>
+                <ol class="standard_ol">
+                    <li>Download <a href="https://www.nexusmods.com/skyrimspecialedition/mods/4875" target="_blank">BethINI</a></li>
+                    <li>Extract the archive somewhere on your computer such as <code>C:\Modding Tools</code> (Make sure it's not a UAC protected folder)</li>
+                    <li>Run <strong>BethINI.exe</strong></li>
+                    <li>Select the medium or high preset depending on your hardware, then do the following</li>
+                        <ol>
+                            <li>Enable Reccomended Tweaks</li>
+                            <li>Disable VSync</li>
+                            <li>Enable Windowed Mode</li>
+                            <li>Set Anisotropic Filtering to 16x</li>
+                            <li>Select the resolution you want to display the game in</li>
+                            <li>Edit the other settings to your liking (Support won't be provided if they are broken or not ideal)</li>
+                            <li>Save and exit</li>
+                        </ol>
+                    <li>Head over to your Documents folder in file explorer, then open this path <code>My Games\Fallout4</code></li>
+                    <li>Download <a href="https://github.com/themidnightride/themidnightride.github.io/blob/main/files/FalloutCustom.ini" target="_blank">this file</a> and paste it next to the other INIs</li>
+                </ol>
             <a class="internallink" href="#advice"><h2 class="subheader" id="advice">Mod Installation Advice</h2></a>
                 <blockquote class="blockquote">
                     If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2.
@@ -196,12 +178,11 @@ SOFTWARE.
                     However, the rest of the information about downloading/installing mods from Nexus still applies.
                 </blockquote>
                 <p class="subparagraph">
-                    When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Unofficial Fallout 4 Patch 2.1.2b</strong>. This is referring to the mod's category on Nexus, the file name, and the file version.
-                        <br> <br>
+                    When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Unofficial Fallout 4 Patch</strong>. This is referring to the mod's category on Nexus and file name.
+                        <br><br>
                         <img style="width:85%;" src="./img/download example.png" alt="download example"> <br> <br>
                     Unless instructed otherwise, simply download the listed file using the <strong>Mod Manager Download</strong> button and install it through MO2.
-                    If you do not know how to install mods through MO2, please watch the video linked above. Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or
-                    will be hosted on a site other than Nexus. If that is the case, do the following:
+                    If you do not know how to install mods through MO2, please watch the video linked above. Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site other than Nexus. If that is the case, do the following:
                 </p>
                 <br>
                 <ol class="standard_ol">
@@ -217,7 +198,6 @@ SOFTWARE.
                     If you are updating from an old version of a mod, you should select <strong>Replace</strong>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version.
                     This is the only time you should use the <strong>Replace</strong> option, otherwise always use <strong>Rename</strong>.
                 </p>
-
     </div>
     <div>
         <br><br>
