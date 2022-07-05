@@ -9,7 +9,6 @@ DLCNukaWorld.esm
 Unofficial Fallout 4 Patch.esp
 PPF.esm
 FOVSlider.esl
-BetterCoastalWaves.esl
 AORobcoReconScope.esl
 Ownership Fixes.esp
 PRP.esp
@@ -31,5 +30,7 @@ Complex Vendors - UFO4P Patch.esp
 SalvageBeacons.esp
 TrueInvisibility.esp
 InstitWeapPosit.esp
+BetterCoastalWaves.esp
 InteriorsEnhanced-All-In-One.esp
 PRP-Compat-IntEnh.esp
+TerrainUndersides.esp
