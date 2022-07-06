@@ -11,7 +11,6 @@ PPF.esm
 FOVSlider.esl
 AORobcoReconScope.esl
 Ownership Fixes.esp
-PRP.esp
 Wetness Shader Fix.esp
 Keep Radiants In Commonwealth.esp
 WhoIsTheGeneral.esp
@@ -32,5 +31,6 @@ TrueInvisibility.esp
 InstitWeapPosit.esp
 BetterCoastalWaves.esp
 InteriorsEnhanced-All-In-One.esp
+PRP.esp
 PRP-Compat-IntEnh.esp
 TerrainUndersides.esp
