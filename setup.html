@@ -1,28 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-MIT License
-
-Copyright (c) 2021 VivaNewVegas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,15 +16,17 @@ SOFTWARE.
     <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
     <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." />
 </head>
+
 <body>
     <div class="titlecontainer">
-        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>THE MIDNIGHT RIDE</h1></a>
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img><h1>THE MIDNIGHT RIDE</h1></a>
         <ul class="navbar">
             <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
             <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
             <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
         </ul>
     </div>
+
     <div class="sidenavleft">
         <a href="./index.html">Home</a>
         <a href="./intro.html">Introduction</a>
@@ -62,6 +41,7 @@ SOFTWARE.
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
     </div>
+
     <div class="sidenavright">
         <a href="./setup.html#uninstall">Uninstall</a>
         <a href="./setup.html#install">Install</a>
@@ -72,66 +52,64 @@ SOFTWARE.
                 <a href="./setup.html#generating_inis"><span style="font-size:.8vw;">INI Files</span></a>
             </ul>
     </div>
+
     <div>
         <h2 class="fullheader">
             Initial Setup
             <p>In this step, we will do a clean installation and configuration of the game, which is required for the guide.</p>
         </h2>
-        <blockquote class="blockquote">
-        If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>.
-        If your issue is not addressed there, join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support.
-        </blockquote>
+        <blockquote class="blockquote">If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>. If your issue is not addressed there, join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support.</blockquote>
         <a class="internallink" href="#uninstall"><h2 class="subheader" id="uninstall">Uninstalling the Game</h2></a>
-            <blockquote class="blockquote">
-                If you do not have the game installed yet, skip this step.
-            </blockquote>
+            <blockquote class="blockquote">If you do not have the game installed yet, skip this step.</blockquote>
             <ol class="standard_ol">
-                <li>Open Steam and go to your <strong>Library</strong></li>
-                <li>Find <strong>Fallout 4</strong> in the list</li>
-                <li>Right-click on it and select <strong>Manage -> Uninstall</strong></li>
-                <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout 4</strong> folder</li>
-                <li>Navigate to <code>Documents\My Games</code> and delete the <strong>Fallout4</strong> folder</li>
+                <li>Open Steam and go to your <strong>Library</strong>.</li>
+                <li>Find <strong>Fallout 4</strong> in the list.</li>
+                <li>Right-click on it and select <strong>Manage -> Uninstall</strong>.</li>
+                <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout 4</strong> folder.</li>
+                <li>Navigate to <code>Documents\My Games</code> and delete the <strong>Fallout4</strong> folder.</li>
             </ol>
         <a class="internallink" href="#install"><h2 class="subheader" id="install">Installing the Game</h2></a>
             <ol class="standard_ol">
-                <li>Open Steam and go to your <strong>Library</strong></li>
-                <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong></li>
-                <li>Select <strong>Next</strong> then wait for the install to finish</li>
+                <li>Open Steam and go to your <strong>Library.</strong></li>
+                <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
+                <li>Select <strong>Next</strong> then wait for the install to finish.</li>
             </ol>
-            <blockquote class="blockquote">
-                REMINDER: Only legal copies of the Steam version of the game are supported! Bethesda.net, Xbox Game Pass, and pirated versions will not work with F4SE.
-            </blockquote>
+            <blockquote class="blockquote">REMINDER: Only legal copies of the Steam version of the game are supported! Bethesda.net, Xbox Game Pass, and pirated versions will not work with F4SE.</blockquote>
         <a class="internallink" href="#post_install"><h2 class="subheader" id="post_install">Post-Installation</h2></a>
             <a class="internallink" href="#terms"><p class="smallheader" id="terms">Key Terminology</p></a>
-                <p class="subparagraph">Now that the game is installed, there are two folders from it that will be referred to in the guide often: </p>
+                <p class="subparagraph">Now that the game is installed, there are two folders from it that will be referred to in the guide often:</p>
                     <ul class="standard_ul">
-                        <li><b>Root</b> folder (where the game is installed): <code>Steam\steamapps\common\Fallout 4</code></li>
-                        <li><b>Data</b> folder (where all of the game's assets are located): <code>Steam\steamapps\common\Fallout 4\Data</code></li>
+                        <li><b>Root</b> folder (Where the game is installed): <code>Steam\steamapps\common\Fallout 4</code></li>
+                        <li><b>Data</b> folder (Where all of the game's assets are located): <code>Steam\steamapps\common\Fallout 4\Data</code></li>
                     </ul>
         <a class="internallink" href="#file_extensions"><p class="smallheader" id="file_extensions">Enabling File Extensions</p></a>
-            <p class="subparagraph">
-                By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:
-            </p>
+            <p class="subparagraph">By default, Windows Explorer will not show file extensions (Such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:</p>
             <br>
             <ol class="standard_ol">
-                <li>Open Windows Explorer</li>
-                <li>Select the <strong>View</strong> tab at the top</li>
-                <li>Check the box next to <strong>File name extensions</strong></li>
-                <img src="./img/show file extensions.png" alt="show file extensions">
+                <li>Open Windows Explorer.</li>
+                <li>Select the <strong>View</strong> tab at the top.</li>
+                <li>Check the box next to <strong>File name extensions</strong>.</li>
+                <img src="./img/show file extensions.png" alt="Show file extensions">
             </ol>
         <a class="internallink" href="#generating_inis"><p class="smallheader" id="generating_inis">Generating Fresh .INI Files</p></a>
             <ol class="standard_ol">
                 <li>Run the game from Steam</li>
-                    <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong> then <strong>Exit</strong></li>
+                    <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
+                    <li>Apply the <strong>Ultra</strong> preset.</li>
+                    <li>In the advanced options, set Godrays Quality and Weapon Debris to Ultra.</li>
+                    <li>Exit.</li>
             </ol>
     </div>
+
     <div>
-        <br><br>
+        <br>
+        <br>
         <hr>
         <br>
-        <a href="./intro.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a href="./mo2.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
-        </div>
+        <a href="./intro.html"><img class="backarrow" src="./img/left arrow.png" alt="Back arrow"></a>
+        <a href="./mo2.html"><img class="forwardarrow" src="./img/right arrow.png" alt="Forward arrow"></a>
+    </div>
+    
     <div class="footer">
         <div class="inner_footer">
             <div class="footer_third">
