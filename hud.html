@@ -38,6 +38,7 @@ SOFTWARE.
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="img/logo.webp">
         <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>User Interface | The Midnight Ride</title>
         <meta name="description" content="Mods that vastly improve the vanilla user interface without making any drastic stylistic changes.">
         <meta name="twitter:card" value="summary">
@@ -49,187 +50,357 @@ SOFTWARE.
     </head>
 
     <body>
-        <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>THE MIDNIGHT RIDE</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html"><span style="color:#DCDCDC">User Interface</span></a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./hud.html#xdi"><span style="font-size:.8vw;">Extended Dialogue Interface</span></a>
-            <a href="./hud.html#mcm"><span style="font-size:.8vw;">MCM</span></a>
-            <a href="./hud.html#hudframework"><span style="font-size:.8vw;">HUDFramework</span></a>
-            <a href="./hud.html#pa_hud"><span style="font-size:.8vw;">Power Armor HoloHUD</span></a>
-            <a href="./hud.html#fallui_inventory"><span style="font-size:.8vw;">FallUI - Inventory</span></a>
-            <a href="./hud.html#fallui_confirm"><span style="font-size:.8vw;">FallUI - Confirm Boxes</span></a>
-            <a href="./hud.html#fallui_sleep"><span style="font-size:.8vw;">FallUI - Sleep and Wait</span></a>
-            <a href="./hud.html#fallui_bench"><span style="font-size:.8vw;">FallUI - Workbench</span></a>
-            <a href="./hud.html#fallui_map"><span style="font-size:.8vw;">FallUI - Map</span></a>
-            <a href="./hud.html#fallui_hud"><span style="font-size:.8vw;">FallUI - HUD</span></a>
-            <a href="./hud.html#mcm_booster"><span style="font-size:.8vw;">MCM Booster</span></a>
-            <a href="./hud.html#mcm_manager"><span style="font-size:.8vw;">MCM Settings Manager</span></a>
-        </div>
         <div>
-            <h2>User Interface</h2>
-            <a href="#separator">
-                <h2 id="separator">Creating a Separator in MO2</h2>
-            </a>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                <li>Name the separator <strong>UI</strong>.</li>
-            </ol>
-            <a href="#xdi">
-                <h2 id="xdi"><a href="https://www.nexusmods.com/fallout4/mods/27216" target="_blank">Extended Dialogue Interface</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - Extended Dialogue Interface 1.3.6</b></li>
-            </ul>
-            <p>The Extended Dialogue Interface removes the hardcoded 4-option limit on dialogue and adds full engine support for any number of player dialogue options.
-            </p>
-            <a href="#mcm">
-                <h2 id="mcm"><a href="https://www.nexusmods.com/fallout4/mods/21497" target="_blank">Mod Configuration Menu</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - Mod Configuration Menu 1.39</b></li>
-            </ul>
-            <p>Adds an easy way to configure mods through the in-game pause menu.
-            </p>
-            <a href="#hudframework">
-                <h2 id="hudframework"><a href="https://www.nexusmods.com/fallout4/mods/20309" target="_blank">HUDFramework</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - HUDFramework 1.0f</b></li>
-            </ul>
-            <p>HUDFramework is a UI framework that makes it possible for mods to add new UI elements to the HUD.
-            </p>
-            <a href="#pa_hud" target="_blank">
-                <h2 id="pa_hud"><a href="https://www.nexusmods.com/fallout4/mods/29969" target="_blank">Power Armor HoloHUD</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - PA HoloHUD</b></li>
-            </ul>
-            <p>Cleans up the HUD while in power armor.
-            </p>
-            <blockquote>If you use an ultrawide aspect ratio, download and install the <b>PA HoloHUD - Ultrawide</b> file instead.</blockquote>
-            <a href="#fallui_inventory" target="_blank">
-                <h2 class="smallheaderoptional" id="fallui_inventory"><a href="https://www.nexusmods.com/fallout4/mods/48758" target="_blank">FallUI - Inventory</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - FallUI - Inventory</b></li>
-                <li>You will be prompted with a FOMOD installer, uncheck the <b>Disable PipboyFX</b> option, then click <b>Next</b> twice and <b>Install</b></li>
-                <img src="./img/fallui inv fomod.png" alt="FallUI Inventory FOMOD">
-            </ul>
-            <p>Optimized inventory interface for PC.
-            </p>
-            <a href="#fallui_confirm" target="_blank">
-                <h2 class="smallheaderoptional" id="fallui_confirm"><a href="https://www.nexusmods.com/fallout4/mods/48958" target="_blank">FallUI - Confirm Boxes</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - FallUI - Confirm Boxes</b></li>
-                <li>You will be prompted with a FOMOD installer, click <b>Next</b> and then select <b>Classic</b></li>
-                <img src="./img/fallui confirm fomod.png" alt="FallUI Confirm Boxes FOMOD">
-                <li>Click <b>Install</b></li>
-            </ul>
-            <p>Overhaul of all confirm box interfaces.
-            </p>
-            <a href="#fallui_sleep" target="_blank">
-                <h2 class="smallheaderoptional" id="fallui_sleep"><a href="https://www.nexusmods.com/fallout4/mods/49070" target="_blank">FallUI - Sleep and Wait</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - FallUI - Sleep and Wait</b></li>
-            </ul>
-            <p>Overhaul of the sleeping and waiting menu.
-            </p>
-            <a href="#fallui_bench" target="_blank">
-                <h2 class="smallheaderoptional" id="fallui_bench"><a href="https://www.nexusmods.com/fallout4/mods/49300" target="_blank">FallUI - Workbench</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - FallUI - Workbench</b></li>
-                <li>You will be prompted with a FOMOD installer, click <b>Install</b></li>
-            </ul>
-            <p>Optimized workbench interface for PC.
-            </p>
-            <a href="#fallui_map" target="_blank">
-                <h2 class="smallheaderoptional" id="fallui_map"><a href="https://www.nexusmods.com/fallout4/mods/49920" target="_blank">FallUI - Map</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - FallUI - Map</b></li>
-                <li>You will be prompted with a FOMOD installer, click <b>Next</b> twice and then <b>Install</b></li>
-            </ul>
-            <p>Overhaul of the map menu.
-            </p>
-            <a href="#fallui_hud" target="_blank">
-                <h2 class="smallheaderoptional" id="fallui_hud"><a href="https://www.nexusmods.com/fallout4/mods/51813" target="_blank">FallUI - HUD</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - FallUI - HUD</b></li>
-                <li>You will be prompted with a FOMOD installer, click <b>Install</b></li>
-            </ul>
-            <p>A highly configurable HUD.
-            </p>
-            <a href="#mcm_booster" target="_blank">
-                <h2 id="mcm_booster"><a href="https://www.nexusmods.com/fallout4/mods/56997" target="_blank">MCM Booster</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - MCM Booster</b></li>
-            </ul>
-            <p>Reduces MCM loading time.
-            </p>
-            <a href="#mcm_manager" target="_blank">
-                <h2 id="mcm_manager"><a href="https://www.nexusmods.com/fallout4/mods/56195" target="_blank">MCM Settings Manager</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main File - MCM Settings Manager</b></li>
-            </ul>
-            <p>Allows you to save, load, transfer, import and export all your MCM settings at once.
-            </p>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./tweaks.html"><img class="backarrow" src="./img/left arrow.png" alt="Back arrow"></a>
-            <a href="./gameplay.html"><img class="forwardarrow" src="./img/right arrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            <!-- Titlebar -->
+            <div class="titlecontainer">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html">The Midnight Ride</a>
+                <div class="guideLinks">
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
                 </div>
             </div>
+            <!-- Left Sidebar -->
+            <div id="sidenavLeft">
+                <p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./intro.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">Initial Setup</a>
+                        </li>
+                        <li>
+                            <a href="./mo2.html">MO2</a>
+                        </li>
+                        <li>
+                            <a href="./utilities.html">Utilities</a>
+                        </li>
+                        <li>
+                            <a href="./bugfix.html">Bug Fixes</a>
+                        </li>
+                        <li>
+                            <a href="./tweaks.html">Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="./hud.html" class="active">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="./gameplay.html">Gameplay</a>
+                        </li>
+                        <li>
+                            <a href="./visuals.html">Visuals</a>
+                        </li>
+                        <li>
+                            <a href="./finish.html">Final Steps</a>
+                        </li>
+                        <li>
+                            <a href="./appendix.html">Appendix</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="./avoid-tools.html">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="./avoid-mods.html">Mods to Avoid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                        </li>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                        </li>
+                        <li>
+                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                <div class="section">
+                    <p>
+                    <h1>User Interface</h1>
+                    <h2>Creating a Separator in MO2</h2>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                        <li>Name the separator <strong>UI</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+                <!-- XDI -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/27216" target="_blank">
+                            <h2 id="xdi">Extended Dialogue Interface</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Extended Dialogue Interface 1.3.6</li>
+                    </ul>
+                    Removes the hardcoded 4-option limit on dialogue and adds full engine support for any number of player dialogue options.
+                    </p>
+                </div>
+                <!-- MCM -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/21497" target="_blank">
+                            <h2 id="mcm">Mod Configuration Menu</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - Mod Configuration Menu 1.39</li>
+                    </ul>
+                    Adds an easy way to configure mods through the in-game pause menu.
+                    </p>
+                </div>
+                <!-- HUDFramework -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/20309" target="_blank">
+                            <h2 id="hudframework">HUDFramework</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - HUDFramework 1.0f</li>
+                    </ul>
+                    HUDFramework is a UI framework that makes it possible for mods to add new UI elements to the HUD.
+                    </p>
+                </div>
+                <!-- HoloHUD -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/29969" target="_blank">
+                            <h2 id="holohud">Power Armor HoloHUD</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - PA HoloHUD</li>
+                    </ul>
+                    Cleans up the HUD while in power armor.
+                    <blockquote>If you use an ultrawide aspect ratio, download and install the <b>PA HoloHUD - Ultrawide</b> file instead.</blockquote>
+                    </p>
+                </div>
+                <!-- FallUI Inventory -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/48758" target="_blank">
+                            <h2 id="fallui_inventory">FallUI - Inventory</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - FallUI - Inventory</li>
+                        <li>You will be prompted with a FOMOD installer, uncheck the <b>Disable PipboyFX</b> option, then click <b>Next</b> twice and <strong>Install</strong></li>
+                    </ul>
+                    Optimized inventory interface for PC.
+                    </p>
+                </div>
+                <!-- FallUI Boxes -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/48958" target="_blank">
+                            <h2 id="fallui_boxes">FallUI - Confirm Boxes</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - FallUI - Confirm Boxes</li>
+                        <li>You will be prompted with a FOMOD installer, click <b>Next</b> and select the style you prefer, then <strong>Install</strong></li>
+                    </ul>
+                    Overhaul of all confirm box interfaces.
+                    </p>
+                </div>
+                <!-- FallUI Sleep -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/49070" target="_blank">
+                            <h2 id="fallui_sleep">FallUI - Sleep and Wait</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - FallUI - Sleep and Wait</li>
+                    </ul>
+                    Overhaul of the sleeping and waiting menu.
+                    </p>
+                </div>
+                <!-- FallUI Bench -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/49300" target="_blank">
+                            <h2 id="fallui_bench">FallUI - Workbench</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - FallUI - Workbench</li>
+                        <li>You will be prompted with a FOMOD installer, click <b>Install</b></li>
+                    </ul>
+                    Optimized workbench interface for PC.
+                    </p>
+                </div>
+                <!-- FallUI Map -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/49920" target="_blank">
+                            <h2 id="fallui_map">FallUI - Map</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - FallUI - Map</li>
+                        <li>You will be prompted with a FOMOD installer, click <b>Next</b> and then <b>Install</b></li>
+                    </ul>
+                    Overhaul of the map menu.
+                    </p>
+                </div>
+                <!-- FallUI HUD -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/51813" target="_blank">
+                            <h2 id="fallui_hud">FallUI - HUD</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - FallUI - HUD</li>
+                        <li>You will be prompted with a FOMOD installer, click <b>Install</b></li>
+                    </ul>
+                    A highly configurable HUD.
+                    </p>
+                </div>
+                <!-- MCM Booster -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/56997" target="_blank">
+                            <h2 id="mcm_booster">MCM Booster</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - MCM Booster</li>
+                    </ul>
+                    Reduces the MCM loading time.
+                    </p>
+                </div>
+                <!-- MCM Manager -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/56195" target="_blank">
+                            <h2 id="mcm_manager">MCM Settings Manager</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - MCM Settings Manager</li>
+                    </ul>
+                    Allows you to save, load, transfer, import and export all your MCM settings at once.
+                    </p>
+                </div>
+                <!-- MCM Categorizer -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/66311" target="_blank">
+                            <h2 id="mcm_categorizer">MCM Categorizer</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Main File - MCM Categorizer</li>
+                    </ul>
+                    Allows you to add your own categories into MCM for easier navigation.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./tweaks.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./gameplay.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right Sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#xdi">XDI</a>
+                </li>
+                <li>
+                    <a href="#mcm">MCM</a>
+                </li>
+                <li>
+                    <a href="#hudframework">HUDFramework</a>
+                </li>
+                <li>
+                    <a href="#holohud">HoloHUD</a>
+                </li>
+                <li>
+                    <a href="#fallui_inventory">FallUI Inventory</a>
+                </li>
+                <li>
+                    <a href="#fallui_boxes">FallUI Boxes</a>
+                </li>
+                <li>
+                    <a href="#fallui_sleep">FallUI Sleep</a>
+                </li>
+                <li>
+                    <a href="#fallui_bench">FallUI Bench</a>
+                </li>
+                <li>
+                    <a href="#fallui_map">FallUI Map</a>
+                </li>
+                <li>
+                    <a href="#fallui_hud">FallUI HUD</a>
+                </li>
+                <li>
+                    <a href="#mcm_booster">MCM Booster</a>
+                </li>
+                <li>
+                    <a href="#mcm_manager">MCM Manager</a>
+                </li>
+                <li>
+                    <a href="#mcm_categorizer">MCM Categorizer</a>
+                </li>
+            </ul>
+            </p>
         </div>
     </body>
 
