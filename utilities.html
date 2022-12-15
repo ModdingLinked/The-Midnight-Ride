@@ -26,13 +26,6 @@ SOFTWARE.
 
     <head>
         <meta charset="UTF-8">
-        <script type="text/javascript">
-            (function (c, l, a, r, i, t, y) {
-                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "ewsfmvesef");
-        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
@@ -217,7 +210,7 @@ SOFTWARE.
                 <!-- Buffout -->
                 <div class="section">
                     <p>
-                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/34705" target="_blank">
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/47359" target="_blank">
                             <h2 id="buffout">Buffout 4</h2>
                         </a>
                     <h2 class="install">Installation instructions:</h2>
@@ -249,9 +242,25 @@ SOFTWARE.
                         </a>
                     <h2 class="install">Installation instructions:</h2>
                     <ul>
-                        <li>Old Files - Whose Quest Is It Anyway</li>
-                    </ul>Swaps the "Quest items cannot be removed..." message for a more descriptive message informing you which quest the item belongs to.
+                        <li><b>Main File - High FPS Physics Fix</b></li>
+                        <li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
+                        <li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
+                        <li>Change the following options:</li>
+                        <ul>
+                            <li>Set <strong>DisableBlackLoadingScreens</strong> to <strong>true</strong> (line 37)</li>
+                            <li>Set <strong>DisableAnimationOnLoadingScreens</strong> to <strong>true</strong> (line 44)</li>
+                            <li>Set <strong>InGameFPS</strong> to a value you want the game FPS to be locked to (line 58)</li>
+                            If you set InGameFPS to a value higher than 60:
+                            <ul>
+                                <li>Set <strong>PipBoyFPS</strong> to 60.0 (line 79)</li>
+                                <li>Set <strong>BudgetMaxFPS</strong> to the same value as InGameFPS (line 283)</li>
+                                <li>Set <strong>DynamicUpdateBudget</strong> to <strong>true</strong> (line 264)</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter, and reduces load times.
                     </p>
+                    <blockquote class="blockquote">If you don't mind something more complex you can find a superior method to lock your FPS on <a href="https://wallsogb.github.io/FalloutNV-Performance-Guide/fallout4.html" target="_blank">this</a> guide by Wall_SoGB.</blockquote>
                 </div>
                 <div>
                     <p>
