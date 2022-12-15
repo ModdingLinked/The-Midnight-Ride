@@ -49,92 +49,205 @@ SOFTWARE.
     </head>
 
     <body>
-        <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>THE MIDNIGHT RIDE</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-            <a href="./lod.html"><span style="color:#DCDCDC">LOD Guide</span></a>
-        </div>
-        <div class="sidenavright">
-            <a href="./lod.html#installing_lodgen" span style="font-size:.8vw;">Installing xLODGen</a>
-            <a href="./lod.html#lodmods" span style="font-size:.8vw;">Recommended Mods</a>
-            <a href="./lod.html#settings" span style="font-size:.8vw;">Settings</a>
-            <a href="./lod.html#installation" span style="font-size:.8vw;">Installation</a>
-        </div>
         <div>
-            <h2>LOD Generating Guide</h2>
-            <a href="#installing_lodgen">
-                <h2 id="installing_lodgen">Installing xLODGen</h2>
-            </a>
-            <ol>
-                <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
-                <li>Once the download has finished, extract the contents of the archive to any location of your choice.</li>
-                <li>In MO2, select the <img src="./img/mo2 executabes.png" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
-                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
-                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FO4 -O:"C:\Output\"</code></li>
-            </ol>
-            <blockquote>This argument will make the files generated through xLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on). You can change this path to whatever you would like if you would prefer the files to be generated elsewhere (Not a UAC protected folder or the game folder).</blockquote>
-            <ol start="9">
-                <li>Select <strong>Apply</strong> then <strong>OK</strong>.</li>
-            </ol>
-            <a href="#lodmods">
-                <h2 id="lodmods">Recommended Mods</h2>
-            </a>
-            <ul>
-                <li><a href="https://github.com/themidnightride/themidnightride.github.io/raw/main/files/FO4LODGen%20Resources.7z" target="_blank">FO4LODGen Resources</a></li>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">Far Object LOD Improvement Project</a></li>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/56138" target="_blank">HD LOD Textures</a>
-            </ul>
-            <blockquote>Also get the optional LOD fixes and normal/noise textures of your choice.</blockquote>
-            <ul>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/62975" target="_blank">ModernHouseLOD</a></li>
-            </ul>
-            <a href="#settings">
-                <h2 id="settings">Settings</h2>
-            </a>
-            <p> Start xLODGen from the executable you added in the previous step and follow the <strong>"Usage"</strong> Section in <a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">this</a> mod page. (Make sure to read it all, including the settings you can expand.) <br> When you have everything set up, double check the settings for each level and then click "Generate" on the bottom right.
-                <br> When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.
-            </p>
-            <a href="#installation">
-                <h2 id="installation">Installation</h2>
-            </a>
-            <ol>
-                <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
-                <li>Title the mod <strong>FO4LODGen Output</strong>.</li>
-                <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
-                <li>Cut them to the <strong>FO4LODGen Output</strong> mod you just created (Right-click on the mod and select <b>Open in Explorer)</b>.</li>
-            </ol>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            <!-- Titlebar -->
+            <div class="titlecontainer">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html">The Midnight Ride</a>
+                <div class="guideLinks">
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
                 </div>
             </div>
-        </div>
+            <!-- Left Sidebar -->
+            <div id="sidenavLeft">
+                <p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./intro.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">Initial Setup</a>
+                        </li>
+                        <li>
+                            <a href="./mo2.html">MO2</a>
+                        </li>
+                        <li>
+                            <a href="./utilities.html">Utilities</a>
+                        </li>
+                        <li>
+                            <a href="./bugfix.html">Bug Fixes</a>
+                        </li>
+                        <li>
+                            <a href="./tweaks.html">Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="./hud.html">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="./gameplay.html">Gameplay</a>
+                        </li>
+                        <li>
+                            <a href="./visuals.html">Visuals</a>
+                        </li>
+                        <li>
+                            <a href="./finish.html">Final Steps</a>
+                        </li>
+                        <li>
+                            <a href="./appendix.html">Appendix</a>
+                        </li>
+                        <ul>
+                            <li>
+                                <a href="./changelog.html" class="active">Changelog</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="./avoid-tools.html">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="./avoid-mods.html">Mods to Avoid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                        </li>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                        </li>
+                        <li>
+                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <div>
+                <!-- Content -->
+                <div class="content">
+                    <p>
+                    <div class="section">
+                        <p>
+                        <h1> LOD Guide </h1>
+                        <p> Before getting started, there are a few things you should know. First, generating LOD is <b>not</b> a requirement, but it will add detail in the distance by improving terrain geometry and the amount of things that have LOD, thanks to the resource mods listed below. It becomes a requirement if you installed texture mods that affect objects in LOD or terrain, or if you are using a mod that requires LOD to be generated because of terrain edits. Terrain LOD creates a much larger file size and will increase the amount of time it takes to run xLODGen. </p>
+                        <p>
+                            <a>
+                                <h2 id="installing_lodgen">Installing xLODGen</h2>
+                            </a>
+                        <ol>
+                            <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
+                            <li>Once the download has finished, extract the contents of the archive to any location of your choice.</li>
+                            <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                            <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong>
+                            </li>
+                            <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
+                            <li>In the <b>Arguments</b> box in the right pane, enter <code>-FO4 -O:"C:\Output\"</code></li>
+                        </ol>
+                        <blockquote>This argument will make the files generated through xLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on). You can change this path to whatever you would like if you would prefer the files to be generated elsewhere (Not a UAC protected folder or the game folder).</blockquote>
+                        <ol start="9">
+                            <li>Select <strong>Apply</strong> then <strong>OK</strong>.</li>
+                        </ol>
+                        </p>
+                        <p>
+                            <a>
+                                <h2 id="installing_resources">Installing LOD Resources</h2>
+                            </a>
+                        <ul>
+                            <li><a href="https://github.com/themidnightride/themidnightride.github.io/raw/main/files/FO4LODGen%20Resources.7z" target="_blank">FO4LODGen Resources</a></li>
+                            <li><a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">Far Object LOD Improvement Project</a></li>
+                            <li><a href="https://www.nexusmods.com/fallout4/mods/56138" target="_blank">HD LOD Textures</a>
+                        </ul>
+                        <blockquote>Also get the optional LOD fixes and normal/noise textures of your choice.</blockquote>
+                        <ul>
+                            <li><a href="https://www.nexusmods.com/fallout4/mods/62975" target="_blank">ModernHouseLOD</a></li>
+                        </ul>
+                        </p>
+                        <p>
+                            <a>
+                                <h2 id="settings">Running xLODGen and Settings</h2>
+                            </a>
+                            Start xLODGen from the executable you added in the previous step and follow the <strong>"Usage"</strong> Section in <a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">this</a> mod page. (Make sure to read it all, including the settings you can expand.) <br> When you have everything set up, double check the settings for each level and then click "Generate" on the bottom right.
+                            <br> When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.
+                        </p>
+                        <p>
+                            <a>
+                                <h2 id="installation">Installation</h2>
+                            </a>
+                        <ol>
+                            <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                            <li>Title the mod <strong>FO4LODGen Output</strong>.</li>
+                            <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders. </li>
+                            <li>Cut them to the <strong>FO4LODGen Output</strong> mod you just created (Right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                        </ol>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <hr>
+                            <a href="./resources.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                        </p>
+                    </div>
+                    </p>
+                </div>
+                <!-- Right Sidebar -->
+                <div id="sidenavRight">
+                    <p>
+                    <ul>
+                        <li>
+                            <a href="#installing_lodgen">Installing</a>
+                        </li>
+                        <li>
+                            <a href="#installing_resources">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#settings">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#installation">Installation</a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
     </body>
 
 </html>
