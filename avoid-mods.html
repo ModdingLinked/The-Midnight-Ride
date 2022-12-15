@@ -49,85 +49,170 @@ SOFTWARE.
     </head>
 
     <body>
-        <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>The Midnight Ride</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-            <a href="./avoid-mods.html"><span style="color:#DCDCDC">Mods to Avoid</span></a>
-        </div>
         <div>
-            <h2>Mods to Avoid</h2>
-            <p><strong>Fallout 4 Official HD Texture Pack DLC:</strong> Almost twice the size of the base game on its own, not worth the extra VRAM usage considered how close it looks to vanilla.
-            </p>
-            <br>
-            <p><strong>Armor and Weapon Keywords Community Resource:</strong> Extremely bloated and buggy, makes tons of out-of-scope/undocumented changes.
-            </p>
-            <br>
-            <p><strong>Armorsmith Extended:</strong> Old and buggy, not to mention extraordinarily overpowered.
-            </p>
-            <br>
-            <p><strong>FO4FI FPS Fix:</strong> Causes crashes in some locations.
-            </p>
-            <br>
-            <p><strong>VIS/VIS-G:</strong> Requires patches with any mods that change/add literally any items, also makes random changes to item names to make them more "realistic" for some reason.
-            </p>
-            <br>
-            <p><strong>Functional Displays:</strong> Causes crashes, deleting the "meshes" folder can fix this.
-            </p>
-            <br>
-            <p><strong>Scrap Everything/Settlement Cleaning Mods:</strong> Breaks precombineds in settlements.
-            </p>
-            <br>
-            <p><strong>Pip-Boy Flashlight:</strong> Very buggy, can cause large performance drops especially with the dynamic shadows option.
-            </p>
-            <br>
-            <p><strong>Damage Threshold Framework:</strong> Occasionally causes crashes due to calculation errors.
-            </p>
-            <br>
-            <p><strong>Tactical Reload:</strong> Will cause crashes with weapons that are not specifically patched for it. Before using it, make sure any weapon mods you use have patches from <a href="https://www.nexusmods.com/fallout4/mods/52619" target="_blank">here</a>.
-            </p>
-            <br>
-            <p><strong>The Beantown Interiors Project:</strong> Breaks precombineds, can accelerate save bloat due to the massive amounts of items in each interior.
-            </p>
-            <br>
-            <p><strong>South of the Sea:</strong> Very buggy and will cause crashes due to deleted nav-meshes. A reworked version is available <a href="https://www.nexusmods.com/fallout4/mods/63152" target="_blank">here</a>.
-            </p>
-            <br>
-            <p><strong>Insignificant Object Remover:</strong> Performance gain is placebo, disabling small clutter items with less than 5 polygons won't do anything. Also potentially dangerous if they mark the records as <b>Deleted</b> rather than <b>Initially Disabled</b>, as the game can crash if a script tries to reference a deleted object.
-            </p>
-            <br>
-            <p>This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods. I highly recommend checking out <a href="https://www.nexusmods.com/fallout4/articles/3115" target="_blank">Poet's Optimization Guide</a> which contains an expanded list of problematic mods, solutions to common crashes, and more. Always view every mod you install with <a href="https://www.nexusmods.com/fallout4/mods/2737" target="_blank">FO4Edit</a> to check for conflicts.
-            </p>
-            <br>
-            <hr>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            <!-- Titlebar -->
+            <div class="titlecontainer">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html">The Midnight Ride</a>
+                <div class="guideLinks">
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                </div>
+            </div>
+            <!-- Left Sidebar -->
+            <div id="sidenavLeft">
+                <p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./intro.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">Initial Setup</a>
+                        </li>
+                        <li>
+                            <a href="./mo2.html">MO2</a>
+                        </li>
+                        <li>
+                            <a href="./utilities.html">Utilities</a>
+                        </li>
+                        <li>
+                            <a href="./bugfix.html">Bug Fixes</a>
+                        </li>
+                        <li>
+                            <a href="./tweaks.html">Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="./hud.html">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="./gameplay.html">Gameplay</a>
+                        </li>
+                        <li>
+                            <a href="./visuals.html">Visuals</a>
+                        </li>
+                        <li>
+                            <a href="./finish.html">Final Steps</a>
+                        </li>
+                        <li>
+                            <a href="./appendix.html">Appendix</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="./avoid-tools.html">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="./avoid-mods.html" class="active">Mods to Avoid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                        </li>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                        </li>
+                        <li>
+                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                <div class="section">
+                    <p>
+                    <h1>Mods to Avoid</h1>
+                    <p>
+                        <strong>Fallout 4 Official HD Texture Pack DLC:</strong> Almost twice the size of the base game on its own, not worth the extra VRAM usage considered how close it looks to vanilla.
+                    </p>
+                    <p>
+                        <strong>Armor and Weapon Keywords Community Resource:</strong> Extremely bloated and buggy, makes tons of out-of-scope/undocumented changes.
+                    </p>
+                    <p>
+                        <strong>Armorsmith Extended:</strong> Old and buggy, not to mention extraordinarily overpowered.
+                    </p>
+                    <p>
+                        <strong>FO4FI FPS Fix:</strong> Causes crashes in some locations.
+                    </p>
+                    <p>
+                        <strong>VIS/VIS-G:</strong> Requires patches with any mods that change/add literally any items, also makes random changes to item names to make them more "realistic" for some reason.
+                    </p>
+                    <p>
+                        <strong>Functional Displays:</strong> Causes crashes, deleting the "meshes" folder can fix this.
+                    </p>
+                    <p>
+                        <strong>Scrap Everything/Settlement Cleaning Mods:</strong> Breaks precombineds in settlements.
+                    </p>
+                    <p>
+                        <strong>Pip-Boy Flashlight:</strong> Very buggy, can cause large performance drops especially with the dynamic shadows option.
+                    </p>
+                    <p>
+                        <strong>Damage Threshold Framework:</strong> Occasionally causes crashes due to calculation errors.
+                    </p>
+                    <p>
+                        <strong>Tactical Reload:</strong> Will cause crashes with weapons that are not specifically patched for it. Before using it, make sure any weapon mods you use have patches from <a href="https://www.nexusmods.com/fallout4/mods/52619" target="_blank">here</a>.
+                    </p>
+                    <p>
+                        <strong>The Beantown Interiors Project:</strong> Breaks precombineds, can accelerate save bloat due to the massive amounts of items in each interior.
+                    </p>
+                    <p>
+                        <strong>South of the Sea:</strong> Very buggy and will cause crashes due to deleted nav-meshes. A reworked version is available <a href="https://www.nexusmods.com/fallout4/mods/63152" target="_blank">here</a>.
+                    </p>
+                    <p>
+                        <strong>Insignificant Object Remover:</strong> Performance gain is placebo, disabling small clutter items with less than 5 polygons won't do anything. Also potentially dangerous if they mark the records as <b>Deleted</b> rather than <b>Initially Disabled</b>, as the game can crash if a script tries to reference a deleted object.
+                    </p>
+                    <p>
+                        This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods. I highly recommend checking out <a href="https://www.nexusmods.com/fallout4/articles/3115" target="_blank">Poet's Optimization Guide</a> which contains an expanded list of problematic mods, solutions to common crashes, and more. Always view every mod you install with <a href="https://www.nexusmods.com/fallout4/mods/2737" target="_blank">FO4Edit</a> to check for conflicts.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <hr>
+                        <a href="./resources.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    </p>
+                </div>
+                </p>
             </div>
         </div>
     </body>
