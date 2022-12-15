@@ -31,17 +31,18 @@ SOFTWARE.
                 c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
                 t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
                 y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "ewsfmvesef");
+            })(window, document, "clarity", "script", "esm2jj88y9");
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="img/logo.webp">
         <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>Tools to Avoid | The Midnight Ride</title>
         <meta name="description" content="List of many popular modding tools that are outdated/broken.">
         <meta name="twitter:card" value="summary">
-        <meta property="og:title" content="The Midnight Ride" />
+        <meta property="og:title" content="A Dragonborn's Fate" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://themidnightride.github.io/" />
         <meta property="og:image" content="img/logo.webp" />
@@ -49,67 +50,153 @@ SOFTWARE.
     </head>
 
     <body>
-        <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>The Midnight Ride</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-            <a href="./avoid-tools.html"><span style="color:#DCDCDC">Tools to Avoid</span></a>
-        </div>
         <div>
-            <h2>Tools to Avoid</h2>
-            <p><strong>Vortex:</strong> Flawed conflict management which makes it annoying to use, does not track generated files and generally slow.
-            </p>
-            <br>
-            <p><strong>Nexus Mod Manager/Fallout Mod Manager:</strong> Outdated/abandoned, have no virtual file system or even dynamic movement of mods with loose files.
-            </p>
-            <br>
-            <p><strong>Mod Organizer 1:</strong> There is no reason to use Mod Organizer 1 over Mod Organizer 2.
-            </p>
-            <br>
-            <p><strong>LOOT:</strong> As LOOT is automated, it will never fully be able to account for all the nuances of a load order, especially a large one. Incorrect load order can lead to overwriting or breaking features from mods.
-            </p>
-            <br>
-            <p><strong>Wrye Bash/Flash and Mator Smash:</strong> Similarly to LOOT, these programs are fully automated and will never be fully accurate. They will solve things that they may see as conflicts, but it reality they are intentional overwrites. They will also often miss critical conflicts.
-            </p>
-            <br>
-            <p><strong>zEdit/zClean:</strong> Neither have any real advantages over <a href="https://www.nexusmods.com/newvegas/mods/34703" target="_blank">xEdit</a>, and lack some essential features/support than xEdit has.
-            </p>
-            <br>
-            <p><strong>Merge Plugins Standalone/zMerge:</strong> Automated merging can potentially cause major breakage in mods, especially heavily-scripted ones.
-            </p>
-            <br>
-            <p><strong>Ordenador/DDSopt:</strong> Breaks many textures by needlessly converting/adding/resizing alpha channels, cubemaps, and mipmaps. Use <a href="https://www.nexusmods.com/skyrimspecialedition/mods/23316" target="_blank">Cathedral Assets Optimizer</a> or <a href="https://www.nexusmods.com/fallout4/mods/63243" target="_blank">BSArch Pro</a> instead.
-            </p>
-            <br>
-            <hr>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            <!-- Titlebar -->
+            <div class="titlecontainer">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html">The Midnight Ride</a>
+                <div class="guideLinks">
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                </div>
+            </div>
+            <!-- Left Sidebar -->
+            <div id="sidenavLeft">
+                <p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./intro.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">Initial Setup</a>
+                        </li>
+                        <li>
+                            <a href="./mo2.html">MO2</a>
+                        </li>
+                        <li>
+                            <a href="./utilities.html">Utilities</a>
+                        </li>
+                        <li>
+                            <a href="./bugfix.html">Bug Fixes</a>
+                        </li>
+                        <li>
+                            <a href="./tweaks.html">Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="./hud.html">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="./gameplay.html">Gameplay</a>
+                        </li>
+                        <li>
+                            <a href="./visuals.html">Visuals</a>
+                        </li>
+                        <li>
+                            <a href="./finish.html">Final Steps</a>
+                        </li>
+                        <li>
+                            <a href="./appendix.html">Appendix</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="./avoid-tools.html" class="active">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="./avoid-mods.html">Mods to Avoid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                        </li>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                        </li>
+                        <li>
+                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                <div class="section">
+                    <p>
+                    <h1>Tools to Avoid</h1>
+                    <p>
+                        <strong>Vortex:</strong> Flawed conflict management which makes it annoying to use, does not track generated files and generally slow.
+                    </p>
+                    <p>
+                        <strong>Nexus Mod Manager/Fallout Mod Manager:</strong> Outdated/abandoned, have no virtual file system or even dynamic movement of mods with loose files.
+                    </p>
+                    <p>
+                        <strong>Mod Organizer 1:</strong> There is no reason to use Mod Organizer 1 over Mod Organizer 2.
+                    </p>
+                    <p>
+                        <strong>LOOT:</strong> As LOOT is automated, it will never fully be able to account for all the nuances of a load order, especially a large one. Incorrect load order can lead to overwriting or breaking features from mods.
+                    </p>
+                    <p>
+                        <strong>Wrye Bash/Flash and Mator Smash:</strong> Similarly to LOOT, these programs are fully automated and will never be fully accurate. They will solve things that they may see as conflicts, but it reality they are intentional overwrites. They will also often miss critical conflicts.
+                    </p>
+                    <p>
+                        <strong>zEdit/zClean:</strong> Neither have any real advantages over <a href="https://www.nexusmods.com/newvegas/mods/34703" target="_blank">xEdit</a>, and lack some essential features/support than xEdit has.
+                    </p>
+                    <p>
+                        <strong>Merge Plugins Standalone/zMerge:</strong> Automated merging can potentially cause major breakage in mods, especially heavily-scripted ones.
+                    </p>
+                    <p>
+                        <strong>Ordenador/DDSopt:</strong> Breaks many textures by needlessly converting/adding/resizing alpha channels, cubemaps, and mipmaps. Use <a href="https://www.nexusmods.com/skyrimspecialedition/mods/23316" target="_blank">Cathedral Assets Optimizer</a> or <a href="https://www.nexusmods.com/fallout4/mods/63243" target="_blank">BSArch Pro</a> instead.
+                    </p>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <hr>
+                        <a href="./resources.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    </p>
+                </div>
+                </p>
             </div>
         </div>
     </body>
