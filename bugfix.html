@@ -1,3 +1,26 @@
+<!--
+MIT License
+
+Copyright (c) TheMidnightRide
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,147 +29,337 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>Bug Fixes | The Midnight Ride</title>
         <meta name="description" content="Essential mods that fix bugs, improve performance, and/or improve quality of life.">
         <meta name="twitter:card" value="summary">
         <meta property="og:title" content="The Midnight Ride" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://themidnightride.github.io/" />
-        <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
+        <meta property="og:image" content="img/logo.webp" />
         <meta property="og:description" content="Essential mods that fix bugs, improve performance, and/or improve quality of life." />
     </head>
 
     <body>
-        <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>The Midnight Ride</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html"><span style="color:#DCDCDC">Bug Fixes</span></a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./bugfix.html#ufo4p"><span style="font-size:.8vw;">UFO4P</span></a></a>
-            <a href="./bugfix.html#dropfix"><span style="font-size:.8vw;">Legendary Drop Fix</span></a></a>
-            <a href="./bugfix.html#ownership"><span style="font-size:.8vw;">Ownership Fixes</span></a></a>
-            <a href="./bugfix.html#sprint"><span style="font-size:.8vw;">Sprint Stutter Fix</span></a>
-            <a href="./bugfix.html#debris_fix"><span style="font-size:.8vw;">Debris Crash Fix</span></a>
-            <a href="./bugfix.html#fps_fix"><span style="font-size:.8vw;">PRP</span></a>
-            <a href="./bugfix.html#bcr"><span style="font-size:.8vw;">Bullet Counted Reload System</span></a>
-            <a href="./bugfix.html#wetness"><span style="font-size:.8vw;">Wetness Shader Fix</span></a>
-        </div>
         <div>
-            <h2 class="fullheader">Bug Fixes</h2>
-            <a class="internallink" href="#separator">
-                <h2 class="smallheader" id="separator">Creating a Separator in MO2</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                <li>Name the separator <strong>Bug Fixes</strong>.</li>
-            </ol>
-            <a class="internallink" href="#ufo4p">
-                <h2 class="smallheader" id="ufo4p"><a href="https://www.nexusmods.com/fallout4/mods/4598" target="_blank">Unofficial Fallout 4 Patch</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ol">
-                <li><b>Main File - Unofficial Fallout 4 Patch</b></li>
-            </ul>
-            <p class="subparagraph">Fixes thousands of bugs with both the base game and DLCs.</p>
-            <a class="internallink" href="#dropfix">
-                <h2 class="smallheader" id="dropfix"><a href="https://www.nexusmods.com/fallout4/mods/61199" target="_blank">Legendary Drop Fix</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ol">
-                <li><b>Main File - Legendary Drop Bugfix</b></li>
-            </ul>
-            <p class="subparagraph">Fixes a bug which causes legendary enemies not to generate and drop a legendary item.</p>
-            <a class="internallink" href="#ownership">
-                <h2 class="smallheader" id="ownership"><a href="https://www.nexusmods.com/fallout4/mods/56885" target="_blank">Ownership Fixes</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ol">
-                <li><b>Main File - Ownership Fixes</b></li>
-            </ul>
-            <p class="subparagraph">Fixes incorrect or missing ownership data assigned to objects and crops.</p>
-            <a class="internallink" href="#sprint">
-                <h2 class="smallheader" id="sprint"><a href="https://www.nexusmods.com/fallout4/mods/47760" target="_blank">Sprint Stutter Fix</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Sprint Stuttering Fix</b> (First file)</li>
-            </ul>
-            <p class="subparagraph">Stops the camera from stuttering while sprinting on uneven surfaces.</p>
-            <a class="internallink" href="#debris_fix">
-                <h2 class="smallheader" id="debris_fix"><a href="https://www.nexusmods.com/fallout4/mods/48078" target="_blank">Weapon Debris Crash Fix</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Weapon Debris Crash Fix</b></li>
-            </ul>
-            <blockquote class="blockquote">NOTE: This mod is only needed for users with NVIDIA GPUs newer than Pascal (10 series).</blockquote>
-            <p class="subparagraph">Fixes crashes with the weapon debris setting enabled caused by different PhysX implementation with new NVIDIA GPUs.</p>
-            <a class="internallink" href="#fps_fix">
-                <h2 class="smallheader" id="fps_fix"><a href="https://www.nexusmods.com/fallout4/mods/46403" target="_blank">Previsibines Repair Pack</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - PRP Full Stable </b>(0.65.0)</li>
-                <li>You will be prompted with a FOMOD installer, in which you should just select <strong>PPF</strong>, <strong>PRP</strong>, <strong>PRP - Interiors Enhanced Patch</strong> and <strong>PRP - Clarity 4.3 Patch</strong></li>
-            </ul>
-            <blockquote class="blockquote"><strong>PRP - Interiors Enhanced Patch</strong> and <strong>PRP - Clarity 4.3 Patch</strong> are patches for mods installed later in the <a href="./visuals.html" target="_blank">Visuals</a> section of the guide. If you don't plan on installing either one, don't select the patch.</blockquote>
-            <blockquote class="blockquote">IMPORTANT: It is very important that the <strong>PRP.esp</strong> file form this mod remains at the bottom-most mod spot in your load order, otherwise you will have Previs issues (any patch you select in this FOMOD will have to go below PRP.esp). The load order at the end of the guide will take care of this for you, but this is very important to know if you plan on adding any extra mods.</blockquote>
-            <p class="subparagraph">Greatly improves FPS throughout the entire game, including interior cells. Also includes many placement or mesh fixes not possible without regenerating previsibines.</p>
-            <a class="internallink" href="#bcr">
-                <h2 class="smallheader" id="bcr"><a href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">Bullet Counted Reload System</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Bullet Counted Reload - v2.00</b></li>
-                <li><b>Optional File - BCR- Lever Action Rifle v1.02</b></li>
-            </ul>
-            <p class="subparagraph">Allows reloading the lever-action rifle based on the amount of shots fired.</p>
-            <a class="internallink" href="#wetness">
-                <h2 class="smallheader" id="wetness"><a href="https://www.nexusmods.com/fallout4/mods/23389" target="_blank">Wetness Shader Fix</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Wetness Shader Fix</b></li>
-            </ul>
-            <p class="subparagraph">Fixes the exaggerated shine of specific objects while it's raining.</p>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./utilities.html"><img class="backarrow" src="./img/left arrow.png" alt="Back arrow"></a>
-            <a href="./tweaks.html"><img class="forwardarrow" src="./img/right arrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            <!-- Titlebar -->
+            <div class="titlecontainer">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html">The Midnight Ride</a>
+                <div class="guideLinks">
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                </div>
+            </div>
+            <!-- Left Sidebar -->
+            <div id="sidenavLeft">
+                <p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./intro.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">Initial Setup</a>
+                        </li>
+                        <li>
+                            <a href="./mo2.html">MO2</a>
+                        </li>
+                        <li>
+                            <a href="./utilities.html">Utilities</a>
+                        </li>
+                        <li>
+                            <a href="./bugfix.html" class="active">Bug Fixes</a>
+                        </li>
+                        <li>
+                            <a href="./tweaks.html">Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="./hud.html">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="./gameplay.html">Gameplay</a>
+                        </li>
+                        <li>
+                            <a href="./visuals.html">Visuals</a>
+                        </li>
+                        <li>
+                            <a href="./finish.html">Final Steps</a>
+                        </li>
+                        <li>
+                            <a href="./appendix.html">Appendix</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="./avoid-tools.html">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="./avoid-mods.html">Mods to Avoid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                        </li>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                        </li>
+                        <li>
+                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                <div class="section">
+                    <p>
+                    <h1>Bug Fixes</h1>
+                    <h2>Creating a Separator in MO2</h2>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                        <li>Name the separator <strong>Bug Fixes</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+                <!-- UFO4P -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/4598" target="_blank">
+                            <h2 id="ufo4p">Unofficial Fallout 4 Patch</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Unofficial Fallout 4 Patch</b></li>
+                    </ul>
+                    Fixes thousands of bugs with both the base game and DLCs.
+                    </p>
+                </div>
+                <!-- FO4 Fixes -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/63005" target="_blank">
+                            <h2 id="fo4_fixes">Fallout 4 Fixes</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Fallout 4 Fixes</b></li>
+                    </ul>
+                    Fixes some bugs.
+                    </p>
+                </div>
+                <!-- Legendary Drop Fix -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/61199" target="_blank">
+                            <h2 id="dropfix">Legendary Drop Fix</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Legendary Drop Bugfix</b></li>
+                    </ul>
+                    Fixes a bug which causes legendary enemies not to generate and drop a legendary item.
+                    </p>
+                </div>
+                <!-- Ownership Fixes -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/56885" target="_blank">
+                            <h2 id="ownership">Ownership Fixes</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Ownership Fixes</b></li>
+                    </ul>
+                    Fixes incorrect or missing ownership data assigned to objects and crops.
+                    </p>
+                </div>
+                <!-- Sprint Fix -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/47760" target="_blank">
+                            <h2 id="sprint">Sprint Stutter Fix</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Sprint Stuttering Fix</b> (First file)</li>
+                    </ul>
+                    Stops the camera from stuttering while sprinting on uneven surfaces.
+                    </p>
+                </div>
+                <!-- Debris Crash Fix -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/48078" target="_blank">
+                            <h2 id="debris_fix">Weapon Debris Crash Fix</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Weapon Debris Crash Fix</b></li>
+                    </ul>
+                    <blockquote>NOTE: This mod is only needed for users with NVIDIA GPUs newer than Pascal (10 series).</blockquote>
+                    Fixes crashes with the weapon debris setting enabled caused by different PhysX implementation with new NVIDIA GPUs.
+                    </p>
+                </div>
+                <!-- PRP -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/46403" target="_blank">
+                            <h2 id="prp">Previsibines Repair Pack</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - PRP Full Stable</b></li>
+                        <li>You will be prompted with a FOMOD installer, here select <strong>English</strong>, then <strong>PPF</strong>, <strong>PRP</strong>, and <strong>PRP - Interiors Enhanced Patch</strong></li>
+                        <li>Update Files - PRP Stable Hotfix</b> (When prompted, select the name that matches the file on Nexus)</li>
+                    </ul>
+                    <blockquote><strong>PRP - Interiors Enhanced Patch</strong> is a patch for a mod installed later in the <a href="./visuals.html" target="_blank">Visuals</a> section of the guide. Don't select the patch if you don't plan on using that mod.</blockquote>
+                    Greatly improves FPS throughout the entire game, including interior cells. Also includes many placement or mesh fixes not possible without regenerating previsibines.
+                    </p>
+                </div>
+                <!-- Wetness Shader Fix -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/23389" target="_blank">
+                            <h2 id="wetness">Wetness Shader Fix</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Wetness Shader Fix</b></li>
+                    </ul>
+                    Fixes the exaggerated shine of specific objects while it's raining.
+                    </p>
+                </div>
+                <!-- Fixed Alpha -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/28974" target="_blank">
+                            <h2 id="alpha">Fixed Alpha Maps</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Fixed Alpha Maps</b></li>
+                    </ul>
+                    Fixes Bethesda's shoddy, non-existent alpha maps.
+                    </p>
+                </div>
+                <!-- NW Bottle Fix -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/66764" target="_blank">
+                            <h2 id="bottle_fix">Clean And Simple Nuka World Bottle Fix</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Nuka World Bottle Fix</b></li>
+                    </ul>
+                    Fixes the oversized Nuka World bottles in a clean, simple, and mod-compatible way.
+                    </p>
+                </div>
+                <!-- Anim Fixes -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/53597" target="_blank">
+                            <h2 id="anim_fixes">Misc anim tweaks and fixes</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Misc anim tweaks and fixes</b></li>
+                        <li><b>Update Files - Shredder tweaks</b> (When prompted, select the name that matches the file on Nexus)</li>
+                    </ul>
+                    Small animation tweaks and fixes.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <hr>
+                        <a href="./utilities.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                        <a href="./tweaks.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                    </p>
+                </div>
+                </p>
+            </div>
+            <!-- Right Sidebar -->
+            <div id="sidenavRight">
+                <p>
+                <ul>
+                    <li>
+                        <a href="#ufo4p">UFO4P</a>
+                    </li>
+                    <li>
+                        <a href="#fo4_fixes">Fallout 4 Fixes</a>
+                    </li>
+                    <li>
+                        <a href="#dropfix">Legendary Drop Fix</a>
+                    </li>
+                    <li>
+                        <a href="#ownership">Ownership Fixes</a>
+                    </li>
+                    <li>
+                        <a href="#sprint">Sprint Stutter Fix</a>
+                    </li>
+                    <li>
+                        <a href="#debris_fix">Debris Crash Fix</a>
+                    </li>
+                    <li>
+                        <a href="#prp">PRP</a>
+                    </li>
+                    <li>
+                        <a href="#wetness">Wetness Shader Fix</a>
+                    </li>
+                    <li>
+                        <a href="#alpha">Fixed Alpha Maps</a>
+                    </li>
+                    <li>
+                        <a href="#bottle_fix">NW Bottle Fix</a>
+                    </li>
+                    <li>
+                        <a href="#anim_fixes">Animation Fixes</a>
+                    </li>
+                </ul>
+                </p>
             </div>
         </div>
     </body>

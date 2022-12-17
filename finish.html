@@ -1,3 +1,26 @@
+<!--
+MIT License
+
+Copyright (c) TheMidnightRide
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,95 +29,196 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>Final Steps | The Midnight Ride</title>
         <meta name="description" content="Final steps necessary before playing the game.">
         <meta name="twitter:card" value="summary">
         <meta property="og:title" content="The Midnight Ride" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://themidnightride.github.io/" />
-        <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
+        <meta property="og:image" content="img/logo.webp" />
         <meta property="og:description" content="Final steps necessary before playing the game." />
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>THE MIDNIGHT RIDE</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html"><span style="color:#DCDCDC">Final Steps</span></a>
-            <a href="./appendix.html">Appendix</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./finish.html#load_order"><span style="font-size:.8vw;">Load Order</span></a>
-            <a href="./finish.html#tweak_mcm"><span style="font-size:.8vw;">Configuring the MCM</span></a>
-            <a href="./finish.html#notes"><span style="font-size:.8vw;">Finishing Notes</span></a>
-        </div>
-        <div>
-            <h2 class="fullheader">Final Steps</h2>
-            <a class="internallink" href="#load_order">
-                <h2 class="smallheader" id="load_order"><a href="https://github.com/themidnightride/themidnightride.github.io/blob/main/files/Load%20Order.7z" target="_blank">Load Order</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the file manually.</li>
-                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/mo2 folders.png" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
-                <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
-                <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
-                <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
-            </ol>
-            <blockquote class="blockquote">If you have not added any mods to the guide, <strong>PRP.esp</strong> and the patches should be at the bottom in your load order (The <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation. Join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support.</blockquote>
-            <p class="subparagraph">Automatically ensures your load order is correct for the guide. This will still work if you didn't install certain mods, but if you added your own mods they will be sorted to the bottom of the load order and need to be manually moved back to their proper position. If you do not know how to check where any mods you have added should go in the load order, it may be best to not add any mods not in the guide.</p>
-            <blockquote class="blockquote">REMINDER: Run the game using the F4SE option in MO2! <br> <img src="./img/run f4se.png" alt="Run F4SE through MO2"></blockquote>
-            <a class="internallink" href="#tweak_mcm">
-                <h2 class="smallheader" id="tweak_mcm">Configuring the Mod Configuration Menu</h2>
-            </a>
-            <p class="subparagraph"> The Mod Configuration Menu can be accessed via the in-game pause menu. The MCM menus that you should see in-game are: <br> - MCM Settings Manager<br> - Complex Vendors<br> - Crafting Highlight Fix<br> - FallUI - Inventory<br> - FallUI - Confirm Boxes<br> - FallUI - HUD<br> - FallUI - Map<br> - FallUI - Sleep and Wait<br> - FallUI - Workbench<br> - FOV Slider<br> - Terrain Undersides<br> - True Invisibility<br> - Unlimited Survival Mode<br> - MCM Booster<br> - MCM Settings<br> - Hotkey Manager<br>
-                <br> None of the settings you can change are essential, so you can just adjust them to your personal preference. I recommend the following: <br> - Crafting Highlight Fix: Disable Trade Menu Highlights<br> - A general look in all the FallUI MCMs so you can get familiar with the new UI<br> - FOV Slider: set to your preferred FOV<br> - FallUI - HUD: Minimalistic preset<br> - FallUI - Inventory: All green coloring<br>
-                <br>Don't forget to <strong>save the settings</strong> with the settings manager once you are done. <br>
-            </p>
-            <br>
-            <a class="internallink" href="#notes">
-                <h2 class="smallheader" id="notes">Finishing Notes</h2>
-            </a>
-            <p class="subparagraph"> Congratulations! You now have modded Fallout 4 set up perfectly and can enjoy a completely stable/smooth experience. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder. If you do not know how to do manual conflict resolution in FO4Edit, how to sort your load order manually, or how to check if a mod is dangerous, it is highly recommended to NOT add any of your own mods. And remember, I do not provide support setups that have added mods. And remember, if you run into any trouble or have any questions, join the <a href="https://discord.com/invite/DhX5S27" target="_blank">Discord</a> and we'll be sure to help you out. <br>
-            <blockquote class="blockquote">DO NOT bother the authors of any of the mods in the guide if you have issues, that's what the Discord is for.</blockquote>
-            </p>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./visuals.html"><img class="backarrow" src="./img/left arrow.png" alt="Back arrow"></a>
-            <a href="./appendix.html"><img class="forwardarrow" src="./img/right arrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
-                </div>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html">The Midnight Ride</a>
+            <div class="guideLinks">
+                <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+            </div>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./utilities.html">Utilities</a>
+                    </li>
+                    <li>
+                        <a href="./bugfix.html">Bug Fixes</a>
+                    </li>
+                    <li>
+                        <a href="./tweaks.html">Tweaks</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay.html">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Visuals</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html" class="active">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    </li>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    </li>
+                    <li>
+                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1>Final Steps</h1>
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://github.com/themidnightride/themidnightride.github.io/raw/main/files/Load%20Order.7z" target="_blank">
+                            <h2 id="load_order">Load Order</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ol>
+                        <li>Download the file manually.</li>
+                        <li>Once it has finished downloading, click the <img style="width:2%" src="./img/mo2 folders.webp" alt="MO2 folders">button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
+                        <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
+                        <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
+                        <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
+                    </ol>
+                    <blockquote>If you have not added any mods to the guide, <strong>PRP-Compat-IntEnh.esp</strong> should be the bottom mod in your load order (The <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
+                        <br>
+                        Join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support.
+                    </blockquote>
+                    Automatically ensures your load order is correct for the guide. This will still work if you didn't install certain mods, but if you added your own mods they will be sorted to the bottom of the load order and need to be manually moved back to their proper position. If you do not know how to check where any mods you have added should go in the load order, it may be best to not add any mods not in the guide.
+                    <blockquote>REMINDER: Run the game using the F4SE option in MO2!
+                        <br>
+                        <img src="./img/run f4se.webp" alt="Run F4SE through MO2" />
+                    </blockquote>
+                    </p>
+                </div>
+                <p>
+                    <a href="#mcm">
+                        <h2 id="mcm">MCM Configuration</h2>
+                    </a>
+                    Now that you are in the game, you should head to the <b>Mod Configuration</b> menu and go through the different options, especially the FallUI suite of mods, since they can be configured very subjectively and defaults will not be coherent with things such as coloring or styling.
+                    <br>
+                </p>
+                <p>
+                    <a href="#notes">
+                        <h2 id="notes">Finishing Notes</h2>
+                    </a>
+                    Congratulations! You now have modded Fallout 4 perfectly and can enjoy a completely stable/smooth experience. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder. If you do not know how to do manual conflict resolution in FO4Edit, how to sort your load order manually, or how to check if a mod is dangerous, it is highly recommended to NOT add any of your own mods. And remember, I do not provide support setups that have added mods, if you run into any trouble or have any questions, join the <a href="https://discord.com/invite/DhX5S27" target="_blank">Discord</a> and we'll be sure to help you out.
+                    <br>
+                <blockquote>DO NOT bother the authors of any of the mods in the guide if you have issues, that's what the Discord is for.</blockquote>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./visuals.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./appendix.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right Sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#load_order">Load Order</a>
+                </li>
+                <li>
+                    <a href="#mcm">MCM Configuration</a>
+                </li>
+                <li>
+                    <a href="#notes">Finishing Notes</a>
+                </li>
+            </ul>
+            </p>
         </div>
     </body>
 

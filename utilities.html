@@ -1,3 +1,26 @@
+<!--
+MIT License
+
+Copyright (c) TheMidnightRide
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,146 +29,272 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://themidnightride.github.io/img/logo.png">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>Utilities | The Midnight Ride</title>
         <meta name="description" content="Essential stability and performance mods, required for any modded setup.">
         <meta name="twitter:card" value="summary">
         <meta property="og:title" content="The Midnight Ride" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://themidnightride.github.io/" />
-        <meta property="og:image" content="https://themidnightride.github.io/img/logo.png" />
+        <meta property="og:image" content="img/logo.webp" />
         <meta property="og:description" content="Essential stability and performance mods, required for any modded setup." />
     </head>
 
     <body>
-        <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>THE MIDNIGHT RIDE</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html"><span style="color:#DCDCDC">Utilities</span></a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./tweaks.html">Tweaks</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./utilities.html#f4se"><span style="font-size:.8vw;">F4SE</span></a>
-            <a href="./utilities.html#preloader"><span style="font-size:.8vw;">Plugin Preloader</span></a>
-            <a href="./utilities.html#godraysfix"><span style="font-size:.8vw;">God Rays Performance Fix</span></a>
-            <a href="./utilities.html#library"><span style="font-size:.8vw;">Address Library</span></a>
-            <a href="./utilities.html#buffout"><span style="font-size:.8vw;">Buffout 4</span></a>
-            <a href="./utilities.html#shadowboost"><span style="font-size:.8vw;">Shadow Boost</span></a>
-            <a href="./utilities.html#physics"><span style="font-size:.8vw;">Physics Fix</span></a>
-        </div>
         <div>
-            <h2 class="fullheader">Utilities</h2>
-            <blockquote class="blockquote">Make sure the <strong>The Midnight Ride</strong> profile is active before proceeding.</blockquote>
-            <a class="internallink" href="#separator">
-                <h2 class="smallheader" id="separator">Creating a Separator in MO2</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                <li>Name the separator <strong>Utilities</strong>.</li>
-            </ol>
-            <a class="internallink" href="#f4se">
-                <h2 class="smallheader" id="f4se"><a href="https://f4se.silverlock.org/" target="_blank">Fallout 4 Script Extender</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Click the topmost download link</li>
-                <li>Extract the contents of the folder from the downloaded archive to the game's <strong>Root</strong> folder</li>
-            </ol>
-            <blockquote class="blockquote">Make sure you are extracting all of the files <u>inside of</u> the <strong>f4se_x_y_z</strong> folder, not just the folder itself.</blockquote>
-            <ol class="standard_ol">
-                <img style="width:60%" src="./img/f4se install.png" alt="F4SE install location">
-            </ol>
-            <blockquote class="blockquote">If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.</blockquote>
-            <p class="subparagraph">Extends the scripting capabilities of the game.</p>
-            <blockquote class="blockquote">In order for the script extender to work, you need to launch the game using the <strong>f4se_loader.exe</strong> file. It will automatically be added to Mod Organizer 2 upon restarting it.</blockquote>
-            <a class="internallink" href="preloader">
-                <h2 class="smallheader" id="preloader"><a href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">PluginPreloader</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the <b>Main File - xSE PluginPreloader F4 0.2.5.1</b> using the <b>Manual Download</b> button</li>
-                <li>Download and extract the archive, then paste the 2 files in your game's <strong>Root</strong> folder</li>
-            </ol>
-            <p class="subparagraph">Allows F4SE plugins to be loaded before the game initializes.</p>
-            <a class="internallink" href="#library">
-                <h2 class="smallheader" id="library"><a href="https://www.nexusmods.com/fallout4/mods/47327" target="_blank">Address Library for F4SE Plugins</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Address Library</b></li>
-            </ul>
-            <p class="subparagraph">Resource required for other F4SE plugins.</p>
-            <blockquote class="blockquote">After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
-            <a class="internallink" href="buffout">
-                <h2 class="smallheader" id="buffout"><a href="https://www.nexusmods.com/fallout4/mods/47359" target="_blank">Buffout 4</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li><b>Main File - Buffout 4</b></li>
-            </ol>
-            <p class="subparagraph">Fixes numerous bugs within the game's engine.</p>
-            <a class="internallink" href="shadowboost">
-                <h2 class="smallheader" id="shadowboost"><a href="https://www.nexusmods.com/fallout4/mods/63482" target="_blank">Shadow Boost</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li><b>Main File - ShadowBoostFO4</b></li>
-                <li>Additionally install the <a href="https://github.com/themidnightride/themidnightride.github.io/blob/main/files/Shadow%20Boost%20INI.7z" target="_blank">Shadow Boost INI</a> (Install manually in MO2)</li>
-            </ol>
-            <p class="subparagraph">Adjusts quality of godrays and distance of shadows, LOD and grass dynamically.</p>
-            <a class="internallink" href="#physics">
-                <h2 class="smallheader" id="physics"><a href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank">High FPS Physics Fix</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li><b>Main File - High FPS Physics Fix</b></li>
-                <li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
-                <li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
-                <li>Change the following options:</li>
-                <ul>
-                    <li>Set <strong>DisableBlackLoadingScreens=</strong> to <strong>true</strong> (line 37)</li>
-                    <li>Set <strong>DisableAnimationOnLoadingScreens=</strong> to <strong>true</strong> (line 44)</li>
-                    <li>Set <strong>InGameFPS</strong> to a value you want the game FPS to be locked to (line 58)</li>
-                </ul>
-            </ol>
-            <blockquote class="blockquote">If you don't mind something more complex you can find a superior method to lock your FPS on <a href="https://wallsogb.github.io/FalloutNV-Performance-Guide/fallout4.html" target="_blank">this</a> guide by Wall_SoGB.</blockquote>
-            <p class="subparagraph">All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter, and reduces load times.</p>
-            <br>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./mo2.html"><img class="backarrow" src="./img/left arrow.png" alt="Back arrow"></a>
-            <a href="./bugfix.html"><img class="forwardarrow" src="./img/right arrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            <!-- Titlebar -->
+            <div class="titlecontainer">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html">The Midnight Ride</a>
+                <div class="guideLinks">
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                </div>
+            </div>
+            <!-- Left Sidebar -->
+            <div id="sidenavLeft">
+                <p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./intro.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">Initial Setup</a>
+                        </li>
+                        <li>
+                            <a href="./mo2.html">MO2</a>
+                        </li>
+                        <li>
+                            <a href="./utilities.html" class="active">Utilities</a>
+                        </li>
+                        <li>
+                            <a href="./bugfix.html">Bug Fixes</a>
+                        </li>
+                        <li>
+                            <a href="./tweaks.html">Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="./hud.html">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="./gameplay.html">Gameplay</a>
+                        </li>
+                        <li>
+                            <a href="./visuals.html">Visuals</a>
+                        </li>
+                        <li>
+                            <a href="./finish.html">Final Steps</a>
+                        </li>
+                        <li>
+                            <a href="./appendix.html">Appendix</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="./avoid-tools.html">Tools to Avoid</a>
+                        </li>
+                        <li>
+                            <a href="./avoid-mods.html">Mods to Avoid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                        </li>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                        </li>
+                        <li>
+                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                <div class="section">
+                    <p>
+                    <h1>Utilities</h1>
+                    <blockquote>Make sure the <strong>The Midnight Ride</strong> profile is active before proceeding.</blockquote>
+                    <h2>Creating a Separator in MO2</h2>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                        <li>Name the separator <strong>Utilities</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+                <!-- F4SE -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/42147" target="_blank">
+                            <h2 id="f4se">F4SE</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ol>
+                        <li><b>Main Files - Fallout 4 Script Extender (F4SE)</b> (Manual Download)</li>
+                        <li>From the downloaded archive, extract the contents of the archive to the game's <strong>Root</strong> folder</li>
+                    </ol>
+                    <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.</blockquote>
+                    <blockquote>You need to extract all of the files and folders contained in the archive.</blockquote>
+                </div>
+                <!-- PluginPreloader -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">
+                            <h2 id="preloader">PluginPreloader</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ol>
+                        <li>Download the <b>Main File - xSE PluginPreloader F4 0.2.5.1</b> using the <b>Manual Download</b> button</li>
+                        <li>Download and extract the archive, then paste the 2 files in your game's <strong>Root</strong> folder</li>
+                    </ol>
+                    Allows F4SE plugins to be loaded before the game initializes.
+                    </p>
+                </div>
+                <!-- Address Library -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/47327" target="_blank">
+                            <h2 id="library">Address Library for F4SE Plugins</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Address Library</b></li>
+                    </ul>
+                    Resource required for other F4SE plugins.
+                    <blockquote>After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
+                    </p>
+                </div>
+                <!-- Buffout -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/47359" target="_blank">
+                            <h2 id="buffout">Buffout 4</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Buffout 4</b></li>
+                    </ul>
+                    Fixes numerous bugs within the game's engine.
+                    </p>
+                </div>
+                <!-- Shadowboost -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/63482" target="_blank">
+                            <h2 id="shadowboost">Shadow Boost</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - ShadowBoostFO4</b></li>
+                        <li>Additionally install the <a href="https://github.com/themidnightride/themidnightride.github.io/raw/main/files/Shadow%20Boost%20INI.7z" target="_blank">Shadow Boost INI</a> (Install manually in MO2)</li>
+                    </ul>
+                    Adjusts quality of godrays and distance of shadows, LOD and grass dynamically.
+                    </p>
+                </div>
+                <!-- High FPS Fix -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank">
+                            <h2 id="physics">High FPS Physics Fix</h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - High FPS Physics Fix</b></li>
+                        <li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
+                        <li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
+                        <li>Change the following options:</li>
+                        <ul>
+                            <li>Set <strong>DisableBlackLoadingScreens</strong> to <strong>true</strong> (line 37)</li>
+                            <li>Set <strong>DisableAnimationOnLoadingScreens</strong> to <strong>true</strong> (line 44)</li>
+                            <li>Set <strong>InGameFPS</strong> to a value you want the game FPS to be locked to (line 58)</li>
+                            If you set InGameFPS to a value higher than 60:
+                            <ul>
+                                <li>Set <strong>PipBoyFPS</strong> to 60.0 (line 79)</li>
+                                <li>Set <strong>BudgetMaxFPS</strong> to the same value as InGameFPS (line 283)</li>
+                                <li>Set <strong>DynamicUpdateBudget</strong> to <strong>true</strong> (line 264)</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter, and reduces load times.
+                    </p>
+                    <blockquote class="blockquote">If you don't mind something more complex you can find a superior method to lock your FPS on <a href="https://wallsogb.github.io/FalloutNV-Performance-Guide/fallout4.html" target="_blank">this</a> guide by Wall_SoGB.</blockquote>
+                </div>
+                <div>
+                    <p>
+                        <hr>
+                        <a href="./mo2.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                        <a href="./bugfix.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                    </p>
+                </div>
+                </p>
+            </div>
+            <!-- Right Sidebar -->
+            <div id="sidenavRight">
+                <p>
+                <ul>
+                    <li>
+                        <a href="#F4SE">F4SE</a>
+                    </li>
+                    <li>
+                        <a href="#preloader">PluginPreloader</a>
+                    </li>
+                    <li>
+                        <a href="#library">Address Library</a>
+                    </li>
+                    <li>
+                        <a href="#buffout">Buffout 4</a>
+                    </li>
+                    <li>
+                        <a href="#shadowboost">Shadow Boost</a>
+                    </li>
+                    <li>
+                        <a href="#physics">High FPS Physics Fix</a>
+                    </li>
+                </ul>
+                </p>
             </div>
         </div>
     </body>
