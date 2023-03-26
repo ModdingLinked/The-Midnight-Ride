@@ -1,351 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="img/logo.webp">
-        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-        <script src="javascript.js"></script>
-        <title>Tweaks | The Midnight Ride</title>
-        <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands">
-        <meta name="description" content="Various tweaks to improve annoying aspects of the game.">
-        <meta name="twitter:card" value="summary">
-        <meta property="og:title" content="The Midnight Ride">
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://themidnightride.github.io/">
-        <meta property="og:image" content="img/logo.webp">
-        <meta property="og:description" content="Various tweaks to improve annoying aspects of the game.">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.webp">
+    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <title>Tweaks | The Midnight Ride</title>
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands">
+    <meta name="description" content="Various tweaks to improve annoying aspects of the game.">
+    <meta name="twitter:card" value="summary">
+    <meta property="og:title" content="The Midnight Ride">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://TheMidnightRide.github.io/">
+    <meta property="og:image" content="img/logo.webp">
+    <meta property="og:description" content="Various tweaks to improve annoying aspects of the game.">
+</head>
 
-    <body>
-        <!-- Titlebar -->
-        <div class="titlecontainer">
-            <div id="sideButton" onclick="toggleNav()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <img src="./img/logo.webp" alt="Logo">
-            <a href="./index.html">The Midnight Ride</a>
-            <div class="guideLinks">
-                <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion</a>
-            </div>
+<body>
+
+    <!-- Titlebar -->
+    <div class="titlecontainer">
+        <div id="sideButton" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <!-- Left Sidebar -->
-        <div id="sidenavLeft">
-            <p>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./intro.html">Introduction</a>
-                    </li>
-                    <li>
-                        <a href="./setup.html">Initial Setup</a>
-                    </li>
-                    <li>
-                        <a href="./mo2.html">MO2</a>
-                    </li>
-                    <li>
-                        <a href="./utilities.html">Utilities</a>
-                    </li>
-                    <li>
-                        <a href="./bugfix.html">Bug Fixes</a>
-                    </li>
-                    <li>
-                        <a href="./tweaks.html" class="active">Tweaks</a>
-                    </li>
-                    <li>
-                        <a href="./hud.html">User Interface</a>
-                    </li>
-                    <li>
-                        <a href="./gameplay.html">Gameplay</a>
-                    </li>
-                    <li>
-                        <a href="./visuals.html">Visuals</a>
-                    </li>
-                    <li>
-                        <a href="./finish.html">Final Steps</a>
-                    </li>
-                    <li>
-                        <a href="./appendix.html">Appendix</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <hr>
-                <ul>
-                    <li>
-                        <a href="./faq.html">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="./avoid-tools.html">Tools to Avoid</a>
-                    </li>
-                    <li>
-                        <a href="./avoid-mods.html">Mods to Avoid</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="guideLinks">
-                <hr>
-                <ul>
-                    <li>
-                        <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                    </li>
-                    <li>
-                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                    </li>
-                    <li>
-                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                    </li>
-                    <li>
-                        <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="footer">
-                <ul>
-                    <li>
-                        <a href="https://github.com/themidnightride/themidnightride.github.io" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/DhX5S27" target="_blank">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                            <i class="fab fa-patreon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="paypal" onclick="toggleDonationMenu()">
-                            <i class="fab fa-paypal"></i>
-                        </a>
-                        <div id="paypalMenu" style="display: none;">
-                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                Author - Qolore7
-                            </a>
-                            <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
-                                Maintainer - VishVadeva50
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            </p>
+        <img src="./img/logo.webp" alt="Logo">
+        <a href="./index.html">The Midnight Ride</a>
+        <div class="guideLinks">
+            <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+            <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion</a>
         </div>
-        <!-- Content -->
-        <div class="content">
-            <p>
-            <div class="section">
-                <p>
-                <h1>Tweaks</h1>
-                <h2>Creating a Separator in MO2</h2>
-                <ol>
-                    <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                    <li>Name the separator <strong>Tweaks</strong>.</li>
-                </ol>
-            </div>
-            <!-- Power Armor Ownership Fix -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/52315" target="_blank">
-                        <h2 id="pa_fix">Power Armor Ownership Fix</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Optional Files - PA Ownership Fix (with No PA Battery Pathing)</b></li>
-                </ul>
-                When you take over a Power Armor that belonged to someone else and insert a fusion core, it will no longer be considered stolen. Also stops you from having to path all the way around power armor when putting in a battery, as this can often result in getting stuck in terrain.
-            </div>
-            <!-- Fortune Finder Fix -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/43740" target="_blank">
-                        <h2 id="fortune_fix">Fortune Finder 4 Fix</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Fortune Finder 4 Fix - Basic Bottlecap Mine</b></li>
-                </ul>
-                Changes the fourth rank of Fortune Finder to put the generated caps directly into your inventory rather than scattered around the game world, as all the loose objects can be hard to collect and can accelerate save-bloating.
-            </div>
-            <!-- Raw Input -->
-            <div class="section">
-                <p>
-                    <a class="link optional" href="https://www.nexusmods.com/fallout4/mods/27019" target="_blank">
-                        <h2 id="input">Raw Input</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ol>
-                    <li><b>Main Files - RAW INPUT - NMM Installer</b></li>
-                    <li>You will be prompted with a FOMOD installer, where you should select the ADS sensitivity percent you prefer</li>
-                    <ul>
-                        <li>This is completely up to personal preference, but I use the <strong>100%</strong> option</li>
-                    </ul>
-                </ol>
-                Disables mouse acceleration, normalizes sensitivity, and more input-related fixes.
-            </div>
-            <!-- Unlimited Survival Mode -->
-            <div class="section">
-                <p>
-                    <a class="link optional" href="https://www.nexusmods.com/fallout4/mods/26163" target="_blank">
-                        <h2 id="unlimited_survival">Unlimited Survival Mode</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Unlimited Survival Mode - F4SE</b></li>
-                </ul>
-                Restores the game features disabled in Survival mode, such as fast travel and saving. Fully configurable.
-            </div>
-            <!-- LOST Audio Tweaks -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/38448" target="_blank">
-                        <h2 id="audiotweaks">LOST Audio Tweaks</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - LOST Audio Tweaks</b></li>
-                    <li><b>Main Files - LOST Audio Tweaks - No RAO Replacer</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                </ul>
-                <blockquote>Make sure the <b>No RAO Replacer</b> mod is loaded below the main one.</blockquote>
-                Fixes many audio issues and annoyances.
-            </div>
-            <!-- Keep Radiants -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/56089" target="_blank">
-                        <h2 id="keep_radiants">Keep Radiants in the Commonwealth UFO4P Version</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Keep Radiants In The Commonwealth UFO4P Version</b></li>
-                </ul>
-                Prevents radiant quests from being generated in DLC areas.
-            </div>
-            <!-- Who's The General -->
-            <div class="section">
-                <p>
-                    <a class="link optional" href="https://www.nexusmods.com/fallout4/mods/59019" target="_blank">
-                        <h2 id="whogeneral">Who's The General</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Who's The General - Minutemen Quest Cleanup</b></li>
-                    <li>Also get the UFO4P Patch<a href="https://www.nexusmods.com/fallout4/mods/63391" target="_blank">here</a> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                    <li><b>Optional Files - 1 - Keep Radiants in the Commonwealth Patch</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                </ul>
-                A mod for players who dislike being asked to report back to Preston Garvey.
-            </div>
-            <!-- Bullet Counted Reload System -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">
-                        <h2 id="bcr">Bullet Counted Reload System</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Bullet Counted Reload - v2.00</b></li>
-                    <li><b>Optional Files - BCR- Lever Action Rifle v1.02</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                </ul>
-                Allows reloading the lever-action rifle based on the amount of shots fired.
-            </div>
-            <!-- Whose Quest Is It Anyway -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/51979" target="_blank">
-                        <h2 id="whose_quest">Whose Quest Is It Anyway</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Whose Quest Is It Anyway</b></li>
-                </ul>
-                Swap the "quest items can't be removed" message with something a little more informative.
-            </div>
-            <!-- Weapon Scrapping Redone -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/56895" target="_blank">
-                        <h2 id="weapon_scrap">Weapon Scrapping Redone</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Weapon Scrapping Redone</b></li>
-                </ul>
-                Makes weapon scrapping return a wider range of materials based on what they are actually made of and with balanced amounts.
-            </div>
-            <!-- Clothing Scrapping Redone -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/fallout4/mods/69715" target="_blank">
-                        <h2 id="clothing_scrap">Clothing Scrapping Redone</h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Clothing Scrapping Redone</b></li>
-                </ul>
-                Makes clothing scrapping return a wider range of materials based on what they are actually made of and with balanced amounts.
-                </p>
-            </div>
-            <div>
-                <p>
-                    <hr>
-                    <a href="./bugfix.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-                    <a href="./hud.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
-                </p>
-            </div>
-            </p>
-        </div>
-        <!-- Right Sidebar -->
-        <div id="sidenavRight">
-            <p>
+    </div>
+
+    <!-- Left Sidebar -->
+    <div id="sidenavLeft">
+        <div>
             <ul>
                 <li>
-                    <a href="#pa_fix">Power Armor Ownership Fix</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#fortune_fix">Fortune Finder Fix</a>
+                    <a href="./intro.html">Introduction</a>
                 </li>
                 <li>
-                    <a href="#input">Raw Input</a>
+                    <a href="./setup.html">Initial Setup</a>
                 </li>
                 <li>
-                    <a href="#unlimited_survival">Unlimited Survival Mode</a>
+                    <a href="./mo2.html">MO2</a>
                 </li>
                 <li>
-                    <a href="#audiotweaks">LOST Audio Tweaks</a>
+                    <a href="./utilities.html">Utilities</a>
                 </li>
                 <li>
-                    <a href="#keep_radiants">Keep Radiants in the Commonwealth</a>
+                    <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
-                    <a href="#whogeneral">Who's The General</a>
+                    <a href="./tweaks.html" class="active">Tweaks</a>
                 </li>
                 <li>
-                    <a href="#bcr">Bullet Counted Reload System</a>
+                    <a href="./hud.html">User Interface</a>
                 </li>
                 <li>
-                    <a href="#whose_quest">Whose Quest Is It Anyway</a>
+                    <a href="./gameplay.html">Gameplay</a>
                 </li>
                 <li>
-                    <a href="#weapon_scrap">Weapon Scrapping Redone</a>
+                    <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="#clothing_scrap">Clothing Scrapping Redone</a>
+                    <a href="./finish.html">Final Steps</a>
+                </li>
+                <li>
+                    <a href="./appendix.html">Appendix</a>
                 </li>
             </ul>
-            </p>
         </div>
-    </body>
+
+        <!-- Lower Left Sidebar -->
+        <div>
+            <hr>
+            <ul>
+                <li>
+                    <a href="./faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="./avoid-tools.html">Tools to Avoid</a>
+                </li>
+                <li>
+                    <a href="./avoid-mods.html">Mods to Avoid</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Left Sidebar Guide Links -->
+        <div class="guideLinks">
+            <hr>
+            <ul>
+                <li>
+                    <a href="https://vivanewvegas.github.io/" target="_blank" rel="nofollow">Fallout New Vegas</a>
+                </li>
+                <li>
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                </li>
+                <li>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                </li>
+                <li>
+                    <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <ul>
+                <li>
+                    <a href="https://github.com/TheMidnightRide/TheMidnightRide.github.io" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/DhX5S27" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                        <i class="fab fa-patreon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a id="paypal" onclick="toggleDonationMenu()">
+                        <i class="fab fa-paypal"></i>
+                    </a>
+                    <div id="paypalMenu" style="display: none;">
+                        <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                            Author - Qolore7
+                        </a>
+                        <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
+                            Maintainer - VishVadeva50
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="section">
+            <h1>Tweaks</h1>
+            <h2>Creating a Separator in MO2</h2>
+            <ol>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                <li>Name the separator <strong>Tweaks</strong>.</li>
+            </ol>
+        </div>
+
+        <!-- Power Armor Ownership Fix -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/52315" target="_blank">
+                    <h2 id="paFix">Power Armor Ownership Fix</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Optional Files - PA Ownership Fix (with No PA Battery Pathing)</b></li>
+            </ul>
+            When you take over a Power Armor that belonged to someone else and insert a fusion core, it will no longer be considered stolen. Also stops you from having to path all the way around power armor when putting in a battery, as this can often result in getting stuck in terrain.
+        </div>
+
+        <!-- Fortune Finder Fix -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/43740" target="_blank">
+                    <h2 id="fortuneFix">Fortune Finder 4 Fix</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Fortune Finder 4 Fix - Basic Bottlecap Mine</b></li>
+            </ul>
+            Changes the fourth rank of Fortune Finder to put the generated caps directly into your inventory rather than scattered around the game world, as all the loose objects can be hard to collect and can accelerate save-bloating.
+        </div>
+
+        <!-- Raw Input -->
+        <div class="section">
+            <p>
+                <a class="link optional" href="https://www.nexusmods.com/fallout4/mods/27019" target="_blank">
+                    <h2 id="input">Raw Input</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ol>
+                <li><b>Main Files - RAW INPUT - NMM Installer</b></li>
+                <li>You will be prompted with a FOMOD installer, where you should select the ADS sensitivity percent you prefer</li>
+                <ul>
+                    <li>This is completely up to personal preference, but I use the <strong>100%</strong> option</li>
+                </ul>
+            </ol>
+            Disables mouse acceleration, normalizes sensitivity, and more input-related fixes.
+        </div>
+
+        <!-- Unlimited Survival Mode -->
+        <div class="section">
+            <p>
+                <a class="link optional" href="https://www.nexusmods.com/fallout4/mods/26163" target="_blank">
+                    <h2 id="unlimitedSurvival">Unlimited Survival Mode</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Unlimited Survival Mode - F4SE</b></li>
+            </ul>
+            Restores the game features disabled in Survival mode, such as fast travel and saving. Fully configurable.
+        </div>
+
+        <!-- LOST Audio Tweaks -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/38448" target="_blank">
+                    <h2 id="audioTweaks">LOST Audio Tweaks</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - LOST Audio Tweaks</b></li>
+                <li><b>Main Files - LOST Audio Tweaks - No RAO Replacer</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+            </ul>
+            <blockquote>Make sure the <b>No RAO Replacer</b> mod is loaded below the main one.</blockquote>
+            Fixes many audio issues and annoyances.
+        </div>
+
+        <!-- Keep Radiants -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/56089" target="_blank">
+                    <h2 id="keepRadiants">Keep Radiants in the Commonwealth UFO4P Version</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Keep Radiants In The Commonwealth UFO4P Version</b></li>
+            </ul>
+            Prevents radiant quests from being generated in DLC areas.
+        </div>
+
+        <!-- Who's The General -->
+        <div class="section">
+            <p>
+                <a class="link optional" href="https://www.nexusmods.com/fallout4/mods/59019" target="_blank">
+                    <h2 id="whosGeneral">Who's The General</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Who's The General - Minutemen Quest Cleanup</b></li>
+                <li>Also get the UFO4P Patch <a href="https://www.nexusmods.com/fallout4/mods/63391" target="_blank">here</a> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+                <li><b>Optional Files - 1 - Keep Radiants in the Commonwealth Patch</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+            </ul>
+            A mod for players who dislike being asked to report back to Preston Garvey.
+        </div>
+
+        <!-- Bullet Counted Reload System -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">
+                    <h2 id="bcr">Bullet Counted Reload System</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Bullet Counted Reload - v2.00</b></li>
+                <li><b>Optional Files - BCR- Lever Action Rifle v1.02</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+            </ul>
+            Allows reloading the lever-action rifle based on the amount of shots fired.
+        </div>
+
+        <!-- Whose Quest Is It Anyway -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/51979" target="_blank">
+                    <h2 id="whoseQuest">Whose Quest Is It Anyway</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Whose Quest Is It Anyway</b></li>
+            </ul>
+            Swap the "quest items can't be removed" message with something a little more informative.
+        </div>
+
+        <!-- Weapon Scrapping Redone -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/56895" target="_blank">
+                    <h2 id="weaponScrap">Weapon Scrapping Redone</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Weapon Scrapping Redone</b></li>
+            </ul>
+            Makes weapon scrapping return a wider range of materials based on what they are actually made of and with balanced amounts.
+        </div>
+
+        <!-- Clothing Scrapping Redone -->
+        <div class="section">
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/69715" target="_blank">
+                    <h2 id="clothingScrap">Clothing Scrapping Redone</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Clothing Scrapping Redone</b></li>
+            </ul>
+            Makes clothing scrapping return a wider range of materials based on what they are actually made of and with balanced amounts.
+        </div>
+
+        <!-- Arrows -->
+        <div>
+            <hr>
+            <a href="./bugfix.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+            <a href="./hud.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <ul>
+            <li>
+                <a href="#paFix">Power Armor Ownership Fix</a>
+            </li>
+            <li>
+                <a href="#fortuneFix">Fortune Finder Fix</a>
+            </li>
+            <li>
+                <a href="#input">Raw Input</a>
+            </li>
+            <li>
+                <a href="#unlimitedSurvival">Unlimited Survival Mode</a>
+            </li>
+            <li>
+                <a href="#audioTweaks">LOST Audio Tweaks</a>
+            </li>
+            <li>
+                <a href="#keepRadiants">Keep Radiants in the Commonwealth</a>
+            </li>
+            <li>
+                <a href="#whosGeneral">Who's The General</a>
+            </li>
+            <li>
+                <a href="#bcr">Bullet Counted Reload System</a>
+            </li>
+            <li>
+                <a href="#whoseQuest">Whose Quest Is It Anyway</a>
+            </li>
+            <li>
+                <a href="#weaponScrap">Weapon Scrapping Redone</a>
+            </li>
+            <li>
+                <a href="#clothingScrap">Clothing Scrapping Redone</a>
+            </li>
+        </ul>
+    </div>
+</body>
 
 </html>
