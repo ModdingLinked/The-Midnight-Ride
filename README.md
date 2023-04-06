@@ -1,4 +1,4 @@
-# [The Midnight Ride](https://github.com/TheMidnightRide/TheMidnightRide.github.io)
+# [The Midnight Ride](https://github.com/WallSoGB/themidnightride.github.io)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-informational.svg)](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt)
 
