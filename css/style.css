@@ -115,12 +115,12 @@ img {
 }
 
 .link {
-  color: rgb(45, 136, 226) !important;
+  color: rgb(51, 122, 183) !important;
   font-size: 1.025em;
 }
 
 .link:hover {
-  color: hsl(210, 100%, 80%) !important;
+  color: hsl(208, 80%, 70%) !important;
   text-decoration-line: underline !important;
 }
 
@@ -207,9 +207,10 @@ img {
   background-color: #235163;
   border-radius: 12pt;
   text-shadow: none;
-  box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.7);
-  text-align: center;
+  box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
   z-index: 1;
+  margin-bottom: auto;
+  text-align: center;
 }
 
 .welcomeContent .welcomeButton strong {
