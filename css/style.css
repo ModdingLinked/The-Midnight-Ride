@@ -1,3 +1,4 @@
+/* Default tags */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -56,6 +57,7 @@ code {
   background-color: rgba(0, 0, 0, 0.233);
   padding: 0.11em 0.33em;
   line-break: loose;
+  border-radius: 4px;
 }
 
 textarea {
@@ -98,6 +100,7 @@ img {
 .section {
   font-size: 1.1rem;
   line-height: 1.33em;
+  margin-bottom: 2em;
 }
 
 .section::before {
@@ -107,7 +110,7 @@ img {
 }
 
 .section a {
-  color: rgb(45, 136, 226);
+  color: rgb(51, 122, 183);
   font-size: 1.025em;
 }
 
@@ -205,8 +208,8 @@ img {
   border-radius: 12pt;
   text-shadow: none;
   box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.7);
-  margin-bottom: auto;
   text-align: center;
+  z-index: 1;
 }
 
 .welcomeContent .welcomeButton strong {
@@ -233,11 +236,6 @@ img {
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
   text-shadow: 0.05em 0.075em 0.1em rgba(0, 0, 0, 0.7);
-}
-
-#changelog ul {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
 }
 
 /* Titlebar */
@@ -304,7 +302,7 @@ img {
   font-size: 1.33em;
   color: hsl(0, 0%, 50%);
   text-decoration: none;
-  padding: 0.66em 0em 0.66em 0em;
+  padding: 0.55em 0em 0.55em 0em;
 }
 
 #sidenavLeft div {
@@ -405,7 +403,7 @@ blockquote {
 }
 
 blockquote a {
-  color: rgb(45, 136, 226);
+  color: rgb(51, 122, 183);
   text-decoration: none;
   font-size: 1.09em;
 }
@@ -502,13 +500,21 @@ blockquote .performance::after {
   scale: 100%;
 }
 
-.navigationArrow {
+.navigationArrow img {
   width: 7.5em;
   height: 7.5em;
   margin: 0.5em 1em 1em 1em;
 }
 
-.navigationArrow:hover {
+.navigationArrow .arrowText {
+  text-decoration: none;
+  font-size: 2.5em;
+  display: flex;
+  padding-top: 1.4em !important;
+  color: #ffffff;
+}
+
+.navigationArrow:hover img {
   scale: 90%;
   transform: scaleY(90%);
 }
@@ -545,6 +551,9 @@ blockquote .performance::after {
   }
 }
 @media only screen and (max-width: 900px) {
+  .navigationArrow .arrowText {
+    display: none;
+  }
   .content {
     width: 100%;
     margin-left: 0;
