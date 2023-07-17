@@ -206,10 +206,42 @@ img {
 	text-shadow: none;
 	box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
 	z-index: 1;
-	margin-bottom: auto;
 	text-align: center;
 }
 
+.welcomeContent .welcomeButtonWJ {
+	color: rgb(220, 220, 220);
+	display: flex;
+	width: fit-content;
+	line-height: 1.2em;
+	padding: 0.2em 1em;
+	font-size: 1.5rem;
+	background-color: #1f1b24;
+	border-radius: 6pt;
+	text-shadow: none;
+	box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
+	margin-top: 0.75em;
+	margin-bottom: auto;
+	text-align: center;
+	z-index: 0;
+}
+
+.welcomeContent .welcomeButtonWJ strong {
+	color: rgba(242, 242, 242, 0.6);
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	font-size: 0.9em;
+}
+
+.welcomeContent .welcomeButtonWJ:hover strong {
+	color: rgba(242, 242, 242, 0.9);
+}
+
+.welcomeContent .welcomeButtonWJ:hover {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: #443a51;
+	box-shadow: 0em 0em 0.6em rgba(50, 114, 139, 0.37);
+}
 
 .welcomeContent .welcomeButton strong {
 	color: rgb(242, 242, 242);
@@ -386,6 +418,30 @@ img {
 	color: hsl(0, 0%, 70%);
 }
 
+.extended-background {
+	margin-left: 0.75em !important;
+	margin-right: 0.75em !important;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-image: linear-gradient(rgba(255, 240, 200, 0.025), rgba(255, 240, 200, 0.04), rgba(255, 240, 200, 0.03), rgba(255, 240, 200, 0.01), rgba(255, 240, 200, 0));
+	border-radius: 16px;
+}
+
+.extended-background.active {
+	background-image: linear-gradient(rgba(255, 240, 200, 0.04), rgba(255, 240, 200, 0.08), rgba(255, 240, 200, 0.055), rgba(255, 240, 200, 0.02), rgba(255, 240, 200, 0.005));
+}
+
+#extended-separator {
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.65);
+	text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 5px;
+}
+
+#extended-separator.active {
+	color: rgba(255, 255, 255, 0.95);
+}
 
 
 /* Quotes */
