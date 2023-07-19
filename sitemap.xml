@@ -6,17 +6,7 @@
 		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://themidnightride.moddinglinked.com/index.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2023-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/intro.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/faq.html</loc>
+		<loc>https://themidnightride.moddinglinked.com/avoid-mods.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2023-07-17</lastmod>
 	</url>
@@ -26,9 +16,19 @@
 		<lastmod>2023-07-17</lastmod>
 	</url>
 	<url>
-		<loc>https://themidnightride.moddinglinked.com/avoid-mods.html</loc>
+		<loc>https://themidnightride.moddinglinked.com/faq.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/intro.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/index.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-04-08</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/lod.html</loc>
@@ -36,42 +36,7 @@
 		<lastmod>2023-07-17</lastmod>
 	</url>
 	<url>
-		<loc>https://themidnightride.moddinglinked.com/setup.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/mo2.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/utilities.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/bugfix.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/tweaks.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/hud.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/gameplay.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2023-07-17</lastmod>
-	</url>
-	<url>
-		<loc>https://themidnightride.moddinglinked.com/visuals.html</loc>
+		<loc>https://themidnightride.moddinglinked.com/appendix.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2023-07-17</lastmod>
 	</url>
@@ -81,19 +46,54 @@
 		<lastmod>2023-07-18</lastmod>
 	</url>
 	<url>
-		<loc>https://themidnightride.moddinglinked.com/appendix.html</loc>
+		<loc>https://themidnightride.moddinglinked.com/visuals.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2023-07-17</lastmod>
 	</url>
 	<url>
-		<loc>https://themidnightride.moddinglinked.com/changelog.html</loc>
-		<priority>0.51</priority>
+		<loc>https://themidnightride.moddinglinked.com/gameplay.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/hud.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/tweaks.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/bugfix.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/utilities.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/mo2.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/setup.html</loc>
+		<priority>0.64</priority>
 		<lastmod>2023-07-17</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/resources.html</loc>
 		<priority>0.51</priority>
 		<lastmod>2023-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://themidnightride.moddinglinked.com/changelog.html</loc>
+		<priority>0.51</priority>
+		<lastmod>2023-07-19</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/wabbajack.html</loc>
