@@ -679,4 +679,15 @@ blockquote .performance::after {
 .transparent {
   background-color: rgba(255, 255, 255, 0) !important;
   box-shadow: none !important;
+}
+
+#logoex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12em;
 }/*# sourceMappingURL=style.css.map */
