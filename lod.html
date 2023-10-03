@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>LOD Guide | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, xLODGen, LOD Guide, Generating LOD, LODGen, Distant Objects">
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, FO4LODGen, xLODGen, LOD Guide, Generating LOD, LODGen, Distant Objects">
     <meta name="description" content="Guide on how to generate LOD with FO4LODgen.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -179,23 +179,6 @@
         <div class="section">
             <h1>LOD Guide</h1>
             <p>Generating LOD is <b>not</b> a requirement, but it will add detail in the distance by improving terrain geometry/textures and the amount of objects that have LOD while also making all LOD match your modded textures. This will also allow mods that edit the game's landscape to have LOD to reflect their changes. Terrain LOD creates a much larger file size and will take longer to generate.</p>
-            <p>
-                <a>
-                    <h2 id="installingXlodgen">Installing xLODGen</h2>
-                </a>
-            </p>
-            <ol>
-                <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
-                <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
-                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
-                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
-                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FO4 -O:"C:\Output\"</code></li>
-            </ol>
-            <blockquote>This argument will send the LOD output to a folder called <b>Output</b> on your <b>C</b> drive (the drive Windows is installed on). You can change this path if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).</blockquote>
-            <ol start="7">
-                <li>Select <strong>Apply</strong> then <strong>OK</strong>.</li>
-            </ol>
             <h2>Creating a Separator in MO2.</h2>
             <ol>
                 <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
@@ -208,22 +191,107 @@
             </p>
             <ul>
                 <li><a href="https://mega.nz/#!BZhlVCAJ!s-GqqbnJlZDvCLPiRw1Wm1EWGqMQCuh4CR8Zzn8POM4" target="_blank">FO4LODGen Resources</a></li>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/56138" target="_blank">HD LOD Textures</a>
-                    <ul>
-                        <li>Optional Files - LOD Fixes and Additions</li>
-                        <li>Optional Files - LOD Terrain Noise and Detail Normals - Variant 1</li>
-                    </ul>
+                Disable or hide the following plugins in the mod:
+                <ul>
+                    <li>FO4LODGen-FullModelLOD.esp</li>
+                    <li>FO4LODGen-DLCCoast.esp</li>
+                    <li>FO4LODGen-DLCNukaWorld.esp</li>
+                    <li>FO4LODGen-DLCWorkshop03.esp</li>
+                    <li>FO4LODGen-HighTrees.esp</li>
+                </ul>
+                <li><a href="https://www.nexusmods.com/fallout4/mods/56138" target="_blank">HD LOD Textures</a></li>
+                Also install these files, you can get a different version of the Terrain Noise based on preference.
+                <ul>
+                    <li>Optional Files - LOD Fixes and Additions</li>
+                    <li>Optional Files - LOD Terrain Noise and Detail Normals - Variant 1</li>
+                </ul>
                 <li><a href="https://www.nexusmods.com/fallout4/mods/62975" target="_blank">ModernHouseLOD</a></li>
                 <li><a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">Far Object LOD Improvement Project</a></li>
                 <li><a href="https://www.nexusmods.com/fallout4/mods/63191" target="_blank">Far Harbor 3D Tree LODs</a></li>
                 <li><a href="https://www.nexusmods.com/fallout4/mods/63198" target="_blank">Optimized Vanilla Tree LODs</a></li>
             </ul>
+            <hr>
             <p>
                 <a>
-                    <h2 id="generatingLod">Generating the LOD</h2>
+                    <h2 id="texgen">TexGen</h2>
                 </a>
             </p>
-            Follow <a href="https://www.nexusmods.com/fallout4/articles/4162" target="_blank">this</a> guide.
+            <ol>
+                <li>Download the latest <a href="https://www.nexusmods.com/skyrimspecialedition/mods/68518?" target="_blank">DynDOLOD 3 Alpha</a>.</li>
+                <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
+                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                <li>From the pop-up, navigate to where TexGen is installed and select <strong>TexGenx64.exe</strong>.</li>
+                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FO4</code></li>
+                <li>Select TexGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                <li>Once the program has loaded, click <strong>Start</strong>.</li>
+                <li>When complete, you will see a message saying "TexGen completed successfully", click <strong>Zip and Exit</strong>.</li>
+                <li>Install the TexGen output by clicking the <img src="./img/mo2 archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
+                <li>From the new window, navigate to the DynDOLOD 3 folder you installed in step 1, then to the <b>TexGen_Output</b> folder and double-click the archive.</li>
+                <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod.</li>
+            </ol>
+            <hr>
+            <p>
+                <a>
+                    <h2 id="synthesis1">Synthesis FOLIP</h2>
+                </a>
+            </p>
+            <ol>
+                <li>Download and install the <a href="https://dotnet.microsoft.com/download" target="_blank">.NET 7.0 SDK</a>, then restart your computer.</li>
+                <li>Download the latest <a href="https://www.nexusmods.com/skyrimspecialedition/mods/68518?" target="_blank">Synthesis</a>.</li>
+                <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
+                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                <li>From the pop-up, navigate to where Synthesis is installed and select <strong>Synthesis.exe</strong>.</li>
+                <li>Select Synthesis from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                <li>Select the Fallout 4 profile, then go to the <b>Git Repositories</b> tab and add the <strong>FOLIP patcher</strong>, then run it.</li>
+                <li>Once the patcher has finished running, close Synthesis.</li>
+                <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                <li>Title the mod <strong>Synthesis LOD Patch</strong>.</li>
+                <li>Take the Synthesis.esp from <i>Overwrite</i> and move it into the mod you just created.</li>
+            </ol>
+            <hr>
+            <p>
+                <a>
+                    <h2 id="fo4lodgen">FO4LODGen</h2>
+                </a>
+            </p>
+            <ol>
+                <li>Download the latest <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">xLODGen</a>.</li>
+                <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
+                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
+                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FO4 -O:"C:\Output\"</code></li>
+            </ol>
+            <blockquote>This argument will send the LOD output to a folder called <b>Output</b> on your <b>C</b> drive (the drive Windows is installed on). You can change this path if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).</blockquote>
+            <ol start="7">
+                <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                <li>Copy the settings below:</li>
+                <img src="./img/lod settings 1.webp" alt="LOD settings 1">
+                <img src="./img/lod settings 2.webp" alt="LOD settings 2">
+                <img src="./img/lod settings 3.webp" alt="LOD settings 3">
+                <img src="./img/lod settings 4.webp" alt="LOD settings 4">
+                <li>Click <strong>Generate</strong>.</li>
+                <li>When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.</li>
+            </ol>
+            <blockquote>
+                <h2 id="settingsDetails">What The Settings Mean</h2>
+                <ul>
+                    <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution, keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).</li>
+                    <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, you should increase this if you run higher settings on TexGen.</li>
+                    <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
+                    <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                    <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
+                    <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
+                    <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
+                    <li><strong>Optimize unseen</strong>: With the right value determined with testing, this can improve the look of coast lines.</li>
+                    <li><strong>No vertex color</strong>: Fixes the LODs not displaying correctly when viewed from either a worldspace that inherits lod from another worldspace (e.g., Diamond City or Goodneighbor) or when viewed from an interior cell that allows you to look at exterior LOD from out a window or similar.</li>
+                    <li><strong>Use source alpha threshold</strong>: Prevents LOD textures from looking too thick or thin.</li>
+                    <li><strong>Use backlight power</strong>: Adds support for respecting the backlight power setting defined in the LOD files, for example on the Diamond City stadium lights to make them appear to be lit.</li>
+                </ul>
+            </blockquote>
+            <hr>
             <p>
                 <a>
                     <h2 id="installingLod">Installing the LOD</h2>
@@ -236,6 +304,18 @@
                 <li>Cut them to the <strong>FO4LODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
             </ol>
             <blockquote>IMPORTANT! Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.</blockquote>
+            <hr>
+            <p>
+                <a>
+                    <h2 id="synthesis2">Synthesis HasDistantLOD</h2>
+                </a>
+            </p>
+            <ol>
+                <li>Select Synthesis from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                <li>If the FOLIP patcher is still enabled, disable it.</li>
+                <li>Open the <b>Git Repositories</b> tab and add the <strong>HasDistantLOD patcher</strong>, then run it.</li>
+                <li>Once the patcher has finished running, close Synthesis.</li>
+            </ol>
         </div>
 
         <!-- Arrows -->
@@ -249,16 +329,22 @@
     <div id="sidenavRight">
         <ul>
             <li>
-                <a href="#installingXlodgen">Installing xLODGen</a>
-            </li>
-            <li>
                 <a href="#installingResources">Installing Resources</a>
             </li>
             <li>
-                <a href="#generatingLod">Generating the LOD</a>
+                <a href="#texgen">TexGen</a>
+            </li>
+            <li>
+                <a href="#synthesis1">Synthesis FOLIP</a>
+            </li>
+            <li>
+                <a href="#fo4lodgen">FO4LODGen</a>
             </li>
             <li>
                 <a href="#installingLod">Installing the LOD</a>
+            </li>
+            <li>
+                <a href="#synthesis2">Synthesis HasDistantLOD</a>
             </li>
         </ul>
     </div>
