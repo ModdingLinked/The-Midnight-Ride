@@ -11,9 +11,9 @@
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
-    <title>Resources | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Various useful resources/guides for additional modding or mod creation.">
+    <title>Light Plugins | The Midnight Ride</title>
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, ESL, Light Plugins">
+    <meta name="description" content="All you need to know about light plugins (ESL).">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Various useful resources/guides for additional modding or mod creation.">
+    <meta property="og:description" content="All you need to know about light plugins (ESL).">
 </head>
 
 <body>
@@ -96,8 +96,13 @@
                 </li>
                 <ul>
                     <li>
-                        <a href="./resources.html" class="active">Resources</a>
+                        <a href="./resources.html">Resources</a>
                     </li>
+                    <ul>
+                        <li>
+                            <a href="./esl.html" class="active">Light Plugins</a>
+                        </li>
+                    </ul>
                 </ul>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -168,58 +173,69 @@
     <!-- Content -->
     <div class="content">
         <div class="section">
-            <h1>General Resources</h1>
+            <h1>Light Plugins</h1>
             <p>
-                <a class="link" href="https://moddinglinked.com/dogmas.html">
-                    <h2>Modding Dogmas</h2>
+                <a>
+                    <h2 id="what">What are They?</h2>
                 </a>
-            </p>
-            Some dangerous dogmas about modding that you should be aware of.
+                ESLs (<b>Elder Scrolls Light</b> Plugin) are a type of plugin used in Fallout 4 and Skyrim Special Edition, they allow plugins within a certain size to have an index limited to <strong>4096 instead of 256</strong>.
+                <br>
+                <br>
+                <strong>Mod Organizer 2 will indicate these plugins</strong> with a <b>yellow circle</b> in the plugins tab and with an <b>italic font</b>.
+                <br>
+                <img src="./img/mo2 esl flag.webp" alt="ESL flag in MO2's plugins tab">
             <p>
-                <a class="link" href="https://moddinglinked.com/xedit.html">
-                    <h2>Basics of xEdit</h2>
+                <a>
+                    <h2 id="limitations">ESL Limitations</h2>
                 </a>
+            <ul>
+                <li>To be flagged ESL, a plugin <strong>can't have more than 4095 new records</strong> (the range is from 001->FFF).</li>
+                <ul>
+                    <li>If a plugin's header is version 0.95, the max amount of new records is 2048 (800->FFF).</li>
+                </ul>
+                <li>Working with ESL plugins in Creation Kit might result in more work due to the <strong>CK totally ignoring ESL</strong> space when creating new records. This means that after making new records in CK you'll have to compact forms in xEdit.</li>
+            </ul>
             </p>
-            An introduction to xEdit and its use.
             <p>
-                <a class="link" href="https://moddinglinked.com/themethod.html">
-                    <h2>The Method</h2>
+                <a>
+                    <h2 id="batchFlagging">Batch Flagging ESL</h2>
                 </a>
+            <blockquote>The following example pictures are taken on a Skyrim load order, but the process is identical for Fallout 4.</blockquote>
+            In order to have more space for non-ESL plugins in your load order, you'll have to make sure everything that can be flagged ESL, is. <strong>xEdit can do this natively</strong> thanks to it's PseudoESL argument and the SetESL script, which flags everything that can be flagged safely.
+            <ol>
+                <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
+                <li><strong>Add <code>-PseudoESL</code></strong> to the arguments field of xEdit in MO2.</li>
+                <li>Run xEdit and load <strong>all of your mods</strong>.</li>
+                <li>Once loaded, select all plugins on the tree-view with CTRL+A, then right-click and <code><strong>Apply Script...</strong></code></li>
+                <img src="./img/apply script.webp" alt="Applying a script to the entire load order">
+                <li>Type <strong>SetESL</strong> in the filter and the script will automatically be selected.</li>
+                <img src="./img/set esl script.webp" alt="Selecting the SetESL script">
+                <li>Click <code><strong>OK</strong></code> and wait for it to process everything.</li>
+                <li><strong>Close xEdit</strong>, if it asks you to save then that means the plugins listed received the ESL flag.</li>
+            </ol>
             </p>
-            A full guide to The Method conflict resolution.
-            <hr>
-            <h1>TMR Resources</h1>
-            <p>
-                <a class="link" href="https://www.youtube.com/watch?v=Ipgx3xmzEaw&list=PL2g2oK5KhZT3L25H0FqJzSnFib9VmymQS">
-                    <h2>Creation Kit Tutorials</h2>
-                </a>
-            </p>
-            Playlist of many YouTube videos from various mod authors that explain how to use the Creation Kit.
-            <p>
-                <a class="link" href="https://www.youtube.com/watch?v=1naNojdx0ek&list=PL2g2oK5KhZT0WUOw0Y_8HFudZbgfmcdEl">
-                    <h2>Bethesda Modding School</h2>
-                </a>
-            </p>
-            Comprehensive tutorials on how to make various types of mod in the Creation Kit, made by the author of Sim Settlements.
-            <p>
-                <a class="link" href="./esl.html">
-                    <h2>Light Plugins</h2>
-                </a>
-            </p>
-            All you need to know about light plugins (ESL).
-            <p>
-                <a class="link" href="./lod.html">
-                    <h2>LOD Guide</h2>
-                </a>
-            </p>
-            Guide on how to generate LOD with FO4LODgen.
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./appendix.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Appendix</span></a>
+            <a href="./resources.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Resources</span></a>
         </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <ul>
+            <li>
+                <a href="#what">What are They?</a>
+            </li>
+            <li>
+                <a href="#limitations">ESL Limitations</a>
+            </li>
+            <li>
+                <a href="#batchFlagging">Batch Flagging ESL</a>
+            </li>
+        </ul>
     </div>
 </body>
 

@@ -37,7 +37,7 @@ body {
 	font-weight: 400;
 	line-height: 1.25em;
 	font-family: arial, helvetica, sans-serif;
-	color: rgb(220, 220, 220);
+	color: #ffffff;
 	background-color: rgb(64, 64, 64);
 	font-size: 0.75em;
 }
@@ -158,7 +158,7 @@ img {
 
 .section ul,
 .section ol {
-	color: #DCDCDC;
+	color: #ffffff;
 	line-height: 2em;
 }
 
@@ -169,7 +169,7 @@ img {
 
 .welcomeContent {
 	user-select: none;
-	color: rgb(220, 220, 220);
+	color: #ffffff;
 	font-size: 2.2em;
 	line-height: 2em;
 	text-decoration: none;
@@ -184,7 +184,7 @@ img {
 }
 
 .welcomeContent h1 {
-	color: #DCDCDC;
+	color: #ffffff;
 	font-size: 1.8em;
 	word-wrap: break-word;
 	text-align: center;
@@ -195,7 +195,7 @@ img {
 }
 
 .welcomeContent .welcomeButton {
-	color: rgb(220, 220, 220);
+	color: #ffffff;
 	display: flex;
 	width: fit-content;
 	line-height: 1.2em;
@@ -210,7 +210,7 @@ img {
 }
 
 .welcomeContent .welcomeButtonWJ {
-	color: rgb(220, 220, 220);
+	color: #ffffff;
 	display: flex;
 	width: fit-content;
 	line-height: 1.2em;
@@ -297,7 +297,7 @@ img {
 }
 
 .titlecontainer .guideLinks a {
-	color: rgb(220, 220, 220);
+	color: #ffffff;
 	font-size: 1.2em;
 	margin-top: 0.75em;
 }
@@ -475,7 +475,7 @@ h1 {
 }
 
 h2 {
-	color: #DCDCDC;
+	color: #ffffff;
 	font-size: 1.8em;
 	word-wrap: break-word;
 }
@@ -483,45 +483,6 @@ h2 {
 .install {
 	color: #33ff72;
 	font-size: 1.5em;
-}
-
-.optional::after {
-	display: inline-flex;
-	position: absolute;
-	transform: translateY(-0.4em);
-	content: "Optional";
-	text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
-	box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
-	color: #fada78;
-	background-image: linear-gradient(to top, hsl(45, 93%, 12.5%), hsl(45, 93%, 15%));
-	border: 2pt solid hsl(45, 93%, 25%);
-	border-radius: 12pt;
-	font-size: 0.7em;
-	padding: 0.25em 0.5em 0.25em 0.5em;
-	margin-left: 1em;
-}
-
-.performance::after {
-	display: inline-flex;
-	position: absolute;
-	transform: translateY(-0.4em);
-	content: "Performance Hit";
-	text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
-	box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
-	color: #d16759;
-	background-image: linear-gradient(to top, hsl(7, 57%, 12.5%), hsl(7, 57%, 18%));
-	border: 2pt solid hsl(7, 57%, 25%);
-	border-radius: 12pt;
-	font-size: 0.7em;
-	padding: 0.25em 0.5em 0.25em 0.5em;
-	margin-left: 1em;
-}
-
-blockquote .optional::after,
-blockquote .performance::after {
-	position: inherit !important;
-	margin: 0.2em 0.4em 0.2em 0.4em;
-	transform: translateY(-0.3em);
 }
 
 #footer {
@@ -661,19 +622,6 @@ blockquote .performance::after {
 
 	code {
 		line-break: anywhere;
-	}
-
-	.performance::after,
-	.optional::after {
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		margin-top: 1em;
-		padding: 0.05em 0.5em 0.05em 0.5em;
-		font-size: 0.5em;
-		width: fit-content;
-		text-align: center;
-		margin-left: 0;
 	}
 }
 
