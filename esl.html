@@ -193,6 +193,13 @@
                 <ul>
                     <li>If a plugin's header is version 0.95, the max amount of new records is 2048 (800->FFF).</li>
                 </ul>
+                <li>
+                    ESL on Fallout 4 has <strong>2 bugs</strong>:
+                    <ul>
+                        <li>Cells originating in a light plugin <strong>cannot use the PreVis/Precombine system</strong>,</li>
+                        <li>Voiced dialogue overriddes in a light plugin might result in <strong>silent dialogue audio</strong>.</li>
+                    </ul>
+                </li>
                 <li>Working with ESL plugins in Creation Kit might result in more work due to the <strong>CK totally ignoring ESL</strong> space when creating new records. This means that after making new records in CK you'll have to compact forms in xEdit.</li>
             </ul>
             </p>
@@ -200,7 +207,7 @@
                 <a>
                     <h2 id="batchFlagging">Batch Flagging ESL</h2>
                 </a>
-            <blockquote>The following example pictures are taken on a Skyrim load order, but the process is identical for Fallout 4.</blockquote>
+            <blockquote>The following example pictures are taken on a Skyrim Special Edition load order, but the process is identical for Fallout 4.</blockquote>
             In order to have more space for non-ESL plugins in your load order, you'll have to make sure everything that can be flagged ESL, is. <strong>xEdit can do this natively</strong> thanks to it's PseudoESL argument and the SetESL script, which flags everything that can be flagged safely.
             <ol>
                 <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
