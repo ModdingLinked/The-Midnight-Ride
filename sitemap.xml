@@ -68,12 +68,12 @@
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/bugfix.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2023-11-25</lastmod>
+		<lastmod>2023-12-20</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/utilities.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2023-11-25</lastmod>
+		<lastmod>2023-12-20</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/mo2.html</loc>
@@ -93,7 +93,7 @@
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/changelog.html</loc>
 		<priority>0.51</priority>
-		<lastmod>2023-11-26</lastmod>
+		<lastmod>2023-12-20</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/basefinish.html</loc>
@@ -103,6 +103,6 @@
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/wabbajack.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-11-25</lastmod>
+		<lastmod>2023-12-20</lastmod>
 	</url>
 </urlset>
