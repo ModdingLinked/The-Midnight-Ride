@@ -134,15 +134,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -152,8 +147,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -208,6 +216,7 @@
                 <li>Now you can play the game through the <strong>F4SE</strong> option in the top right:</li>
                 <img src="./img/run f4se.webp" alt="Run F4SE through MO2">
             </ol>
+            <blockquote>This Wabbajack list ships with better LOD generated according to our <a href="./lod.html">LOD guide</a>.</blockquote>
             <p>
                 <a>
                     <h2 id="gogSupport">GOG Support</h2>

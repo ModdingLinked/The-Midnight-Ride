@@ -134,15 +134,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -152,8 +147,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -212,11 +220,11 @@
                 </a>
             </p>
             <ul>
-                <li>An <b>English</b> copy of the game with all DLCs from <a href="https://store.steampowered.com/sub/199943/">Steam</a> or <a href="https://www.gog.com/en/game/fallout_4_game_of_the_year_edition">GOG</a>.</li>
+                <li>An <b>English</b> copy of the game with all DLCs from either <a href="https://store.steampowered.com/sub/199943/">Steam</a> or <a href="https://www.gog.com/en/game/fallout_4_game_of_the_year_edition">GOG</a>.</li>
                 <ul>
                     <li>Only the English version of the game is supported for maximum compatibility; translations can conflict with mods and cause issues. The Bethesda.net and Xbox Game Pass versions of the game are also unsupported, as they do not work with F4SE, which is essential for many mods.</li>
                 </ul>
-                <li>At least 48GB of free drive space (42GB if you delete all the downloads).</li>
+                <li>At least 48GB of free drive space, game included (42GB if you delete all the downloads).</li>
                 <li>Windows 10 or higher (64-bit).</li>
                 <li><a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
                 <ul>

@@ -134,15 +134,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -152,8 +147,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -164,12 +172,6 @@
     <div class="content">
         <div class="section">
             <h1>Utilities</h1>
-            <blockquote>Make sure the <strong>The Midnight Ride</strong> profile is active before proceeding.</blockquote>
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Utilities</strong>.</li>
-            </ol>
 
             <!-- F4SE -->
             <p>
@@ -205,6 +207,16 @@
             </ul>
             Allows preloading F4SE plugins before the game initializes.
 
+            <br>
+            <br>
+            <hr>
+
+            <h2>Creating a Separator in MO2.</h2>
+            <ol>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Name the separator <strong>Utilities</strong>.</li>
+            </ol>
+
             <!-- INI Cacher -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/fallout4/mods/33947" target="_blank">
@@ -214,8 +226,10 @@
             <h2 class="install">Installation instructions:</h2>
             <ul>
                 <li><b>Main Files - PrivateProfileRedirector F4 0.5.3 (Runime 1.10.163)</b></li>
+                <li>If you see a pop-up called <strong>No category found</strong>, select <strong>Disable</strong>.</li>
             </ul>
             Speeds up game start by storing INI files in memory instead of opening, parsing and closing the file each time some value from it is needed.
+            <blockquote>This is the first mod in the guide that is installed with the <strong>Mod Manager Download</strong> button, you will need to click that button then head to the <strong>Downloads</strong> section of Mod Organizer 2 to install it. Once installed, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
 
             <!-- Address Library -->
             <p>
@@ -228,7 +242,6 @@
                 <li><b>Main Files - Address Library</b></li>
             </ul>
             Resource required for other F4SE plugins.
-            <blockquote>After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
 
             <!-- Commands Extender -->
             <p>

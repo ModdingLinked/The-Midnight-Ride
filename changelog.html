@@ -139,15 +139,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -157,8 +152,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -170,6 +178,54 @@
         <div class="section">
             <h1>Changelog</h1>
             <h2>Time formatted in DD/MM/YY</h2>
+            <hr>
+            <h2 class="install">21/12/23</h2>
+            <h3>Safe Mid-game</h3>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Added a setting forcing the highest quality of godrays in case you have them enabled, this reduces the blocky artifacting that you can notice at any lower setting.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Removed the following mods:</li>
+                <ul>
+                    <li>MGEF Condition Bug Fix, it introduces a bug where taking chems no longer removed withdrawal effects, which often happens earlier than the main bug the mod fixes.</li>
+                    <li>Guard Post Animation Tweak - No More Finger Guns, too minor of a change to warrant an extra mod in the list.</li>
+                </ul>
+            </ul>
+            <h2><strong>Tweaks</strong></h2>
+            <ul>
+                <li>Removed Im Talking to You because of lack of testing.</li>
+            </ul>
+            <h2><strong>User Interface</strong></h2>
+            <ul>
+                <li>Edited the MCM Settings Manager - TMR Configuration to increase Terrain Undersides quality to 3 (prevents some clipping with the ground) and tweak the DLC Timing configuration.</li>
+                <li>Added Fire Rate Shows RPM.</li>
+            </ul>
+            <h2><strong>Visuals</strong></h2>
+            <ul>
+                <li>Switched to the packed versions of Northern Foothills Rocks Fix and First-Person Running with Hands Animations.</li>
+                <li>Switched to First-Person Swimming Animations Tweak from the original.</li>
+                <li>Flagged Remove Ironsight Blur as ESL.</li>
+                <li>Added Terrain Undersides - PPF Patch</li>
+            </ul>
+            <h2><strong>LOD Guide</strong></h2>
+            <ul>
+                <li>Added FOMOD steps.</li>
+                <li>Added pre-generated LOD for the VNV Wabbajack and for users of the full guide (resources listed in the LOD page are still needed).</li>
+            </ul>
+            <h2><strong>Wabbajack</strong></h2>
+            <ul>
+                <li>Updated to reflect the changes above.</li>
+                <li>Updated to Mod Organizer 2.5.1 RC1.</li>
+                <li>The FPS limiter now defaults to 60 to cover any user who skips the High FPS Fix configuration by mistake.</li>
+                <li>Updated the following mods:</li>
+                <ul>
+                    <li>PRP Updates (69.6)</li>
+                    <li>MCM Settings Manager - TMR Configuration</li>
+                    <li>Let Me Use That (1.2.2)</li>
+                </ul>
+            </ul>
             <hr>
             <h2 class="install">25/11/23</h2>
             <h3>Safe Mid-game</h3>
@@ -363,7 +419,7 @@
                     <li>Less Annoying Berry Mentats</li>
                     <li>Extended Dialogue Interface</li>
                     <li>Outline Workshop Highlight Only</li>
-                    <li> Blocking Overhaul</li>
+                    <li>Blocking Overhaul</li>
                     <li>NPCs Use Items</li>
                 </ul>
             </ul>

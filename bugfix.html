@@ -134,15 +134,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -152,8 +147,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -328,6 +336,42 @@
             <blockquote>This mod is only needed for users with NVIDIA GPUs newer than Pascal (10 series).</blockquote>
             Fixes crashes with the weapon debris setting enabled caused by different PhysX implementation with new NVIDIA GPUs.
 
+            <!-- Long Save Bug Fix -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/68681" target="_blank">
+                    <h2 id="longSaveFix">Long Save Bug Fix</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - GCBugFix Release 0.1</b></li>
+            </ul>
+            A bug fix for one of the common causes of long save/autosave times.
+
+            <!-- 3rd Person Fixes -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/69243" target="_blank">
+                    <h2 id="3rdPersonFixes">3rd Person Behavior Fixes</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - 3rd Person Behavior Fixes</b></li>
+            </ul>
+            Fixes some glitches related to 3rd person behavior.
+
+            <!-- Reload Fix -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/68931" target="_blank">
+                    <h2 id="reloadFix">Reload Fix</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Reload Fix</b></li>
+            </ul>
+            Fixes some reloading issues.
+
             <!-- Wetness Shader Fix -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/fallout4/mods/23389" target="_blank">
@@ -364,54 +408,6 @@
             </ul>
             Fixes artefacts, pixelation and color banding in textures that are used for special light effects.
 
-            <!-- Long Save Bug Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/68681" target="_blank">
-                    <h2 id="longSaveFix">Long Save Bug Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - GCBugFix Release 0.1</b></li>
-            </ul>
-            A bug fix for one of the common causes of long save/autosave times.
-
-            <!-- MGEF Condition Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/69096" target="_blank">
-                    <h2 id="mgefFix">MGEF Condition Bug Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - MGEF Condition Bug Fix</b></li>
-            </ul>
-            Fixes the magic effect condition bug that happens when you have a perk/ability for too long.
-
-            <!-- 3rd Person Fixes -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/69243" target="_blank">
-                    <h2 id="3rdPersonFixes">3rd Person Behavior Fixes</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - 3rd Person Behavior Fixes</b></li>
-            </ul>
-            Fixes some glitches related to 3rd person behavior.
-
-            <!-- Reload Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/68931" target="_blank">
-                    <h2 id="reloadFix">Reload Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Reload Fix</b></li>
-            </ul>
-            Fixes some reloading issues.
-
             <!-- MCS Material Fix -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/fallout4/mods/19854" target="_blank">
@@ -435,18 +431,6 @@
                 <li><b>Main Files - PBR</b></li>
             </ul>
             Adds missing material properties to the Marine Wet Suit.
-
-            <!-- Guard Anim Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/72363" target="_blank">
-                    <h2 id="guardAnim">Guard Post Animation Tweak - No More Finger Guns</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Guard Post Animation Replacer No More Finger Guns</b></li>
-            </ul>
-            Fixes the guard post animation to close the hand that was supposed to be holding a gun.
 
             <!-- Drinking Fix -->
             <p>
@@ -472,8 +456,7 @@
                 <li><b>Main Files - PRP Updates</b></li>
                 <li>You will be prompted with a FOMOD installer:
                     <ol>
-                        <li>English</li>
-                        <li>PPF and PRP</li>
+                        <li>Next</li>
                         <li>Install</li>
                     </ol>
                 </li>
@@ -541,6 +524,15 @@
                 <a href="#debrisFix">Debris Crash Fix</a>
             </li>
             <li>
+                <a href="#longSaveFix">Long Save Bug Fix</a>
+            </li>
+            <li>
+                <a href="#3rdPersonFixes">3rd Person Fixes</a>
+            </li>
+            <li>
+                <a href="#reloadFix">Reload Fix</a>
+            </li>
+            <li>
                 <a href="#wetnessFix">Wetness Shader Fix</a>
             </li>
             <li>
@@ -550,25 +542,10 @@
                 <a href="#goboEffects">Fixed Gobo Effects</a>
             </li>
             <li>
-                <a href="#longSaveFix">Long Save Bug Fix</a>
-            </li>
-            <li>
-                <a href="#mgefFix">MGEF Condition Fix</a>
-            </li>
-            <li>
-                <a href="#3rdPersonFixes">3rd Person Fixes</a>
-            </li>
-            <li>
-                <a href="#reloadFix">Reload Fix</a>
-            </li>
-            <li>
                 <a href="#materialFix1">MCS Material Fix</a>
             </li>
             <li>
                 <a href="#materialFix2">MWS Material Fix</a>
-            </li>
-            <li>
-                <a href="#guardAnim">Guard Anim Fix</a>
             </li>
             <li>
                 <a href="#drinkingFix">Drinking Fix</a>
