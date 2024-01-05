@@ -11,7 +11,7 @@
     <link rel="icon" href="img/logo-icon.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <script src="./js/javascript.js" type="module"></script>
     <title>The Midnight Ride</title>
     <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
@@ -36,84 +36,14 @@
         }
     </style>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer transparent">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-        </div>
-    </div>
-
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft" class="transparent">
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li>
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </li>
-                <li>
-                    <a onclick="handleButtonClick(event, paypalMenu)">
-                        <i class="fa fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" class="donoMenu" style="display: none;">
-                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a onclick="handleButtonClick(event, kofiMenu)">
-                        <i class="fa fa-coffee"></i>
-                    </a>
-                    <div id="kofiMenu" class="donoMenu" style="display: none;">
-                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <title-bar type="transparent"></title-bar>
+    <!-- <side-bar id="sidenavLeft"></side-bar> -->
 
     <!-- Content -->
     <div id="backdrop" class="welcomeContent">
         <h1 id="title">Welcome to The Midnight Ride!</h1>
-        <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Get Started</strong></a>
+        <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)"
+            onmouseleave="titleGlow(0)"><strong>Get Started</strong></a>
         <!-- <a id="next" class="welcomeButtonWJ" href="./wabbajack.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Automated Install <br> Wabbajack</strong></a> -->
     </div>
 </body>

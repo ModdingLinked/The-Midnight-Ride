@@ -10,10 +10,12 @@
     <link rel="icon" href="img/logo-icon.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <script src="./js/javascript.js" type="module"></script>
     <title>Bug Fixes | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Essential mods that fix bugs, improve performance and add quality of life features.">
+    <meta name="keywords"
+        content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="description"
+        content="Essential mods that fix bugs, improve performance and add quality of life features.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,152 +23,13 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Essential mods that fix bugs, improve performance and add quality of life features.">
+    <meta property="og:description"
+        content="Essential mods that fix bugs, improve performance and add quality of life features.">
 </head>
 
 <body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-        </div>
-    </div>
-
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html" class="active">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">TMRE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./appendix.html">Appendix</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
-
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li>
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </li>
-                <li>
-                    <a onclick="handleButtonClick(event, paypalMenu)">
-                        <i class="fa fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" class="donoMenu" style="display: none;">
-                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a onclick="handleButtonClick(event, kofiMenu)">
-                        <i class="fa fa-coffee"></i>
-                    </a>
-                    <div id="kofiMenu" class="donoMenu" style="display: none;">
-                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <title-bar></title-bar>
+    <side-bar id="sidenavLeft"></side-bar>
 
     <!-- Content -->
     <div class="content">
@@ -174,7 +37,8 @@
             <h1>Bug Fixes</h1>
             <h2>Creating a Separator in MO2.</h2>
             <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.
+                </li>
                 <li>Name the separator <strong>Bug Fixes</strong>.</li>
             </ol>
 
@@ -240,7 +104,8 @@
                         <li>Install</li>
                     </ol>
                 </li>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/74945" target="_blank">Community Fixes Merged - Weapon Mod Fixes Patch</a></li>
+                <li><a href="https://www.nexusmods.com/fallout4/mods/74945" target="_blank">Community Fixes Merged -
+                        Weapon Mod Fixes Patch</a></li>
             </ul>
             Fixes a number of small and major bugs in vanilla weapon mods.
 
@@ -334,7 +199,8 @@
                 <li><b>Main Files - Weapon Debris Crash Fix</b></li>
             </ul>
             <blockquote>This mod is only needed for users with NVIDIA GPUs newer than Pascal (10 series).</blockquote>
-            Fixes crashes with the weapon debris setting enabled caused by different PhysX implementation with new NVIDIA GPUs.
+            Fixes crashes with the weapon debris setting enabled caused by different PhysX implementation with new
+            NVIDIA GPUs.
 
             <!-- Long Save Bug Fix -->
             <p>
@@ -461,7 +327,8 @@
                     </ol>
                 </li>
             </ul>
-            Greatly improves FPS throughout the entire game, including interior cells. Also includes many placement or mesh fixes not possible without regenerating previsibines.
+            Greatly improves FPS throughout the entire game, including interior cells. Also includes many placement or
+            mesh fixes not possible without regenerating previsibines.
 
             <!-- Puddles Fix -->
             <p>
@@ -479,85 +346,14 @@
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./utilities.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Utilities</span></a>
-            <a href="./basefinish.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Base Finish</span></a>
+            <a href="./utilities.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror"
+                    src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Utilities</span></a>
+            <a href="./basefinish.html" id="next" rel="next" class="navigationArrow"><img class="right"
+                    src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Base Finish</span></a>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#ufo4p">UFO4P</a>
-            </li>
-            <li>
-                <a href="#ownership">Ownership Fixes</a>
-            </li>
-            <li>
-                <a href="#cfm">Community Fixes</a>
-            </li>
-            <li>
-                <a href="#gfaio">Glitchfinder AIO</a>
-            </li>
-            <li>
-                <a href="#weaponModsFix">Weapon Mod Fixes</a>
-            </li>
-            <li>
-                <a href="#buffout">Buffout 4</a>
-            </li>
-            <li>
-                <a href="#sprintFix">Sprint Fix</a>
-            </li>
-            <li>
-                <a href="#jetFix">Jet Script Bug Fix</a>
-            </li>
-            <li>
-                <a href="#penFix">Armor Pen Fix</a>
-            </li>
-            <li>
-                <a href="#outfitFix">Outfit ReDress Fix</a>
-            </li>
-            <li>
-                <a href="#navcutFix">Interior NavCut Fix</a>
-            </li>
-            <li>
-                <a href="#debrisFix">Debris Crash Fix</a>
-            </li>
-            <li>
-                <a href="#longSaveFix">Long Save Bug Fix</a>
-            </li>
-            <li>
-                <a href="#3rdPersonFixes">3rd Person Fixes</a>
-            </li>
-            <li>
-                <a href="#reloadFix">Reload Fix</a>
-            </li>
-            <li>
-                <a href="#wetnessFix">Wetness Shader Fix</a>
-            </li>
-            <li>
-                <a href="#fixedProtectron">Fixed Protectron</a>
-            </li>
-            <li>
-                <a href="#goboEffects">Fixed Gobo Effects</a>
-            </li>
-            <li>
-                <a href="#materialFix1">MCS Material Fix</a>
-            </li>
-            <li>
-                <a href="#materialFix2">MWS Material Fix</a>
-            </li>
-            <li>
-                <a href="#drinkingFix">Drinking Fix</a>
-            </li>
-            <li>
-                <a href="#prp">PRP</a>
-            </li>
-            <li>
-                <a href="#puddlesFix">Puddles Fix</a>
-            </li>
-        </ul>
-    </div>
+    <right-side-bar id="sidenavRight"></right-side-bar>
 </body>
 
 </html>

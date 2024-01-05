@@ -10,9 +10,10 @@
     <link rel="icon" href="img/logoex-icon.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <script src="./js/javascript.js" type="module"></script>
     <title>Tweaks | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="keywords"
+        content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Various tweaks to improve annoying aspects of the game.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -25,148 +26,8 @@
 </head>
 
 <body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/logoex.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-        </div>
-    </div>
-
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html" class="active">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">TMRE Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./appendix.html">Appendix</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-<!--                 <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
-
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li>
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </li>
-                <li>
-                    <a onclick="handleButtonClick(event, paypalMenu)">
-                        <i class="fa fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" class="donoMenu" style="display: none;">
-                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a onclick="handleButtonClick(event, kofiMenu)">
-                        <i class="fa fa-coffee"></i>
-                    </a>
-                    <div id="kofiMenu" class="donoMenu" style="display: none;">
-                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <title-bar></title-bar>
+    <side-bar id="sidenavLeft"></side-bar>
 
     <!-- Content -->
     <div class="content">
@@ -174,7 +35,8 @@
             <h1>Tweaks</h1>
             <h2>Creating a Separator in MO2.</h2>
             <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.
+                </li>
                 <li>Name the separator <strong>Tweaks</strong>.</li>
             </ol>
 
@@ -291,7 +153,8 @@
             <ul>
                 <li><b>Main Files - Less Annoying Berry Mentats</b></li>
             </ul>
-            Prevents the Berry Mentats effect from highlighting your current companion and disables the effect entirely while your weapon is holstered or you are in dialogue.
+            Prevents the Berry Mentats effect from highlighting your current companion and disables the effect entirely
+            while your weapon is holstered or you are in dialogue.
 
             <!-- To Your Face -->
             <p>
@@ -315,7 +178,8 @@
             <ul>
                 <li><b>Main Files - Deadeye Weapon Effect Fix</b></li>
             </ul>
-            Improves the performance of Deadeye weapons. Adds detailed sounds and screen effects and removes the text message.
+            Improves the performance of Deadeye weapons. Adds detailed sounds and screen effects and removes the text
+            message.
 
             <!-- Simple Offence Suppression -->
             <p>
@@ -333,52 +197,14 @@
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./basefinish.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Base Finish</span></a>
-            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
+            <a href="./basefinish.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror"
+                    src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Base Finish</span></a>
+            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp"
+                    alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#whoseQuest">Whose Quest</a>
-            </li>
-            <li>
-                <a href="#unlimitedSurvival">Unlimited Survival Mode</a>
-            </li>
-            <li>
-                <a href="#bcr">BCR</a>
-            </li>
-            <li>
-                <a href="#chw">CHW</a>
-            </li>
-            <li>
-                <a href="#dropAmmo">No Ammo Drops</a>
-            </li>
-            <li>
-                <a href="#rawInput">Raw Input</a>
-            </li>
-            <li>
-                <a href="#friendlyFire">Friendly Fire</a>
-            </li>
-            <li>
-                <a href="#rememberAngle">Remember Angle</a>
-            </li>
-            <li>
-                <a href="#betterMentats">Better Mentats</a>
-            </li>
-            <li>
-                <a href="#toYourFace">To Your Face</a>
-            </li>
-            <li>
-                <a href="#deadeyeFix">Deadeye Fix</a>
-            </li>
-            <li>
-                <a href="#suppression">Simple Offence Suppression</a>
-            </li>
-        </ul>
-    </div>
+    <right-side-bar id="sidenavRight"></right-side-bar>
 </body>
 
 </html>
