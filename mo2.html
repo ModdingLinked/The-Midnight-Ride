@@ -161,6 +161,78 @@
             <h1>Mod Organizer 2</h1>
             <h3>In this step, we will install and configure Mod Organizer 2.</h3>
 
+            <hr>
+
+            <!-- What is MO2 -->
+            <p>
+                <a href="#whatIsMO2">
+                    <h2 id="whatIsMO2">What is Mod Organizer 2?</h2>
+                </a>
+            </p>
+            Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games.
+            <h4>MO2's main characteristics are:</h4>
+            <ul>
+                <li>
+                    <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from.
+                    <br>
+                    This allows for:
+                    <ul>
+                        <li>Safe mod installation and uninstallation.</li>
+                        <li>Being able to modify mod install order at any point.</li>
+                        <li>Having multiple profiles with different mod setups.</li>
+                        <li>Keeping orignal game files clean,.</li>
+                    </ul>
+                    Nothing is perfect, and USVFS is no exception. There are some downsides to it, such as:
+                    <ul>
+                        <li>Mods installed through MO2 are "visible" only to programs launched using MO2.</li>
+                        <li>Some programs may not work properly with MO2's virtual filesystem.</li>
+                        <li>USVFS can cause performance overhead if you have tons of loose (not-BSA) files.</li>
+                        <li>USVFS works by "hooking" into the game (similarly to mods such as F4SE plugins, ReShade, etc.).
+                            <br>
+                            This method can be considered as unsafe by some Anti-Virus software due to its memory-invasive nature.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Profile System</strong>: MO2 allows you to create multiple profiles with different mod setups, saves, and settings.
+                </li>
+                <li>
+                    <strong>Two pane interface</strong>: MO2 is split into two sides, the left side is the mod list and the right side is the plugin list. This allows for easy conflict resolution and mod management.
+                </li>
+                <li>
+                    <strong>Portability</strong>: Thanks to the use of USVFS, MO2 has a "portable" mode that allows you to move the entire MO2 folder to another location with minimal setup.
+                </li>
+                <li>
+                    <strong>Modding Community Integration</strong>: MO2 has built-in support for Nexus Mods, allowing you to download mods directly from the Nexus.
+                    <br>
+                    It also has a plugin system that allows for creation of custom plugins to extend its functionality.
+                    <blockquote>
+                        Mod Organizer 2 has <strong>NO</strong> support for Nexus' Collections feature, so you will have to download mods one by one.
+                        <br>
+                        This is not a big issue, as the guide will provide direct links to the mods you need, and most collections are low quality and not curated.
+                        <hr>
+                        The closest alternative to Collections is <a href="https://www.wabbajack.org/">Wabbajack</a>, which is a community-made modlist installer that can install entire modlists with a single click.
+                        <br>
+                        Due to the higher bar of entry for modlist creations, those tend to be of higher quality compared to Collections.
+                    </blockquote>
+                </li>
+            </ul>
+
+
+            <!-- Why MO2 -->
+            <p>
+                <a href="#whyMO2">
+                    <h2 id="whyMO2">Why Mod Organizer 2?</h2>
+                </a>
+            </p>
+            Mod Organizer 2 has been chosen as <i>The</i> mod manager for our guides due to its ease of use, and its ability to keep the game's folder clean.
+            <br>
+            This is important because it allows for easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong order? Just drag them into the correct position!
+            <br>
+            Compared to Vortex, MO2 doesn't hide the most important parts of modding from the user, making it easier to understand what is happening and why, albeit at the cost of potentially looking scary at first.
+            <br>
+            That said, we are well aware that MO2 is not perfect, and it has its own set of issues and limitations, but it is the best tool for the job.
+
             <!-- Installing MO2 -->
             <p>
                 <a href="#installation">
@@ -170,17 +242,20 @@
             <ol>
                 <li>Download <strong>Mod Organizer 2</strong> from <a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.7z" target="_blank">here</a>.</li>
                 <li>Once the download has finished, right click the file and open its <strong>Properties</strong>.</li>
-                <li>In the properties window, tick the <strong>Unblock</strong> checkbox under <strong>Security</strong> section.</li>
+                <li>In the properties window, if present, tick the <strong>Unblock</strong> checkbox at the bottom of <strong>General</strong> section.</li>
+                <img src="./img/MO2/Unblock.webp" alt="Unblock file" style="max-width: 33%;">
                 <blockquote>
                     This operation is required because Windows can block MO2 files from loading.
                     <br>
                     If you used the installer, this action is not needed as it handles it automatically.
                 </blockquote>
-                <li>Extract the archive anywhere <u>outside</u> of the default Windows folders (like <code>Program Files x86</code>) and <u>outside</u> of the game's <strong>Root</strong> folder.
+                <li>Extract the archive into a folder where you want your TMR instance to be, for example <code>C:\Modding\MO2\The Midnight Ride</code>.</li>
+                <blockquote>
+                    Folder <u>MUST</u> be outside of the default Windows folders (such as <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder.
                     <br>
-                    Example install path: <code>C:\Modding\MO2\The Midnight Ride</code>
-                </li>
-                <blockquote>It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.</blockquote>
+                    <br>
+                    It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.
+                </blockquote>
             </ol>
 
             <!-- MO2 -->
@@ -266,12 +341,11 @@
             <ol>
                 <li>Download <a href="https://www.nexusmods.com/site/mods/631" target="_blank">BethINI PIE</a>,</li>
                 <li>Extract the archive anywhere outside of the default Windows folders, such as <code>C:\Modding Tools</code>,</li>
-					<li>In MO2, click on the dropdown in the right pane next to the <strong>Run</strong> button. Right now, it should be displaying <strong>Fallout 4</strong>. In the resulting dropdown, click <code>&#60;Edit...&#62;</code>. A window titled <strong>Modify Executables</strong> will pop up. Click the <strong>+</strong> sign in the top left, then <strong>Add from file.</strong> Navigate in the resulting window to where you placed the BethINI Pie executable (<code>BethINI.exe</code>). Double click it. This will return you to the <strong>Modify Executables</strong> window. Press <strong>Apply</strong> in the lower right, then <strong>OK</strong>. The window will close.</li>
-					<li>This sets up BethINI to run as an executable through MO2, which is necessary for it to be able to access mods and other files that MO2 handles. You can repeat this process for any other executable you may need to run through MO2, such as xEdit.</li>
-					<li>Click on the dropdown in the right pane again. Select <strong>Bethini</strong>.</li>
-					<li>Click <strong>Run</strong>.</li>
-				<li>Make sure Fallout 4 is chosen. Press <strong>Select Game</strong>.</li
-				<li>Make sure the <code>Game Path</code> is accurate to where you installed Fallout 4, then make sure the <code>INI Path</code> is pointing towards something like <code>Documents\MyGames\Fallout4</code>.</li>
+                <li>In MO2, click on the dropdown in the right pane next to the <strong>Run</strong> button. Right now, it should be displaying <strong>Fallout 4</strong>. In the resulting dropdown, click <code>&#60;Edit...&#62;</code>. A window titled <strong>Modify Executables</strong> will pop up. Click the <strong>+</strong> sign in the top left, then <strong>Add from file.</strong> Navigate in the resulting window to where you placed the BethINI Pie executable (<code>BethINI.exe</code>). Double click it. This will return you to the <strong>Modify Executables</strong> window. Press <strong>Apply</strong> in the lower right, then <strong>OK</strong>. The window will close.</li>
+                <li>This sets up BethINI to run as an executable through MO2, which is necessary for it to be able to access mods and other files that MO2 handles. You can repeat this process for any other executable you may need to run through MO2, such as xEdit.</li>
+                <li>Click on the dropdown in the right pane again. Select <strong>Bethini</strong>.</li>
+                <li>Click <strong>Run</strong>.</li>
+                <li>Make sure Fallout 4 is chosen. Press <strong>Select Game</strong>.</li <li>Make sure the <code>Game Path</code> is accurate to where you installed Fallout 4, then make sure the <code>INI Path</code> is pointing towards something like <code>Documents\MyGames\Fallout4</code>.</li>
                 <li>Select a BethINI preset depending on your hardware (I recommend High for an average system, do <b>NOT</b> use Ultra. Lower-end systems can use Medium or Low; Keep in mind that this does NOT effect texture quality), then do the following:</li>
                 <ol>
                     <li>Apply Recommended Tweaks,</li>
@@ -348,6 +422,12 @@
     <!-- Right Sidebar -->
     <div id="sidenavRight">
         <ul>
+            <li>
+                <a href="#whatIsMO2">What is MO2?</a>
+            </li>
+            <li>
+                <a href="#whyMO2">Why MO2?</a>
+            </li>
             <li>
                 <a href="#installation">Installation</a>
             </li>
