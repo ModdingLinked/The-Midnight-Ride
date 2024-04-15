@@ -106,7 +106,7 @@
                 <li>
                     <a href="./avoid-mods.html">Mods to Avoid</a>
                 </li>
-<!--                 <li>
+                <!--                 <li>
                     <a href="./wabbajack.html">Wabbajack</a>
                 </li> -->
             </ul>
@@ -167,6 +167,22 @@
             </blockquote>
 
             <hr>
+
+            <!-- File Extensions -->
+            <p>
+                <a href="#fileExtensions">
+                    <h2 id="fileExtensions">Enabling File Extensions</h2>
+                </a>
+            </p>
+            Before we start, it is important to enable file extensions in Windows.
+            <br>
+            By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable visible file extensions:
+            <ol>
+                <li>Open File Explorer.</li>
+                <li>Select the <strong>View</strong> tab at the top.</li>
+                <li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
+                <img width="60%" src="./img/show file extensions.webp" alt="Show file extensions">
+            </ol>
 
             <!-- Recommended Location -->
             <p>
@@ -288,6 +304,8 @@
             <br>
             <br>
 
+            <hr>
+
             <!-- Post-Installation -->
             <p>
                 <a href="#postInstall">
@@ -312,20 +330,6 @@
                     <li><code>Steam\steamapps\common\Fallout 4\Data</code></li>
                 </ul>
             </ul>
-
-            <!-- File Extensions -->
-            <p>
-                <a href="#fileExtensions">
-                    <h3 id="fileExtensions">Enabling File Extensions</h3>
-                </a>
-            </p>
-            By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable visible file extensions:
-            <ol>
-                <li>Open File Explorer.</li>
-                <li>Select the <strong>View</strong> tab at the top.</li>
-                <li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
-                <img width="60%" src="./img/show file extensions.webp" alt="Show file extensions">
-            </ol>
 
             <!-- INI Files -->
             <p>
@@ -356,16 +360,16 @@
                 <li>Click on <strong>Change high DPI settings</strong>.</li>
                 <li>Set <strong>High DPI scaling override</strong> to <strong>Application</strong>.</li>
             </ol>
-			
-			 <!-- Disabling Updates -->
+
+            <!-- Disabling Updates -->
             <p>
                 <a>
                     <h3 id="DisableUpdates">Disabling Automatic Steam Updates</h3>
                 </a>
             </p>
             Steam, by default, automatically keeps your game up to date with the latest patches. This is normally fine; However, for a modded game, this can be a problem, as updates can bring with them unwanted hurdles for modding, as seen often with Skyrim updates, such as new content that needs to be patched against or .exe version updates that need the script extender to be updated for, or the worst case: recompiling that breaks many or even all .dll-based mods. In addition, Bethesda announced a while ago that Fallout 4 would receive a next-gen update with 4K support and other various (and nebulous) improvements. Good money's on that update arriving with the Amazon show later this year. With that in mind, it would be good practice to disable automatic updates on Steam. You can do this for any game.
-			<ol>
-				<li>In your Steam Library, <strong>right click</strong> on Fallout 4, and click on <strong>Properties</strong> in the resulting context menu. In the resulting new window, click on the dropdown at the top of the right pane underneath <strong>Automatic Updates.</strong> Set it to <code>Only update this game when I launch it</code>. Since MO2 bypasses the Steam "play" button, this means Fallout 4 will never automatically update so long as you launch through MO2.</li>
+            <ol>
+                <li>In your Steam Library, <strong>right click</strong> on Fallout 4, and click on <strong>Properties</strong> in the resulting context menu. In the resulting new window, click on the dropdown at the top of the right pane underneath <strong>Automatic Updates.</strong> Set it to <code>Only update this game when I launch it</code>. Since MO2 bypasses the Steam "play" button, this means Fallout 4 will never automatically update so long as you launch through MO2.</li>
             </ol>
         </div>
 
@@ -380,6 +384,9 @@
     <!-- Right Sidebar -->
     <div id="sidenavRight">
         <ul>
+            <li>
+                <a href="#fileExtensions">File Extensions</a>
+            </li>
             <li>
                 <a href="#location">Install Location</a>
             </li>
@@ -397,18 +404,15 @@
                     <a href="#terms">Key Terms</a>
                 </li>
                 <li>
-                    <a href="#fileExtensions">File Extensions</a>
-                </li>
-                <li>
                     <a href="#generatingInis">INI Files</a>
                 </li>
+                <li>
+                    <a href="#dpiFix">DPI Fix</a>
+                </li>
+                <li>
+                    <a href="#DisableUpdates">Disabling Updates</a>
+                </li>
             </ul>
-            <li>
-                <a href="#dpiFix">DPI Fix</a>
-            </li>
-			 <li>
-                <a href="#DisableUpdates">Disabling Updates</a>
-            </li>
         </ul>
         </ul>
     </div>
