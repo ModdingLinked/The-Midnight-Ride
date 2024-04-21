@@ -81,6 +81,9 @@
                     <a href="./gameplay.html">Gameplay</a>
                 </li>
                 <li>
+                    <a href="./content.html">Content</a>
+                </li>
+                <li>
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
@@ -106,7 +109,7 @@
                 <li>
                     <a href="./avoid-mods.html">Mods to Avoid</a>
                 </li>
-                <!--                 <li>
+                <!-- <li>
                     <a href="./wabbajack.html">Wabbajack</a>
                 </li> -->
             </ul>
@@ -157,7 +160,6 @@
     <div class="content">
         <div class="section">
             <h1>Utilities</h1>
-
             <h3>In this step, we will install mods that are required by the game and other mods to function properly</h3>
 
             <hr>
@@ -183,6 +185,28 @@
             </ol>
             Extends the scripting capabilities of the game.
 
+            <!-- F4SE Setup -->
+            <p>
+                <a>
+                    <h2 id="f4seSetup">Making MO2 Detect F4SE & GOG Support</h2>
+                </a>
+            </p>
+            <ol>
+                <li>
+                    Once F4SE is installed as instructed above, <strong>restart MO2</strong> and you should see a new option in the top right drop-down:
+                    <img src="./img/run f4se.webp" alt="New F4SE option in the drop-down" id="f4seSetup">
+                </li>
+                <li>If you own the game on <strong>GOG</strong>, click <strong>Edit...</strong> then add <code>-forcesteamloader</code> to the arguments text box of <b>F4SE</b>.</li>
+            </ol>
+
+            <hr>
+
+            <h2>Creating a Separator in MO2.</h2>
+            <ol>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Name the separator <strong>Utilities</strong>.</li>
+            </ol>
+
             <!-- Preloader -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">
@@ -195,16 +219,6 @@
                 <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
             </ul>
             Allows preloading F4SE plugins before the game initializes.
-
-            <br>
-            <br>
-            <hr>
-
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Utilities</strong>.</li>
-            </ol>
 
             <!-- INI Cacher -->
             <p>
@@ -269,6 +283,7 @@
                 <li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
                 <li>Change the following options:</li>
                 <ul>
+                    <li>Set <strong>PostloadingMenuSpeed</strong> to 3 (line 51)</li>
                     <li>Set <strong>InGameFPS</strong> to a value you want the game FPS to be locked to (line 58)</li>
                     If you set InGameFPS to a value higher than 60:
                     <ul>
@@ -278,23 +293,10 @@
                     If you are using VRR (G-Sync or FreeSync):
                     <ul>
                         <li>Set <strong>AllowTearing</strong> to <b>true</b> (line 26)</li>
-                        <li>Set <strong>FramerateLimitMode</strong> to <b>1</b> (line 92)</li>
                     </ul>
                 </ul>
             </ul>
             All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and reduces loading times.
-
-            <!-- Loading Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/73469" target="_blank">
-                    <h2 id="loadingFix">Long Loading Times Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Long Loading Times Fix</b></li>
-            </ul>
-            Fixes long loading times, also provides some customization options for loading screens.
 
             <!-- RobCo Patcher -->
             <p>
@@ -332,7 +334,7 @@
             </ul>
             A simple framework that allows mod authors to safely use the base game's random encounter story manager.
 
-            <!-- Lighthouse Papyrus Extender -->
+            <!-- Lighthouse -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/fallout4/mods/71420" target="_blank">
                     <h2 id="#lighthouse">Lighthouse Papyrus Extender</h2>
@@ -344,7 +346,7 @@
             </ul>
             F4SE Papyrus extender that adds new utilities for mod authors.
 
-            <!-- Garden of Eden Papyrus Script Extender -->
+            <!-- Garden of Eden -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/fallout4/mods/74160" target="_blank">
                     <h2 id="#GardenofEden">Garden of Eden Papyrus Script Extender</h2>
@@ -355,6 +357,24 @@
                 <li><b>Main Files - Garden of Eden Papyrus Script Extender</b></li>
             </ul>
             F4SE plugin that extends the capabilites of the game's scripting language with over 585 new native functions.
+
+            <!-- Raw Input -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/27019" target="_blank">
+                    <h2 id="rawInput">RAW INPUT - The Ultimate Mouse Sensitivity Fix</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - RAW INPUT - NMM Installer</b></li>
+                <li>You will be prompted with a FOMOD installer:
+                    <ol>
+                        <li>Select the option you prefer</li>
+                        <li>Install</li>
+                    </ol>
+                </li>
+            </ul>
+            Disables mouse acceleration and more.
         </div>
 
         <!-- Arrows -->
@@ -390,9 +410,6 @@
                 <a href="#physics">High FPS Fix</a>
             </li>
             <li>
-                <a href="#loadingFix">Loading Fix</a>
-            </li>
-            <li>
                 <a href="#robco">RobCo Patcher</a>
             </li>
             <li>
@@ -402,10 +419,13 @@
                 <a href="#encounterFramework">Encounter Framework</a>
             </li>
             <li>
-                <a href="#lighthouse">Lighthouse Papyrus Extender</a>
+                <a href="#lighthouse">Lighthouse</a>
             </li>
             <li>
-                <a href="#GardenofEden">Garden of Eden Papyrus Extender</a>
+                <a href="#gardenofEden">Garden of Eden</a>
+            </li>
+            <li>
+                <a href="#rawInput">Raw Input</a>
             </li>
         </ul>
     </div>
