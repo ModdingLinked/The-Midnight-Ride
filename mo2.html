@@ -81,6 +81,9 @@
                     <a href="./gameplay.html">Gameplay</a>
                 </li>
                 <li>
+                    <a href="./content.html">Content</a>
+                </li>
+                <li>
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
@@ -106,7 +109,7 @@
                 <li>
                     <a href="./avoid-mods.html">Mods to Avoid</a>
                 </li>
-                <!--                 <li>
+                <!-- <li>
                     <a href="./wabbajack.html">Wabbajack</a>
                 </li> -->
             </ul>
@@ -249,7 +252,7 @@
                     <br>
                     If you used the installer, this action is not needed as it handles it automatically.
                 </blockquote>
-                <li>Extract the archive into a folder where you want your TMR instance to be, for example <code>C:\Modding\MO2\The Midnight Ride</code>.</li>
+                <li>Extract the archive into a folder where you want your TMR instance to be, for example <code>C:\Modding\MO2\The Midnight Ride</code></li>
                 <blockquote>
                     Folder <u>MUST</u> be outside of the default Windows folders (such as <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder.
                     <br>
@@ -281,10 +284,10 @@
                 <li>If you see a pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
             </ol>
 
-            <!-- Exceptions -->
+            <!-- Exclusions -->
             <p>
-                <a href="#exceptions">
-                    <h3 id="exceptions">Adding Exceptions to Defender</h3>
+                <a href="#exclusions">
+                    <h3 id="exclusions">Adding Exclusions to Defender</h3>
                 </a>
             </p>
             <ol>
@@ -301,7 +304,7 @@
                 If you used the installer, this action is not needed as it handles it automatically.
                 <br>
                 <br>
-                If you are using a third-party antivirus, you will need to find the exceptions menu and add those 2 folders mentioned previously.
+                If you are using a third-party antivirus, you will need to find the exclusions menu and add those 2 folders mentioned previously.
             </blockquote>
 
             <!-- Settings -->
@@ -320,7 +323,7 @@
                     <li>This option will not show up if you have already connected your Nexus account on a different MO2 instance.</li>
                 </ul>
                 <li>MO2 will open your browser and prompt you to authorize the connection.</li>
-                <li>Once you authorize it, you can close out of your browser and of the MO2 settings.</li>
+                <li>Once you authorize it, you can close your browser and of the MO2 settings.</li>
                 <li>Allow MO2 to restart.</li>
             </ol>
 
@@ -337,36 +340,24 @@
                     <h3 id="bethIni">Running BethINI</h3>
                 </a>
             </p>
-            In this step, we will download and run BethINI, which will allow choosing optimized presets and more specific options all through an easy GUI.</a>
+            In this step, we will download and run BethINI Pie, which will allow choosing optimized presets and more specific options all through an easy to use interface.</a>
             <ol>
-                <li>Download <a href="https://www.nexusmods.com/site/mods/631" target="_blank">BethINI PIE</a>,</li>
+                <li>Download <a href="https://www.nexusmods.com/site/mods/631" target="_blank">BethINI Pie</a>,</li>
                 <li>Extract the archive anywhere outside of the default Windows folders, such as <code>C:\Modding Tools</code>,</li>
-                <li>In MO2, click on the dropdown in the right pane next to the <strong>Run</strong> button. Right now, it should be displaying <strong>Fallout 4</strong>. In the resulting dropdown, click <code>&#60;Edit...&#62;</code>. A window titled <strong>Modify Executables</strong> will pop up. Click the <strong>+</strong> sign in the top left, then <strong>Add from file.</strong> Navigate in the resulting window to where you placed the BethINI Pie executable (<code>BethINI.exe</code>). Double click it. This will return you to the <strong>Modify Executables</strong> window. Press <strong>Apply</strong> in the lower right, then <strong>OK</strong>. The window will close.</li>
-                <li>This sets up BethINI to run as an executable through MO2, which is necessary for it to be able to access mods and other files that MO2 handles. You can repeat this process for any other executable you may need to run through MO2, such as xEdit.</li>
-                <li>Click on the dropdown in the right pane again. Select <strong>Bethini</strong>.</li>
-                <li>Click <strong>Run</strong>.</li>
-                <li>Make sure Fallout 4 is chosen. Press <strong>Select Game</strong>.</li <li>Make sure the <code>Game Path</code> is accurate to where you installed Fallout 4, then make sure the <code>INI Path</code> is pointing towards something like <code>Documents\MyGames\Fallout4</code>.</li>
-                <li>Select a BethINI preset depending on your hardware (I recommend High for an average system, do <b>NOT</b> use Ultra. Lower-end systems can use Medium or Low; Keep in mind that this does NOT effect texture quality), then do the following:</li>
+                <li>In MO2, click on the <strong>drop-down</strong> in the right pane next to the <b>Run</b> button,</li>
+                <li>Click <code>&#60;Edit...&#62;</code>, then click the <b>+</b> symbol in the top left and <strong>Add from file</strong>,</li>
+                <li>In the resulting explorer window, navigate to where you installed BethINI Pie and select <strong>Bethini.exe</strong>,</li>
+                <li>Press <strong>Apply</strong> in the lower right, then <strong>OK</strong>,</li>
+                <li>Select <strong>BethINI</strong> from the drop-down and run it,</li>
+                <li>Click Fallout 4 then press <strong>Select Game</strong>,</li>
+                <li>Select a BethINI preset depending on your hardware (High is recommended for most systems, you can use Ultra if your system specs allow it and you want better visual fidelity), then do the following:</li>
                 <ol>
                     <li>Apply Recommended Tweaks,</li>
                     <li>Set Display Mode to Borderless Windowed,</li>
-                    <li>Set Anisotropic Filtering to 16x,</li>
                     <li>Select the resolution you want to display the game in,</li>
-                    <li>Edit the other settings to your liking, such as the FOV value or if you want to have subtitles,</li>
-                    <li>Save and exit by clicking one "File" in the top left -> Save. Say yes to resulting popups.</li>
+                    <li>Edit the other settings to your liking, such as FOV or subtitles,</li>
+                    <li>Click <strong>File</strong> then <strong>Save</strong> in the top left, then confirm the prompts and close BethINI.</li>
                 </ol>
-            </ol>
-
-            <!-- Custom INI -->
-            <p>
-                <a href="#customIni">
-                    <h3 id="customIni">Custom INI</h3>
-                </a>
-            </p>
-            <ol>
-                <li>Download the <a href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">Custom INI</a>.</li>
-                <li>Head over to your MO2 Profiles folder in File Explorer (you can do this by clicking the folder icon in MO2 and clicking on <strong>Open Profile folder</strong>).</li>
-                <li>Download and extract the archive, then paste the Fallout4Custom.ini file next to the other INIs. If prompted to replace, click <strong>Yes</strong>.</li>
             </ol>
 
             <!-- Instructions -->
@@ -436,7 +427,7 @@
             </li>
             <ul>
                 <li>
-                    <a href="#exceptions">Exceptions</a>
+                    <a href="#exclusions">exclusions</a>
                 </li>
                 <li>
                     <a href="#settings">Settings</a>
@@ -448,9 +439,6 @@
             <ul>
                 <li>
                     <a href="#bethIni">BethINI</a>
-                </li>
-                <li>
-                    <a href="#customIni">Custom INI</a>
                 </li>
             </ul>
             <li>

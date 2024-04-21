@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo-icon.webp">
+    <link rel="icon" href="img/logoex-icon.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
-    <title>Resources | The Midnight Ride</title>
+    <title>Content | The Midnight Ride</title>
     <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Various useful resources/guides for additional modding or mod creation.">
+    <meta name="description" content="Small content additions/restorations that keep the vanilla-style.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Various useful resources/guides for additional modding or mod creation.">
+    <meta property="og:description" content="Small content additions/restorations that keep the vanilla-style.">
 </head>
 
 <body>
@@ -31,8 +31,8 @@
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
+        <img src="./img/logoex.webp" alt="Logo">
+        <a href="./index.html">The Midnight Ride - Extended</a>
         <div class="guideLinks">
             <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
             <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
@@ -68,7 +68,7 @@
             </ul>
             <hr>
         </div>
-        <div class="extended-background">
+        <div class="extended-background active">
             <ul>
                 <h3 id="extended-separator">TMR Extended</h3>
                 <li>
@@ -81,7 +81,7 @@
                     <a href="./gameplay.html">Gameplay</a>
                 </li>
                 <li>
-                    <a href="./content.html">Content</a>
+                    <a href="./content.html" class="active">Content</a>
                 </li>
                 <li>
                     <a href="./visuals.html">Visuals</a>
@@ -98,7 +98,7 @@
                     <a href="./changelog.html">Changelog</a>
                 </li>
                 <li>
-                    <a href="./resources.html" class="active">Resources</a>
+                    <a href="./resources.html">Resources</a>
                 </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -159,52 +159,93 @@
     <!-- Content -->
     <div class="content">
         <div class="section">
-            <h1>General Resources</h1>
-            <p>
-                <a class="link" href="https://moddinglinked.com/dogmas.html">
-                    <h2>Modding Dogmas</h2>
-                </a>
-            </p>
-            Some dangerous dogmas about modding that you should be aware of.
-            <p>
-                <a class="link" href="https://moddinglinked.com/xedit.html">
-                    <h2>Basics of xEdit</h2>
-                </a>
-            </p>
-            An introduction to xEdit and its use.
-            <p>
-                <a class="link" href="https://moddinglinked.com/themethod.html">
-                    <h2>The Method</h2>
-                </a>
-            </p>
-            A full guide to The Method conflict resolution.
+            <h1>Content</h1>
+            <h3>In this step, we will install mods that restore removed, and add new lore-friendly content to the game</h3>
+
             <hr>
-            <h1>TMR Resources</h1>
+
+            <h2>Creating a Separator in MO2.</h2>
+            <ol>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Name the separator <strong>Content</strong>.</li>
+            </ol>
+
+            <!-- Attachment Pack -->
             <p>
-                <a class="link" href="https://www.youtube.com/watch?v=Ipgx3xmzEaw&list=PL2g2oK5KhZT3L25H0FqJzSnFib9VmymQS">
-                    <h2>Creation Kit Tutorials</h2>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/76924" target="_blank">
+                    <h2 id="attachmentPack">The Attachment Pack</h2>
                 </a>
             </p>
-            Playlist of many YouTube videos from various mod authors that explain how to use the Creation Kit.
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Attachment Pack</b></li>
+                <li><b>Optional Files - Implementation Patch</b></li>
+                <li><a href="https://www.nexusmods.com/fallout4/mods/63391" target="_blank">The Attachment Pack - Implementation WMF Patch</a></li>
+            </ul>
+            Adds over 400 brand new lore friendly hand crafted attachments for vanilla and DLC weapons.
+
+            <!-- Mutation Messages -->
             <p>
-                <a class="link" href="https://www.youtube.com/watch?v=1naNojdx0ek&list=PL2g2oK5KhZT0WUOw0Y_8HFudZbgfmcdEl">
-                    <h2>Bethesda Modding School</h2>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/63929" target="_blank">
+                    <h2 id="mutationMessages">Legendary Mutation Messages Fix - Cut Content Restored</h2>
                 </a>
             </p>
-            Comprehensive tutorials on how to make various types of mod in the Creation Kit, made by the author of Sim Settlements.
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Legendary Mutation Messages Fix - Cut Content Restored</b></li>
+            </ul>
+            A small fix to restore unique messages when legendary enemies mutate.
+
+            <!-- DC Guards Dialogue -->
             <p>
-                <a class="link" href="./lod.html">
-                    <h2>LOD Guide</h2>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/79911" target="_blank">
+                    <h2 id="guardsDialogue">Extended Diamond City Security Dialogue</h2>
                 </a>
             </p>
-            General information on LOD and how to generate it with FO4LODgen, TexGen, and Synthesis.
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Extended Diamond City Security Dialogue</b></li>
+            </ul>
+            Gives Diamond City security officers new things to say in a way that should be almost indistinguishable from the original voice acting.
+
+            <!-- YAWA2 -->
             <p>
-                <a class="link" href="./esl.html">
-                    <h2>Light Plugins</h2>
+                <a class="link" href="https://www.nexusmods.com/fallout4/mods/78925" target="_blank">
+                    <h2 id="yawa2">You And What Army 2</h2>
                 </a>
             </p>
-            All you need to know about light plugins (ESL).
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - You And What Army 2</b></li>
+            </ul>
+            Expands the minutemen into a proper faction the player rebuilds, complete with integration into the game's world.
+
         </div>
+
+        <!-- Arrows -->
+        <div>
+            <hr>
+            <a href="./gameplay.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Gameplay</span></a>
+            <a href="./visuals.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Visuals</span></a>
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <ul>
+            <li>
+                <a href="#attachmentPack">Attachment Pack</a>
+            </li>
+            <li>
+                <a href="#mutationMessages">Mutation Messages</a>
+            </li>
+            <li>
+                <a href="#guardsDialogue">DC Guards Dialogue</a>
+            </li>
+            <li>
+                <a href="#yawa2">YAWA2</a>
+            </li>
+        </ul>
     </div>
 </body>
 
