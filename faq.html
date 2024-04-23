@@ -165,25 +165,35 @@
             <h2 id="crash"><b>Crash before launch</b></h2>
             This can be caused by multiple things, so check all of them:
             <ul>
-                <li><strong>Misconfigured Buffout 4</strong>, set MaxStdIO to 2048 as instructed in the <a href="./bugfix.html#buffout">Buffout 4</a> section. When done, the setting will look like this: <code>MaxStdIO = 2048</code>,
-                <li><strong>Missing masters</strong>, check the big red triangle icon on the top right corner of Mod Organizer 2 and if it says a master is missing, install the mod reported to be missing. Ask for support in the <a href="https://discord.gg/S99Ary5eba">ModdingLinked Discord server</a> if you are unsure on how to do this,</li>
+                <li><strong>Misconfigured Buffout 4</strong>, set MaxStdIO to 2048 as instructed in the <a href="./bugfix.html#buffout">Buffout 4</a> section. When done, the setting will look like this: <code>MaxStdIO = 2048</code>.</li>
+                <li><strong>Missing masters</strong>, check the big red triangle icon on the top right corner of Mod Organizer 2 and if it says a master is missing, install the mod reported to be missing. Ask for support in the <a href="https://discord.gg/S99Ary5eba">ModdingLinked Discord server</a> if you are unsure on how to do this</li>
                 <li><strong>Missing AV exclusions</strong>, add the required exclusions to your antivirus as instructed in the <a href="./mo2.html#exclusions">Adding Exclusions to Defender</a> section.</li>
             </ul>
 
             <!-- Buffout Loading -->
             <h2 id="buffoutLoading"><b>"Buffout has loaded too late" error</b></h2>
-            This can be caused by 2 things:
             <ul>
-                <li><strong>Missing GOG support</strong>, add the required argument as instructed in the <a href="./utilities.html#f4se">F4SE</a> section,
                 <li>
-                    The game's isn't <strong>launching with F4SE</strong>, make sure to <b>always</b> run the game with F4SE through Mod Organizer 2 as shown in the picture:
+                    Make sure to <b>always</b> <strong>run the game with F4SE</strong> through Mod Organizer 2 as shown in the picture. If the F4SE option isn't present, restart MO2.
                     <img src="./img/run f4se.webp">
                 </li>
+                <li>If you own the game on <strong>GOG</strong>, click <code>&#60;Edit...&#62;</code> then add <code><strong>-forcesteamloader</strong></code> to the arguments text box of <b>F4SE</b>.</li>
             </ul>
 
             <!-- Infinite Loading -->
             <h2 id="ils"><b>Infinite loading on New Game</b></h2>
             Just like in the <a href="./utilities.html#physics">High FPS Physics Fix</a> section, open up the configuration file and change <strong>NumOfThreadsWhileLoadingNewGame</strong> to 2 (line 83). If the issue persists, increase the value until the game manages to load normally.
+
+            <!-- Missing Voice Audio -->
+            <h2 id="noAudio"><b>Missing Voice Audio</b></h2>
+            This is caused by the language of your game's audio files not matching what your Fallout4.ini is setting. To fix it, do the following:
+            <ol>
+                <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                <li>Select the <strong>Fallout4.ini</strong> tab.</li>
+                <li>Filter for <code><strong>sLanguage</strong></code> by using the <b>CTRL+F</b> shortcut.</li>
+                <li>Set it to <code><strong>en</strong></code>.</li>
+                <li>Save and exit.</li>
+            </ol>
 
             <!-- NPC Respawn Fix Error -->
             <h2 id="npcRespawnError"><b>NPCRespawnFix: ERROR: F4SE</b></h2>
@@ -191,7 +201,7 @@
 
             <!-- Broken Previs -->
             <h2 id="brokenPrevis"><b>Invisible or flickering parts of the world</b></h2>
-            Install the <strong>PRP Resources</strong> as instructed in the <a href="./bugfix.html#prp">Previs Repair Pack</a> section.
+            Install the <strong>PRP Resources</strong> as instructed in the <a href="./bugfix.html#prp">Previs Repair Pack</a> section, then apply the guide's <a href="https://www.nexusmods.com/fallout4/mods/67185">Load Order</a> if you haven't already.
 
             <!-- Random Crashes -->
             <h2 id="randomCrashes"><b>Random crashes</b></h2>
