@@ -285,16 +285,13 @@
                 <li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
                 <li>Change the following options:</li>
                 <ul>
-                    <li>Set <strong>PostloadingMenuSpeed</strong> to 3 (line 51)</li>
-                    <li>Set <strong>InGameFPS</strong> to a value you want the game FPS to be locked to (line 58)</li>
-                    If you set InGameFPS to a value higher than 60:
+                    <li>Set <code><strong>AllowTearing</strong></code> to <b>true</b> (line 26)</li>
+                    <li>Set <code><strong>PostloadingMenuSpeed</strong></code> to <b>3</b> (line 51)</li>
+                    <li>Set <code><strong>InGameFPS</strong></code> to a value you want the game <b>FPS</b> to be locked to (line 58)</li>
+                    If you set InGameFPS to a value higher than 60, do the following as well:
                     <ul>
-                        <li>Set <strong>DynamicUpdateBudget</strong> to <b>true</b> (line 264)</li>
-                        <li>Set <strong>BudgetMaxFPS</strong> to the <b>same value as InGameFPS</b> (line 283)</li>
-                    </ul>
-                    If you are using VRR (G-Sync or FreeSync):
-                    <ul>
-                        <li>Set <strong>AllowTearing</strong> to <b>true</b> (line 26)</li>
+                        <li>Set <code><strong>DynamicUpdateBudget</strong></code> to <b>true</b> (line 264)</li>
+                        <li>Set <code><strong>BudgetMaxFPS</strong></code> to the same value as <b>InGameFPS</b> (line 283)</li>
                     </ul>
                 </ul>
             </ul>
@@ -303,6 +300,7 @@
                 <br>
                 Make sure that <strong>no other external program</strong> such as <b>RTSS</b> or your <b>GPU's drivers</b> are applying a <b>limiter</b> or forcing <b>VSync</b>. These features have to be handled by the mod in order to achieve the best results in loading time.
             </blockquote>
+            <blockquote>Enabling <code>AllowTearing</code> allows the mod to disable VSync during loading in order to make it faster, since the game loading time is largely limited by current framerate (up to a certain point). Enabling it will <b>NOT</b> lead to any tearing during gameplay.</blockquote>
             All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and reduces loading times.
 
             <!-- RobCo Patcher -->
