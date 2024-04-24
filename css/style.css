@@ -550,12 +550,12 @@ h2 {
   background-color: rgb(88, 101, 242);
 }
 
-.kofi {
-  background-color: rgba(255, 94, 91, 0.5);
+.paypal {
+  background-color: rgba(0, 69, 124, 0.5);
 }
 
-.kofi:hover {
-  background-color: rgb(255, 94, 91);
+.paypal:hover {
+  background-color: rgb(0, 69, 124);
 }
 
 .github {

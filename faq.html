@@ -140,10 +140,10 @@
                         Discord
                     </a>
                 </li>
-                <li class="kofi">
-                    <a href="https://ko-fi.com/lucasarthur" target="_blank">
-                        <i class="fa fa-coffee"></i>
-                        Support us
+                <li class="paypal">
+                    <a href="https://paypal.me/Ungeziefi" target="_blank">
+                        <i class="fa fa-paypal"></i>
+                        Donations
                     </a>
                 </li>
                 <li class="github">
@@ -174,19 +174,26 @@
             <h2 id="buffoutLoading"><b>"Buffout has loaded too late" error</b></h2>
             <ul>
                 <li>
-                    Make sure to <b>always</b> <strong>run the game with F4SE</strong> through Mod Organizer 2 as shown in the picture. If the F4SE option isn't present, restart MO2.
+                    <b>Always</b> <strong>run the game with F4SE</strong> through Mod Organizer 2 as shown in the picture. If the F4SE option isn't present, restart MO2.
                     <img src="./img/run f4se.webp">
                 </li>
                 <li>If you own the game on <strong>GOG</strong>, click <code>&#60;Edit...&#62;</code> then add <code><strong>-forcesteamloader</strong></code> to the arguments text box of <b>F4SE</b>.</li>
             </ul>
 
+            <!-- Ultrawide -->
+            <h2 id="ultrawide"><b>Ultrawide support</b></h2>
+            Install <a href="https://www.nexusmods.com/fallout4/mods/65677">Ultra Wide Interface (21x9)</a>.
+
             <!-- Infinite Loading -->
             <h2 id="ils"><b>Infinite loading on New Game</b></h2>
             Just like in the <a href="./utilities.html#physics">High FPS Physics Fix</a> section, open up the configuration file and change <strong>NumOfThreadsWhileLoadingNewGame</strong> to 2 (line 83). If the issue persists, increase the value until the game manages to load normally.
 
-            <!-- Missing Voice Audio -->
-            <h2 id="noAudio"><b>Missing Voice Audio</b></h2>
-            This is caused by the language of your game's audio files not matching what your Fallout4.ini is setting. To fix it, do the following:
+            <!-- No Audio or Wrong Lang -->
+            <h2 id="audioLang"><b>Missing Voice Audio or Wrong Language</b></h2>
+            In the case of missing voice audio, this is caused by the language of your game's audio files not matching what your Fallout4.ini is setting. The same option in Fallout4.ini controls the text language.
+            <br>
+            <br>
+            To fix both problems, do the following:
             <ol>
                 <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
                 <li>Select the <strong>Fallout4.ini</strong> tab.</li>
@@ -197,7 +204,14 @@
 
             <!-- NPC Respawn Fix Error -->
             <h2 id="npcRespawnError"><b>NPCRespawnFix: ERROR: F4SE</b></h2>
-            Make sure to follow the <a href="./mo2.html#bethIni">BethINI</a> section in its entirety, especially enabling <strong>Recommended Tweaks</strong>.
+            <ul>
+                <li>Follow the <a href="./mo2.html#bethIni">BethINI</a> section in its entirety, especially enabling <strong>Recommended Tweaks</strong>.</li>
+                <li>
+                    <b>Always</b> <strong>run the game with F4SE</strong> through Mod Organizer 2 as shown in the picture. If the F4SE option isn't present, restart MO2.
+                    <img src="./img/run f4se.webp">
+                </li>
+                <li>If you own the game on <strong>GOG</strong>, click <code>&#60;Edit...&#62;</code> then add <code><strong>-forcesteamloader</strong></code> to the arguments text box of <b>F4SE</b>.</li>
+            </ul>
 
             <!-- Broken Previs -->
             <h2 id="brokenPrevis"><b>Invisible or flickering parts of the world</b></h2>
@@ -207,9 +221,16 @@
             <h2 id="randomCrashes"><b>Random crashes</b></h2>
             This could also be caused by missing <strong>PRP Resources</strong>, install them as instructed in the <a href="./bugfix.html#prp">Previs Repair Pack</a> section.
 
-            <!-- Ultrawide -->
-            <h2 id="ultrawide"><b>Ultrawide support</b></h2>
-            Install <a href="https://www.nexusmods.com/fallout4/mods/65677">Ultra Wide Interface (21x9)</a>.
+            <!-- DLC Timing -->
+            <h2 id="dlcTiming"><b>Why aren't the DLC quests starting?</b></h2>
+            <a href="./gameplay#dlcTiming">DLC Timing</a> paired with the <a href="./hud.html#settingsManager">MCM Settings Manager - TMR Configuration</a> will delay DLCs until you meet the following requirements:
+            <ul>
+                <li>Vault-Tec Workshop: <span class="spoiler">level 15 and Reunions completed</span></li>
+                <li>Automatron: <span class="spoiler">level 20 and Dangerous Minds completed</span></li>
+                <li>Far Harbor: <span class="spoiler">level 25 and The Glowing Sea completed</span></li>
+                <li>Nuka World: <span class="spoiler">level 30 and Hunter/Hunted completed</span></li>
+            </ul>
+            This is fully configurable through the DLC Timing Mod Configuration Menu.
 
             <!-- DLC Cleaning -->
             <h2 id="cleaning"><b>Shouldn't the DLC plugins be cleaned?</b></h2>
