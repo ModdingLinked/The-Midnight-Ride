@@ -143,7 +143,7 @@
                 <li class="paypal">
                     <a href="https://paypal.me/Ungeziefi" target="_blank">
                         <i class="fa fa-paypal"></i>
-                        Donations
+                        Donate
                     </a>
                 </li>
                 <li class="github">
@@ -162,7 +162,7 @@
         <!-- Introduction -->
         <div class="section">
             <h1>Mod Organizer 2</h1>
-            <h3>In this step, we will install and configure Mod Organizer 2.</h3>
+            <h3>In this step, we will set up Mod Organizer 2 and INI files.</h3>
 
             <hr>
 
@@ -172,27 +172,22 @@
                     <h2 id="whatIsMO2">What is Mod Organizer 2?</h2>
                 </a>
             </p>
-            Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games.
-            <h4>MO2's main characteristics are:</h4>
+            Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games. Its main features are:
             <ul>
                 <li>
-                    <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from.
-                    <br>
-                    This allows for:
+                    <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from. This allows for:
                     <ul>
-                        <li>Safe mod installation and uninstallation.</li>
-                        <li>Being able to modify mod install order at any point.</li>
-                        <li>Having multiple profiles with different mod setups.</li>
-                        <li>Keeping orignal game files clean,.</li>
+                        <li>Safe mod installation and uninstallation,</li>
+                        <li>Being able to modify mod install order at any point,</li>
+                        <li>Having multiple profiles with different mod setups,</li>
+                        <li>Keeping orignal game files clean.</li>
                     </ul>
-                    Nothing is perfect, and USVFS is no exception. There are some downsides to it, such as:
+                    The <b>downsides</b> to USVFS are:
                     <ul>
-                        <li>Mods installed through MO2 are "visible" only to programs launched using MO2.</li>
-                        <li>Some programs may not work properly with MO2's virtual filesystem.</li>
-                        <li>USVFS can cause performance overhead if you have tons of loose (not-BSA) files.</li>
-                        <li>USVFS works by "hooking" into the game (similarly to mods such as F4SE plugins, ReShade, etc.).
-                            <br>
-                            This method can be considered as unsafe by some antivirus software due to its memory-invasive nature.
+                        <li>Mods installed through MO2 are "visible" only to programs launched using MO2,</li>
+                        <li>Some programs may not work properly with MO2's virtual filesystem,</li>
+                        <li>USVFS can cause performance overhead if you have tons of loose (not-BSA/BA2) files,</li>
+                        <li>USVFS works by "hooking" into the game (similarly to mods such as F4SE plugins, ReShade, etc.). This method can be considered as unsafe by some antivirus software due to its memory-invasive nature.
                         </li>
                     </ul>
                 </li>
@@ -210,7 +205,7 @@
                     <br>
                     It also has a plugin system that allows for creation of custom plugins to extend its functionality.
                     <blockquote>
-                        Mod Organizer 2 has <strong>NO</strong> support for Nexus' Collections feature, so you will have to download mods one by one.
+                        Mod Organizer 2 has <b>NO</b> support for Nexus' Collections feature, so you will have to download mods one by one.
                         <br>
                         This is not a big issue, as the guide will provide direct links to the mods you need, and most collections are low quality and not curated.
                         <hr>
@@ -228,13 +223,17 @@
                     <h2 id="whyMO2">Why Mod Organizer 2?</h2>
                 </a>
             </p>
-            Mod Organizer 2 has been chosen as <i>The</i> mod manager for our guides due to its ease of use, and its ability to keep the game's folder clean.
+            Mod Organizer 2 has been chosen for our guides due to its ease of use and its ability to keep the game's folder clean. This is important because it allows for easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong order? Just drag them into the correct position!
             <br>
-            This is important because it allows for easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong order? Just drag them into the correct position!
             <br>
             Compared to Vortex, MO2 doesn't hide the most important parts of modding from the user, making it easier to understand what is happening and why, albeit at the cost of potentially looking scary at first.
             <br>
+            <br>
             That said, we are well aware that MO2 is not perfect, and it has its own set of issues and limitations, but it is the best tool for the job.
+
+            <br>
+            <br>
+            <hr>
 
             <!-- Installing MO2 -->
             <p>
@@ -243,9 +242,9 @@
                 </a>
             </p>
             <ol>
-                <li>Download <strong>Mod Organizer 2</strong> from <a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.7z" target="_blank">here</a>.</li>
-                <li>Once the download has finished, right click the file and open its <strong>Properties</strong>.</li>
-                <li>In the properties window, if present, tick the <strong>Unblock</strong> checkbox at the bottom of <strong>General</strong> section.</li>
+                <li>Download <b>Mod Organizer 2</b> from <a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.7z" target="_blank">here</a>.</li>
+                <li>Once the download has finished, right-click the file and open its <strong>Properties</strong>.</li>
+                <li>In the properties window, if present, tick the <strong>Unblock</strong> checkbox at the bottom of <b>General</b> section.</li>
                 <img src="./img/MO2/Unblock.webp" alt="Unblock file" class="width-insanely-limited">
                 <blockquote>
                     This operation is required because Windows can block MO2 files from loading.
@@ -254,7 +253,7 @@
                 </blockquote>
                 <li>Extract the archive into a folder where you want your TMR instance to be, for example <code>C:\Modding\MO2\The Midnight Ride</code></li>
                 <blockquote>
-                    Folder <u>MUST</u> be outside of the default Windows folders (such as <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder.
+                    Folder <u>MUST</u> be outside of the default Windows folders (such as <code>Program Files x86</code>) and outside of the game's <b>Root</b> folder.
                     <br>
                     <br>
                     It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.
@@ -270,14 +269,14 @@
 
             <ol>
                 <li>Run <strong>ModOrganizer.exe</strong> inside the Mod Organizer 2 folder you extracted before.</li>
-                <li>You will be prompted with a pop-up called <strong>Creating an instance</strong>, in which you should just select <strong>Next</strong>.</li>
+                <li>You will be prompted with a pop-up called <strong>Creating an instance</strong>, in which you should just select <b>Next</b>.</li>
                 <li>Create a <strong>portable instance</strong>.</li>
                 <img src="./img/mo2 portable instance.webp" alt="Portable instance">
                 <li>Select <strong>Fallout 4</strong>.</li>
                 <li>Enable both <strong>profile-specific</strong> options.</li>
                 <li>Keep the <strong>Location</strong> file path as default.</li>
             </ol>
-            <blockquote>If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space. This will not effect download/game performance, and the downloads can be deleted after the mods have been installed.</blockquote>
+            <blockquote>If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space. This will not affect performance and the downloads can be deleted after the mods have been installed.</blockquote>
             <ol start="7">
                 <li>On the last page, select <strong>Finish</strong>.</li>
                 <li>MO2 will launch and prompt you with <strong>Category Setup</strong>, select <strong>Do Nothing</strong>.</li>
@@ -301,8 +300,6 @@
             <blockquote>
                 This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works.
                 <br>
-                If you used the installer, this action is not needed as it handles it automatically.
-                <br>
                 <br>
                 If you are using a third-party antivirus, you will need to find the exclusions menu and add those 2 folders mentioned previously.
             </blockquote>
@@ -316,16 +313,18 @@
             <ol>
                 <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window.</li>
                 <li>Select the <img src="./img/mo2 settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
-                <li>In the <strong>Theme</strong> tab, you can select a different style of your choosing from the drop-down menu at the top.</li>
-                <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong>.</li>
+                <li>If you wish, you can select a different <strong>Theme</strong>.</li>
+                <li>In the <b>Nexus</b> tab, select <strong>Connect to Nexus</strong>.</li>
                 <img src="./img/mo2 connect.webp" alt="Connect to Nexus">
-                <ul>
-                    <li>This option will not show up if you have already connected your Nexus account on a different MO2 instance.</li>
-                </ul>
-                <li>MO2 will open your browser and prompt you to authorize the connection.</li>
-                <li>Once you authorize it, you can close your browser and of the MO2 settings.</li>
-                <li>Allow MO2 to restart.</li>
             </ol>
+            <blockquote>This option will not show up if you have already connected your Nexus account on a different MO2 instance.</blockquote>
+            <ol start="5">
+                <li>MO2 will open your browser and prompt you to <strong>authorize</strong> the connection.</li>
+                <li>Once you authorize it, you can close your browser and of the MO2 settings.</li>
+                <li>Allow MO2 to <strong>restart</strong>.</li>
+            </ol>
+
+            <hr>
 
             <!-- INI Configuration -->
             <p>
@@ -347,18 +346,21 @@
                 <li>In MO2, click on the <strong>drop-down</strong> in the right pane next to the <b>Run</b> button,</li>
                 <li>Click <code>&#60;Edit...&#62;</code>, then click the <b>+</b> symbol in the top left and <strong>Add from file</strong>,</li>
                 <li>In the resulting explorer window, navigate to where you installed BethINI Pie and select <strong>Bethini.exe</strong>,</li>
-                <li>Press <strong>Apply</strong> in the lower right, then <strong>OK</strong>,</li>
-                <li>Select <strong>BethINI</strong> from the drop-down and run it,</li>
+                <li>Press <strong>Apply</strong> in the lower right, then <b>OK</b>,</li>
+                <li>Select <b>BethINI</b> from the drop-down and <strong>run</strong> it,</li>
                 <li>Click Fallout 4 then press <strong>Select Game</strong>,</li>
-                <li>Select a BethINI preset depending on your hardware (High is recommended for most systems, Ultra if you have spare GPU performance. You can check this <a href="https://github.com/ModdingLinked/The-Midnight-Ride/blob/main/bethini%20performance%20testing">complete comparison</a> if you aren't sure), then do the following:</li>
+                <li>Select a BethINI <strong>preset</strong> depending on your hardware, then do the following:</li>
                 <ol>
                     <li>Apply Recommended Tweaks,</li>
                     <li>Set Display Mode to Borderless Windowed,</li>
                     <li>Select the resolution you want to display the game in,</li>
                     <li>Edit the other settings to your liking, such as FOV or subtitles,</li>
-                    <li>Click <strong>File</strong> then <strong>Save</strong> in the top left, then confirm the prompts and close BethINI.</li>
+                    <li>Click <b>File</b> then <strong>Save</strong> in the top left, then confirm the prompts and close BethINI.</li>
                 </ol>
             </ol>
+            <blockquote>The BethINI High preset is recommended for most systems, use Ultra if you have spare GPU performance and want better visual quality. You can check this <a href="https://github.com/ModdingLinked/The-Midnight-Ride/blob/main/bethini%20performance%20testing">complete comparison</a> if you are unsure.</blockquote>
+
+            <hr>
 
             <!-- Instructions -->
             <p>
@@ -366,12 +368,10 @@
                     <h2 id="instructions">Mod Installation Instructions</h2>
                 </a>
             </p>
-            <blockquote>
-                If a mod is tagged <strong class="performance"></strong> it means that the mod may be performance intensive on lower-end systems. It can be skipped without any problems.
-            </blockquote>
-            When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example 1.5</strong>. This is referring to the mod's category on Nexus and file name.
+            When the guide says to install a mod, it will be formatted as <strong>Main File - Example 1.5</strong>, this is referring to the mod's category on Nexus and file name.
             <br>
-            The guide will list a mod's specific file name, category and version if you need to do more than just download the latest main file.
+            <br>
+            Unless otherwise specified, you will always use <b>Mod Manager Download</b>.
             <br>
             <br>
             <img src="./img/download example.webp" alt="Download example">
@@ -379,19 +379,10 @@
             <br>
             Standard mod installation procedure:
             <ol>
-                <li>Unless instructed otherwise by the guide, download a mod's latest main file using the <strong>Mod Manager Download</strong> button.</li>
-                <li>Once the download has finished, open <strong>Downloads</strong> tab in MO2 (right pane, below executable selector).</li>
+                <li>Download the indicated file(s).</li>
+                <li>Open the <strong>Downloads</strong> tab in MO2 (below the executable selector on the right).</li>
                 <li>Double-click on the mod to install it.</li>
-                <li>Enable the mod on the left pane.</li>
-            </ol>
-            Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site other than Nexus.
-            <br>
-            If that is the case, do the following:
-            <ol>
-                <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site).</li>
-                <li>Once the download has finished, click the <img src="./img/mo2 archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
-                <li>From the new window, navigate to where the file was downloaded to and double-click it.</li>
-                <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod.</li>
+                <li>Enable the mod on the left pane by ticking its checkbox.</li>
             </ol>
             When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong> and <strong>Rename</strong>.
             <br>
