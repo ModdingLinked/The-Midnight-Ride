@@ -241,22 +241,33 @@
                 </a>
             </p>
             <ol>
-                <li>Download <b>Mod Organizer 2</b> from <a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.7z" target="_blank">here</a>.</li>
-                <li>Once the download has finished, right-click the file and open its <strong>Properties</strong>.</li>
-                <li>In the properties window, if present, tick the <strong>Unblock</strong> checkbox at the bottom of <b>General</b> section.</li>
-                <img src="./img/MO2/Unblock.webp" alt="Unblock file" class="width-insanely-limited">
-                <blockquote>
-                    This operation is required because Windows can block MO2 files from loading.
+                <li>Download <strong>Mod Organizer 2</strong> from <a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.exe" target="_blank">here</a>.</li>
+                <li>Once the download has finished, run the installer.</li>
+                <li>Accept the license, click <strong>Next</strong>.</li>
+                <li>
+                    When asked about the install location, change <code>MO2</code> to <code>The Midnight Ride</code> and click <strong>Next</strong>.
                     <br>
-                    If you used the installer, this action is not needed as it handles it automatically.
-                </blockquote>
-                <li>Extract the archive into a folder where you want your TMR instance to be, for example <code>C:\Modding\MO2\The Midnight Ride</code></li>
-                <blockquote>
-                    Folder <u>MUST</u> be outside of the default Windows folders (such as <code>Program Files x86</code>) and outside of the game's <b>Root</b> folder.
+                    <img src="img/MO2/InstallPath.webp" alt="Change folder name to The Midnight Ride" class="width-ultra-limited">
+                    <blockquote>
+                        If you wish to install Mod Organizer 2 in a different location, you can do so by clicking the <strong>Browse</strong> button and selecting a different folder.
+                        <br>
+                        <br>
+                        The folder <u>MUST</u> be outside of the default Windows folders (such as <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder.
+                        <br>
+                        <br>
+                        It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.
+                    </blockquote>
+                </li>
+                <li>On the install components page, use defaults.</li>
+                <li>
+                    When asked about the Start Menu folder, change the name to <code>The Midnight Ride</code> and click <strong>Next</strong>.
                     <br>
-                    <br>
-                    It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.
-                </blockquote>
+                    <img src="img/MO2/StartMenu.webp" alt="Change the name to The Midnight Ride" class="width-ultra-limited">
+
+                </li>
+                <li>Don't create a Desktop shortcut - we will create our own later.</li>
+                <li>On the final page, click <strong>Install</strong>.</li>
+                <li>Once the install is complete, ensure that <strong>Launch Mod Organizer</strong> is ticked and click <strong>Finish</strong>.</li>
             </ol>
 
             <!-- MO2 -->
@@ -267,41 +278,20 @@
             </p>
 
             <ol>
-                <li>Run <strong>ModOrganizer.exe</strong> inside the Mod Organizer 2 folder you extracted before.</li>
-                <li>You will be prompted with a pop-up called <strong>Creating an instance</strong>, in which you should just select <b>Next</b>.</li>
-                <li>Create a <strong>portable instance</strong>.</li>
-                <img src="./img/mo2 portable instance.webp" alt="Portable instance">
-                <li>Select <strong>Fallout 4</strong>.</li>
-                <li>Enable both <strong>profile-specific options</strong>.</li>
+                <li>On the instance creation page, select <strong>Create a portable instance</strong>, click <strong>Next</strong>.</li>
+                <img src="./img/MO2/Instance.webp" alt="Select Portable Instance option" class="width-insanely-limited">
+                <li>Select <strong>Fallout 4</strong>, click <strong>Next</strong></li>
+                <li>Select the store where you bought the game, click <strong>Next</strong></li>
+                <li>When asked about profile settings, <strong>enable all options</strong> and click <strong>Next</strong></li>
                 <li>Keep the default <strong>Location</strong> file path.</li>
             </ol>
-            <blockquote>If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space. This will not affect performance and the downloads can be deleted after the mods have been installed.</blockquote>
-            <ol start="7">
+            <blockquote>If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space. This will not effect download/game performance, and the downloads can be deleted after the mods have been installed.</blockquote>
+            <ol start="8">
                 <li>On the last page, select <strong>Finish</strong>.</li>
                 <li>MO2 will launch and prompt you with <strong>Category Setup</strong>, select <strong>Do Nothing</strong>.</li>
+                <li>If you see a pop-up called <strong>INI file is read-only</strong>, select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag</strong>.</li>
                 <li>If you see a pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
             </ol>
-
-            <!-- Exclusions -->
-            <p>
-                <a href="#exclusions">
-                    <h3 id="exclusions">Adding Exclusions to Defender</h3>
-                </a>
-            </p>
-            <ol>
-                <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
-                <li>Open <strong>Virus & threat protection</strong>.</li>
-                <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
-                <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
-                <li>Add a <b>Folder</b> exclusion and point it to the folder <strong>Mod Organizer 2</strong> is in.</li>
-                <li>Add another exclusion for your <strong>game folder</strong> (the game's root folder, not documents).</li>
-            </ol>
-            <blockquote>
-                This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works.
-                <br>
-                <br>
-                If you are using a third-party antivirus, you will need to find the exclusions menu and add those 2 folders mentioned previously.
-            </blockquote>
 
             <!-- Settings -->
             <p>
@@ -416,9 +406,6 @@
                 <a href="#configuration">Configuration</a>
             </li>
             <ul>
-                <li>
-                    <a href="#exclusions">Exclusions</a>
-                </li>
                 <li>
                     <a href="#settings">Settings</a>
                 </li>
