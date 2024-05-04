@@ -320,34 +320,10 @@
 
             <hr>
 
-            <!-- Downgrading -->
-            <p>
-                <a href="#downgrading">
-                    <h2 id="downgrading">Downgrading to 1.10.163.0 (Steam Only)</h2>
-                </a>
-            </p>
-            The currently supported Steam version of the game is only 1.10.163.0, this means that downgrading from later versions is required in order to follow The Midnight Ride.
-            <ol>
-                <li>Make sure Steam is running, then enter <code><strong>steam://nav/console</strong></code> in your browser's address bar (on the top),</li>
-                <li>Execute the following commands one by one after each download completes,</li>
-                <ol>
-                    <li><code>download_depot 377160 377162 5847529232406005096</code></li>
-                    <li><code>download_depot 377160 377161 7497069378349273908</code></li>
-                    <li><code>download_depot 377160 377163 5819088023757897745</code></li>
-                    <li><code>download_depot 377160 377164 2178106366609958945</code></li>
-                    <li><code>download_depot 377160 435870 1691678129192680960</code></li>
-                    <li><code>download_depot 377160 435871 5106118861901111234</code></li>
-                    <li><code>download_depot 377160 435880 1255562923187931216</code></li>
-                </ol>
-                <li>Open the <code><strong>Steam\steamapps\content\app_377160</strong></code> folder, you will see one folder for each depot ID you downloaded earlier,</li>
-                <li>Take the content of each folder and move it to the game's <b>Root</b> folder (overwrite when prompted) in the same order the guide lists them in,</li>
-                <li>Once you have moved all the downloaded files into the game folder, head to the <b>Data</b> folder and delete all files that start with "<b>cc</b>".</li>
-            </ol>
-
             <!-- Disabling Updates -->
             <p>
                 <a>
-                    <h3 id="DisableUpdates">Disabling Automatic Steam Updates</h3>
+                    <h2 id="DisableUpdates">Disabling Automatic Steam Updates</h2>
                 </a>
             </p>
             This will prevent Steam from automatically installing Fallout 4 updates, which will break modding support considerably until they gain wide modding support (and the guide's).
@@ -423,13 +399,8 @@
                 <a href="#install">Install</a>
             </li>
             <li>
-                <a href="#downgrading">Downgrading</a>
+                <a href="#DisableUpdates">Disabling Updates</a>
             </li>
-            <ul>
-                <li>
-                    <a href="#DisableUpdates">Disabling Updates</a>
-                </li>
-            </ul>
             <li>
                 <a href="#postInstall">Post-Install</a>
             </li>
