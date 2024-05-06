@@ -808,16 +808,6 @@ h2 {
   border-right: 0.5em solid #435e84;
 }
 
-.colors-gog {
-  border-left: 0.5em solid #7c21ad;
-  border-right: 0.5em solid #7c21ad;
-}
-
-.colors-gog.clickable:hover {
-  border-left: 0.5em solid #b22ff9;
-  border-right: 0.5em solid #b22ff9;
-}
-
 .spoiler {
   background-color: rgba(0, 0, 0, 0.233);
   color: transparent;

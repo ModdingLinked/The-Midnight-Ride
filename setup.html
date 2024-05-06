@@ -221,42 +221,18 @@
                     <h2 id="uninstall">Uninstalling the Game</h2>
                 </a>
             </p>
-            <blockquote>If you never installed the game before, go directly to the install section.</blockquote>
-            As the game is available on Steam and GOG, there are separate instructions for each version. You obviously only need to follow the directions for the version you have.
-
-            <div class="expander-top colors-steam clickable width-very-limited" onclick="expandCard(this, uninstallSteamExpander)" id="uninstallSteam">
-                Steam
-                <div class="expander-info" alt="UI element - Chevron">Show</div>
-            </div>
-            <div class="expander-bottom colors-steam width-very-limited" id="uninstallSteamExpander">
-                <blockquote>If you already uninstalled the game, make sure to follow step 4 and 5 to ensure there are no leftovers.</blockquote>
-                <ol>
-                    <li>Open Steam and go to your <strong>Library</strong>.</li>
-                    <li>Find <strong>Fallout 4</strong> in the list.</li>
-                    <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
-                    <li>Navigate to <code>Steam\steamapps\common</code> and, if present, delete the <strong>Fallout 4</strong> folder.</li>
-                    <li>Navigate to <code>Documents\My Games</code> and delete the <strong>Fallout4</strong> folder.</li>
-                </ol>
-            </div>
-
-            <div class="expander-top colors-gog clickable width-very-limited" onclick="expandCard(this, uninstallGogExpander)" id="uninstallGog">
-                GOG
-                <div class="expander-info" alt="UI element - Chevron">Show</div>
-            </div>
-            <div class="expander-bottom colors-gog width-very-limited" id="uninstallGogExpander">
-                <ol>
-                    <li>Open GOG and go to your <strong>Library</strong>.</li>
-                    <li>Find <strong>Fallout 4</strong> in the list.</li>
-                    <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
-                    <ul>
-                        <li>If you used an offline installer then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder.</li>
-                    </ul>
-                </ol>
-            </div>
-
-            <br>
-            <br>
-            <br>
+            <blockquote>If you never installed the game before, go directly to the install section.
+                <br>
+                <br>
+                If you already uninstalled the game, make sure to follow step 4 and 5 to ensure there are no leftovers.
+            </blockquote>
+            <ol>
+                <li>Open Steam and go to your <strong>Library</strong>.</li>
+                <li>Find <strong>Fallout 4</strong> in the list.</li>
+                <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
+                <li>Navigate to <code>Steam\steamapps\common</code> and, if present, delete the <strong>Fallout 4</strong> folder.</li>
+                <li>Navigate to <code>Documents\My Games</code> and delete the <strong>Fallout4</strong> folder.</li>
+            </ol>
 
             <!-- Install -->
             <p>
@@ -264,55 +240,29 @@
                     <h2 id="install">Installing the Game</h2>
                 </a>
             </p>
-
-            <div class="expander-top colors-steam clickable width-very-limited" onclick="expandCard(this, installSteamExpander)" id="installSteam">
-                Steam
-                <div class="expander-info" alt="UI element - Chevron">Show</div>
-            </div>
-            <div class="expander-bottom colors-steam width-very-limited" id="installSteamExpander">
-                <blockquote>
-                    It is strongly recommended to install the game outside of any default Windows folders (such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders.
-                    <br>
-                    <br>
-                    If you already have Steam installed outside of any default windows folders then go directly to step 7 and install the game to your custom Steam library.
-                </blockquote>
-                <ol>
-                    <li>Completely exit out of Steam using Task Manager or System Tray.</li>
-                    <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases" target="_blank">here</a>.</li>
-                    <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
-                    <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
-                    <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
-                    <li>The tool will ask to exit, select <strong>OK</strong>.</li>
-                    <img width="50%" src="./img/steam library setup tool.webp" alt="Steam library setup tool">
-                    <li>Open Steam and go to your <strong>Library</strong>.</li>
-                    <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
-                    <li>Under <strong>Install to:</strong>, select the library folder created with the tool, which is the second <b>C:\</b> entry if you are installing on the main drive.</li>
-                    <img size="60%" src="./img/steam location picker.webp" alt="Example Steam install locations">
-                </ol>
-                <blockquote>If you still do not see your new library, restart your PC.</blockquote>
-                <ol start="10">
-                    <li>Select <strong>Next</strong> then wait for the install to finish.</li>
-                </ol>
-            </div>
-
-            <div class="expander-top colors-gog clickable width-very-limited" onclick="expandCard(this, installGogExpander)" id="installGog">
-                GOG
-                <div class="expander-info" alt="UI element - Chevron">Show</div>
-            </div>
-            <div class="expander-bottom colors-gog width-very-limited" id="installGogExpander">
-                <ol>
-                    <li>Open GOG and go to your <strong>Library</strong>.</li>
-                    <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
-                    <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
-                    <ul>
-                        <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>).</li>
-                    </ul>
-                </ol>
-            </div>
-
-            <br>
-            <br>
-            <br>
+            <blockquote>
+                It is strongly recommended to install the game outside of any default Windows folders (such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders.
+                <br>
+                <br>
+                If you already have Steam installed outside of any default windows folders then go directly to step 7 and install the game to your custom Steam library.
+            </blockquote>
+            <ol>
+                <li>Completely exit out of Steam using Task Manager or System Tray.</li>
+                <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases" target="_blank">here</a>.</li>
+                <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
+                <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
+                <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
+                <li>The tool will ask to exit, select <strong>OK</strong>.</li>
+                <img width="50%" src="./img/steam library setup tool.webp" alt="Steam library setup tool">
+                <li>Open Steam and go to your <strong>Library</strong>.</li>
+                <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
+                <li>Under <strong>Install to:</strong>, select the library folder created with the tool, which is the second <b>C:\</b> entry if you are installing on the main drive.</li>
+                <img size="60%" src="./img/steam location picker.webp" alt="Example Steam install locations">
+            </ol>
+            <blockquote>If you still do not see your new library, restart your PC.</blockquote>
+            <ol start="10">
+                <li>Select <strong>Next</strong> then wait for the install to finish.</li>
+            </ol>
 
             <hr>
 
