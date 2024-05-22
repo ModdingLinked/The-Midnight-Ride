@@ -161,8 +161,7 @@
     <div class="content">
         <div class="section">
             <h1>LOD Guide</h1>
-            <p>Generating/installing new LOD is <b>NOT</b> a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. You can also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.</p>
-            <blockquote>The Midnight Ride (even with TMR Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists or if you just want better looking terrain LOD.</blockquote>
+            <p>Generating/installing new LOD is <b>NOT</b> a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. You should also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes.</p>
 
             <!-- What is LOD -->
             <p>
@@ -365,7 +364,7 @@
                 <li>Select TexGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                 <li>Once the program has loaded, click <strong>Start</strong>.</li>
                 <li>When complete, you will see a message saying "TexGen completed successfully", click <strong>Zip and Exit</strong>.</li>
-                <li>Install the TexGen output by clicking the <img src="./img/mo2 archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
+                <li>Install the TexGen output by clicking the <img src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
                 <li>From the new window, navigate to the DynDOLOD folder you installed in step 2, then to the <b>TexGen_Output</b> folder and double-click the archive.</li>
                 <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod.</li>
             </ol>
@@ -418,38 +417,12 @@
 
             <ol start="7">
                 <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
-                <li>Copy all settings from the image below:</li>
-
-                <img src="./img/LOD/Main.webp" alt="Main LOD Settings - Objects" class="width-very-limited">
-
-                <div class="expander-top clickable width-limited" onclick="expandCard(this, landLODExpander)" id="landLOD">
-                    Terrain LOD Generation instructions (Optional but Recommended)
-                    <div class="expander-info" alt="UI element - Chevron">Show</div>
-                </div>
-                <div class="expander-bottom width-limited" id="landLODExpander">
-                    <ol>
-                        <blockquote>
-                            Generating Terrain LOD is <strong>very</strong> time consuming and CPU intensive.
-                            <br>
-                            It's needed only if you have mods that edit the landscape or landscape textures.
-                        </blockquote>
-                        <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
-                        <li>
-                            Lansdcape LOD has 4 quality levels for different distances (with LOD4 being the closest to you, and LOD32 being the farthest).
-                            Copy the settings for each LOD level from images below:
-                            <ul>
-                                <li><b>LOD 4</b>:</li>
-                                <img src="./img/LOD/Land4.webp" alt="Landscape LOD Settings - Level 4" class="width-very-limited">
-                                <li><b>LOD 8</b>:</li>
-                                <img src="./img/LOD/Land8.webp" alt="Landscape LOD Settings - Level 8" class="width-very-limited">
-                                <li><b>LOD 16</b>:</li>
-                                <img src="./img/LOD/Land16.webp" alt="Landscape LOD Settings - Level 16" class="width-very-limited">
-                                <li><b>LOD 32</b>:</li>
-                                <img src="./img/LOD/Land32.webp" alt="Landscape LOD Settings - Level 32" class="width-very-limited">
-                            </ul>
-                        </li>
-                    </ol>
-                </div>
+                <li>Copy all settings from the images below:</li>
+                <img src="./img/LOD/Main Settings.webp" alt="Main LOD Settings - Objects and Level 4" class="width-very-limited">
+                <blockquote>Generating LOD for the DLC03VRWorldspace is a waste of time and disk space as you won't be able to see any LOD in that location.</blockquote>
+                <img src="./img/LOD/Land 8 Settings.webp" alt="Landscape LOD Settings - Level 8" class="width-very-limited">
+                <img src="./img/LOD/Land 16 Settings.webp" alt="Landscape LOD Settings - Level 16" class="width-very-limited">
+                <img src="./img/LOD/Land 32 Settings.webp" alt="Landscape LOD Settings - Level 32" class="width-very-limited">
 
                 <div class="expander-top clickable width-limited" onclick="expandCard(this, settingsDetailsExpander)" id="settingsDetails">
                     Settings Explanation
