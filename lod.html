@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/Logos/logo.webp">
+    <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
@@ -20,7 +20,7 @@
     <meta property="og:title" content="The Midnight Ride">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
-    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
+    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="General information on LOD and how to generate it with FO4LODgen.">
 </head>
 
@@ -31,7 +31,7 @@
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <img src="./img/Logos/logo.webp" alt="Logo">
+        <img src="./img/Coco/Logo.webp" alt="Logo">
         <a href="./index.html">The Midnight Ride</a>
         <div class="guideLinks">
             <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
@@ -101,13 +101,8 @@
                 </li>
                 <ul>
                     <li>
-                        <a href="./resources.html">Resources</a>
+                        <a href="./lod.html" class="active">LOD Guide</a>
                     </li>
-                    <ul>
-                        <li>
-                            <a href="./lod.html" class="active">LOD Guide</a>
-                        </li>
-                    </ul>
                 </ul>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -166,7 +161,7 @@
     <div class="content">
         <div class="section">
             <h1>LOD Guide</h1>
-            <p>Generating LOD is <b>NOT</b> a requirement, but it will add detail in the distance by improving terrain geometry/textures and the amount of objects that have LOD while also making all LOD match your modded textures. This will also allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.</p>
+            <p>Generating/installing new LOD is <b>NOT</b> a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. You can also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.</p>
             <blockquote>The Midnight Ride (even with TMR Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists or if you just want better looking terrain LOD.</blockquote>
 
             <!-- What is LOD -->
@@ -219,7 +214,7 @@
             </p>
 
             <!-- Creating a Separator -->
-            <h2>Creating a Separator in MO2.</h2>
+            <h2>Creating a Separator in MO2</h2>
             <ol>
                 <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                 <li>Name the separator <strong>LOD</strong>.</li>
@@ -314,6 +309,16 @@
                     </ul>
                 </li>
             </ol>
+
+            <blockquote style="display: flex; align-items: center;">
+                <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" style="margin-right: 1em;">
+                <div>
+                    <b>IMPORTANT:</b>
+                    <br>
+                    Make sure to enable all resources in MO2 before continuing!
+                </div>
+            </blockquote>
+
             <p>
                 <a class="link" href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">
                     <h2 id="preGennedLod">TMR Pre-Generated LOD</h2>
@@ -326,6 +331,24 @@
 
             <hr>
 
+            <!-- BA2 Patcher -->
+            <p>
+                <a>
+                    <h2 id="ba2Patcher">BA2 Patcher</h2>
+                </a>
+            </p>
+            <ol>
+                <li>Download the latest <a href="https://www.nexusmods.com/fallout4/mods/82114" target="_blank">BA2 Archive Version Patcher</a>.</li>
+                <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
+                <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                <li>From the pop-up, navigate to where the Patcher is installed and select <strong>BA2 Archive Version Patcher.exe</strong>.</li>
+                <li>Select the Patcher from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                <li>Once the program has loaded, click <strong>Select Directory</strong>.</li>
+                <li>Select your game's <strong>Data folder</strong>.</li>
+                <li>Click <strong>Patch</strong>, then close the program when the patching is complete.</li>
+            </ol>
+
             <!-- TexGen -->
             <p>
                 <a>
@@ -335,7 +358,7 @@
             <ol>
                 <li>Download the latest <a href="https://www.nexusmods.com/skyrimspecialedition/mods/68518?" target="_blank">DynDOLOD 3 Alpha</a>.</li>
                 <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
-                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                 <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
                 <li>From the pop-up, navigate to where TexGen is installed and select <strong>TexGenx64.exe</strong>.</li>
                 <li>In the <b>Arguments</b> box in the right pane, enter <code>-FO4</code></li>
@@ -359,7 +382,7 @@
                 <li>Download and install the <a href="https://dotnet.microsoft.com/download" target="_blank">.NET 8.0 SDK</a>, then restart your computer.</li>
                 <li>Download the latest <a href="https://github.com/Mutagen-Modding/Synthesis/releases" target="_blank">Synthesis</a>.</li>
                 <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
-                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                 <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
                 <li>From the pop-up, navigate to where Synthesis is installed and select <strong>Synthesis.exe</strong>.</li>
                 <li>Select Synthesis from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
@@ -385,22 +408,48 @@
             <ol>
                 <li>Download the latest <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">xLODGen</a>.</li>
                 <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
-                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                 <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
                 <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
                 <li>In the <b>Arguments</b> box in the right pane, enter <code>-FO4 -O:"C:\Output\"</code></li>
             </ol>
+
             <blockquote>This argument will send the LOD output to a folder called <b>Output</b> on your <b>C</b> drive (the drive Windows is installed on). You can change this path if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).</blockquote>
+
             <ol start="7">
                 <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
-                <li>Copy the settings below:</li>
-                <img src="./img/lod settings 1.webp" alt="LOD settings 1">
-                <br>
-                <img src="./img/lod settings 2.webp" alt="LOD settings 2">
-                <br>
-                <img src="./img/lod settings 3.webp" alt="LOD settings 3">
-                <br>
-                <img src="./img/lod settings 4.webp" alt="LOD settings 4">
+                <li>Copy all settings from the image below:</li>
+
+                <img src="./img/LOD/Main.webp" alt="Main LOD Settings - Objects" class="width-very-limited">
+
+                <div class="expander-top clickable width-limited" onclick="expandCard(this, landLODExpander)" id="landLOD">
+                    Terrain LOD Generation instructions (Optional but Recommended)
+                    <div class="expander-info" alt="UI element - Chevron">Show</div>
+                </div>
+                <div class="expander-bottom width-limited" id="landLODExpander">
+                    <ol>
+                        <blockquote>
+                            Generating Terrain LOD is <strong>very</strong> time consuming and CPU intensive.
+                            <br>
+                            It's needed only if you have mods that edit the landscape or landscape textures.
+                        </blockquote>
+                        <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
+                        <li>
+                            Lansdcape LOD has 4 quality levels for different distances (with LOD4 being the closest to you, and LOD32 being the farthest).
+                            Copy the settings for each LOD level from images below:
+                            <ul>
+                                <li><b>LOD 4</b>:</li>
+                                <img src="./img/LOD/Land4.webp" alt="Landscape LOD Settings - Level 4" class="width-very-limited">
+                                <li><b>LOD 8</b>:</li>
+                                <img src="./img/LOD/Land8.webp" alt="Landscape LOD Settings - Level 8" class="width-very-limited">
+                                <li><b>LOD 16</b>:</li>
+                                <img src="./img/LOD/Land16.webp" alt="Landscape LOD Settings - Level 16" class="width-very-limited">
+                                <li><b>LOD 32</b>:</li>
+                                <img src="./img/LOD/Land32.webp" alt="Landscape LOD Settings - Level 32" class="width-very-limited">
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
 
                 <div class="expander-top clickable width-limited" onclick="expandCard(this, settingsDetailsExpander)" id="settingsDetails">
                     Settings Explanation
@@ -446,12 +495,17 @@
                 <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
                 <li>Cut them to the <strong>FO4LODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
             </ol>
-            <blockquote>
-                <b>IMPORTANT:</b>
-                <br>
-                Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.
+            <blockquote style="display: flex; align-items: center;">
+                <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" style="margin-right: 1em;">
+                <div>
+                    <b>IMPORTANT:</b>
+                    <br>
+                    Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.
+                </div>
             </blockquote>
+
             <hr>
+
             <p>
                 <a>
                     <h2 id="synthesis2">Synthesis HasDistantLOD</h2>
@@ -468,7 +522,7 @@
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./resources.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Resources</span></a>
+            <a href="./resources.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Resources</span></a>
         </div>
     </div>
 
@@ -486,6 +540,9 @@
             </li>
             <li>
                 <a href="#preGennedLod">Pre-Generated LOD</a>
+            </li>
+            <li>
+                <a href="#ba2Patcher">BA2 Patcher</a>
             </li>
             <li>
                 <a href="#texgen">TexGen</a>
