@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>Light Plugins | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, ESL, Light Plugins">
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack, ESL, Light Plugins">
     <meta name="description" content="All you need to know about light plugins (ESL).">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -101,13 +101,8 @@
                 </li>
                 <ul>
                     <li>
-                        <a href="./resources.html">Resources</a>
+                        <a href="./esl.html" class="active">Light Plugins</a>
                     </li>
-                    <ul>
-                        <li>
-                            <a href="./esl.html" class="active">Light Plugins</a>
-                        </li>
-                    </ul>
                 </ul>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -166,20 +161,26 @@
     <div class="content">
         <div class="section">
             <h1>Light Plugins</h1>
+
+            <!-- Introduction -->
             <p>
                 <a>
-                    <h2 id="what">What are They?</h2>
+                    <h2 id="introduction">Introduction to ESL</h2>
                 </a>
-                ESLs (<b>Elder Scrolls Light</b> Plugin) are a type of plugin used in Fallout 4 and Skyrim Special Edition, they allow plugins within a certain size to have an index limited to <strong>4096 instead of 256</strong>.
-                <br>
-                <br>
-                <strong>Mod Organizer 2 will indicate these plugins</strong> with a <b>yellow circle</b> in the plugins tab and with an <b>italic font</b>.
-                <br>
-                <img src="./img/Others/ESL Flag.webp" alt="ESL flag in MO2's plugins tab">
+            </p>
+            ESLs (<b>Elder Scrolls Light</b> Plugin) are a type of plugin used in Fallout 4 and Skyrim Special Edition, they allow plugins within a certain size to have an index limited to <strong>4096 instead of 256</strong>.
+            <br>
+            <br>
+            <strong>Mod Organizer 2 will indicate these plugins</strong> with a <b>yellow circle</b> in the plugins tab and with an <b>italic font</b>.
+            <br>
+            <img src="./img/Others/ESL Flag.webp" alt="ESL flag in MO2's plugins tab">
+
+            <!-- Limitations -->
             <p>
                 <a>
                     <h2 id="limitations">ESL Limitations</h2>
                 </a>
+            </p>
             <ul>
                 <li>To be flagged ESL, a plugin <strong>can't have more than 4095 new records</strong> (the range is from 001->FFF).</li>
                 <ul>
@@ -194,12 +195,13 @@
                 </li>
                 <li>Working with ESL plugins in Creation Kit might result in more work due to the <strong>CK totally ignoring ESL</strong> space when creating new records. This means that after making new records in CK you'll have to compact forms in xEdit.</li>
             </ul>
-            </p>
+
+            <!-- Batch Flagging -->
             <p>
                 <a>
-                    <h2 id="batchFlagging">Batch Flagging ESL</h2>
+                    <h2 id="batchFlagging">Batch Flagging</h2>
                 </a>
-            <blockquote>The following example pictures are taken on a Skyrim Special Edition load order, but the process is identical for Fallout 4.</blockquote>
+            </p>
             In order to have more space for non-ESL plugins in your load order, you'll have to make sure everything that can be flagged ESL, is. <strong>xEdit can do this natively</strong> thanks to it's PseudoESL argument and the SetESL script, which flags everything that can be flagged safely.
             <ol>
                 <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
@@ -212,7 +214,6 @@
                 <li>Click <code><strong>OK</strong></code> and wait for it to process everything.</li>
                 <li><strong>Close xEdit</strong>, if it asks you to save then that means the plugins listed received the ESL flag.</li>
             </ol>
-            </p>
         </div>
 
         <!-- Arrows -->
@@ -226,13 +227,13 @@
     <div id="sidenavRight">
         <ul>
             <li>
-                <a href="#what">What are They?</a>
+                <a href="#introduction">Introduction</a>
             </li>
             <li>
-                <a href="#limitations">ESL Limitations</a>
+                <a href="#limitations">Limitations</a>
             </li>
             <li>
-                <a href="#batchFlagging">Batch Flagging ESL</a>
+                <a href="#batchFlagging">Batch Flagging</a>
             </li>
         </ul>
     </div>
