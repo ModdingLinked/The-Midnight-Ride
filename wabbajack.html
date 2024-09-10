@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/Coco/Logo.webp">
+    <link rel="canonical" href="https://themidnightride.moddinglinked.com">
+
+    <title>Wabbajack | The Midnight Ride</title>
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="All the information and instructions regarding the The Midnight Ride Wabbajack modlist.">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="twitter:card" value="summary_large_image">
+    <meta property="og:site_name" content="ModdingLinked">
+    <meta property="og:title" content="The Midnight Ride">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://themidnightride.moddinglinked.com">
+    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="All the information and instructions regarding the The Midnight Ride Wabbajack modlist.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+</head>
+
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
+        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Wabbajack" class="section">
+                <div class="card-red center" style="display: flex; align-items: center; margin-top: 30px;">
+                    <p>
+                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                    <div>
+                        <b>IMPORTANT:</b>
+                        <br>
+                        Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
+                        <br>
+                        You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
+                    </div>
+                    </p>
+                </div>
+
+                <h2 onclick="location.href='#Wabbajack'">Wabbajack</h2>
+
+                <div class="card" id="WhatIsWabbajack">
+                    <p>
+                    <h3 onclick="location.href='#WhatIsWabbajack'">What Is Wabbajack?</h3>
+                    Wabbajack is an <strong>automated modlist installer</strong>, it will allow you to install the entirety of Viva New Vegas Extended in a matter of minutes and with extras such as better LOD and decompressed plugins.
+                    </p>
+                </div>
+
+                <div class="card" id="IntroductionAndSetup">
+                    <p>
+                    <h3 onclick="location.href='#IntroductionAndSetup'">Introduction And Setup</h3>
+                    Read the <a href="./intro.html">Introduction</a> first, then proceed to the <a href="./setup.html">Setup</a> page. Once you're done, keep following this page.
+                    <div class="card-red">
+                        <p>
+                            <b>IMPORTANT:</b>
+                            <br>
+                            Only Steam (Global) and GOG copies of the game are supported!
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="Installation">
+                    <p>
+                    <h3 onclick="location.href='#Installation'">Installation</h3>
+                    <ol>
+                        <li>Download the latest <a href="https://www.wabbajack.org/" target="_blank">Wabbajack</a>.</li>
+                        <li>
+                            <strong>Create a new folder</strong> anywhere outside of any default Windows folders, and the game folder itself.
+                            <br>
+                            Example: <span class="card-basic">C:\Modding\Wabbajack</span>
+                        </li>
+                        <li>Place the downloaded <strong>Wabbajack.exe</strong> in this folder, then run it.</li>
+                        <li>Click <strong>Browse Modlists</strong>, then locate Viva New Vegas in the gallery and click the download button in the corner.</li>
+                        <li>In <b>Installation Location</b> select an <strong>empty folder</strong> that is <b>NOT</b> the following:
+                            <ul>
+                                <li>The Steam folder,</li>
+                                <li>Any default Windows folders,</li>
+                                <li>The game folder,</li>
+                                <li>The folder where you put Wabbajack.exe.</li>
+                            </ul>
+                            Example: <span class="card-basic">C:\Modding\Viva New Vegas</span>
+                        </li>
+                        <li><strong>Begin</strong> the installation.</li>
+                        <li>Accept the Nexus Mods API request.</li>
+                        <li>If you are not a Premium user you will need to manually click download for each mod.</li>
+                        <li>Once complete, the installation will show a green <strong>Installation Complete</strong> screen.
+                            <ul>
+                                <li>If you see a red <b>Installation Failed</b> screen, try log-in again through the Wabbajack settings, then reinstall the list to the same folder. If that doesn't work please join the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server for support.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+            </span>
+
+            <span id="PostInstallSteps" class="section">
+                <h2 onclick="location.href='#PostInstallSteps'">Post-Install Steps</h2>
+
+                <div class="card" id="Exclusions">
+                    <p>
+                    <h3 onclick="location.href='#Exclusions'">Exclusions</h3>
+                    This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works. It's not part of the manual guide because exclusions are handled by the MO2 installer, which Wabbajack doesn't use.
+                    <ol>
+                        <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
+                        <li>Open <strong>Virus & threat protection</strong>.</li>
+                        <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
+                        <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
+                        <li>Add a <b>Folder</b> exclusion and point it to the <strong>Installation Location</strong> folder.</li>
+                    </ol>
+                    <div class="card-red">
+                        <p>
+                            If you are using a third-party antivirus, you will need to find the exclusions menu and add one to the same folder.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="RootMods">
+                    <p>
+                    <h3 onclick="location.href='#RootMods'">Root Mods</h3>
+                    <ol>
+                        <li>In your <b>Installation Location</b>, open the <strong>Root Mods</strong> folder.</li>
+                        <li>Copy <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                        <li>Still in the game's Root folder, double-click on <strong>FNVpatch.exe</strong> to run it.</li>
+                        <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b>.</li>
+                        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="BSADecompressor" title="BSA Decompressor">
+                    <p>
+                    <h3 onclick="location.href='#BSADecompressor'">BSA Decompressor</h3>
+                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
+                    <ol>
+                        <li>In your <b>Installation Location</b>, open the <strong>BSA Decompressor</strong> folder.</li>
+                        <li>Run <strong>FNV BSA Decompressor.exe</strong>.</li>
+                        <li>The <b>Fallout: New Vegas</b> and <b>Decompressed Archives</b> <strong>paths</strong> should be filled by default (Root folder and Data folder respectively).
+                            <br>
+                            If they aren't, close the program and re-run your game launcher to generate the required registry key,
+                        </li>
+                        <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="ModOrganizer2Setup" title="Mod Organizer 2 Setup">
+                    <p>
+                    <h3 onclick="location.href='#ModOrganizer2Setup'">Mod Organizer 2 Setup</h3>
+                    <ol>
+                        <li>Launch <strong>ModOrganizer.exe</strong> from your <strong>Installation Location</strong>.</li>
+                        <li>If you see a pop-up called <strong>FalloutNV_lang.esp was found</strong>, select <strong>Yes</strong>.</li>
+                        <li>If you see a pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="GameConfiguration">
+                    <p>
+                    <h3 onclick="location.href='#GameConfiguration'">Game Settings</h3>
+                    <ol>
+                        <li>Launch the game launcher using the <strong>Fallout Launcher</strong> option in MO2.</li>
+                        <div class="image-container width-60">
+                            <img class="content-img" src="./img/Others/Start Launcher.webp" alt="Run the launcher through MO2">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+                        <li>
+                            Inside the launcher, click <b>Options</b> and do the following:
+                            <ol>
+                                <li>
+                                    Select <strong>Ultra Preset</strong>.
+                                    <div class="card-yellow">
+                                        <p>If you have a very weak PC, you can select <b>Medium Preset</b> instead.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Set <strong>Resolution</strong> to your monitor's native resolution.
+                                    <div class="card-yellow">
+                                        <p>
+                                            If you can't find the right resolution in the launcher's list, do the following:
+                                        <ol>
+                                            <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                                            <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
+                                            <li>Change following settings in the <span class="card-basic">Display</span> section:
+                                                <br>
+                                                <span class="card-basic">iSize W = your screen width</span>
+                                                <br>
+                                                <span class="card-basic">iSize H = your screen height</span>
+                                            </li>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Close the launcher.</li>
+                        </p>
+                </div>
+
+                <div class="card" id="PerformanceGuide">
+                    <p>
+                    <h3 class="link-page"><a href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">Performance Guide</a></h3>
+                    In-depth guide on how to fix the game's lackluster performance, display issues and <strong>alt-tabbing</strong>. Covers topics such as DXVK, framerate limiting, display modes, lag and HDR.
+                    </p>
+                </div>
+
+                <div class="card" id="LaunchingTheGame">
+                    <p>
+                    <h3 onclick="location.href='#LaunchingTheGame'">Launching The Game</h3>
+                    Go to the modlist's <strong>Installation Location</strong> folder you chose at the beggining and run <strong>ModOrganizer.exe</strong>.
+                    <br>
+                    <br>
+                    Due to the way Mod Organizer 2 works, running programs through it is a requirement in order to load mods. This is done in the <strong>top-right corner</strong> of the manager, where the program to run is chosen. Here, <strong>select New Vegas</strong>.
+                    <br>
+                    <br>
+                    For the sake of convenience you may also <strong>create a shortcut</strong> (right below the <b>Run</b> button) so that you won't have to manually open MO2 each time before playing.
+                    <br>
+                    <div class="image-container width-60">
+                        <img class="content-img" src="./img/Others/Start Game.webp" alt="Launching the game">
+                        <div class="resize-overlay expand"></div>
+                    </div>
+                    <br>
+                    <div class="card-yellow">
+                        <p>
+                            <b>Q: Aren't you supposed to launch through NVSE?</b>
+                            <br>
+                            <br>
+                            A: The 4GB Patcher and the Epic Games Patcher both allow the game's main executable to automatically load the script extender.
+                            <br>
+                            <hr>
+                            Refer to the <a href="./faq.html" target="_blank">FAQ</a> section for more information and solutions to possible problems you might encounter at this stage of the guide.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="FinishingNotes">
+                    <p>
+                    <h3 onclick="location.href='#FinishingNotes'">Finishing Notes</h3>
+                    You have now installed the Viva New Vegas Wabbajack list. If you don't want to mod your game further, <strong>you can now start playing</strong>. Have fun!
+                    <br>
+                    <br>
+                    Adding mods independently and without the help of a guide is only recommended after you have learned the required information and workflow. These range from general technicalities about the game, to solving conflicts with <a href="https://moddinglinked.com/xedit.html" target="_blank">xEdit</a> through <a href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a>.
+                    <br>
+                    <br>
+                    You can find sources for all this information and more in the <a href="./resources.html" target="_blank">Resources</a> section. You should also be aware of the <a href="./avoid-tools.html" target="_blank">Tools</a> and <a href="./avoid-mods.html" target="_blank">Mods to Avoid</a>.
+                    <div class="card-yellow">
+                        <p>
+                            We may not provide support for setups that have added mods, especially if you went overboard!
+                        </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <span id="ModlistUpdate" class="section">
+                <h2 onclick="location.href='#ModlistUpdate'">Modlist Update</h2>
+                <div class="card" id="UpdatingTheList">
+                    <p>
+                    <h3 onclick="location.href='#UpdatingTheList'">Updating The List</h3>
+                    Whenever a new version of the list is released, you can update your current installation by following these steps:
+                    <ol>
+                        <li>If you added any mods to the list after installation, add the <span class="card-basic">[NoDelete]</span> prefix to their name in the left pane.</li>
+                        <li><strong>Verify files</strong> on Steam or GOG Galaxy.</li>
+                        <li><strong>Reinstall the list</strong> from Wabbajack with the "<b>Overwrite Installation</b>" checkbox enabled.</li>
+                        <li>Reapply the 4GB Patch, then optionally run the BSA Decompressor as well (<a href="./wabbajack.html#RootMods" target="_blank">instructions</a> for both are provided above).</li>
+                    </ol>
+                    </p>
+                </div>
+
+
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
+        </div>
+    </div>
+
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

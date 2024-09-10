@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/Coco/Logo.webp">
-    <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
+    <link rel="canonical" href="https://themidnightride.moddinglinked.com">
 
     <title>FAQ | The Midnight Ride</title>
 
@@ -55,7 +55,7 @@
                 <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
             </div>
         </div>
-        
+
         <div class="sidebar left-sidebar">
             <p class="pageLinks">
                 <a href="./index.html" title="Home">
@@ -137,9 +137,9 @@
                     Mods to Avoid
                 </a>
 
-<!--                 <a href="./wabbajack.html" title="Wabbajack">
+                <a href="./wabbajack.html" title="Wabbajack">
                     Wabbajack
-                </a> -->
+                </a>
             </p>
             <p class="sidebar-padder"></p>
             <hr>
@@ -183,7 +183,7 @@
                         Short answer: <strong>No</strong>.
                         <br>
                         <br>
-                        You cannot use an existing Fallout: New Vegas save to play The Midnight Ride. Even though a save might load, there are too many changes for it to work correctly. No support is provided if you do this anyway.
+                        You cannot use an existing Fallout 4 save to play The Midnight Ride. Even though a save might load, there are too many changes for it to work correctly. No support is provided if you do this anyway.
                     </p>
                 </div>
 
@@ -223,74 +223,60 @@
 
                 <div class="expander-top clickable" onclick="expandCard(this, generalquestion5expander)" id="generalquestion5">
                     <p>
-                    <h3>Can I use New Vegas Muliplayer (NV:MP)?</h3>
+                    <h3>Why Long Loading Times Fix not in the guide?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
                 <div class="expander-bottom" id="generalquestion5expander">
                     <p>
-                        We <strong>will not provide any support</strong> for NVMP, redirect all questions to their server.
+                        Long Loading Times Fix has its own set of issues and it performs worse than High FPS Physics Fix configured according to the guide, as <a href="https://discord.com/channels/1135527122849497149/1135557693181014046/1280172204444749904" target="_blank">these results</a> prove (ModdingLinked Discord server).
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion6expander)" id="generalquestion6">
+                    <p>
+                    <h3>Why are there no big visual mods in the guide?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion6expander">
+                    <p>
+                        The headroom you have for visual mods highly depends on hardware, especially VRAM. Including big mods would raise the requirements of the guide too much to still call it vanilla+. The game can also suffer a lot from replacing assets with mods which are usually loose files. So for a proper visual overhaul you will also need to know how to pack files into archives.
                     </p>
                 </div>
 
                 <h2 onclick="location.href='#Troubleshooting'">Troubleshooting</h2>
-                <p>You can ask for support in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> or <a href="https://discord.gg/taleoftwowastelands" target="_blank">TTW</a> Discord server in case any of the advice below does not solve your problem.</p>
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion2expander)" id="troubleshootingquestion2">
+                <p>You can ask for support in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server in case any of the advice below does not solve your problem.</p>
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion1expander)" id="troubleshootingquestion1">
                     <p>
                     <h3>The game crashes or nothing happens when starting it</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootingquestion2expander">
+                <div class="expander-bottom" id="troubleshootingquestion1expander">
                     <p>
                         This could happen for <strong>various reasons</strong>:
                     <ul>
-                        <li>Base Address Randomization is enabled. This has to be disabled for a modded game to work, you can do so by following <a href="./setup.html#BaseAddressRandomization">these steps</a>.</li>
-                        <li>The 4GB patch or the EGS patcher weren't run. Follow <a href="./utilities.html">the steps</a> in the guide. If you are using Wabbajack, follow <a href="./wabbajack.html#RootMods" target="_blank">these steps</a> instead.</li>
-                        <li>xNVSE is not installed correctly or at all, make sure that you have all of the <a href="./utilities.html" target="_blank">utilities</a>. If you are using Wabbajack, follow <a href="./wabbajack.html#RootMods" target="_blank">these steps</a> instead.</li>
                         <li>You have incompatible mods lingering in your game's Data folder, this is why <a href="./setup.html#Uninstall" target="_blank">a clean slate</a> is required.</li>
-                        <li>If you are using an AMD GPU, make sure that your drivers are updated to the <a href="https://www.amd.com/en/support" target="_blank">latest version</a> or that you are using DXVK according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.</li>
                         <li>If you are using a third-party antivirus, add exclusions to the folder Mod Organizer 2 is in. If that doesn't work, try disabling the antivirus completely and rely solely on Windows Defender (which should work fine once exclusions are present).</li>
-                        <li>Close or uninstall Overwolf.</li>
-                        <li>Lock your FPS below 120 according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.</li>
+                        <li>Make sure you have both files from <a href="./bugfix.html#PRP">PRP</a>.</li>
+                        <li>Missing masters, check the big red triangle icon on the top right corner of Mod Organizer 2:
+                            <ul>
+                                <li>If you're missing one of the mods in TMR, install it or get rid of the mod that requires it (for example if you erronesouly downloaded a patch for a mod you don't want in TMR Extended).</li>
+                                <li>If you're missing Creation Club content, verify your game files on Steam and run the <a href="./utilities.html#Downgrader">downgrader</a>.</li>
+                            </ul>
+                        </li>
                     </ul>
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion3expander)" id="troubleshootquestion3">
-                    <p>
-                    <h3>Pink main menu</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootquestion3expander">
-                    <p>
-                        This is caused by <span class="card-basic">SMainMenuMovieIntro</span> in your <b>Fallout.ini</b> being set to 0 instead of having to value at all. This is a <strong>known issue with BethINI</strong>, which has no utility once you are using the guide's <a href="./utilities.html#CustomINI">Custom INI</a>.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion4expander)" id="troubleshootquestion4">
-                    <p>
-                    <h3>Missing meshes (red diamonds)</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootquestion4expander">
-                    <p>
-                        <strong>Verify your game files</strong>.
-                    </p>
-                    <p>
-                        You will need to <a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">re-run the BSA Decompressor</a> and <a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a> after doing this.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion5expander)" id="troubleshootquestion5">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion2expander)" id="troubleshootingquestion2">
                     <p>
                     <h3>How do I export my modlist and/or load order?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion5expander">
+                <div class="expander-bottom" id="troubleshootingquestion2expander">
                     <p>
                         As MO2 is the only supported manager, instructions for other managers will not be provided:
                     <ol>
@@ -301,40 +287,40 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion7expander)" id="troubleshootquestion7">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion3expander)" id="troubleshootingquestion3">
                     <p>
-                    <h3>GECK isn't detecting any mods</h3>
+                    <h3>The CK isn't detecting any mods</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion7expander">
+                <div class="expander-bottom" id="troubleshootingquestion3expander">
                     <p>
-                        MO2 requires that you run most tools, including GECK, through its list of executables. This allows the programs to be <strong>run with VFS</strong>, loading all the mods alongside it.
+                        MO2 requires that you run most tools, including CK, through its list of executables. This allows the programs to be <strong>run with VFS</strong>, loading all the mods alongside it.
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion8expander)" id="troubleshootquestion8">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion4expander)" id="troubleshootingquestion4">
                     <p>
-                    <h3>There is no New Vegas option when creating an MO2 instance</h3>
+                    <h3>There is no Fallout 4 option when creating an MO2 instance</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion8expander">
+                <div class="expander-bottom" id="troubleshootingquestion4expander">
                     <p>
                         <strong>Launch the game</strong> once, then restart the MO2 installer and try again.
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion9expander)" id="troubleshootquestion9">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion5expander)" id="troubleshootingquestion5">
                     <p>
                     <h3>How to reset your INIs</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion9expander">
+                <div class="expander-bottom" id="troubleshootingquestion5expander">
                     <p>
                         <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <b>INI Editor</b>.</li>
-                        <li>Clear the contents of both <b>Fallout.ini</b> and <b>FalloutPrefs.ini</b>, making sure to save both.</li>
+                        <li>Clear the contents of both <b>Fallout4.ini</b> and <b>Fallout4Prefs.ini</b>, making sure to save both.</li>
                         <li>Run the game's launcher through MO2 and you'll have new INIs.</li>
                     </p>
                     <div class="card-yellow">
@@ -342,105 +328,63 @@
                     </div>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion10expander)" id="troubleshootquestion10">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion6expander)" id="troubleshootingquestion6">
                     <p>
                     <h3>Is it safe to validate game files?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion10expander">
+                <div class="expander-bottom" id="troubleshootingquestion6expander">
                     <p>
-                        Verifying game files <strong>will revert the BSA decompression and the executable patch</strong>. You can solve this by <a href="./utilities.html#Patchers">re-running the correct patcher</a> based on your game version, then re-running the <a href="./utilities.html#Decompressor">BSA Decompressor</a>.
+                        Verifying game files <strong>will revert the executable downgrade</strong>. You can solve this by <a href="./utilities.html#Downgrader">re-running the downgrader</a>.
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion11expander)" id="troubleshootquestion11">
-                    <p>
-                    <h3>Plugin reported as incompatible during query</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootquestion11expander">
-                    <p>
-                        This is just a case of mods logging that they are not meant for the GECK if made for the game, or the other way around. <strong>Can be safely ignored</strong>.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion12expander)" id="troubleshootquestion12">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion7expander)" id="troubleshootingquestion7">
                     <p>
                     <h3>Application Load Errors</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion12expander">
+                <div class="expander-bottom" id="troubleshootingquestion7expander">
                     <p>
                     <ul>
                         <li><b>5:0000065434</b>: <strong>Make sure Steam is running</strong>. If that doesn't fix it, <strong>run your game directly through Steam once</strong>. You may also need to restart Steam and/or Mod Organizer 2. If that still doesn't work, place a copy of your Steam.exe (not a shortcut) into the game's <a href="./setup.html#Terminology" target="_blank"><b>Root folder</b></a>.</li>
-                        <li><b>P:0000065432</b>: This might be related to the PCR release of the game. <strong>Override the Steamapp ID</strong> with MO2's executable settings and set it to <span class="card-basic">22490</span>.</li>
                     </ul>
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion13expander)" id="troubleshootquestion13">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion8expander)" id="troubleshootingquestion8">
                     <p>
                     <h3>Mod Organizer 2 is reporting that mods in the left pane have overwritten loose files</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion13expander">
+                <div class="expander-bottom" id="troubleshootingquestion8expander">
                     <p>
                         This is <strong>safe and intentional</strong> as long as your mods in the left pane of MO2 are in the exact order as they appear in the guide.
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion14expander)" id="troubleshootquestion14">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion9expander)" id="troubleshootingquestion9">
                     <p>
-                    <h3>Why is the Utilities Checker reporting NVTF as missing even when it's installed correctly?</h3>
+                    <h3>Sped-up game</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion14expander">
+                <div class="expander-bottom" id="troubleshootingquestion9expander">
                     <p>
-                        If <strong>restarting your PC</strong> doesn't work, try this:
-                    <ol>
-                        <li>Clean all D3DX files using <a href="./files/DirectX Remover.7z" target="_blank">this script</a>.</li>
-                        <li>Install the DirectX libraries from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.</li>
-                        <li>Restart your PC.</li>
-                    </ol>
+                        Make sure to run the game through F4SE in MO2 and that you installed (then enabled) the correct version of <a href="utilities.html#PhysicsFix">High FPS Physics Fix</a>.
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion15expander)" id="troubleshootquestion15">
-                    <p>
-                    <h3>Bouncing NPCs or sped-up game</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootquestion15expander">
-                    <p>
-                        <strong>Lock your FPS</strong> below 120 according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion16expander)" id="troubleshootquestion16">
-                    <p>
-                    <h3>Black patches of terrain</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootquestion16expander">
-                    <p>
-                        <strong>Disable Improved Lighting Shaders</strong> in your Mod Organizer 2 modlist by unchecking its box. This issue seems to be hardware related but we do not know the specific cause at the moment.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion17expander)" id="troubleshootquestion17">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion10expander)" id="troubleshootingquestion10">
                     <p>
                     <h3>Mod Organizer 2 refuses to open and creates a dump file at each try</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion17expander">
+                <div class="expander-bottom" id="troubleshootingquestion10expander">
                     <p>
                     <ol>
                         <li>Download the <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
@@ -450,25 +394,13 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion19expander)" id="troubleshootquestion19">
-                    <p>
-                    <h3>Alt-tabbing crashes the game or prevents it from opening again</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootquestion19expander">
-                    <p>
-                        This is due to using the NVTF texture modding preset, which <strong>requires DXVK</strong> in order to keep a functional Alt-Tab. Read the <a href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">Performance Guide</a> for more information and the steps to solve this.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion20expander)" id="troubleshootquestion20">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion11expander)" id="troubleshootingquestion11">
                     <p>
                     <h3>Mods are downloading to Vortex instead of MO2</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion20expander">
+                <div class="expander-bottom" id="troubleshootingquestion11expander">
                     <p>
                     <ol>
                         <li>Click the <img class="mo2-icon" src="./img/MO2/Settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
@@ -477,20 +409,109 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion21expander)" id="troubleshootquestion21">
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion12expander)" id="troubleshootingquestion12">
                     <p>
                     <h3>Wabbajack errors during installation</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
-                <div class="expander-bottom" id="troubleshootquestion21expander">
+                <div class="expander-bottom" id="troubleshootingquestion12expander">
                     <p>
                     <ul>
-                        <li>You are using an Epic Games Store version of the game, which is not supported by this Wabbajack list.</li>
-                        <li>Ensure you have a clean install of the game with all DLCs, including the pre-order packs.</li>
-                        <li>Set the game to English, other languages are not supported.</li>
+                        <li>You are using the GOG version of the game, which is not supported by TMR (both the guide and Wabbajack).</li>
+                        <li>Ensure you have a clean install of the game with all DLCs.</li>
+                        <li>Set the game to English - other languages are not supported.</li>
                         <li>If all that doesn't work, click the settings cog in the top right of Wabbajack, log out of Nexus then log in again and restart the installation process.</li>
                     </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion13expander)" id="troubleshootingquestion13">
+                    <p>
+                    <h3>"Buffout has loaded too late" error</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion13expander">
+                    <p>
+                        <b>Always</b> <strong>run the game with F4SE</strong> through Mod Organizer 2 as shown in the picture.
+                        <br>
+                        <br>
+                        <img src="./img/Others/Start F4SE.webp">
+                        <br>
+                        <br>
+                        If the F4SE option isn't present, restart MO2. If it's not present after restarting, follow the <a href="./utilities#F4SE" target="_blank">F4SE installation instructions</a> again.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion14expander)" id="troubleshootingquestion14">
+                    <p>
+                    <h3>Stuck loading a new game</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion14expander">
+                    <p>
+                        Just like in the <a href="./utilities.html#PhysicsFix">High FPS Physics Fix</a> section, open up the configuration file and change <span class="card-basic">NumOfThreadsWhileLoadingNewGame</span> to 2 (line 83). If the issue persists, increase the value until the game manages to load normally.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion15expander)" id="troubleshootingquestion15">
+                    <p>
+                    <h3>Missing voice audio or wrong language text</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion15expander">
+                    <p>
+                        Follow the <a href="./mo2.html#GameSettings">BethINI</a> section in its entirety, especially setting the language to <strong>English</strong>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion16expander)" id="troubleshootingquestion16">
+                    <p>
+                    <h3>Door prompts or Locations not in English</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion16expander">
+                    <p>
+                        You installed the wrong version of PRP's Plugin file. Install the English one from <a href="https://www.nexusmods.com/fallout4/mods/46403">here</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion17expander)" id="troubleshootingquestion17">
+                    <p>
+                    <h3>NPCRespawnFix: ERROR: F4SE</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion17expander">
+                    <p>
+                    <ul>
+                        <li>Follow the <a href="./mo2.html#GameSettings">BethINI</a> section in its entirety, especially enabling <strong>Recommended Tweaks</strong>.</li>
+                        <li>
+                            <b>Always</b> <strong>run the game with F4SE</strong> through Mod Organizer 2 as shown in the picture.
+                            <br>
+                            <br>
+                            <img src="./img/Others/Start F4SE.webp">
+                            <br>
+                            <br>
+                            If the F4SE option isn't present, restart MO2. If it's not present after restarting, follow the <a href="./utilities#F4SE" target="_blank">F4SE installation instructions</a> again.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion18expander)" id="troubleshootingquestion18">
+                    <p>
+                    <h3>Invisible or flickering parts of the world</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion18expander">
+                    <p>
+                        Install the <strong>PRP Resources</strong> as instructed in the <a href="./bugfix.html#PRP">Previs Repair Pack</a> section, then apply the guide's <a href="https://www.nexusmods.com/fallout4/mods/67185">Load Order</a> if you haven't already.
                     </p>
                 </div>
 
@@ -503,11 +524,7 @@
                 </div>
                 <div class="expander-bottom" id="configquestion1expander">
                     <p>
-                    <ol>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <b>INI Editor</b>.</li>
-                        <li>Select the <b>FalloutCustom.ini</b> tab, which should already have all the guide's settings if you followed the <a href="./utilities.html#CustomINI">Custom INI steps</a>.</li>
-                        <li>Edit the 3 FOV settings to your liking, then save.</li>
-                    </ol>
+                        Changing FOV through the game INIs is bugged (even through BethINI Pie), so it won't work. You can use the <a href="https://www.nexusmods.com/fallout4/mods/36768" target="_blank">FOV Slider mod</a> or do it through a plugin-loaded INI file.
                     </p>
                 </div>
 
@@ -519,7 +536,7 @@
                 </div>
                 <div class="expander-bottom" id="configquestion2expander">
                     <p>
-                        <strong>No</strong>, but you can generate vastly more detailed LOD (at a performance cost) by following the <a href="./lod.html" target="_blank">LOD guide</a>. If you are using a The Midnight Ride Extended list with no changes, you can skip a large chunk of the LOD regeneration process by using the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV Pre-Generated LOD</a> (the resources listed in the LOD guide are still required).
+                        <strong>No</strong>, but you can generate vastly more detailed LOD (at a performance cost) by following the <a href="./lod.html" target="_blank">LOD guide</a>. If you are using a The Midnight Ride Extended list with no changes, you can skip a large chunk of the LOD regeneration process by using the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">TMR Pre-Generated LOD</a> (the resources listed in the LOD guide are still required).
                     </p>
                 </div>
 
@@ -531,7 +548,7 @@
                 </div>
                 <div class="expander-bottom" id="configquestion3expander">
                     <p>
-                        All the INI changes you'll need for stability and performance are <strong>already in the guide</strong>'s <a href="./utilities.html#CustomINI">Custom INI</a>. If you find some other settings you wish to tweak, add it to <b>FalloutCustom.ini</b> through MO2's INI Editor (<img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> on the top of MO2).
+                        All the INI changes you'll need for stability and performance are <strong>already applied by <a href="./mo2.html#GameSettings">BethINI Pie</a></strong>. If you find some other settings you wish to tweak, add it to <b>FalloutCustom.ini</b> through MO2's INI Editor (<img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> on the top of MO2).
                     </p>
                 </div>
 
@@ -543,7 +560,7 @@
                 </div>
                 <div class="expander-bottom" id="configquestion4expander">
                     <p>
-                        <strong>Ultimate Edition ESM Fixes already does this</strong> (far more than what automated xEdit cleaning would do).
+                        Cleaning plugins on Fallout 4 has <strong>no benefit</strong> nor downside. There's no reason to waste time doing it.
                     </p>
                 </div>
 
@@ -555,19 +572,19 @@
                 </div>
                 <div class="expander-bottom" id="configquestion5expander">
                     <p>
-                        <strong>Yes</strong>, but you'll have to take extra steps for it to work:
-                    <ol>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
-                        <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
-                        <li>Change following settings in the <span class="card-basic">Display</span> section:
-                            <br>
-                            <span class="card-basic">iSize W = your screen width</span>
-                            <br>
-                            <span class="card-basic">iSize H = your screen height</span>
-                        </li>
-                        <li>Start the game then open the <strong>Tweaks menu</strong> in the settings.</li>
-                        <li>Filter for <span class="card-basic">Ultrawide</span> then enable the support tweak.</li>
-                    </ol>
+                        Install <a href="https://www.nexusmods.com/fallout4/mods/65677" target="_blank">Ultra Wide Interface (21x9)</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, configquestion6expander)" id="configquestion6">
+                    <p>
+                    <h3>Why you should disable the High Resolution Texture Pack DLC</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="configquestion6expander">
+                    <p>
+                        The High Resolution Texture Pack provides a very marginal visual increase for a potentially major performance decrease. It is simply not worth the trade-off.
                     </p>
                 </div>
 
@@ -579,13 +596,14 @@
                     </p>
                 </div>
                 <div class="expander-bottom" id="gameplayquestion1expander">
-                    <p><a href="./gameplay.html#DLCDelay" target="_blank">Leveled DLC Delay</a> delays DLC until you meet the required level or visit the respective location. <a href="./overhauls.html#LoneStar" target="_blank">Lone Star</a> also moves the pre-order pack items to the following locations:</p>
+                    <a href="./gameplay#dlcTiming">DLC Timing</a> paired with the <a href="./hud.html#settingsManager">MCM Settings Manager - TMR Configuration</a> will delay DLCs until you meet the following requirements:
                     <ul>
-                        <li>Tribal Pack: <span class="spoiler">Lucky Jim Mine House</span></li>
-                        <li>Caravan Pack: <span class="spoiler">Hell's Motel</span></li>
-                        <li>Classic Pack: <span class="spoiler">Wrecked Highwayman</span></li>
-                        <li>Mercenary Pack: <span class="spoiler">Bradley's Shack</span></li>
+                        <li>Vault-Tec Workshop: <span class="spoiler">level 15 and Reunions completed</span></li>
+                        <li>Automatron: <span class="spoiler">level 20 and Dangerous Minds completed</span></li>
+                        <li>Far Harbor: <span class="spoiler">level 25 and The Glowing Sea completed</span></li>
+                        <li>Nuka World: <span class="spoiler">level 30 and Hunter/Hunted completed</span></li>
                     </ul>
+                    This is fully configurable through the DLC Timing Mod Configuration Menu.
                 </div>
             </span>
 
