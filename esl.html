@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
-    <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
-    <title>Light Plugins | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack, ESL, Light Plugins">
-    <meta name="description" content="All you need to know about light plugins (ESL).">
+    <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
+
+    <title>Introduction | The Midnight Ride</title>
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="Preamble about the guide's goals and requirements.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,222 +19,280 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="All you need to know about light plugins (ESL).">
+    <meta property="og:description" content="Preamble about the guide's goals and requirements.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
+        
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
             <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <ul>
-                    <li>
-                        <a href="./esl.html" class="active">Light Plugins</a>
-                    </li>
-                </ul>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
+            <p class="pageLinks">
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+<!--                 <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Light Plugins</h1>
+        <div class="content">
 
             <!-- Introduction -->
-            <p>
-                <a>
-                    <h2 id="introduction">Introduction to ESL</h2>
-                </a>
-            </p>
-            ESLs (<b>Elder Scrolls Light</b> Plugin) are a type of plugin used in Fallout 4 and Skyrim Special Edition, they allow plugins within a certain size to have an index limited to <strong>4096 instead of 256</strong>.
-            <br>
-            <br>
-            <strong>Mod Organizer 2 will indicate these plugins</strong> with a <b>yellow circle</b> in the plugins tab and with an <b>italic font</b>.
-            <br>
-            <img src="./img/Others/ESL Flag.webp" alt="ESL flag in MO2's plugins tab">
+            <span id="Introduction" class="section">
+                <div class="card-yellow center" style="display: flex; align-items: center; margin-top: 30px;">
+                    <p>
+                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                    <div>
+                        <b>IMPORTANT:</b>
+                        <br>
+                        Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
+                        <br>
+                        You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
+                    </div>
+                    </p>
+                </div>
 
-            <!-- Limitations -->
-            <p>
-                <a>
-                    <h2 id="limitations">ESL Limitations</h2>
-                </a>
-            </p>
-            <ul>
-                <li>To be flagged ESL, a plugin <strong>can't have more than 4095 new records</strong> (the range is from 001->FFF).</li>
-                <ul>
-                    <li>If a plugin's header is version 0.95, the max amount of new records is 2048 (800->FFF).</li>
-                </ul>
-                <li>
-                    ESL on Fallout 4 has <strong>2 bugs</strong>:
+                <h2 onclick="location.href='#Introduction'">Introduction</h2>
+                <div class="card flex logo-container" id="Overview">
+                    <div>
+                        <p>
+                        <h3>Overview</h3>
+                        The Midnight Ride is a modding guide for Fallout: New Vegas that will carefully walk you through how to install all the mods you will need for a perfectly stable, smooth and enjoyable experience.
+                        <br>
+                        <br>
+                        The guide is highly accessible for everyone, no matter your modding experience.
+                        It is still incredibly important that you read all the instructions very carefully, even if you believe you are experienced enough to skip them. There are many small instructions that are vital for your game to function, and could be easily missed if you aren't careful.
+                        Although you don't need any modding experience to use this guide, it is expected for you to be relatively experienced with operating a computer in general.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/Coco/Full.webp" alt="Logo of a Coco - a dog mascot of ModdingLinked">
+                    </div>
+                </div>
+                <div class="card" id="Features">
+                    <p>
+                    <h3 onclick="location.href='#Features'">Features</h3>
                     <ul>
-                        <li>Cells originating in a light plugin <strong>cannot use the PreVis/Precombine system</strong>.</li>
-                        <li>Voiced dialogue overriddes in a light plugin might result in <strong>silent dialogue audio</strong>.</li>
+                        <li>
+                            <b>Stability:</b> The guide includes all the latest and essential stability enhancements.
+                        </li>
+                        <li>
+                            <b>Performance:</b> Every tool, setting and mod in the guide has been carefully selected and play-tested to ensure maximum possible performance.
+                        </li>
+                        <li>
+                            <b>Customizability:</b> The guide is split into <b>2 sections</b>; all the mods required for the game to work and perform better are contained in the first section. The mods that can be considered subjective and that alter or add game content are in the <strong>VNV Extended</strong> section, which is fully modular.
+                        </li>
+                        <li>
+                            <b>Better Gameplay:</b> As part of the <b>VNV Extended</b> section, the guide includes many mods that greatly improve the gameplay without drastically overhauling the core experience or straying away from the game's original intent. There is also an <b>Overhauls</b> section that will make the game much more difficult and add some new vanilla-friendly content. This section is highlighted by <a href="https://www.nexusmods.com/newvegas/mods/87935" target="_blank">Lone Star</a> so it is not recommended for first time players.
+                        </li>
                     </ul>
-                </li>
-                <li>Working with ESL plugins in Creation Kit might result in more work due to the <strong>CK totally ignoring ESL</strong> space when creating new records. This means that after making new records in CK you'll have to compact forms in xEdit.</li>
-            </ul>
+                    </p>
+                </div>
+                <div class="card" id="Requirements">
+                    <p>
+                    <h3 onclick="location.href='#Requirements'">Requirements</h3>
+                    <ul>
+                        <li>An <b>English</b> copy of the game with <strong>all DLCs</strong> from either <a href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a>, <a href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a>, or the <a href="https://store.epicgames.com/en-US/p/fallout-new-vegas" target="_blank">Epic Games Store</a>.</li>
+                        <ul>
+                            <li>Only the English version of the game is supported for maximum compatibility - translations can conflict with mods and cause issues.</li>
+                            <li>The Microsoft Store versions are not supported.</li>
+                            <li>The Polish-Czech-Russian (PCR) version of Fallout: New Vegas is fully supported as long as the game itself is in English.</li>
+                            <li>The German release uses a "No Gore" version, making it also incompatible with xNVSE. If you have it on Steam, you can use <a href="https://github.com/SteamRE/DepotDownloader" target="_blank">DepotDownloader</a> to download the international EXE.</li>
+                        </ul>
+                        <li>At least 19GB of free drive space, game included (17GB if you delete all the downloads).</li>
+                        <li>Windows 10 or higher (64-bit).</li>
+                        <ul>
+                            <li>
+                                ARM64 systems are <b>NOT</b> supported due to Mod Organizer 2's lack of support.
+                            </li>
+                        </ul>
+                        <li><a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
+                        <ul>
+                            <li>Extract the archive and run the included <strong>install_all.bat</strong> as an administrator to install all of the required libraries at once.</li>
+                            <li>Restart your PC.</li>
+                        </ul>
+                        <li>A text editor (<a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> is recommended, but the default Windows notepad will work).</li>
+                        <li>An archiving tool (<a href="https://apps.microsoft.com/store/detail/nanazip/9N8G7TSCL18R?hl=en-us&gl=us" target="_blank">NanaZip</a> is recommended).</li>
+                        <li>The latest GPU drivers (either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/search.html#q=&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Graphics]" target="_blank">Intel</a>).</li>
+                        <li>A <a href="https://users.nexusmods.com/register" target="_blank">Nexus Mods</a> account (a Premium subscription will allow uncapped speeds).</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="card" id="RecommendedSpecs">
+                    <p>
+                    <h3 onclick="location.href='#RecommendedSpecs'">Recommended Specs</h3>
+                    The guide will make the game run better than vanilla. The game is much more CPU-intensive than GPU-intensive, and actually scales with modern hardware pretty well. Installing the game on an SSD will drastically improve loading times and decrease stuttering. Here are the recommended specs for being able to run the guide at 60 FPS at 1080p:
+                    <br>
+                    <ul>
+                        <li><b>CPU:</b> Any quad-core processor (2.5GHz or more).</li>
+                        <li><b>RAM:</b> 8GB or more.</li>
+                        <li><b>GPU:</b> Matching or surpassing the performance of NVIDIA's 600 series or AMD's 5500 series.</li>
+                        <div class="card-red" style="display: flex; align-items: center;">
+                            <p>
+                                <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                            <div>
+                                <b>IMPORTANT WARNING TO AMD USERS:</b>
+                                <br>
+                                Make sure you have the <a href="https://www.amd.com/en/support" target="_blank">latest drivers</a>! Drivers between 24.1.1 and 24.5.1 will crash the game unless you use DXVK according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>!
+                            </div>
+                            </p>
+                        </div>
+                    </ul>
+                    </p>
+                </div>
+            </span>
 
-            <!-- Batch Flagging -->
-            <p>
-                <a>
-                    <h2 id="batchFlagging">Batch Flagging</h2>
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
             </p>
-            In order to have more space for non-ESL plugins in your load order, you'll have to make sure everything that can be flagged ESL, is. <strong>xEdit can do this natively</strong> thanks to it's PseudoESL argument and the SetESL script, which flags everything that can be flagged safely.
-            <ol>
-                <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
-                <li><strong>Add <code>-PseudoESL</code></strong> to the arguments field of xEdit in MO2.</li>
-                <li>Run xEdit and load <strong>all of your mods</strong>.</li>
-                <li>Once loaded, select all plugins on the tree-view with CTRL+A, then right-click and <code><strong>Apply Script...</strong></code></li>
-                <img src="./img/Others/Apply Script.webp" alt="Apply a script to the entire load order">
-                <li>Type <strong>SetESL</strong> in the filter and the script will automatically be selected.</li>
-                <img src="./img/Others/ESL Script.webp" alt="Select the SetESL script">
-                <li>Click <code><strong>OK</strong></code> and wait for it to process everything.</li>
-                <li><strong>Close xEdit</strong>, if it asks you to save then that means the plugins listed received the ESL flag.</li>
-            </ol>
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./resources.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Resources</span></a>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#introduction">Introduction</a>
-            </li>
-            <li>
-                <a href="#limitations">Limitations</a>
-            </li>
-            <li>
-                <a href="#batchFlagging">Batch Flagging</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

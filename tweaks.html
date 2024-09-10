@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
-    <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
-    <title>Tweaks | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Various tweaks to improve annoying aspects of the game.">
+    <link rel="icon" href="img/Coco/Logo.webp">
+    <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
+
+    <title>Bug Fixes | The Midnight Ride</title>
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="Essential mods that fix bugs, improve performance and add quality of life features.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,331 +19,694 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Various tweaks to improve annoying aspects of the game.">
+    <meta property="og:description" content="Essential mods that fix bugs, improve performance and add quality of life features.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+<!--                 <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a> -->
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="BugFixes" class="section">
+                <h2 onclick="location.href='#BugFixes'">Bug Fixes</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Bug Fixes</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="YUP" title="YUP">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/51664" target="_blank">Yukichigai Unofficial Patch - YUP</a></h3>
+                    Fixes thousands of bugs with both the base game and DLCs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - YUP - Base Game and All DLC</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="UPNVSE" title="UPNVSE+">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71239" target="_blank">Unofficial Patch NVSE Plus</a></h3>
+                    Fixes many bugs like YUP, but takes advantage of NVSE and JIP LN.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Unofficial Patch NVSE Plus</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="NavmeshOverhaul">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81003" target="_blank">Improved AI (Navmesh Overhaul Mod)</a></h3>
+                    This mod fixes and improves vanilla game pathfinding errors and will provide a better and more challenging experience with the AI.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Navmesh Overhaul</b></li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="StewieTweaks">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks and Engine Fixes</a></h3>
+                    Collection of many configurable quality of life improvements and bug fixes. Settings can be further enabled/disabled/tweaked in the new <strong>Tweaks</strong> section added to the main menu.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Stewie Tweaks</li>
+                        <li>
+                            <h4><a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">The Midnight Ride Resources</a></h4>
+                            <ul>
+                                <li><b>Main Files</b> - Stewie Tweaks - VNV INI</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="EngineOptimizations">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/80993" target="_blank">lStewieAl's Engine Optimizations</a></h3>
+                    Rewrites various slow functions in the game to decrease loading/saving time and improve general performance.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Engine Optimizations</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CombatLagFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71973" target="_blank">Combat Lag Fix (NVSE)</a></h3>
+                    Improves framerate in combat by fixing an engine bug that lowered framerate while attacking an enemy with a health-bar visible.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Fast Weapon Lag Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="VATSFix" title="VATS Lag Fix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/84823" target="_blank">VATS Lag Fix</a></h3>
+                    Fixes an issue that caused the game to wait around 1-2 seconds before showing hit percentages in some cases.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - VATS Lag Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="SaveBloatFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/80666" target="_blank">ActorCause Save Bloat Fix</a></h3>
+                    Fixes a save bloating issue related to actors detecting the player, improving save/load speed and decreasing the size of save files by 15-30%.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - ActorCause Save Bloat Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ViewmodelShakeFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/84443" target="_blank">Viewmodel Shake Fix - NVSE</a></h3>
+                    Fix for massive shaking during aiming caused by floating point precision loss.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Viewmodel Shake Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ISControl" title="ISControl Enabler">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/75417" target="_blank">ISControl Enabler and Ironsights adjuster</a></h3>
+                    Dynamically adds ISControl node system animation support and easy per-weapon sights adjustment.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - ISControl</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="IronSightsAligned">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81933" target="_blank">Iron Sights Aligned</a></h3>
+                    Fixes all iron sights on vanilla weapon meshes using ISControl Enabler.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Iron Sights Aligned
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:</li>
+                                <ol>
+                                    <li>Install</li>
+                                </ol>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="3rdPersonFixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/85198" target="_blank">3rd Person Animation Fixpack</a></h3>
+                    Fixes most animation bugs in 3rd person.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - 3rd Person Animation Fixpack</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="NVMIM" title="NVMIM">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/74295" target="_blank">New Vegas Mesh Improvement Mod - NVMIM</a></h3>
+                    Optimizations and fixes for over one thousand meshes throughout the base game and DLCs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - New Vegas Mesh Improvement Mod</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="SMIM" title="SMIM">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/82042" target="_blank">skinned mesh improvement mod</a></h3>
+                    Optimizes and fixes armors, characters and creatures.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - skinned mesh improvement mod
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>Plugin Version: FNV Ultimate Edition</li>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="PipBoyOnNodeFixes" title="PipBoyOn Node Fixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81775" target="_blank">PipBoyOn Node Fixes</a></h3>
+                    Fixes multiple pipboy:on nodes in the armor meshes.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - PipBoyOn Node Fixes SMIM</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="MAC10" title="MAC-10">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83815" target="_blank">Meshes and Collision - Totally Enhanced Nifs (MAC-TEN)</a></h3>
+                    Fixes dozens of meshes across the base game and DLCs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - MAC-10</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ITEM" title="ITEM">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/85622" target="_blank">Items Transformed - Enhanced Meshes (ITEM)</a></h3>
+                    Fixes even more meshes.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - ITEM</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="WindowSunlightFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/86437" target="_blank">Doc Mitchell's Window Sunlight Fix</a></h3>
+                    Fixes game starting at 23:00 leading to wrong lighting at the start of the game.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Doc Mitchell's Window Sunlight Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ImprovedLightingShaders">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/69833" target="_blank">Improved Lighting Shaders</a></h3>
+                    Allows landscape to support more than 4 lights.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Improved Lighting Shaders</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="PipBoyShadingFix" title="Pip-Boy Shading Fix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77957" target="_blank">Pip-Boy Shading Fix NVSE</a></h3>
+                    Fixes Pip-Boy's shading when shadows are disabled or using NVR.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Pip-Boy Shading Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ClimateControl">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77205" target="_blank">Climate Control NVSE</a></h3>
+                    Fixes bugs and adds utilities for weather mods.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Climate Control NVSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="AudioFixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77073" target="_blank">Misc Audio Tweaks and Fixes</a></h3>
+                    A collection of tweaks for certain audio files to fix popping issues and other annoyances.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Assorted Voice Popping Fixes</li>
+                        <li><b>Main Files</b> - Elijah Missing Distortion Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="MoonlightNVSE" title="MoonlightNVSE">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77683" target="_blank">MoonlightNVSE</a></h3>
+                    Fixes moonlight by making the moon the light caster instead of the sun.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - MoonlightNVSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="StripPerformanceFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/78617" target="_blank">Aqua Performa - Strip Performance Fix</a></h3>
+                    Drastically improves performance on The Strip by getting rid of water LOD.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Strip Performance Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="AlphaRenderingTweaks">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/80316" target="_blank">Fallout Alpha Rendering Tweaks - NVSE</a></h3>
+                    Fixes some alpha rendering issues like broken effects when using transparency multisampling.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Fallout Alpha Rendering Tweaks</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ExternalEmittanceFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/80443" target="_blank">External Emittance Fix - NVSE</a></h3>
+                    Fixes incorrect exterior emittance handling which leads to particles being black.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - External Emittance Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="DOFFix" title="Depth of Field Fix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81200" target="_blank">Depth of Field Fix - NVSE</a></h3>
+                    Fixes depth of field effects bleeding over onto player's viewmodel.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Depth of Field Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ExtendedRoombounds">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71501" target="_blank">ExRB - Extended Roombounds</a></h3>
+                    Adds and tweaks roombounds in some interiors possibly improving performance.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - ExRB
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>Full (YUP)</li>
+                                        <li>Next</li>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="StripLightsRegionFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/73596" target="_blank">Strip Lights Region Fix</a></h3>
+                    Fixes a vanilla issue about the Strip lights not showing in certain parts of the map.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Strip Lights Region Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="SwimmingCreaturesFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83094" target="_blank">Swimming Creatures Fix - ESPless</a></h3>
+                    Gives the "swim" movement flag to the few vanilla creatures that have anims for that. Now you can be pursued on water by something else than mirelurks.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Swiming Creatures Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="SlideshowFOVFix" title="Slideshow FOV Fix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87119" target="_blank">Slideshow FOV Fix - ESPLess</a></h3>
+                    Fixes the size of slideshows when using a custom FOV value.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Slideshow FOV Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="GasTrapPerformanceFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/88587" target="_blank">Gas Trap Performance Fix</a></h3>
+                    Vastly improves performance in cells with numerous gas traps, such as Vault 22.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Gas Trap Performance Fix
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>Plugin (Recommended)</li>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <span id="MinorVisualFixes" class="section">
+                <h2 onclick="location.href='#MinorVisualFixes'">Minor Visual Fixes</h2>
+
+                <div class="card" id="FixedFaceGen" title="Fixed FaceGen Tints">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71577" target="_blank">Mostly Fixed FaceGen Tints</a></h3>
+                    Fixes the odd skin color you'll see on NPCs, including the player.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - FaceGen Tint Fixes for NV</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="WaterAliasingFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/78400" target="_blank">High Resolution Water Fog - Water Aliasing Fix</a></h3>
+                    Increases resolution of the water depth render target, significantly reducing aliasing.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - High Resolution Water Fog</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="MuzzleFlashFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81201" target="_blank">Muzzle Flash Light Fix - NVSE</a></h3>
+                    Fixes muzzle flash lights not being culled after shot, leading to game still using them for illumination.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Muzzle Flash Light Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ViewmodelShadingFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/84781" target="_blank">Viewmodel Shading Fix - NVSE</a></h3>
+                    Fixes totally wrong specular lighting, and lack of muzzle flash lights on viewmodel.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Viewmodel Shading Fix - NVSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BloodDecalFlashingFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87830" target="_blank">Blood Decal Flashing Fix</a></h3>
+                    Fixes color overflow in blood decal shaders, which caused colorful flashes on Nvidia DXVK or other GPUs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Blood Decal Flashing Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ImprovedLandscape">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83425" target="_blank">Landscape Texture Improvements</a></h3>
+                    Improves many aspects of the landscape, most notably reducing texture seams.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Landscape Texture Improvements
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:</li>
+                                <ol>
+                                    <li>Next</li>
+                                    <li>YUP Patch</li>
+                                    <li>Install</li>
+                                </ol>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="card-green">
+                        <p>
+                            You can safely ignore the <span class="card-basic">Error failed to restore load order...</span> message.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="LandscapeDispositionFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/73937" target="_blank">Landscape Disposition Fix</a></h3>
+                    Fixes several hundred vanilla misplaced objects.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Landscape Disposition Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="WastedRockNormals">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83065" target="_blank">Wasted Rock Normals</a></h3>
+                    Fixes the flipped lighting on the vanilla rock normal maps.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - First release.</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html" class="active">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Tweaks</h1>
-            <h3>In this step we will install various tweaks that are too specific to fit any category.</h3>
-
-            <hr>
-
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Tweaks</strong>.</li>
-            </ol>
-
-            <!-- Unlimited Survival Mode -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/26163" target="_blank">
-                    <h2 id="unlimitedSurvival">Unlimited Survival Mode - F4SE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Unlimited Survival Mode - F4SE</b></li>
-            </ul>
-            Restores the game features disabled in Survival mode, such as fast travel and saving. Fully configurable.
-
-            <!-- BCR -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">
-                    <h2 id="bcr">Bullet Counted Reload System (BCR)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Bullet Counted Reload - v2.00</b></li>
-                <li><b>Optional Files - BCR- Lever Action Rifle v1.02</b></li>
-            </ul>
-            Allows reloading the lever-action rifle based on the amount of shots fired.
-
-            <!-- CHW -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/46101" target="_blank">
-                    <h2 id="chw">Classic Holstered Weapons System (CHW)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Classic Holstered Weapons - v1.06b</b></li>
-            </ul>
-            Shows holstered weapons on characters with various customization options.
-
-            <!-- No Ammo Drops -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/Core/Libs/Common/Widgets/DownloadPopUp?id=252499&nmm=1&game_id=1151" target="_blank">
-                    <h2 id="ammoDrops">Remove Ammo from Dropped Guns</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - AmmoRemover <strong>v1.0.5</strong></b> (Click the blue name above for a direct link to the correct version)</li>
-            </ul>
-            Removes ammo from guns on corpses and adds it to the corpse's inventory.
-
-            <!-- Remember Angle -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/42421" target="_blank">
-                    <h2 id="rememberAngle">Remember Lockpick Angle - Updated</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Remember Lockpick Angle Updated</b></li>
-            </ul>
-            When a bobby pin breaks in a lock, the next pin will be at the same angle instead of resetting every time.
-
-            <!-- Better Mentats -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/11838" target="_blank">
-                    <h2 id="betterMentats">Less Annoying Berry Mentats</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Less Annoying Berry Mentats</b></li>
-            </ul>
-            Prevents the Berry Mentats effect from highlighting your current companion and disables the effect entirely while your weapon is holstered or you are in dialogue.
-
-            <!-- To Your Face -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/73259" target="_blank">
-                    <h2 id="toYourFace">To Your Face FO4</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - ToYourFaceFO4</b> (First file)</li>
-            </ul>
-            NPCs will not greet you from behind.
-
-            <!-- Deadeye Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/57838" target="_blank">
-                    <h2 id="deadeyeFix">Deadeye Weapon Effect Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Deadeye Weapon Effect Fix</b></li>
-            </ul>
-            Improves the performance of Deadeye weapons. Adds detailed sounds and screen effects and removes the text message.
-
-            <!-- Offence Suppression -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/75292" target="_blank">
-                    <h2 id="suppression">Simple Offence Suppression F4</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Simple Offence Suppression F4SE</b></li>
-            </ul>
-            Prevents friendly NPCs from turning hostile on you if you accidentally hit them during combat.
-
-            <!-- Faster Workbench -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/70013" target="_blank">
-                    <h2 id="fasterWorkbench">Faster Workbench Exit</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Faster Workbench Exit</b></li>
-            </ul>
-            Makes the exit animation for workbenches nearly instant but without any visual hitches.
-
-            <!-- Dogmeat Behind -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/79543" target="_blank">
-                    <h2 id="dogmeatBehind">Dogmeat Follow Behind</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Dogmeat Follow Behind</b></li>
-            </ul>
-            Makes Dogmeat travel behind you instead of out in front.
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./basefinish.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Base Finish</span></a>
-            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
-        </div>
-    </div>
-
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#unlimitedSurvival">Unlimited Survival Mode</a>
-            </li>
-            <li>
-                <a href="#bcr">BCR</a>
-            </li>
-            <li>
-                <a href="#chw">CHW</a>
-            </li>
-            <li>
-                <a href="#ammoDrops">No Ammo Drops</a>
-            </li>
-            <li>
-                <a href="#rememberAngle">Remember Angle</a>
-            </li>
-            <li>
-                <a href="#betterMentats">Better Mentats</a>
-            </li>
-            <li>
-                <a href="#toYourFace">To Your Face</a>
-            </li>
-            <li>
-                <a href="#deadeyeFix">Deadeye Fix</a>
-            </li>
-            <li>
-                <a href="#suppression">Offence Suppression</a>
-            </li>
-            <li>
-                <a href="#fasterWorkbench">Faster Workbench</a>
-            </li>
-            <li>
-                <a href="#dogmeatBehind">Dogmeat Behind</a>
-            </li>
-        </ul>
-    </div>
 </body>
 
 </html>
