@@ -339,15 +339,7 @@
                     <p>
                         <b>IMPORTANT</b>:
                         <br>
-                        Enable all resources in MO2 before continuing, then move the following plugins above <strong>above PRP.esp</strong> and order them as follows:
-                    <ol>
-                        <li>FO4LODGen.esp</li>
-                        <li>FO4LODGen-DLCCoast-WindTurbines.esp</li>
-                        <li>FOLIP - New LODs.esp</li>
-                        <li>Far Harbor 3d Tree LODs.esp</li>
-                        <li>Optimized Vanilla Tree LODs.esp</li>
-                        <li>NF_Rocks_Fix.esp</li>
-                    </ol>
+                        Enable all resources in MO2 before continuing.
                     </p>
                 </div>
 
@@ -357,7 +349,12 @@
                     If you use a <strong>TMRE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using this file. It includes both Object and Terrain LOD.
                     <br>
                     <br>
-                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need).
+                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need), then move the following plugins to the bottom of your load order:
+                    <ol>
+                        <li>PRP.esp</li>
+                        <li>ClearableUSSRiptide_PRP_Patch.esp</li>
+                        <li>PuddleReflectionFix.esp</li>
+                    </ol>
                     </p>
                 </div>
             </span>
@@ -565,6 +562,18 @@
                         <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
                         <li>Title the mod <strong>FOLIP - After Generation</strong>.</li>
                         <li>Double-click <i>Overwrite</i> and drag FOLIP - After Generation.esp to the newly created mod, then enable it (both in the modlist and load order).</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="LoadOrder">
+                    <p>
+                    <h3>LoadOrder</h3>
+                    Move the following plugins to the bottom of your load order:
+                    <ol>
+                        <li>PRP.esp</li>
+                        <li>ClearableUSSRiptide_PRP_Patch.esp</li>
+                        <li>PuddleReflectionFix.esp</li>
                     </ol>
                     </p>
                 </div>
