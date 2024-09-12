@@ -5,238 +5,429 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Wabbajack | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack, FO4LODGen, xLODGen, LOD Guide, Generating LOD, LODGen, Distant Objects, Wabbajack">
-    <meta name="description" content="All the information and instructions regarding the Midnight Ride Wabbajack modlist.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="All the information and instructions regarding the The Midnight Ride Wabbajack modlist.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="The Midnight Ride">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
-    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/WJ Card.webp">
-    <meta property="og:description" content="All the information and instructions regarding the Midnight Ride Wabbajack modlist.">
+    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:description" content="All the information and instructions regarding the The Midnight Ride Wabbajack modlist.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Wabbajack" class="section">
+
+                <div class="card-red center" style="display: flex; align-items: center; margin-top: 30px;">
+                    <p>
+                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                    <div>
+                        <p>
+                            <b>IMPORTANT</b>:
+                            <br>
+                            Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
+                            <br>
+                            You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <h2 onclick="location.href='#Wabbajack'">Wabbajack</h2>
+
+                <div class="card" id="WhatIsWabbajack">
+                    <p>
+                    <h3 onclick="location.href='#WhatIsWabbajack'">What Is Wabbajack?</h3>
+                    Wabbajack is an <strong>automated modlist installer</strong>, it will allow you to install the entirety of The Midnight Ride Extended in a matter of minutes and with extras such as better LOD.
+                    </p>
+                </div>
+
+                <div class="card" id="IntroductionAndSetup">
+                    <p>
+                    <h3 onclick="location.href='#IntroductionAndSetup'">Introduction And Setup</h3>
+                    Read the <a href="./intro.html">Introduction</a> first, then proceed to the <a href="./setup.html">Setup</a> page. Once you're done, keep following this page.
+                    </p>
+                </div>
+
+                <div class="card" id="Installation">
+                    <p>
+                    <h3 onclick="location.href='#Installation'">Installation</h3>
+                    <ol>
+                        <li>Download the latest <a href="https://www.wabbajack.org/" target="_blank">Wabbajack</a>.</li>
+                        <li>
+                            <strong>Create a new folder</strong> anywhere outside of any default Windows folders, and the game folder itself.
+                            <br>
+                            Example: <span class="card-basic">C:\Modding\Wabbajack</span>
+                        </li>
+                        <li>Place the downloaded <strong>Wabbajack.exe</strong> in this folder, then run it.</li>
+                        <li>Click <strong>Browse Modlists</strong>, then tick the <b>Show Unofficial Lists</b> box in the corner.</li>
+                        <li>Locate The Midnight Ride in the gallery and click the download button in the corner.</li>
+                        <li>In <b>Installation Location</b> select an <strong>empty folder</strong> that is <b>NOT</b> the following:
+                            <ul>
+                                <li>The Steam folder,</li>
+                                <li>Any default Windows folders,</li>
+                                <li>The game folder,</li>
+                                <li>The folder where you put Wabbajack.exe.</li>
+                            </ul>
+                            Example: <span class="card-basic">C:\Modding\The Midnight Ride</span>
+                        </li>
+                        <li><strong>Begin</strong> the installation.</li>
+                        <li>Accept the Nexus Mods API request.</li>
+                        <li>If you are not a Premium user you will need to manually click download for each mod.</li>
+                        <li>Once complete, the installation will show a green <strong>Installation Complete</strong> screen.
+                            <ul>
+                                <li>If you see a red <b>Installation Failed</b> screen, try log-in again through the Wabbajack settings, then reinstall the list to the same folder. If that doesn't work please join the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server for support.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+            </span>
+
+            <span id="PostInstallSteps" class="section">
+                <h2 onclick="location.href='#PostInstallSteps'">Post-Install Steps</h2>
+
+                <div class="card" id="Exclusions">
+                    <p>
+                    <h3 onclick="location.href='#Exclusions'">Exclusions</h3>
+                    This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works. It's not part of the manual guide because exclusions are handled by the MO2 installer, which Wabbajack doesn't use.
+                    <ol>
+                        <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
+                        <li>Open <strong>Virus & threat protection</strong>.</li>
+                        <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
+                        <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
+                        <li>Add a <b>Folder</b> exclusion and point it to the <strong>Installation Location</strong> folder.</li>
+                    </ol>
+
+                    <div class="card-red">
+                        <p>
+                            If you are using a third-party antivirus, you will need to find the exclusions menu and add one to the same folder.
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="card" id="RootMods">
+                    <p>
+                    <h3 onclick="location.href='#RootMods'">Root Mods</h3>
+                    <ol>
+                        <li>In your <b>Installation Location</b>, open the <strong>Root Mods</strong> folder.</li>
+                        <li>Copy <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                        <li>Still in the game's Root folder, double-click on <strong>fo4downgrader.exe</strong> to run it.</li>
+                        <li>
+                            A command prompt window will open and it should say:
+                            <div class="card-basic">Patching successful</div>
+                        </li>
+                        <li>Close the command prompt and backups with <strong>_downgradeBackup</strong> appended to their name should appear in the game's <b>Root</b> folder.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="ModOrganizer2Setup" title="Mod Organizer 2 Setup">
+                    <p>
+                    <h3 onclick="location.href='#ModOrganizer2Setup'">Mod Organizer 2 Setup</h3>
+                    <ol>
+                        <li>Launch <strong>ModOrganizer.exe</strong> from your <strong>Installation Location</strong>.</li>
+                        <li>If you see a pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="GameConfiguration">
+                    <p>
+                    <h3 onclick="location.href='#GameConfiguration'">Game Settings</h3>
+                    <ol>
+                        <li>Launch the game launcher using the <strong>Fallout Launcher</strong> option in MO2.</li>
+                        <div class="image-container width-60">
+                            <img class="content-img" src="./img/Others/Start Launcher.webp" alt="Run the launcher through MO2">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+                        <li>
+                            Inside the launcher, click <b>Options</b> and do the following:
+                            <ol>
+                                <li>
+                                    Select <strong>Ultra Preset</strong>.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Close the launcher.</li>
+                        <li>Still in the Executables menu of MO2, <strong>select BethINI Pie</strong>.</li>
+                        <li>Click <b>Fallout 4</b> then press <strong>Select Game</strong>.</li>
+                        <li>Apply the following settings:</li>
+                        <ol>
+                            <li>Select a BethINI <strong>preset</strong> depending on your hardware.</li>
+                        </ol>
+
+                        <div class="card-yellow">
+                            <p>
+                                The BethINI High preset is recommended for most systems, use Ultra if you have spare GPU performance and want better visual quality.
+                                <br>
+                                You can check this <a href="https://github.com/ModdingLinked/The-Midnight-Ride/blob/main/bethini%20performance%20testing">complete comparison</a> if you are unsure.
+                            </p>
+                        </div>
+
+                        <ol start="2">
+                            <li>Apply <strong>Recommended Tweaks</strong>.</li>
+                            <li>Set <b>Display Mode</b> to <strong>Borderless Windowed</strong>.</li>
+                            <li>Select the <strong>resolution</strong> you want to display the game in.</li>
+                            <li>Set <b>Text Language</b> to <strong>English</strong> (other languages are not supported by the guide).</li>
+                            <li>Edit the other settings to your liking.</li>
+                        </ol>
+
+                        <div class="card-yellow">
+                            <p>
+                                The FOV setting in BethINI won't be functional due to a game bug.
+                                <br>
+                                You can safely download and install <a href="https://www.nexusmods.com/fallout4/mods/36768" target="_blank">FOV Slider</a> later on top of the guide.
+                            </p>
+                        </div>
+
+                        <div class="card-yellow">
+                            <p>
+                                The NVFlex setting (weapon debris) in BethINI is disabled by default.
+                                <br>
+                                <br>
+                                If you plan on enabling this and you have a newer Nvidia GPU, be sure to download and install <a href="./bugfix.html#debrisFix" target="_blank">Weapon Debris Crash Fix</a> later in the guide.
+                            </p>
+                        </div>
+
+                        <ol start="5">
+                            <li>Click <b>File</b> then <strong>Save</strong> in the top left, then confirm the prompts and close BethINI.</li>
+                        </ol>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="LaunchingTheGame">
+                    <p>
+                    <h3 onclick="location.href='#LaunchingTheGame'">Launching The Game</h3>
+                    Go to the modlist's <strong>Installation Location</strong> folder you chose at the beggining and run <strong>ModOrganizer.exe</strong>.
+                    <br>
+                    <br>
+                    Due to the way Mod Organizer 2 works, running programs through it is a requirement in order to load mods. This is done in the <strong>top-right corner</strong> of the manager, where the program to run is chosen. Here, <strong>select F4SE</strong>.
+                    <br>
+
+                    <div class="card-yellow">
+                        <p>
+                            If you don't see F4SE then you haven't followed the <a href="./wabbajack.html#RootMods">Root Mods</a> instructions correctly.
+                        </p>
+                    </div>
+
+                    <br>
+                    For the sake of convenience you may also <strong>create a shortcut</strong> (right below the <b>Run</b> button) so that you won't have to manually open MO2 each time before playing.
+                    <br>
+                    <div class="image-container width-60">
+                        <img class="content-img" src="./img/Others/Start F4SE.webp" alt="Launching F4SE">
+                        <div class="resize-overlay expand"></div>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="FinishingNotes">
+                    <p>
+                    <h3 onclick="location.href='#FinishingNotes'">Finishing Notes</h3>
+                    You have now installed the The Midnight Ride Wabbajack list. If you don't want to mod your game further, <strong>you can now start playing</strong>. Have fun!
+                    <br>
+                    <br>
+                    Adding mods independently and without the help of a guide is only recommended after you have learned the required information and workflow. These range from general technicalities about the game, to solving conflicts with <a href="https://moddinglinked.com/xedit.html" target="_blank">xEdit</a> through <a href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a>.
+                    <br>
+                    <br>
+                    You can find sources for all this information and more in the <a href="./resources.html" target="_blank">Resources</a> section. You should also be aware of the <a href="./avoid-tools.html" target="_blank">Tools</a> and <a href="./avoid-mods.html" target="_blank">Mods to Avoid</a>.
+
+                    <div class="card-yellow">
+                        <p>
+                            We may not provide support for setups that have added mods, especially if you went overboard!
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+            </span>
+
+            <span id="ModlistUpdate" class="section">
+                <h2 onclick="location.href='#ModlistUpdate'">Modlist Update</h2>
+                <div class="card" id="UpdatingTheList">
+                    <p>
+                    <h3 onclick="location.href='#UpdatingTheList'">Updating The List</h3>
+                    Whenever a new version of the list is released, you can update your current installation by following these steps:
+                    <ol>
+                        <li>If you added any mods to the list after installation, add the <span class="card-basic">[NoDelete]</span> prefix to their name in the left pane.</li>
+                        <li><strong>Verify files</strong> on Steam or GOG Galaxy.</li>
+                        <li><strong>Reinstall the list</strong> from Wabbajack with the "<b>Overwrite Installation</b>" checkbox enabled.</li>
+                        <li>Reapply the Downgrader <a href="./wabbajack.html#RootMods">as instructed above</a>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html" class="active">Wabbajack</a>
-                </li>
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Wabbajack</h1>
-            The TMR Wabbajack is currently offline, sorry for the inconvenience.
-
-            <!--
-            The TMR Wabbajack modlist will allow you to quickly and easily install TMR, both the basic and extended sections.
-            <p>
-                <a>
-                    <h2 id="introSetup">Introduction and Setup</h2>
-                </a>
-            </p>
-            Read the <a href="./intro.html">Introduction</a> first, then proceed to the <a href="./setup.html">Setup</a> page. Once you're done, keep following this page.
-            <p>
-                <a>
-                    <h2 id="installation">Installation</h2>
-                </a>
-            </p>
-            <ol>
-                <li>Download the latest <a href="https://www.wabbajack.org/" target="_blank">Wabbajack</a>.</li>
-                <li>Create a new folder anywhere outside of any default Windows folders.</li>
-                <li>Place the downloaded <strong>Wabbajack.exe</strong> in this folder, then run it.</li>
-                <li>Click <strong>Browse Modlists</strong>, enable <strong>Show Unofficial Lists</strong>, then locate The Midnight Ride in the gallery and click the download button in the corner.</li>
-                <li>In <b>Installation Location</b> select an <strong>empty folder</strong> that is <b>NOT</b> the following:</li>
-                <ul>
-                    <li>The Steam folder.</li>
-                    <li>Any default Windows folders.</li>
-                    <li>The game folder.</li>
-                    <li>The folder where you put Wabbajack.exe.</li>
-                </ul>
-                <li>Add your <b>Installation Location</b> and game folder as <strong>exclusions</strong> in your AV by following <a href="./mo2.html#exclusions">these steps</a>.</li>
-                <li>Begin the installation.</li>
-                <li>Accept the Nexus Mods API request.</li>
-                <li>If you are not a Premium user you will need to manually click download for each mod.</li>
-                <li>Once complete, the installation will show a green <strong>Installation Complete</strong> screen.
-                    <ul>
-                        <li>If you see a red <strong>Installation Failed</strong> screen, please join the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server for support.</li>
-                    </ul>
-            </ol>
-            <p>
-                <a>
-                    <h2 id="postInstall">Post-Install Steps</h2>
-                </a>
-            </p>
-            <ol>
-                <li>In your <b>Installation Location</b>, open Mod Organizer 2.</li>
-                <li>If you want to play at higher than 60 FPS, expand the <b>Utilities</b> separator and <strong>configure High FPS Physics Fix</strong> according to the instructions <a href="./utilities.html#physics">here</a>.</li>
-                <li>Run the game through the <strong>F4SE</strong> option in the top right:</li>
-                <img src="./img/Others/Start F4SE.webp" alt="Run F4SE through MO2">
-                <li>Once you are in the game, you need to head to the <b>Mod Configuration</b> menu, then the <strong>MCM Settings Manager</strong> menu and click <strong>Apply</strong>.</li>
-                <li>Now you can play, remember to always run the game from <b>Mod Organizer 2</b> and with <b>F4SE</b>.</li>
-            </ol>
-            <blockquote>This Wabbajack list ships with better LOD generated according to our <a href="./lod.html">LOD guide</a>.</blockquote>
-            <hr>
-            <p>
-                <a>
-                    <h2 id="updating">Updating the List</h2>
-                </a>
-            </p>
-            Reinstall the list from the Wabbajack tool and enable the <strong>"Overwrite Installation"</strong> checkbox.
-            -->
-        </div>
-    </div>
-
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#introSetup">Introduction & Setup</a>
-            </li>
-            <li>
-                <a href="#installation">Installation</a>
-            </li>
-            <li>
-                <a href="#postInstall">Post-Install Steps</a>
-            </li>
-            <li>
-                <a href="#mcm">MCM Configuration</a>
-            </li>
-            <li>
-                <a href="#updating">Updating</a>
-            </li>
-        </ul>
-    </div>
 </body>
 
 </html>

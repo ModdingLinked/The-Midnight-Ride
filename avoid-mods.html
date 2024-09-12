@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Mods to Avoid | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack, Avoid, Don't use These, Bad Mods, Broken Mods, Broken">
-    <meta name="description" content="List of many popular mods that are outdated/broken.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="List of many popular mods that are outdated or broken.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,285 +19,379 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="List of many popular mods that are outdated/broken.">
+    <meta property="og:description" content="List of many popular mods that are outdated or broken.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="ModsToAvoid" class="section">
+
+                <h2 onclick="location.href='#ModsToAvoid'">Mods to Avoid</h2>
+
+                <div class="card-yellow">
+                    <p>
+                        This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
+                        <br>
+                        Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">FO4Edit</a> to check for conflicts.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, bugfixmodsexpander)" id="bugfixmods">
+                    <p>
+                    <h3>Bugfix & Optimization Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="bugfixmodsexpander">
+                    <p>
+                    <h3>ENBoost</h3>
+                    ENBoost works around an issue (which NVTF already fixes properly) with a hacky memory sharing across processes. It also requires configuration based on the user's system and much like ENB, has been abandoned.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Zan AutoPurge Crash Protector, PCB Hotkey, and Clear Cache Hotkey</h3>
+                    The script command used by these mods is a leftover command from development that forcefully clears buffered cells from memory, which can lead to unforeseen consequences. Essentially the same function is performed safely by the INI tweaks in the guide.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>FO4FI FPS Fix</h3>
+                    Causes crashes in some locations.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>FPSL - Lighting and Tweaks Performance</h3>
+                    Contains many edits that are not related to the mod's goal at all (such as water output from a pump and generator cost), does not really improve performance in any relevant amount and it will make light sources look miserable.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Mods from Qrsr, such as Fixer - Fixes for Fallout 4 - An addition to UFO4P</h3>
+                    Many of their mods have been proven to be released untested with tone deaf changes masquerading as fixes. Fixer, specifically, contains many invalid fixes and subjective changes.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Any configuration file for Buffout 4/X-Cell/High FPS Fix</h3>
+                    Mods like <a href="https://www.nexusmods.com/fallout4/mods/79804" target="_blank">this</a> are advertised as some magic solution but they are not. TMR has all the changes that you need and it's especially important to set up HFPF yourself as its configuration can vary a lot based on your setup.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, visualmodsexpander)" id="visualmods">
+                    <p>
+                    <h3>Visual Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="visualmodsexpander">
+                    <p>
+                    <h3>Oversized textures</h3>
+                    Based on the object size and how the texture is wrapped around it, you should pick textures with a reasonable resolution and avoid the very big ones also based on your display resolution. Keep in mind that the textures will not be displayed with their full resolution at all times, in fact they will be scaled down because of <a href="https://imgsli.com/MTMwNjU2" target="" _blank>mipmaps</a> based on distance and other factors, as shown with these sliders. Just for reference, a maximum of 2K at 1080p is a pretty safe bet in terms of balance.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>ENB</h3>
+                    Fallout 4 does not need ENB as much as older titles such as Skyrim (even though SSE has Community Shaders). Using ENB also brings a flat CPU performance reduction of about 25%, which is far from worth it especially if you use ENB for simple effects such as a LUT.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>AI-upscaled texture packs</h3>
+                    Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Fallout 4 Official HD Texture Pack DLC</h3>
+                    Almost twice the size of the base game on its own, not worth the extra VRAM usage (from around 3GB to 5.5GB on average) considered how close it looks to vanilla.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Functional Displays</h3>
+                    Causes crashes, you can fix this by deleting everything in the <b>meshes folder</b> except for the <b>Functional Displays</b> folder.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Pip-Boy Flashlight</h3>
+                    The shadow option from this will severely affect performance.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>NAC and NAC X</h3>
+                    Bloated, riddled with bugs and performance intensive.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplaymodsexpander)" id="gameplaymods">
+                    <p>
+                    <h3>Content & Gameplay Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplaymodsexpander">
+                    <p>
+                    <h3>Any mods that edit timescale</h3>
+                    Vanilla AI packages and scripts are based on the vanilla timescale, and can break and/or run when they aren't supposed to if the timescale is changed.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Armor and Weapon Keywords Community Resource</h3>
+                    Extremely bloated and buggy, makes tons of out-of-scope/undocumented changes.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Armorsmith Extended</h3>
+                    Old and buggy, not to mention extraordinarily overpowered.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>VIS/VIS-G</h3>
+                    Requires patches with any mods that change/add literally any items, also makes random changes to item names to make them more "realistic" for some reason.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Scrap Everything/Settlement Cleaning Mods</h3>
+                    Most of these mods will break precombination, which will destroy performance especially in denser areas. A notable exception to this is <a href="https://www.nexusmods.com/fallout4/mods/79618" target="_blank">The Rebuild Collection - AIO</a>.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Damage Threshold Framework</h3>
+                    Occasionally causes crashes due to calculation errors.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>The Beantown Interiors Project</h3>
+                    Breaks precombineds, can accelerate save bloat due to the massive amounts of items in each interior.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>South of the Sea</h3>
+                    Very buggy and will cause crashes due to deleted nav-meshes. Use <a href="https://www.nexusmods.com/fallout4/mods/63152" target="_blank">South of the Sea - Atoms Storm</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Most mods that raise settlement happiness</h3>
+                    Most are made incorrectly, while your happiness number will go up, it doesn't actually do anything. Please refer to <a href="https://www.nexusmods.com/fallout4/mods/82928?tab=posts&jump_to_comment=138133883" target="_blank">Tenhat's comment</a> for a more detailed explanation. Notable exceptions to this are <a href="https://www.nexusmods.com/fallout4/mods/82928" target="_blank">Radios Give Happiness - Settlement Workshop Tweak</a> and <a href="https://www.nexusmods.com/fallout4/mods/83334" target="_blank">Simple Happiness Emitters - New Buildable Object for Settlement Workshops</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, miscellaneousexpander)" id="miscellaneous">
+                    <p>
+                    <h3>Miscellaneous</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="miscellaneousexpander">
+                    <p>
+                    <h3>Sinitar's Modlists</h3>
+                    If you have a few hours and want more information about Sinitar's lies, scamming and lack of modding knowledge, check out <a href="https://docs.google.com/document/d/1F1-6lF8dI4i2Zz8iT-bv_Ci1VO9MSU4MiSUrT5JqgHA/edit" target="_blank">this</a> <i>twenty-eight</i> page essay that goes into excruciating detail about it.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>HUDCaps</h3>
+                    Breaks the saving system, a fix is available in the <a href="https://www.nexusmods.com/fallout4/mods/43505?tab=posts&jump_to_comment=133851608" target="_blank">comment section</a>.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>The MOFAM mod list</h3>
+                    Contains various misinformation and bad recommendations, such as running a pre-NG version of the game and leaving the user with many outdated fixes.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>The BiRaitBec mod list</h3>
+                    Heavily outdated and misinformed.
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html" class="active">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Mods to Avoid</h1>
-            <blockquote>
-                This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
-                <br>
-                Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">FO4Edit</a> to check for conflicts.
-            </blockquote>
-            <!-- Oversized Textures -->
-            <p>
-                <strong>Oversized textures</strong>
-                <br>
-                Based on the object size and how the texture is wrapped around it, you should pick textures with a reasonable resolution and avoid the very big ones also based on your display resolution. Keep in mind that the textures will not be displayed with their full resolution at all times, in fact they will be scaled down because of <a href="https://imgsli.com/MTMwNjU2" target="" _blank>mipmaps</a> based on distance and other factors, as shown with these sliders. Just for reference, a maximum of 2K at 1080p is a pretty safe bet in terms of balance.
-            </p>
-
-            <!-- AI Upscales -->
-            <p>
-                <strong>AI-upscaled texture packs</strong>
-                <br>
-                Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
-            </p>
-
-            <!-- Timescale -->
-            <p>
-                <strong>Any mods that edit timescale</strong>
-                <br>
-                Vanilla AI packages and scripts are based on the vanilla timescale, and can break and/or run when they aren't supposed to if the timescale is changed.
-            </p>
-
-            <!-- Sinitar -->
-            <p>
-                <strong>Sinitar's Modlists</strong>
-                <br>
-                If you have a few hours and want more information about Sinitar's lies, scamming and lack of modding knowledge, check out <a href="https://docs.google.com/document/d/1F1-6lF8dI4i2Zz8iT-bv_Ci1VO9MSU4MiSUrT5JqgHA/edit" target="_blank">this</a> <i>twenty-eight</i> page essay that goes into excruciating detail about it.
-            </p>
-
-            <!-- ENBoost -->
-            <p>
-                <strong>ENBoost</strong>
-                <br>
-                Completely unnecessary on Fallout 4 and unsupported.
-            </p>
-
-            <!-- FO4FI FPS Fix -->
-            <p>
-                <strong>FO4FI FPS Fix</strong>
-                <br>
-                Causes crashes in some locations.
-            </p>
-
-            <!-- Official HD DLC -->
-            <p>
-                <strong>Fallout 4 Official HD Texture Pack DLC</strong>
-                <br>
-                Almost twice the size of the base game on its own, not worth the extra VRAM usage (from around 3GB to 5.5GB on average) considered how close it looks to vanilla.
-            </p>
-
-            <!-- FPSL -->
-            <p>
-                <strong>FPSL - Lighting and Tweaks Performance</strong>
-                <br>
-                Contains many edits that are not related to the mod's goal at all (such as water output from a pump and generator cost), does not really improve performance in any relevant amount as tested <a href="https://cdn.discordapp.com/attachments/775894076410429470/1113992881817014322/image.png" target="" _blank>here</a> and as a result of using it, light sources will look miserable.
-            </p>
-
-            <!-- AWKCR -->
-            <p>
-                <strong>Armor and Weapon Keywords Community Resource</strong>
-                <br>
-                Extremely bloated and buggy, makes tons of out-of-scope/undocumented changes.
-            </p>
-
-            <!-- Armorsmith -->
-            <p>
-                <strong>Armorsmith Extended</strong>
-                <br>
-                Old and buggy, not to mention extraordinarily overpowered.
-            </p>
-
-            <!-- VIS -->
-            <p>
-                <strong>VIS/VIS-G</strong>
-                <br>
-                Requires patches with any mods that change/add literally any items, also makes random changes to item names to make them more "realistic" for some reason.
-            </p>
-
-            <!-- Functional Displays -->
-            <p>
-                <strong>Functional Displays</strong>
-                <br>
-                Causes crashes, you can fix this by deleting everything in the <b>meshes folder</b> except for the <b>Functional Displays</b> folder.
-            </p>
-
-            <!-- Scrap Mods -->
-            <p>
-                <strong>Scrap Everything/Settlement Cleaning Mods</strong>
-                <br>
-                Breaks precombineds in settlements.
-            </p>
-
-            <!-- Flashlight -->
-            <p>
-                <strong>Pip-Boy Flashlight</strong>
-                <br>
-                The shadow option from this will severely affect performance.
-            </p>
-
-            <!-- Damage Treshold -->
-            <p>
-                <strong>Damage Threshold Framework</strong>
-                <br>
-                Occasionally causes crashes due to calculation errors.
-            </p>
-
-            <!-- Beantown -->
-            <p>
-                <strong>The Beantown Interiors Project</strong>
-                <br>
-                Breaks precombineds, can accelerate save bloat due to the massive amounts of items in each interior.
-            </p>
-
-            <!-- SotS -->
-            <p>
-                <strong>South of the Sea</strong>
-                <br>
-                Very buggy and will cause crashes due to deleted nav-meshes. A reworked version is available <a href="https://www.nexusmods.com/fallout4/mods/63152" target="_blank">here</a>.
-            </p>
-
-            <!-- NAC -->
-            <p>
-                <strong>NAC and NAC X</strong>
-                <br>
-                Bloated, riddled with bugs and performance intensive.
-            </p>
-
-            <!-- HUDCaps -->
-            <p>
-                <strong>HUDCaps</strong>
-                <br>
-                Breaks the saving system.
-            </p>
-
-            <!-- MOFAM -->
-            <p>
-                <strong>The MOFAM mod list</strong>
-                <br>
-                Contains various misinformation about things the author does not understand, seems very selective about who to take feedback from even when shown proof.
-            </p>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 </body>

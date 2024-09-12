@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
+    <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Gameplay | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Simple gameplay changes/additions that make the game feel more balanced and modern.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="Simple gameplay changes and additions that make the game feel more balanced and modern.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,402 +19,371 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Simple gameplay changes/additions that make the game feel more balanced and modern.">
+    <meta property="og:description" content="Simple gameplay changes and additions that make the game feel more balanced and modern.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Gameplay" class="section">
+                <h2 onclick="location.href='#Gameplay'">Gameplay</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Gameplay</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="LootReduction">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/21366" target="_blank">Loot Logic and Reduction With optional Harvest Restrictions</a></h3>
+                    Reduces ammo, meds and bobby pin drops while logically diversifying loot into appropriate containers.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Loot Logic and Reduction 1.5.3.1</li>
+                        <li><a href="https://www.nexusmods.com/fallout4/mods/74945" target="_blank">Loot Logic and Reduction - CFM Patch</a></li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ComplexVendors">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/47364" target="_blank">Complex Vendors</a></h3>
+                    Makes most vendors only buy items related to what they sell (for example doctors will only buy medical supplies).
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Complex Vendors</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BlockingOverhaul">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/73333" target="_blank">Blocking Overhaul</a></h3>
+                    Revamps the blocking system.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Blocking Overhaul</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="Chemfluence">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/73741" target="_blank">Chemfluence - AI Combat Dynamics</a></h3>
+                    Enhances AI behavior by integrating two key factors: chem usage and weapon choice. NPCs will not only respond to chem consumption with distinct combat strategies, but also adapt their tactics based on the weapons they wield.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Chemfluence AI Combat Dynamics</li>
+                    </ul>
+
+                    <div class="card-yellow">
+                        <p>
+                            Ignore the pop-up stating that NPCs Use Items is required, it's not.
+                        </p>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="card" id="PowerArmorReduction">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/65983" target="_blank">SPARS - Simple Power Armor Reduction System</a></h3>
+                    Reduces the number of power armor parts around the Commonwealth.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - SPARS-50 Main File</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="DLCTiming" title="DLC Timing">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/53057" target="_blank">DLC Timing</a></h3>
+                    Allows you to change the starting conditions for Automatron, Far Harbor, Nuka World and Vault-Tec Workshop independently to suit your playthrough.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - DLC Timing</li>
+                        <li><a href="https://www.nexusmods.com/fallout4/mods/63391" target="_blank">DLC Timing - UFO4P Patch</a></li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CreationClubDelayed">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/84393" target="_blank">Simple Creation Club Delayed NG</a></h3>
+                    Delays the start of the Next Gen Creation Club content until certain requirements are met.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Simple Creation Club Delayed NG</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="LocalRadiants">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/56089" target="_blank">Keep Radiants in the Commonwealth UFO4P Version</a></h3>
+                    Prevents radiant quests from sending you outside the Commonwealth.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Keep Radiants in the Commonwealth UFO4P Version</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="EncounterZoneRecalculation">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/45674?tab=files&file_id=184238&nmm=1" target="_blank">Encounter Zone Recalculation (Continuous Level Scaling)</a></h3>
+                    Allows previously-visited encounter zones to update the levels of the enemies in them as the player levels up.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Encounter Zone Recalculation <strong>1.0</strong></li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="MinutemenQuestCleanup">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/59019" target="_blank">Who's The General - Minutemen Quest Cleanup</a></h3>
+                    Does multiple things:
+                    <ul>
+                        <li>Most Minutemen quests have been moved to Preston's "How are you doing?" dialogue option.</li>
+                        <li>Preston Garvey no longer gives you a new quest as part of turning in an old quest.</li>
+                        <li>As General of the Minutemen, you no longer report back to Preston at the end of most quests.</li>
+                        <li>Radio Freedom now broadcasts even when the player isn't tuned in, fixing radios tuned to the station.</li>
+                        <li>The player will only acquire quests from Radio Freedom while tuned in on their Pip-Boy, or listening at The Castle.</li>
+                    </ul>
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Who's The General - Minutemen Quest Cleanup</li>
+                        <li><b>Optional Files</b> - 1 - Keep Radiants in the Commonwealth Patch</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="MolotovNerf">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/15364" target="_blank">Molotov Cocktail Nerf</a></h3>
+                    Nerfs the molotov's insane damage on hit and removes its stagger.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Molotov Cocktail Nerf</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="LegendariesTheyCanUse">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/61411" target="_blank">Legendaries They Can Use</a></h3>
+                    Scans the NPCs inventory and picks a random item they already have to slap a legendary on. The item will then be used in their attempt to kill you.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Legendaries They Can Use</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="NoPASneaking" title="No PA Sneaking">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/75430" target="_blank">No Sneaking in Power Armor</a></h3>
+                    Sneaking is now far, far harder in power armor.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - No Sneaking in Power Armor</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="HitThoseObjects">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/85755" target="_blank">Hit Those Objects</a></h3>
+                    Adds contextual hit reactivity to various objects and items in the world.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Hit Those Objects</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="HitThoseExplosives">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/82592" target="_blank">Hit Those Explosives</a></h3>
+                    Hitting explosive weapons and ammo will now cause them to explode, allowing for chain reactions.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Hit Those Explosives</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html" class="active">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Gameplay</h1>
-            <h3>In this step, we will install mods aiming to improve the general gameplay</h3>
-
-            <blockquote>It is especially important to read the descriptions of these mods.</blockquote>
-
-            <hr>
-
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Gameplay</strong>.</li>
-            </ol>
-
-            <!-- Loot Reduction -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/21366" target="_blank">
-                    <h2 id="lootReduction">Loot Logic and Reduction With optional Harvest Restrictions</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Loot Logic and Reduction 1.5.3.1</b></li>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/74945" target="_blank">Loot Logic and Reduction - CFM Patch</a></li>
-            </ul>
-            Reduces ammo, meds and bobby pin drops while logically diversifying loot into appropriate containers.
-
-            <!-- Complex Vendors -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/47364" target="_blank">
-                    <h2 id="complexVendors">Complex Vendors</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Complex Vendors</b></li>
-            </ul>
-            Makes most vendors only buy items related to what they sell (for example doctors will only buy medical supplies).
-
-            <!-- Blocking Overhaul -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/73333" target="_blank">
-                    <h2 id="blockingOverhaul">Blocking Overhaul</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Blocking Overhaul</b></li>
-            </ul>
-            Revamps the blocking system.
-
-            <!-- Chemfluence -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/73741" target="_blank">
-                    <h2 id="chemfluence">Chemfluence - AI Combat Dynamics</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Chemfluence AI Combat Dynamics</b></li>
-            </ul>
-            Enhances AI behavior by integrating two key factors: chem usage and weapon choice. NPCs will not only respond to chem consumption with distinct combat strategies, but also adapt their tactics based on the weapons they wield.
-
-            <!-- SPARS -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/65983" target="_blank">
-                    <h2 id="spars">SPARS - Simple Power Armor Reduction System</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - SPARS-50 Main File</b></li>
-            </ul>
-            Reduces the frequency of power armors.
-
-            <!-- DLC Timing -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/53057" target="_blank">
-                    <h2 id="dlcTiming">DLC Timing</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - DLC Timing</b></li>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/63391" target="_blank">DLC Timing - UFO4P Patch</a></li>
-            </ul>
-            Allows you to change the starting conditions for Automatron, Far Harbor, Nuka World and Vault-Tec Workshop independently to suit your playthrough.
-
-            <!-- Creation Club Delayed -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/84393" target="_blank">
-                    <h2 id="creationClubDelayed">Simple Creation Club Delayed NG</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Simple Creation Club Delayed NG</b></li>
-            </ul>
-            Delays the start of the Next Gen Creation Club content until certain requirements are met.
-
-            <!-- Local Radiants -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/56089" target="_blank">
-                    <h2 id="localRadiants">Keep Radiants in the Commonwealth UFO4P Version</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Keep Radiants in the Commonwealth UFO4P Version</b></li>
-            </ul>
-            Prevents radiant quests from sending you outside the Commonwealth.
-
-            <!-- Zone Recalculation -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/Core/Libs/Common/Widgets/DownloadPopUp?id=184238&nmm=1&game_id=1151" target="_blank">
-                    <h2 id="zoneRecalc">Encounter Zone Recalculation (Continuous Level Scaling)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Encounter Zone Recalculation <strong>1.0</strong></b> (Click the blue name above for a direct link to the correct version)</li>
-            </ul>
-            Allows previously-visited encounter zones to update the levels of the enemies in them as the player levels up.
-
-            <!-- Who's The General -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/59019" target="_blank">
-                    <h2 id="whosTheGeneral">Who's The General - Minutemen Quest Cleanup</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Who's The General - Minutemen Quest Cleanup</b></li>
-                <li><b>Optional Files - 1 - Keep Radiants in the Commonwealth Patch</b></li>
-            </ul>
-            Does multiple things:
-            <ul>
-                <li>Most Minutemen quests have been moved to Preston's "How are you doing?" dialogue option.</li>
-                <li>Preston Garvey no longer gives you a new quest as part of turning in an old quest.</li>
-                <li>As General of the Minutemen, you no longer report back to Preston at the end of most quests.</li>
-                <li>Radio Freedom now broadcasts even when the player isn't tuned in, fixing radios tuned to the station.</li>
-                <li>The player will only acquire quests from Radio Freedom while tuned in on their Pip-Boy, or listening at The Castle.</li>
-            </ul>
-
-            <!-- Molotov Nerf -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/15364" target="_blank">
-                    <h2 id="molotovNerf">Molotov Cocktail Nerf</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Molotov Cocktail Nerf</b></li>
-            </ul>
-            Nerfs the molotov's insane damage on hit and removes its stagger.
-
-            <!-- Legendaries They Use -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/61411" target="_blank">
-                    <h2 id="legendariesTheyUse">Legendaries They Can Use</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Legendaries They Can Use</b></li>
-            </ul>
-            Scans the NPCs inventory and picks a random item they already have to slap a legendary on. The item will then be used in their attempt to kill you.
-
-            <!-- No Sneaking in PA -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/75430" target="_blank">
-                    <h2 id="paSneaking">No Sneaking in Power Armor</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - No Sneaking in Power Armor</b></li>
-            </ul>
-            Sneaking is now far, far harder in power armor.
-
-            <!-- Hit Those Objects -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/85755" target="_blank">
-                    <h2 id="hitObjects">Hit Those Objects</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Hit Those Objects</b></li>
-            </ul>
-            Adds contextual hit reactivity to various objects and items in the world.
-
-            <!-- Hit Those Explosives -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/82592" target="_blank">
-                    <h2 id="hitExplosives">Hit Those Explosives</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Hit Those Explosives</b></li>
-            </ul>
-            Hitting explosive weapons and ammo will now cause them to explode, allowing for chain reactions.
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./hud.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">User Interface</span></a>
-            <a href="./content.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Content</span></a>
-        </div>
-    </div>
-
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#lootReduction">Loot Reduction</a>
-            </li>
-            <li>
-                <a href="#complexVendors">Complex Vendors</a>
-            </li>
-            <li>
-                <a href="#blockingOverhaul">Blocking Overhaul</a>
-            </li>
-            <li>
-                <a href="#chemfluence">Chemfluence</a>
-            </li>
-            <li>
-                <a href="#spars">SPARS</a>
-            </li>
-            <li>
-                <a href="#dlcTiming">DLC Timing</a>
-            </li>
-            <li>
-                <a href="#Creation Club Delayed">Creation Club Delayed</a>
-            </li>
-            <li>
-                <a href="#localRadiants">Local Radiants</a>
-            </li>
-            <li>
-                <a href="#zoneRecalc">Zone Recalculation</a>
-            </li>
-            <li>
-                <a href="#whosTheGeneral">Who's The General</a>
-            </li>
-            <li>
-                <a href="#molotovNerf">Molotov Nerf</a>
-            </li>
-            <li>
-                <a href="#legendariesTheyUse">Legendaries They Use</a>
-            </li>
-            <li>
-                <a href="#paSneaking">No Sneaking in PA</a>
-            </li>
-            <li>
-                <a href="#hitObjects">Hit Those Objects</a>
-            </li>
-            <li>
-                <a href="#hitExplosives">Hit Those Explosives</a>
-            </li>
-        </ul>
-    </div>
 </body>
 
 </html>

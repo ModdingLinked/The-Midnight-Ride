@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Utilities | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
     <meta name="description" content="Essential stability and performance mods, required for any modded setup.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -22,474 +20,495 @@
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Essential stability and performance mods, required for any modded setup.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html" class="active">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
             <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-            </ul>
+            <p class="pageLinks">
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
         </div>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+        <div class="content">
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Utilities</h1>
-            <h3>In this step, we will install mods that are required by the game and other mods to function properly</h3>
-            <blockquote>
-                If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>.
-                <br>
-                <br>
-                If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
-            </blockquote>
-
-            <hr>
-
-            <!-- F4SE -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/Core/Libs/Common/Widgets/DownloadPopUp?id=253313&game_id=1151" target="_blank">
-                    <h2 id="f4se">Fallout 4 Script Extender (F4SE)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Fallout 4 Script Extender (F4SE) <strong>0.6.23</strong></b> (Manual download, click the blue name above for a direct link to the correct version).</li>
-                <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-            </ol>
-            <blockquote>If you do not know what the <b>Root</b> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
-            <ol start="3">
-                <li>
-                    After proper install, your <b>Root Folder</b> should look like this:
+            <div class="card-yellow center">
+                <p>
+                    <b>IMPORTANT</b>:
                     <br>
-                    <img src="./img/Others/Root Folder.webp" alt="Root folder with a correct F4SE install" id="f4seRoot">
-                </li>
-            </ol>
-            Extends the scripting capabilities of the game.
+                    If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>.
+                    <br>
+                    If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
+                </p>
+            </div>
 
-            <!-- F4SE Setup -->
-            <p>
-                <a>
-                    <h2 id="f4seSetup">Making MO2 Detect F4SE</h2>
-                </a>
-            </p>
-            <ol>
-                <li>
-                    Once F4SE is installed as instructed above, <strong>restart MO2</strong> and you should see a new option in the top right drop-down:
-                    <img src="./img/Others/Start F4SE.webp" alt="New F4SE option in the drop-down" id="f4seSetup">
-                </li>
-            </ol>
+            <span id="ManualDownloads" class="section">
+                <h2 onclick="location.href='#ManualDownloads'">Manual Downloads</h2>
 
-            <!-- Preloader -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">
-                    <h2 id="preloader">xSE PluginPreloader F4</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - xSE PluginPreloader F4 0.3</b> (Manual download).</li>
-                <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-            </ul>
-            Allows preloading F4SE plugins before the game initializes.
-
-            <!-- Downgrader -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/81933" target="_blank">
-                    <h2 id="downgrader">Simple Fallout 4 Downgrader</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Simple Fallout 4 Downgrader</b></li>
-                <ol>
-                    <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-                    <li>Double-click the downgrader executable to <strong>launch it</strong>.</li>
-                    <li>Wait for the "<strong>Patching successful</strong>" message in the console window that just opened, then you can close it.</li>
-                </ol>
-            </ul>
-            Reverts game code to version 1.10.163 for wider modding support.
-
-            <br>
-            <br>
-            <hr>
-
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Utilities</strong>.</li>
-            </ol>
-
-            <!-- Address Library -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/47327" target="_blank">
-                    <h2 id="library">Address Library for F4SE Plugins</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Address Library - All In One</b></li>
-            </ul>
-            Resource required for other F4SE plugins.
-            <blockquote>This is the first mod in the guide that is installed with the <strong>Mod Manager Download</strong> button, you will need to click that button then head to the <strong>Downloads</strong> section of Mod Organizer 2 to install it. Once installed, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
-
-            <!-- BASS -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/81859" target="_blank">
-                    <h2 id="bass">Backported Archive2 Support System</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - BackportedBA2Support-1_0</b></li>
-            </ul>
-            Allows the downgraded executable to use the updated BA2 files.
-
-            <!-- Commands Extender -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/47328" target="_blank">
-                    <h2 id="commandsExtender">Console Commands Extender</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Console Commands Extender</b></li>
-            </ul>
-            This mod adds new commands and overhauls existing console commands.
-
-            <!-- Better Console -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/26582" target="_blank">
-                    <h2 id="betterConsole">Better Console - F4SE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Better Console</b></li>
-            </ul>
-            Makes console menu show extra useful infomation.
-
-            <!-- High FPS Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/Core/Libs/Common/Widgets/DownloadPopUp?id=242328&nmm=1&game_id=1151" target="_blank">
-                    <h2 id="physics">High FPS Physics Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - High FPS Physics Fix <strong>0.8.6</strong></b> (Click the blue name above for a direct link to the correct version)</li>
-                <li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
-                <li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
-                <li>Change the following options:</li>
-                <ul>
-                    <li>Set <code><strong>AllowTearing</strong></code> to <b>true</b> (line 26)</li>
-                </ul>
-                <blockquote>Enabling <code>AllowTearing</code> allows the mod to disable VSync during loading in order to make it faster, since the game loading time is largely limited by current framerate (up to a certain point). Enabling it will <b>NOT</b> lead to any tearing during gameplay. This setting is also a requirement for VRR.</blockquote>
-                <ul>
-                    <li>Set <code><strong>DisableBlackLoadingScreens</strong></code> to <b>true</b> (line 37)</li>
-                    <li>Set <code><strong>DisableAnimationOnLoadingScreens</strong></code> to <b>true</b> (line 44)</li>
-                </ul>
-                <blockquote>Enabling <code>DisableAnimationOnLoadingScreens</code> will freeze loading screens and any overlay you use, this is intended and will lead to way faster loading times. You can omit it if you prefer looking at animated loading screens.</blockquote>
-                <ul>
-                    <li>Set <code><strong>PostloadingMenuSpeed</strong></code> to <b>3.0</b> (line 51)</li>
-                    <li>If you use <strong>VRR</strong> (GSync/FreeSync), set <code><strong>InGameFPS</strong></code> (line 58) to any value close to your lowest FPS and not exceeding your <code>refresh rate - (refresh rate x 6.8%)</code></li>
-                    </li>
-                </ul>
-                <blockquote>You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the GSync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in OSD.
+                <div class="card">
+                    <p>
+                    <h3>Root Mods</h3>
+                    The following mods are special because they need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                    <br>
+                    Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
                     <br>
                     <br>
-                    <b>NVIDIA USERS ONLY</b>:
-                    <br>
-                    Make sure that <strong>GSync is set to Fullscreen</strong> and that <strong>Display Specific settings are enabled</strong> in the Control Panel, the Windowed option is problematic due to it being a hacky method. Both of the settings are wrongly named so they do not actually directly refer to the display method.
-                </blockquote>
-                <ul>
-                    <li>If you use <strong>fixed refresh rate</strong> (meaning no VRR), set <code><strong>InGameFPS</strong></code> (line 58) to your <code>refresh rate - 0.005</code> or fractions of your refresh rate. For example on 60hz you can lock to 59.995 or 30. Just like on VRR, choose whether to lock to a fraction or <code>RR-0.005</code> based on which is closest to your lowest FPS.</li>
-                    <li>If you set InGameFPS to a value higher than 60, do the following as well:</li>
-                    <ul>
-                        <li>Set <code><strong>DynamicUpdateBudget</strong></code> to <b>true</b> (line 264)</li>
-                        <li>Set <code><strong>BudgetMaxFPS</strong></code> to the same value as <b>InGameFPS</b> (line 283)</li>
-                    </ul>
-                </ul>
-            </ul>
-            <blockquote style="display: flex; align-items: center;">
-                <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
-                <div>
-                    <b>IMPORTANT:</b>
-                    <br>
-                    Make sure that <strong>no other external program</strong> such as <b>RTSS</b> or your <b>GPU's drivers</b> are applying a <b>limiter</b> or forcing <b>VSync</b>. These features have to be handled by the mod in order to achieve the best results.
+                    Failing to install these mods correctly will result in issues.
+                    </p>
                 </div>
-            </blockquote>
-            All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and reduces loading times.
 
-            <!-- RobCo Patcher -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/69798" target="_blank">
-                    <h2 id="robco">RobCo Patcher</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - RobCo Patcher</b></li>
-            </ul>
-            Allows modifying game data without the use of plugins.
+                <div class="card" id="F4SE" title="F4SE">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/42147?tab=files&file_id=253313" target="_blank">Fallout 4 Script Extender (F4SE)</a></h3>
+                    Extends the scripting capabilities of the game.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Fallout 4 Script Extender (F4SE) <strong>0.6.23</strong></li>
+                        <ol>
+                            <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                        </ol>
 
-            <!-- Encounter Framework -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/60074" target="_blank">
-                    <h2 id="encounterFramework">Random Encounter Framework</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Random Encounter Framework</b></li>
-            </ul>
-            A simple framework that allows mod authors to safely use the base game's random encounter story manager.
+                        <div class="card-yellow">
+                            <p>
+                                If you do not know what the <b>Root</b> folder is, read the <a href="./setup.html#terms" target="_blank">Key Terminology</a>.</p>
+                        </div>
 
-            <!-- Lighthouse -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/71420" target="_blank">
-                    <h2 id="#lighthouse">Lighthouse Papyrus Extender</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Lighthouse Papyrus Extender</b></li>
-            </ul>
-            F4SE Papyrus extender that adds new utilities for mod authors.
+                        <div class="card-red">
+                            <p>
+                                <strong>The direct link to an older version is intentional</strong> to grant compatibility with the downgraded EXE.
+                                <br>
+                                <br>
+                                Downloading through the link button above is especially important when the guide specifies the exact version, like for this mod and more later.
+                            </p>
+                        </div>
 
-            <!-- Garden of Eden -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/74160" target="_blank">
-                    <h2 id="#GardenofEden">Garden of Eden Papyrus Script Extender</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Garden of Eden Papyrus Script Extender</b></li>
-            </ul>
-            F4SE plugin that extends the capabilites of the game's scripting language with over 585 new native functions.
+                        <ol start="2">
+                            <li>
+                                After proper install, your <b>Root</b> folder should look like this:
+                                <br>
+                                <div class="image-container width-40">
+                                    <img class="content-img" src="./img/Others/Root Folder.webp" alt="Root folder with a correct F4SE install">
+                                    <div class="resize-overlay expand"></div>
+                                </div>
+                            </li>
+                        </ol>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Papyrus Common Lib -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/86222" target="_blank">
-                    <h2 id="#papyrusCommonLib">Papyrus Common Library</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Papyrus Common Library</b></li>
-            </ul>
-            Provides a common set of tools to be used with Papyrus. Includes temporary global variables, 2D-arrays, maps, extensive file management, console interaction and more.
-
-            <!-- Console Autocomplete -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/86290" target="_blank">
-                    <h2 id="#consoleAutocomplete">Console Autocomplete</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Console Autocomplete</b></li>
-            </ul>
-            Adds command autocompletion to the in-game console.
-
-            <!-- RAW INPUT -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/27019" target="_blank">
-                    <h2 id="rawInput">RAW INPUT - The Ultimate Mouse Sensitivity Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - RAW INPUT - NMM Installer</b></li>
-                <li>You will be prompted with a FOMOD installer:
+                <div class="card">
+                    <p>
+                    <h3>Making MO2 Detect F4SE</h3>
                     <ol>
-                        <li>Select the option you prefer</li>
-                        <li>Install</li>
+                        <li>
+                            Once F4SE is installed as instructed above, <strong>restart MO2</strong> and you should see a new option in the top right drop-down:
+                            <div class="image-container width-60">
+                                <img class="content-img" src="./img/Others/Start F4SE.webp" alt="Launching F4SE">
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                        </li>
                     </ol>
-                </li>
-            </ul>
-            Disables mouse acceleration and more.
+                    </p>
+                </div>
+
+                <div class="card" id="PluginPreloader">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">xSE PluginPreloader F4</a></h3>
+                    Allows preloading F4SE plugins before the game initializes.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - xSE PluginPreloader F4 0.3</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="Downgrader">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/81933" target="_blank">Simple Fallout 4 Downgrader</a></h3>
+                    A simple one-click downgrader that doesn't require any login credentials.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Simple Fallout 4 Downgrader - for v1.10.984</li>
+                        <ol>
+                            <li>From the downloaded archive, extract <strong>everything</strong> to the game's <b>Root</b> folder.</li>
+                            <li>Double-click on <strong>fo4downgrader.exe</strong> to run it.</li>
+                            <li>
+                                A command prompt window will open and it should say:
+                                <div class="card-basic">Patching successful</div>
+                            </li>
+                            <li>Close the command prompt and backups with <strong>_downgradeBackup</strong> appended to their name should appear in the game's <b>Root</b> folder.</li>
+                        </ol>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <span id="MO2Downloads" class="section">
+                <h2 onclick="location.href='#MO2Downloads'">Mod Organizer Downloads</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Managed</h3>
+                    From now on, select <strong>Mod Manager Download</strong> to download mods - this will make the file appear in MO2's <b>Downloads</b> tab, ready to be installed according to the <a href="./mo2.html#Instructions" target="_blank">instructions</a> earlier in the guide.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Utilities</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="AddressLibrary">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/47327" target="_blank">Address Library for F4SE Plugins</a></h3>
+                    Resource required by most F4SE plugins.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Address Library - All In One</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BASS" title="BASS">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/81859" target="_blank">Backported Archive2 Support System</a></h3>
+                    Allows the downgraded executable to use the updated BA2 files.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - BackportedBA2Support-1_0</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ConsoleCommandsExtender">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/47328" target="_blank">Console Commands Extender</a></h3>
+                    Adds new commands and overhauls existing console commands.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Console Commands Extender</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BetterConsole">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/26582" target="_blank">Better Console - F4SE</a></h3>
+                    Makes console menu show extra useful infomation.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Better Console</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="PhysicsFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/44798?tab=files&file_id=242328&nmm=1" target="_blank">High FPS Physics Fix</a></h3>
+                    All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and reduces loading times massively.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - High FPS Physics Fix <strong>0.8.6</strong></li>
+                        <li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
+                        <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">F4SE/Plugins/HighFPSPhysicsFix.ini</span></li>
+                        <li>Change the following options:</li>
+                        <ul>
+                            <li>Set <strong>AllowTearing</strong> to <b>true</b> (line 26)</li>
+                        </ul>
+
+                        <div class="card-yellow">
+                            <p>Enabling <b>AllowTearing</b> allows the mod to disable VSync during loading in order to make it faster, since the game loading time is largely limited by current framerate (up to a certain point). Enabling it will <b>NOT</b> lead to any tearing during gameplay. This setting is also a requirement for VRR.</p>
+                        </div>
+
+                        <ul>
+                            <li>Set <strong>DisableBlackLoadingScreens</strong> to <b>true</b> (line 37)</li>
+                            <li>Set <strong>DisableAnimationOnLoadingScreens</strong> to <b>true</b> (line 44)</li>
+                        </ul>
+
+                        <div class="card-yellow">
+                            <p>
+                                Enabling <b>DisableAnimationOnLoadingScreens</b> will freeze loading screens and any overlay you use, this is intended and will lead to way faster loading times. You can omit it if you prefer looking at animated loading screens.
+                            </p>
+                        </div>
+
+                        <ul>
+                            <li>Set <strong>PostloadingMenuSpeed</strong> to <b>3.0</b> (line 51)</li>
+                            <li>If you use <strong>VRR</strong> (GSync/FreeSync), set <strong>InGameFPS</strong> (line 58) to any value close to your lowest FPS and not exceeding your <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span></li>
+                            </li>
+                        </ul>
+
+                        <div class="card-yellow">
+                            <p>
+                                You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the GSync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in OSD.
+                            </p>
+                        </div>
+
+                        <div class="card-red">
+                            <p>
+                                <b>NVIDIA USERS ONLY</b>:
+                                <br>
+                                Make sure that <strong>GSync is set to Fullscreen</strong> and that <strong>Display Specific settings are enabled</strong> in the Control Panel, the Windowed option is problematic due to it being a hacky method. Both of the settings are wrongly named so they do not actually directly refer to the display method.
+                            </p>
+                        </div>
+
+                        <ul>
+                            <li>If you use <strong>fixed refresh rate</strong> (meaning no VRR), set <strong>InGameFPS</strong> (line 58) to your <span class="card-basic">refresh rate - 0.005</span> or fractions of your refresh rate. For example on 60hz you can lock to 59.995 or 30. Just like on VRR, choose whether to lock to a fraction or <span class="card-basic">RR-0.005</span> based on which is closest to your lowest FPS.</li>
+                            <li>If you set InGameFPS to a value higher than 60, do the following as well:</li>
+                            <ul>
+                                <li>Set <strong>DynamicUpdateBudget</strong> to <b>true</b> (line 264)</li>
+                                <li>Set <strong>BudgetMaxFPS</strong> to the same value as <b>InGameFPS</b> (line 283)</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="RobCoPatcher" title="RobCo Patcher">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/69798" target="_blank">RobCo Patcher</a></h3>
+                    Allows modifying game data without the use of plugins.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - RobCo Patcher</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="RandomEncounterFramework">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/60074" target="_blank">Random Encounter Framework</a></h3>
+                    A simple framework that allows mod authors to safely use the base game's random encounter story manager.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Random Encounter Framework</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="LighthousePapyrusExtender">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/71420" target="_blank">Lighthouse Papyrus Extender</a></h3>
+                    Adds new scripting functions for mod authors.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Lighthouse Papyrus Extender</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="GoEScriptExtender" title="GoE Script Extender">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/74160" target="_blank">Garden of Eden Papyrus Script Extender</a></h3>
+                    Just like Lighthouse, this adds new scripting functions.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Garden of Eden Papyrus Script Extender</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="PapyrusCommonLib">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/86222" target="_blank">Papyrus Common Library</a></h3>
+                    Provides a common set of tools to be used with Papyrus.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Papyrus Common Library</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ConsoleAutocomplete">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/86290" target="_blank">Console Autocomplete</a></h3>
+                    Adds command autocompletion to the in-game console.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Console Autocomplete</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="RawInput">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/27019" target="_blank">RAW INPUT - The Ultimate Mouse Sensitivity Fix</a></h3>
+                    Disables mouse acceleration and more.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - RAW INPUT - NMM Installer</li>
+                        <ul>
+                            <li>You will be prompted with a FOMOD installer:</li>
+                            <ol>
+                                <li>Select the option you prefer</li>
+                                <li>Install</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./mo2.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Mod Organizer 2</span></a>
-            <a href="./bugfix.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Bug Fixes</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#f4se">F4SE</a>
-            </li>
-            <li>
-                <a href="#preloader">Preloader</a>
-            </li>
-            <li>
-                <a href="#downgrader">Downgrader</a>
-            </li>
-            <li>
-                <a href="#library">Address Library</a>
-            </li>
-            <li>
-                <a href="#bass">BASS</a>
-            </li>
-            <li>
-                <a href="#commandsExtender">Commands Extender</a>
-            </li>
-            <li>
-                <a href="#betterConsole">Better Console</a>
-            </li>
-            <li>
-                <a href="#physics">High FPS Fix</a>
-            </li>
-            <li>
-                <a href="#robco">RobCo Patcher</a>
-            </li>
-            <li>
-                <a href="#encounterFramework">Encounter Framework</a>
-            </li>
-            <li>
-                <a href="#lighthouse">Lighthouse</a>
-            </li>
-            <li>
-                <a href="#gardenofEden">Garden of Eden</a>
-            </li>
-            <li>
-                <a href="#papyrusCommonLib">Papyrus Common Lib</a>
-            </li>
-            <li>
-                <a href="#consoleAutocomplete">Console Autocomplete</a>
-            </li>
-            <li>
-                <a href="#rawInput">RAW INPUT</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

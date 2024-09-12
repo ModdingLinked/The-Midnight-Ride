@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
+    <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Tweaks | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
     <meta name="description" content="Various tweaks to improve annoying aspects of the game.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -22,330 +20,310 @@
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Various tweaks to improve annoying aspects of the game.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            </div>
         </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
+                </a>
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./esl.html" title="Light Plugins" class="sublink">
+                    Light Plugins
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Tweaks" class="section">
+                <h2 onclick="location.href='#Tweaks'">Tweaks</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Tweaks</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="UnlimitedSurvivalMode">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/26163" target="_blank">Unlimited Survival Mode - F4SE</a></h3>
+                    Restores the game features disabled in Survival mode, such as fast travel and normal saves. Fully configurable.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Unlimited Survival Mode - F4SE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BCR" title="BCR">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">Bullet Counted Reload System (BCR)</a></h3>
+                    Allows reloading the lever-action rifle based on the amount of shots fired.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Bullet Counted Reload - v2.00</li>
+                        <li><b>Optional Files</b> - BCR- Lever Action Rifle v1.02</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CHW" title="CHW">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/46101" target="_blank">Classic Holstered Weapons System (CHW)</a></h3>
+                    Shows holstered weapons on characters with various customization options.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Classic Holstered Weapons - v1.06b</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="NoAmmoFromGunDrops">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/64426?tab=files&file_id=252499&nmm=1" target="_blank">Remove Ammo from Dropped Guns</a></h3>
+                    Removes ammo from guns on corpses and adds it to the corpse's inventory.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - AmmoRemover <strong>v1.0.5</strong></li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="RememberLockpickAngle">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/42421" target="_blank">Remember Lockpick Angle - Updated</a></h3>
+                    When a bobby pin breaks in a lock, the next pin will be at the same angle instead of resetting every time.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Remember Lockpick Angle Updated</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BetterBerryMentats">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/11838" target="_blank">Less Annoying Berry Mentats</a></h3>
+                    Prevents the Berry Mentats effect from highlighting your current companion and disables the effect entirely while your weapon is holstered or you are in dialogue.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Less Annoying Berry Mentats</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ToYourFace">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/73259" target="_blank">To Your Face FO4</a></h3>
+                    NPCs will not greet you from behind.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - ToYourFaceFO4 (First file)</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="DeadeyeEffectFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/57838" target="_blank">Deadeye Weapon Effect Fix</a></h3>
+                    Improves the performance of Deadeye weapons. Adds detailed sounds and screen effects and removes the text message.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Deadeye Weapon Effect Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="OffenceSuppression">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/75292" target="_blank">Simple Offence Suppression F4</a></h3>
+                    Prevents friendly NPCs from turning hostile on you if you accidentally hit them during combat.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Simple Offence Suppression F4SE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="FasterWorkbench">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/70013" target="_blank">Faster Workbench Exit</a></h3>
+                    Makes the exit animation for workbenches nearly instant but without any visual hitches.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Faster Workbench Exit</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="DogmeatFollowBehind">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/79543" target="_blank">Dogmeat Follow Behind</a></h3>
+                    Makes Dogmeat travel behind you instead of out in front.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Dogmeat Follow Behind</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html" class="active">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Tweaks</h1>
-            <h3>In this step we will install various tweaks that are too specific to fit any category.</h3>
-
-            <hr>
-
-            <h2>Creating a Separator in MO2.</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Tweaks</strong>.</li>
-            </ol>
-
-            <!-- Unlimited Survival Mode -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/26163" target="_blank">
-                    <h2 id="unlimitedSurvival">Unlimited Survival Mode - F4SE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Unlimited Survival Mode - F4SE</b></li>
-            </ul>
-            Restores the game features disabled in Survival mode, such as fast travel and saving. Fully configurable.
-
-            <!-- BCR -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/41178" target="_blank">
-                    <h2 id="bcr">Bullet Counted Reload System (BCR)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Bullet Counted Reload - v2.00</b></li>
-                <li><b>Optional Files - BCR- Lever Action Rifle v1.02</b></li>
-            </ul>
-            Allows reloading the lever-action rifle based on the amount of shots fired.
-
-            <!-- CHW -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/46101" target="_blank">
-                    <h2 id="chw">Classic Holstered Weapons System (CHW)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Classic Holstered Weapons - v1.06b</b></li>
-            </ul>
-            Shows holstered weapons on characters with various customization options.
-
-            <!-- No Ammo Drops -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/Core/Libs/Common/Widgets/DownloadPopUp?id=252499&nmm=1&game_id=1151" target="_blank">
-                    <h2 id="ammoDrops">Remove Ammo from Dropped Guns</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - AmmoRemover <strong>v1.0.5</strong></b> (Click the blue name above for a direct link to the correct version)</li>
-            </ul>
-            Removes ammo from guns on corpses and adds it to the corpse's inventory.
-
-            <!-- Remember Angle -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/42421" target="_blank">
-                    <h2 id="rememberAngle">Remember Lockpick Angle - Updated</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Remember Lockpick Angle Updated</b></li>
-            </ul>
-            When a bobby pin breaks in a lock, the next pin will be at the same angle instead of resetting every time.
-
-            <!-- Better Mentats -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/11838" target="_blank">
-                    <h2 id="betterMentats">Less Annoying Berry Mentats</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Less Annoying Berry Mentats</b></li>
-            </ul>
-            Prevents the Berry Mentats effect from highlighting your current companion and disables the effect entirely while your weapon is holstered or you are in dialogue.
-
-            <!-- To Your Face -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/73259" target="_blank">
-                    <h2 id="toYourFace">To Your Face FO4</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - ToYourFaceFO4</b> (First file)</li>
-            </ul>
-            NPCs will not greet you from behind.
-
-            <!-- Deadeye Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/57838" target="_blank">
-                    <h2 id="deadeyeFix">Deadeye Weapon Effect Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Deadeye Weapon Effect Fix</b></li>
-            </ul>
-            Improves the performance of Deadeye weapons. Adds detailed sounds and screen effects and removes the text message.
-
-            <!-- Offence Suppression -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/75292" target="_blank">
-                    <h2 id="suppression">Simple Offence Suppression F4</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Simple Offence Suppression F4SE</b></li>
-            </ul>
-            Prevents friendly NPCs from turning hostile on you if you accidentally hit them during combat.
-
-            <!-- Faster Workbench -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/70013" target="_blank">
-                    <h2 id="fasterWorkbench">Faster Workbench Exit</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Faster Workbench Exit</b></li>
-            </ul>
-            Makes the exit animation for workbenches nearly instant but without any visual hitches.
-
-            <!-- Dogmeat Behind -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/79543" target="_blank">
-                    <h2 id="dogmeatBehind">Dogmeat Follow Behind</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Dogmeat Follow Behind</b></li>
-            </ul>
-            Makes Dogmeat travel behind you instead of out in front.
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./basefinish.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Base Finish</span></a>
-            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
-        </div>
-    </div>
-
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#unlimitedSurvival">Unlimited Survival Mode</a>
-            </li>
-            <li>
-                <a href="#bcr">BCR</a>
-            </li>
-            <li>
-                <a href="#chw">CHW</a>
-            </li>
-            <li>
-                <a href="#ammoDrops">No Ammo Drops</a>
-            </li>
-            <li>
-                <a href="#rememberAngle">Remember Angle</a>
-            </li>
-            <li>
-                <a href="#betterMentats">Better Mentats</a>
-            </li>
-            <li>
-                <a href="#toYourFace">To Your Face</a>
-            </li>
-            <li>
-                <a href="#deadeyeFix">Deadeye Fix</a>
-            </li>
-            <li>
-                <a href="#suppression">Offence Suppression</a>
-            </li>
-            <li>
-                <a href="#fasterWorkbench">Faster Workbench</a>
-            </li>
-            <li>
-                <a href="#dogmeatBehind">Dogmeat Behind</a>
-            </li>
-        </ul>
-    </div>
 </body>
 
 </html>
