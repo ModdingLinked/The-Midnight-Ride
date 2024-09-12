@@ -239,7 +239,7 @@
                     Install in the following order:
                     <ol>
                         <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/x" target="_blank">FO4LODGen Resources</a></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/80276" target="_blank">FO4LODGen Resources</a></b>
                             <ul>
                                 <li><b>Main Files</b> - FO4LODGen Resources</li>
                                 <li>You will be prompted with a FOMOD installer:
@@ -252,7 +252,7 @@
                         </li>
 
                         <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/56138" target="_blank">HD LOD Textures</a></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/56138" target="_blank">HD LOD Textures</a></b>
                             <ul>
                                 <li><b>Main Files</b> - HD LOD Textures</li>
                                 <li><b>Optional Files</b> - LOD Fixes and Additions</li>
@@ -278,14 +278,14 @@
                         </li>
 
                         <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/62975" target="_blank">ModernHouseLOD</a></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/62975" target="_blank">ModernHouseLOD</a></b>
                             <ul>
                                 <li><b>Main Files</b> - ModernHouseLOD</li>
                             </ul>
                         </li>
 
                         <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/61884" target="_blank">Far Object LOD Improvement Project</a></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">Far Object LOD Improvement Project</a></b>
                             <ul>
                                 <li><b>Main Files</b> - Far Object LOD Improvement Project</li>
                                 <li>You will be prompted with a FOMOD installer:
@@ -298,7 +298,7 @@
                         </li>
 
                         <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/63191" target="_blank">Far Harbor 3D Tree LODs</a></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/63191" target="_blank">Far Harbor 3D Tree LODs</a></b>
                             <ul>
                                 <li><b>Main Files</b> - Far Harbor 3D Tree LODs</li>
                                 <li>You will be prompted with a FOMOD installer:
@@ -311,7 +311,7 @@
                         </li>
 
                         <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/63198" target="_blank">Optimized Vanilla Tree LODs</a></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/63198" target="_blank">Optimized Vanilla Tree LODs</a></b>
                             <ul>
                                 <li><b>Main Files</b> - Optimized Vanilla Tree LODs</li>
                                 <li>You will be prompted with a FOMOD installer:
@@ -326,7 +326,7 @@
                         </li>
 
                         <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/70237" target="_blank">Northern Foothills Rocks Fix</a></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/70237" target="_blank">Northern Foothills Rocks Fix</a></b>
                             <ul>
                                 <li><b>Main Files</b> - NF_Rocks_Fix_Packed</li>
                             </ul>
@@ -339,14 +339,22 @@
                     <p>
                         <b>IMPORTANT</b>:
                         <br>
-                        Enable all resources in MO2 before continuing.
+                        Enable all resources in MO2 before continuing, then move the following plugins above <strong>above PRP.esp</strong> and order them as follows:
+                    <ol>
+                        <li>FO4LODGen.esp</li>
+                        <li>FO4LODGen-DLCCoast-WindTurbines.esp</li>
+                        <li>FOLIP - New LODs.esp</li>
+                        <li>Far Harbor 3d Tree LODs.esp</li>
+                        <li>Optimized Vanilla Tree LODs.esp</li>
+                        <li>NF_Rocks_Fix.esp</li>
+                    </ol>
                     </p>
                 </div>
 
                 <div class="card" id="PreGeneratedLOD" title="Pre-Generated LOD">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Pre-Generated LOD</a></h3>
-                    If you use a <strong>TMRE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using this file. It includes Object, Tree, and Terrain LOD.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">Pre-Generated LOD</a></h3>
+                    If you use a <strong>TMRE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using this file. It includes both Object and Terrain LOD.
                     <br>
                     <br>
                     Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need).
@@ -363,9 +371,11 @@
                     <ol>
                         <li><strong>Setup xEdit</strong> according to the ModdingLinked Setup instructions <a href="https://moddinglinked.com/xedit.html#setup" target="_blank">here</a>.</li>
                         <li>Launch xEdit with any plugin loaded, then go in the settings and <strong>disable Simple Records</strong>.</li>
-                        <li>Download <a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">FOLIP xEdit Scripts</a> and drag the archive's contents into xEdit's <span class="card-basic">Edit Scripts</span> folder.</li>
+                        <li>Download <a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">FOLIP xEdit Scripts</a> and drag the archive's contents into xEdit's <b>Edit Scripts</b> folder.</li>
                         <li>Restart xEdit and load all of the plugins.</li>
-                        <li>Once everything has loaded, right-click any of them and <span class="card-basic">Apply Script...</span>, then select the <strong>FOLIP - Before Generation.pas</strong> file and click <b>OK</b>.</li>
+                        <li>Once everything has loaded, right-click any of them and <b>Apply Script...</b>, then select the <strong>FOLIP - Before Generation.pas</strong> file and click <b>OK</b>.</li>
+                        <li>Optionally, enable <b>Force LOD8</b> for better visuals at a small performance cost.</li>
+                        <li>Click <b>Start</b>.</li>
                         <li>Let the script finish then exit xEdit and save the plugin when prompted.</li>
                         <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
                         <li>Title the mod <strong>FOLIP - Before Generation</strong>.</li>
@@ -383,7 +393,7 @@
                         <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                         <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
                         <li>From the pop-up, navigate to where TexGen is installed and select <strong>TexGenx64.exe</strong>.</li>
-                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-FO4</span></li>
+                        <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-FO4</span>.</li>
                         <li>Select TexGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                         <li>Once the program has loaded, click <strong>Start</strong>.</li>
                         <li>When complete, you will see a message saying "TexGen completed successfully", click <strong>Zip and Exit</strong>.</li>
@@ -550,7 +560,7 @@
                     <h3>FOLIP After Generation</h3>
                     <ol>
                         <li>Just like before, open xEdit and load all of the plugins.</li>
-                        <li>Once everything has loaded, right-click any of them and <span class="card-basic">Apply Script...</span>, then select the <strong>FOLIP - After Generation.pas</strong> file and click <b>OK</b>.</li>
+                        <li>Once everything has loaded, right-click any of them and <b>Apply Script...</b>, then select the <strong>FOLIP - After Generation.pas</strong> file and click <b>OK</b>.</li>
                         <li>Let the script finish then exit xEdit and save the plugin when prompted.</li>
                         <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
                         <li>Title the mod <strong>FOLIP - After Generation</strong>.</li>
