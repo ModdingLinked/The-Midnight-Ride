@@ -157,7 +157,6 @@
 
         <div class="content">
 
-            <!-- Introduction -->
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">Changelog (DD/MM/YY)</h2>
 
@@ -169,7 +168,379 @@
                 </div>
                 <div class="expander-bottom" id="year2024expander">
                     <p>
+                    <h2 class="install">31/8/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added an Extra Fixes section for the smaller mods.</li>
+                        <li>Switched to the ESL version of Hostile NPC Respawn Fix and Companion Jump Fall Pose Fix so that users don't get confused and instructions are easier (since the ESL files are ordered first).</li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Outfit ReDress Fix, the bug it fixes is rare and you might not ever see it while playing TMR. The problem is that the mod creates a far easier bug to see with Paladin Danse's helmet equipping animation.</li>
+                                <li>Long Save Bug Fix, not necessary anymore thanks to a Sim Settlements 2 update and it might cause performance issues in edge cases.</li>
+                                <li>Fixed Protectron Textures, the same fixes are partially covered by UFO4P and the only one missing can barely be seen.</li>
+                            </ul>
+                        </li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Moon Rotation Fix</li>
+                                <li>Weapon Rack Fixes - WRR</li>
+                                <li>Midnight Cult Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Hit Those Objects.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Switched to the Radstorm Restored version of Lightweight Lighting.</li>
+                        <li>Moved Hair Specular Map Removal Thingy to the <b>Bug Fixes (Extra Fixes)</b> section.</li>
+                    </ul>
 
+                    <hr>
+
+                    <h2 class="install">13/8/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Switched from Papyrus Script Runner to Papyrus Common Library.</li>
+                        <li>Added Console Autocomplete.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added back Hostile NPC Respawn Fix now that it is fixed (>=1.4).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/7/24</h2>
+                    <h3>NOT Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Hostile NPC Respawn Fix, it currently causes a respawn bug in certain locations. It'll come back once fixed.</li>
+                                <li>Marine Combat Armor Material Fix and Marine Wet suit Material Fix, they share file name making things confusing during installation and their changes are too subtle and specific to warrant 2 spots in the already massive list of fixes.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">21/7/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed the Ironsight Fixes - RAW INPUT Patch because it's no longer needed with 0.94-beta and up.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/7/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed the Loot Logic and Reduction - UFO4P Patch because the CFM one (1.0.1) makes it redundant. The patch will stay on the Hub for people not using CFM.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">9/7/24</h2>
+                    <h3>NOT Safe Mid-game</h3>
+                    <h2><strong>Introduction</strong></h2>
+                    <ul>
+                        <li>Re-added VC++ Runtime Libraries installation steps as a fallback to mysteriously missing libraries from MO2's installer.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Private Profile Redirector, it provides minimal performance benefits and its removal allows simplifying the installation of Buffout 4 NG.</li>
+                                <li>Baka MaxPapyrusOps, Buffout 4 NG >=1.33.0 replaces it.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Switched back to Buffout 4 NG.</li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Interior NavCut Fix, Buffout 4 NG >=1.34.0 replaces it. Mac and Linux users will need to disable this fix in Buffout and use the No Multithreading version of the original mod, steps are provided in the guide.</li>
+                                <li>Combat Shutdown Grenade Fixes, it causes strange NPC behavior in combat where they just randomly flee for a split second and then snap back into it.</li>
+                                <li>Jet Script Bug Fix, UFO4P includes the same fix.</li>
+                                <li>Energy Weapons Fix, it has major balance implications and causes VATS to incorrectly report expected damage.</li>
+                                <li>3rd Person Behavior Fixes, it causes a bug where reloads get cancelled in third person.</li>
+                            </ul>
+                        </li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>General Atomics Galleria Speaking Guard Gutsy Voice Fix</li>
+                                <li>Companion Shoots At Player Fix - F4SE</li>
+                                <li>Empty Vendor List Bug Fix - F4SE</li>
+                                <li>Magic Effect and Spell Engine Fixes - F4SE</li>
+                                <li>Weapon Behavior Ironsights movement direction lock fixes and tweaks (3rd person) and a patch between it and RAW INPUT.</li>
+                            </ul>
+                        </li>
+                        <li>Moved Papyrus Script Runner to the <b>Utilities</b> section.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Replaced Outline Workshop Highlight Only with Workshop Highlight Fix.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Loot Logic and Reduction With optional Harvest Restrictions</li>
+                                <li>Simple Creation Club Delayed NG</li>
+                                <li>Hit Those Explosives</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Removed the BA2 Patcher steps because Synthesis is no longer used.</li>
+                        <li>Updated instructions for FOLIP >=5.0.</li>
+                        <li>Updated the pre-generated LOD to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">2/6/24</h2>
+                    <h2><strong>Introduction</strong></h2>
+                    <ul>
+                        <li>Removed VC++ Runtime Libraries installation steps, as the Mod Organizer 2 installer now handles it (2.5.1rc2-ML1.3 onwards).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/5/24</h2>
+                    <h2><strong>LOD</strong></h2>
+                    <ul>
+                        <li>Added steps to downgrade the BA2 header version for compatibility with TexGen until it gets an update.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/5/24</h2>
+                    <h3>NOT Safe Mid-game</h3>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>The guide now uses 1.10.163.0 code and 1.10.980.0 assets, this means that GOG copies are no longer supported (they don't have the new assets). On the other hand, staying on a full downgrade would mean outdated fixes for everyone.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Melee Sneak Locomotion Animation Blending Fix.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Diamond City Supplements.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">29/4/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched to the MO2 installer over the archive download in order to prevent missing AV exclusions.</li>
+                        <li>Added steps to set the game to English through BethINI, other languages are not supported by the guide.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/4/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Setup</strong></h2>
+                    <ul>
+                        <li>Added the necessary downgrading instructions.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Energy Weapon Calculation Fix, needed after the removal of DirectHit (which included it).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">25/4/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added more instructions on how to enable DisableBlackLoadingScreens and DisableAnimationOnLoadingScreens in High FPS Physics Fix, the latter might not be suited for everyone so make sure to read the note to avoid confusion when using it.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">24/4/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Improved the High FPS Physics Fix intructions with extra information and by differentiating the best FPS limiter setup based on VRR and fixed refresh rate.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Companion Jump Fall Pose Fix - F4SE - Garden of Eden SE</li>
+                                <li>Combat Shutdown Grenade Fixes - F4SE - Garden of Eden SE</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/4/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>High FPS Physics Fix AllowTearing is now part of the instructions for any setup and not just VRR ones. A note with details is included.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Godrays Performance Fix Redux - ESPless and bundled it with Weapon Debris Crash Fix in a Nvidia-only section of the page.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">21/4/24</h2>
+                    <h3>NOT Safe Mid-game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Streamlined and corrected BethINI instructions.</li>
+                        <li>Removed the Custom INI because its features are available through BethINI Pie.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Switched back to High FPS Physics Fix FramerateLimitMode 0 in VRR because of awful frametime consistency in mode 1. Also changed PostloadingMenuSpeed to 3 to avoid enemy AI engaging in combat before the player gains PC control after fast travel or loading.</li>
+                        <li>Removed Long Loading Times Fix, its loading time improvements are marginal once High FPS Physics Fix is configured properly and there's the chance of introducing more issues without extra configuration that someone might miss.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added clearer instructions for PRP 74's extra plugins that can't be used by the guide.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Hostile NPC Respawn Fix</li>
+                                <li>Flutter Flicker Fixer For Foliage</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Faster Workbench Exit</li>
+                                <li>Dogmeat Follow Behind</li>
+                            </ul>
+                        </li>
+                        <li>Moved RAW INPUT to the <b>Utilities</b> section.</li>
+                        <li>Removed Friendly Fire because of its limited functionality (explosives).</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Updated MCM Settings Manager - TMR Configuration.</li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>HUDFramework, it is no longer needed</li>
+                                <li>MCM Booster, the amount of MCMs in the guide is too low to need any caching</li>
+                                <li>MCM Categorizer, same reason as above but for categories</li>
+                                <li>Less intrusive tutorial, beginners are better off with the more invasive tutorial so that they have time to read. BethINI Pie exposes the option for those who want to disable it</li>
+                                <li>Grab and Eat Revisited - Quick Use items, too many user reports and requires extra patching</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Complex Vendors - UFO4P Patch, no longer needed.</li>
+                                <li>NPCs Use Items, this can get spammy and incredibly annoying especially if playing in Survival difficulty like the guide suggests</li>
+                                <li>DirectHit, damage in VATS doesn't reflect the mod's mechanics</li>
+                                <li>Bastion - A Power Armor Overhaul, vanilla power armor is already quite a strong buff</li>
+                                <li>Thrive Redone, some of its rebalance might be too stark</li>
+                                <li>Weapon Scrapping Redone, returns an excessive amount of materials</li>
+                                <li>Clothing Scrapping Redone, same as above</li>
+                            </ul>
+                        </li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Molotov Cocktail Nerf, they are incredibly overpowered (against the player) especially in survival</li>
+                                <li>Legendaries They Can Use</li>
+                                <li>No Sneaking in Power Armor</li>
+                            </ul>
+                        </li>
+                        <li>Switched to the 50% version of SPARS.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>First version, contains the following mods:
+                            <ul>
+                                <li>The Attachment Pack</li>
+                                <li>Legendary Mutation Messages Fix - Cut Content Restored</li>
+                                <li>Extended Diamond City Security Dialogue</li>
+                                <li>You And What Army 2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Moved Northern Foothills Rocks Fix to the LOD guide because it doesn't affect LOD without regeneration.</li>
+                        <li>Added Hair Specular Map Removal Thingy.</li>
+                        <li>Removed the Terrain Undersides - PPF Patch because it is no longer needed.</li>
+                    </ul>
+                    <h2><strong>LOD</strong></h2>
+                    <ul>
+                        <li>Corrected instructions on how to install FO4LODGen Resources.</li>
+                    </ul>
+                    <h2><strong>FAQ</strong></h2>
+                    <ul>
+                        <li>Added more solutions to common problems and ultrawide support.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">7/3/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Updated PRP to Branch 74.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Removed Whose Quest Is It Anyway.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed Fire Rate Shows RPM.</li>
+                    </ul>
+                    <h2><strong>General</strong></h2>
+                    <ul>
+                        <li>Added instructions to disable Steam auto-updates, switched to BethINI Pie and updated instructions accordingly.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">11/2/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Misc Anim Tweaks and Fixes back since it is no longer rolled into Community Fixes Merged.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/2/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Lighthouse Papyrus Extender and Garden of Eden Papyrus Extender, because Grab and Eat Revisited needs them.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed Let Me Use That.</li>
+                        <li>Added Grab and Eat Revisited in its place.</li>
+                    </ul>
                     </p>
                 </div>
 
@@ -181,7 +552,737 @@
                 </div>
                 <div class="expander-bottom" id="year2023expander">
                     <p>
+                    <h2 class="install">29/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to Mod Organizer 2.5.1 RC2.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Updated RobCo Patcher (3.6).</li>
+                    </ul>
 
+                    <hr>
+
+                    <h2 class="install">22/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to Mod Organizer 2.5.1 RC1.</li>
+                        <li>Removed the profile configuration section since it is now a step during instance creation.</li>
+                        <li>Added a setting in the Custom INI forcing the highest quality of godrays in case you have them enabled, this reduces the blocky artifacting that you can notice at any lower setting.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>MGEF Condition Bug Fix, it introduces a bug where taking chems no longer removes withdrawal effects, which often happens earlier than the main bug the mod fixes</li>
+                                <li>Guard Post Animation Tweak - No More Finger Guns, too minor of a change to warrant an extra mod in the list</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Removed Im Talking to You because of lack of testing.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Edited the MCM Settings Manager - TMR Configuration to increase Terrain Undersides quality to 3 (prevents some clipping with the ground) and tweak the DLC Timing configuration.</li>
+                        <li>Added Fire Rate Shows RPM.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Switched to the packed versions of Northern Foothills Rocks Fix and First-Person Running with Hands Animations.</li>
+                        <li>Replaced First-Person Swimming Animations with First-Person Swimming Animations Tweak.</li>
+                        <li>Added Terrain Undersides - PPF Patch.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added FOMOD steps.</li>
+                        <li>Added pre-generated LOD, resources listed in the LOD page are still needed.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated to Mod Organizer 2.5.1 RC1.</li>
+                        <li>The FPS limiter now defaults to 60 to cover any user who skips the High FPS Physics Fix configuration by mistake.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>PRP Updates (69.6)</li>
+                                <li>MCM Settings Manager - TMR Configuration</li>
+                                <li>Let Me Use That (1.2.2)</li>
+                            </ul>
+                        </li>
+                        <li>Flagged Remove Ironsight Blur as ESL.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">25/11/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Added a godrays toggle in the Custom INI for users who need more performance especially at high native resolutions.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Added instructions to apply the guide's MCM preset.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Community Fixes Merged (2.4)</li>
+                                <li>Let Me Use That (1.2.1)</li>
+                                <li>DirectHit (1.2.4)</li>
+                                <li>Who's The General - Minutemen Quest Cleanup (1.06)</li>
+                                <li>Who's The General - Keep Radiants in the Commonwealth Patch (1.06)</li>
+                                <li>Lightweight Lighting - A weather and interior lighting overhaul (4.0)</li>
+                                <li>Targeted Textures - Vanilla textures upscaled fixed and sized (2.3)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/11/23</h2>
+                    <h2><strong>Resources</strong></h2>
+                    <ul>
+                        <li>Restructured to host 3 new pages on ModdingLinked (these pages were previously on the Wasteland Survival Guide and are universal).</li>
+                        <li>Added a guide on how to batch flag your load order as ESL.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">28/10/23</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>RobCo Patcher (3.5.4)</li>
+                                <li>Community Fixes Merged (2.2)</li>
+                                <li>The Midnight Ride - Glitchfinder All-In-One (1.01)</li>
+                                <li>Community Fixes Merged - Weapon Mod Fixes Patch</li>
+                                <li>DirectHit (1.1.4)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/10/23</h2>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added Simple Offence Suppression.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Community Fixes Merged (2.0)</li>
+                                <li>Thrive Redone (3.4.4)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">8/10/23 Hotfix</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Added missing Remove Ironsight Blur.</li>
+                        <li>Packed the following mods into BA2:
+                            <ul>
+                                <li>HUDFramework</li>
+                                <li>Blocking Overhaul</li>
+                                <li>NPCs Use Items</li>
+                                <li>Chemfluence - AI Combat Dynamics</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">8/10/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Removed the PA UI brightness tweak from the Custom INI.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed Shadow Boost because of the amount of configuration needed for specific hardware and the desired FPS target.</li>
+                        <li>Improved configuration steps for High FPS Physics Fix.</li>
+                        <li>Added Long Loading Times Fix.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>New instructions for Buffout 4.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Fixed Protectron Textures</li>
+                                <li>Simple Puddle Reflection Flicker Fix (Water and Blood)</li>
+                            </ul>
+                        </li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Legendary Drop Bug Fix, because UFO4P includes a fix to the same issue</li>
+                                <li>PA Ownership Fix (With no PA Battery Pathing), because it allows you to get free Power Armors in the Prydwen</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Classic Holstered Weapons System (CHW)</li>
+                                <li>Friendly Fire</li>
+                                <li>Remember Lockpick Angle - Updated</li>
+                                <li>Less Annoying Berry Mentats</li>
+                                <li>Im Talking to You</li>
+                                <li>To Your Face FO4</li>
+                                <li>Deadeye Weapon Effect Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Outline Workshop Highlight Only for consistency with Crafting Highlight Fix</li>
+                                <li>Let Me Use That</li>
+                                <li>MCM Settings Manager - TMR Configuration instead of instructions at the end on how to configure the MCM</li>
+                            </ul>
+                        </li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Favorites Menu Ex</li>
+                                <li>Power Armor HoloHUD</li>
+                            </ul>
+                        </li>
+                        <li>Removed the following mods because of the amount of configuration required:
+                            <ul>
+                                <li>FallUI</li>
+                                <li>FallUI - Confirm Boxes</li>
+                                <li>FallUI - Sleep and Wait</li>
+                                <li>FallUI - Workbench</li>
+                                <li>FallUI - Map</li>
+                                <li>FallUI - HUD</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Blocking Overhaul</li>
+                                <li>NPCs Use Items</li>
+                                <li>Chemfluence - AI Combat Dynamics</li>
+                                <li>DirectHit</li>
+                                <li>SPARS - Simple Power Armor Reduction System</li>
+                                <li>Who's The General - Minutemen Quest Cleanup</li>
+                            </ul>
+                        </li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>True Invisibility, because of the reported bugs and insufficient testing</li>
+                                <li>Kat's Power Armor Repair Kits, because it's not really needed without SAR. The higher repair costs will also offset how good PA is with Bastion</li>
+                                <li>Perennial Power Armor - Lightweight Power Armor Rebalance</li>
+                            </ul>
+                        </li>
+                        <li>Replaced Better Power Armor - Redux with Bastion - A Power Armor Overhaul (the Community Fixes Merged - BPA Redux Patch still works).</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>WET</li>
+                                <li>WAVE - Wave Animation Vanilla Enhanced</li>
+                                <li>Northern Foothills Rocks Fix</li>
+                                <li>Sniper Scope Overlay And Reticles Replacement + DoF</li>
+                                <li>Diamond City Billboards</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Final Steps</strong></h2>
+                    <ul>
+                        <li>Added instructions for GOG users.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Removed subjective tweaks from the included INIs.</li>
+                        <li>Added instructions for GOG users.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Root Builder (4.5.1)</li>
+                                <li>RobCo Patcher (3.5.3)</li>
+                                <li>Community Fixes Merged (1.8.1)</li>
+                                <li>Thrive Redone (3.4.3)</li>
+                            </ul>
+                        </li>
+                        <li>Packed the following mods into BA2:
+                            <ul>
+                                <li>Im Talking to You</li>
+                                <li>Let Me Use That</li>
+                            </ul>
+                        </li>
+                        <li>Flagged the following mods as ESL:
+                            <ul>
+                                <li>RAW INPUT - The Ultimate Mouse Sensitivity Fix</li>
+                                <li>Less Annoying Berry Mentats</li>
+                                <li>Extended Dialogue Interface</li>
+                                <li>Outline Workshop Highlight Only</li>
+                                <li>Blocking Overhaul</li>
+                                <li>NPCs Use Items</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/10/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Weapon Mod Fixes and its patch for Community Fixes Merged.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Integrated and shortened the <a class="link" href="https://www.nexusmods.com/fallout4/articles/4162" target="_blank">FOLIP LOD guide</a> instead of redirecting to it, thanks to <a class="link" href="https://www.nexusmods.com/fallout4/users/5045901" target="_blank">DoubleYouC</a> for the help and the original guide.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">30/9/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed Laser Weapons 1st Person Reposition because it is no longer available.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">26/9/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Guard Post Animation Tweak - No More Finger Guns</li>
+                                <li>NPC Drinking Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Fallout 4 Particle Patch - No More Glowing Objects</li>
+                                <li>Goodneighbor View</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/9/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Private Profile Redirector (confirmed to have benefits over Buffout 4's implementation of the same feature)</li>
+                                <li>Random Encounter Framework</li>
+                            </ul>
+                        </li>
+                        <li>Moved Buffout 4 to the <b>Bug Fixes</b> section.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed FATE completely.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Ownership Fixes</li>
+                                <li>Community Fixes Merged</li>
+                                <li>The Midnight Ride - Glitchfinder All-In-One</li>
+                            </ul>
+                        </li>
+                        <li>Removed Far Harbor Marine Armor Boots Fix because CFM replaces it.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Community Fixes Merged - BPA Redux Patch.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Gloomy Glass.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">30/8/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Removed FATE Core Settings loading in the Custom INI.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Baka MaxPapyrusOps.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed FATE Tweaks and the FATE INI because of the huge amount of undocumented features and questionable changes.</li>
+                        <li>Added PRP - FATE Fixes Patch.</li>
+                        <li>Added Armor Penetration Bug Fix.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added back Keep Radiants in the Commonwealth UFO4P Version and RAW INPUT - The Ultimate Mouse Sensitivity Fix.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Terrain Undersides - FATE Fixes Patch.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above, also set the max file handles in Buffout 4 to 2048.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">31/7/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed Clean And Simple Weapon Collision Box Fix because it has been merged into FATE Fixes.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added back Perennial Power Armor - Lightweight Power Armor Rebalance since it is now patched for FATE.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/7/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched back to portable instance for consistency with the TBoT video guide and the Wabbajack lists.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/7/23</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>The essential part of the guide is now split from the extras, which are in the TMR Extended section.</li>
+                        <li>Removed optional tags, since the optional mods are contained in TMRE (which is entirely optional).</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Fixed FATE Core Settings loading in the Custom INI.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added RobCo Patcher (required by EVAC).</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>FATE Tweaks</li>
+                                <li>Far Harbor Marine Armor Boots Fix</li>
+                                <li>Marine Combat Armor Material Fix</li>
+                                <li>Marine Wet suit Material Fix</li>
+                                <li>Clean And Simple Weapon Collision Box Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Moved Power Armor Ownership Fix to the <b>Bug Fixes</b> section.</li>
+                        <li>Added Unlimited Survival Mode TMR Configuration (disables the achievements tweak to not conflict with Buffout 4 and re-enables enemy dots on the compass).</li>
+                        <li>Removed the following mods because FATE replaces them:
+                            <ul>
+                                <li>Keep Radiants in the Commonwealth UFO4P Version</li>
+                                <li>Who's The General - Minutemen Quest Cleanup</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed the following mods because of the amount of overlap and unforwarded fixes/useful changes from FATE:
+                            <ul>
+                                <li>Perk Up - Lightweight Perk Overhaul</li>
+                                <li>Capped Out - A loot and levelled list rebalance</li>
+                                <li>Perennial Power Armor - Lightweight Power Armor Rebalance</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Enhanced Vanilla Armor and Clothing - EVAC.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added the following patches:</li>
+                        <ul>
+                            <li>FO4LODGen Resources - FATE Fixes Patch</li>
+                            <li>FOLIP - FATE Fixes Patch</li>
+                            <li>Optimized Vanilla Tree LODs - FATE Fixes Patch</li>
+                        </ul>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">18/7/23</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Fixed missing PRP and Weapon Debris Crash Fix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">17/7/23</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>A Wabbajack modlist and section are now available.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/7/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated Custom INI to apply the FATE bat, also removed a tweak already applied by it and commented the changes.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed FATE Tweaks.</li>
+                        <li>Removed Armor Penetration Bug Fix because FATE replaces it.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Removed the following mods because FATE replaces them (partially, but it is enough for the purpose of the guide):
+                            <ul>
+                                <li>RAW INPUT</li>
+                                <li>LOST Audio Tweaks</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Replaced the Better Power Armor - Redux - Fallout 4 Fixes Patch with Better Power Armor - Redux - FATE Fixes Patch.</li>
+                        <li>Removed Thrive Redone - Better Power Armor - Redux - Fallout 4 Fixes Patch because it is no longer needed with Thrive Redone 3.2.</li>
+                        <li>Removed Decreased Automatron Encounters to slim down the guide and because it would need a patch. Added Complex Vendors - FATE Fixes Patch.</li>
+                    </ul>
+                    <h2><strong>Horizon</strong></h2>
+                    <ul>
+                        <li>Removed this section because i cannot provide support nor updates.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed No Holotape Tease because Targeted Textures already improves those textures.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/7/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Switched back to the original Buffout 4 since it's now the updated version.</li>
+                        <li>Added xSE PluginPreloader F4</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed the following mods because FATE replaces them:
+                            <ul>
+                                <li>Fallout 4 Fixes</li>
+                                <li>Ownership Fixes</li>
+                                <li>Jamaica Plain Pathfinding Fix</li>
+                                <li>Clean And Simple Nuka World Bottle Fix</li>
+                                <li>Mechanist's Lair Pathfinding Fix</li>
+                                <li>Newton's Regards - No More Falling Cars</li>
+                                <li>Misc anim tweaks and fixes</li>
+                                <li>Vault-Tec Workshop Gear Door Fix</li>
+                                <li>Mesh Bounds Fix</li>
+                            </ul>
+                        </li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>FO4 Fixes And Technical Enhancements (FATE Patch)</li>
+                                <li>Outfit ReDress Fix</li>
+                                <li>Interior NavCut Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/5/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to MO2 2.4.5 Alpha 3 version to fix the alphabetic load order issues and bring some QoL features.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed Streamlined Weapons since it does not align with the goal of this guide. The mod is still recommended if you are interested in what it accomplishes.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/5/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Vault-Tec Workshop Gear Door Fix</li>
+                                <li>Mesh Bounds Fix</li>
+                                <li>Weird Mattress Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">26/3/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Better Console and removed Console Util because it is no longer needed.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added Remove Ammo from Dropped Guns and removed Fortune Finder 4 Fix (replaced by Perk Up).</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed Leveled Item Framework because the LL injections make it annoying to work with.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Jet Script Bug Fix</li>
+                                <li>Fixed Gobo Effects</li>
+                                <li>Reload Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed Some Assembly Required (replaced by Perennial Power Armor).</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Perk Up</li>
+                                <li>Capped Out</li>
+                                <li>Perennial Power Armor</li>
+                                <li>Streamlined Weapons</li>
+                                <li>Thrive Redone - Better Power Armor - Redux - Fallout 4 Fixes Patch</li>
+                                <li>PRP - LOST Audio Tweaks Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/3/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed Fixed Alpha Maps (included in Targeted Textures).</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Leveled Item Framework</li>
+                                <li>Jamaica Plain Pathfinding Fix</li>
+                                <li>Mechanist's Lair Pathfinding Fix</li>
+                                <li>Newton's Regards - No More Falling Cars</li>
+                                <li>Armor Penetration Bug Fix</li>
+                                <li>MGEF Condition Bug Fix</li>
+                                <li>3rd Person Behavior Fixes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added Less intrusive tutorial.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Better Power Armor - Redux.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed No More Glowing Mouths (included in Targeted Textures) and added the following mods:
+                            <ul>
+                                <li>Targeted Textures</li>
+                                <li>First-Person Swimming Animations</li>
+                                <li>First-Person Running with Hands Animations</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">17/3/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed PluginPreloader and replaced Buffout 4 with Buffout 4 NG.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/3/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Replaced Interiors Enhanced and Commonwealth Climate with Lightweight Lighting.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/3/23</h2>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added Weapon Scrapping Redone and Clothing Scrapping Redone.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">20/2/23</h2>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Removed FOV Slider because lots of users have issues with it.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/2/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Long Save Bug Fix.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Console Commands Extender and Console Util (soft requirement for FOV Slider).</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added Whose Quest Is It Anyway.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/1/23</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed the forced removal of PipBoyFX through the guide's custom INI, now only users of FallUI Inventory will have the tweak thanks to the bundled plugin.</li>
+                    </ul>
                     </p>
                 </div>
 
@@ -193,7 +1294,257 @@
                 </div>
                 <div class="expander-bottom" id="year2022expander">
                     <p>
+                    <h2 class="install">23/12/22</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Replaced custom FO4LODGen Resources with the official file because FOLIP has specific steps for it's plugins (which weren't present with my version).</li>
+                    </ul>
 
+                    <hr>
+
+                    <h2 class="install">17/12/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Recreated the website with the help of Wall_SoGB, it is now responsive.</li>
+                        <li>Reformatted and edited a lot of steps and information.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Removed TAA and AO tweaks from the guide's Custom INI.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added steps to the High FPS Physics Fix configuration for users who lock their game at higher than 60 FPS.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Moved Bullet Counted Reload System to the <b>Tweaks</b> section.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Fallout 4 Fixes</li>
+                                <li>Fixed Alpha Maps</li>
+                                <li>Clean And Simple Nuka World Bottle Fix</li>
+                                <li>Misc anim tweaks and fixes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added UFO4P Patch for Who's The General.</li>
+                        <li>Moved Crafting Highlight Fix to the <b>User Interface</b> section.</li>
+                        <li>Removed No Aggro Impact Landing (replaced by Fallout 4 Fixes).</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>MCM Categorizer</li>
+                                <li>Favorites Menu Ex</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed Salvage Beacons.</li>
+                        <li>Added UFO4P Patch for Some Assembly Required.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>RobCo Recon Scope Replacer</li>
+                                <li>Flowing Rivers</li>
+                                <li>Clarity</li>
+                            </ul>
+                        </li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Interiors Enhanced - UFO4P Patch</li>
+                                <li>Interiors Enhanced - LOST Audio Tweaks Patch</li>
+                                <li>Commonwealth Climate</li>
+                                <li>Remove Ironsight Blur</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Far Harbor 3D Tree LODs</li>
+                                <li>Optimized Vanilla Tree LODs</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/12/22</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Increased minimum shadow distance in the Shadow Boost custom INI.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/10/22</h2>
+                    <h2><strong>Setup</strong></h2>
+                    <ul>
+                        <li>Added more steps when running the game launcher.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Added borderless in BethINI steps.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/11/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched to global instance (don't worry about this if you already have the guide installed).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">1/10/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Added TAA fix.</li>
+                        <li>Disabled Pip-Boy FX in the custom INI.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed godrays performance fix.</li>
+                        <li>Added Shadow Boost.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">11/8/22</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Redirected instructions.</li>
+                        <li>Added ModernHouseLOD.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">18/7/22</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added XDI back, its previous removal was an error.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/7/22</h2>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Switched from No PA Battery Pathing to the version merged with the ownership fix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">12/7/22</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added HUD Framework, which is required by True Invisibility.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">10/7/22</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>First version, this replaced the (now deleted) PDF guide on Nexus.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Switched to the newer version of Some Assembly Required.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Legendary Drop Bug Fix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/7/22</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Replaced Disable Creation Club with custom INI entry.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Clarity back.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added LOST Audio Tweaks.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/7/22</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed Clarity because of PRP 3-way conflict with Interiors Enhanced and it takes too much effort to patch.</li>
+                        <li>Replaced Better Coastal Waves with Flowing Rivers.</li>
+                        <li>Added Terrain Undersides.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Added BethINI instructions and disabled profile-specific INIs.</li>
+                        <li>Added Custom INI.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>FallUI Series</li>
+                                <li>Disable Creation Club</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Replaced Lunar Overhaul with Thrive Redone.</li>
+                        <li>Added Some Assembly Required.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Replaced Preston No Radiants with Who's The General.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/7/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Tweaked shadow distance for better performance with the average CPU.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Ownership Fixes.</li>
+                        <li>Added Wetness Shader Fix.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed DEF_UI in favour of FallUI, which will be added later.</li>
+                        <li>Added MCM Booster and MCM Settings Manager.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Replaced Keep Radiants In The Commonwealth with the UFO4P version.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed Commonwealth Climate because of unresolved issue.</li>
+                    </ul>
+                    <h2><strong>Final Steps</strong></h2>
+                    <ul>
+                        <li>Removed Ruddy88's Simple Sorter.</li>
+                    </ul>
                     </p>
                 </div>
 
@@ -205,19 +1556,130 @@
                 </div>
                 <div class="expander-bottom" id="year2021expander">
                     <p>
+                    <h2 class="install">13/10/21</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Commonwealth Climate.</li>
+                        <li>Removed Clarity Darker Nights (redundant with Commonwealth Climate).</li>
+                    </ul>
 
-                    </p>
-                </div>
+                    <hr>
 
-                <div class="expander-top clickable" onclick="expandCard(this, year2020expander)" id="year2020">
-                    <p>
-                    <h3>2020</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="year2020expander">
-                    <p>
+                    <h2 class="install">3/9/21</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Split into two sections: <b>Bug Fixes</b> and <b>Tweaks</b>.</li>
+                        <li>Replaced Boston FPS Fix with Previs Repair Pack.</li>
+                    </ul>
+                    <h2><strong>Tweaks</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Preston Garvey No Radiant Settlement Quests</li>
+                                <li>Better Settlement Attack Warnings</li>
+                                <li>No PA Battery Pathing</li>
+                                <li>FOV Slider and Player Height</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added Immersive HUD.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Better Coastal Waves</li>
+                                <li>Previs Repair Pack - Interiors Enhanced Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Lunar Fallout Overhaul</li>
+                                <li>Kat's Power Armor Repair Kits</li>
+                                <li>True Invisibility</li>
+                                <li>Survival Saving - Holotapes Save the Game</li>
+                            </ul>
+                        </li>
+                        <li>Removed Loot Logic and Reduction and Lore-Based PA Changes (redundant with Lunar Overhaul).</li>
+                    </ul>
 
+                    <hr>
+
+                    <h2 class="install">20/6/21</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed Previs Repair Pack (although there is pretty much nothing actually wrong with the mod, it caused countless issues for end users who did not know how to read).</li>
+                    </ul>
+                    <h2><strong>Final Steps</strong></h2>
+                    <ul>
+                        <li>Changed how the guide handles sorting. FO4Edit, Mator's Patching Framework and the Simple Sorter Script have been removed from the main part of the guide. Instead, the guide now uses a pre-made sorting plugin.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">10/5/21</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Weapon Debris Crash Fix.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Removed the INI settings that disable weapon debris.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/5/21</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed PrivateProfileRedirector (replaced by Buffout 4).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/3/21</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Previs Repair Pack</li>
+                                <li>Keep Radiants in the Commonwealth</li>
+                            </ul>
+                        </li>
+                        <li>Removed standalone FPS Fix - UF4P Patch (details below).</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Re-added HUDFramework (forgot that the <b>Use Sorting Mod Component Tags</b> option in DEF_UI requires it).</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>No Holotape Tease</li>
+                                <li>Clarity - Darker Nights</li>
+                                <li>Interiors Enhanced</li>
+                                <li>No More Glowing Mouths</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Final Steps</strong></h2>
+                    <ul>
+                        <li>Added a conflict resolution FOMOD which includes the old standalone FPS Fix patch, along with new patches for Keep Radiants in Commonwealth and Previs Repair/Interiors Enhanced.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">2/16/21</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Site redesign.</li>
+                    </ul>
                     </p>
                 </div>
             </span>
