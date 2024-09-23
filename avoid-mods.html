@@ -177,8 +177,11 @@
                 </div>
                 <div class="expander-bottom" id="bugfixmodsexpander">
                     <p>
-                    <h3>ENBoost</h3>
-                    ENBoost works around an issue (which NVTF already fixes properly) with a hacky memory sharing across processes. It also requires configuration based on the user's system and much like ENB, has been abandoned.
+                    <h3>ENBoost and ENB's ForceVideoMemorySize</h3>
+                    Both are unnecessary and bring the possibility of more issues. They most likely exists because the author of ENB uses/used Windows 7, which lacks the <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/display/gpu-virtual-memory-in-wddm-2-0" target="_blank">WDDM 2.0</a> update (in Windows 10) that allows virtual memory for GPUs. Goes without saying that you should not be using such an outdated OS, as it brings a ton of other problems on top of this.
+                    <br>
+                    <br>
+                    Another possible reason for ForceVideoMemorySize's existence is the same behind SpecialK's VRAM budget spoofing: improving performance in some game engines due to their misbehaviour with certain amounts of VRAM. No such thing is known to be a problem in Fallout 4 and there's no testing about it, so even less reasons to consider ForceVideoMemorySize.
                     </p>
 
                     <hr>
