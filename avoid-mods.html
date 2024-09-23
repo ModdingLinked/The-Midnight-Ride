@@ -178,10 +178,10 @@
                 <div class="expander-bottom" id="bugfixmodsexpander">
                     <p>
                     <h3>ENBoost and ENB's ForceVideoMemorySize</h3>
-                    Both are unnecessary and bring the possibility of more issues. They most likely exists because the author of ENB uses/used Windows 7, which lacks the <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/display/gpu-virtual-memory-in-wddm-2-0" target="_blank">WDDM 2.0</a> update (in Windows 10) that allows virtual memory for GPUs. Goes without saying that you should not be using such an outdated OS, as it brings a ton of other problems on top of this.
+                    Both are unnecessary and bring the possibility of more issues. ForceVideoMemorySize was made to fix an old bug with game's streaming system, which has been fixed for a long time (<a href="https://discord.com/channels/708699116519161907/1119634808209936385/1287740192165462048" target="_blank">this is coming from Boris himself in the ENB Discord server</a>).
                     <br>
                     <br>
-                    Another possible reason for ForceVideoMemorySize's existence is the same behind SpecialK's VRAM budget spoofing: improving performance in some game engines due to their misbehaviour with certain amounts of VRAM. No such thing is known to be a problem in Fallout 4 and there's no testing about it, so even less reasons to consider ForceVideoMemorySize.
+                    Claims stating that this feature is required in order to use RAM as VRAM are false. RAM (and pagefile) have been part of the virtual memory pool used as VRAM since <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/display/gpu-virtual-memory-in-wddm-2-0" target="_blank">WDDM 2.0</a> in Windows 10. Crashing because you're out of VRAM is not a thing unless strictly enforced by the program (not the case here).
                     </p>
 
                     <hr>
