@@ -228,7 +228,40 @@
                 </div>
                 <div class="expander-bottom" id="generalquestion5expander">
                     <p>
-                        Long Loading Times Fix has its own set of issues and it performs worse than High FPS Physics Fix configured according to the guide, as <a href="https://discord.com/channels/1135527122849497149/1135557693181014046/1280172204444749904" target="_blank">these results</a> prove (ModdingLinked Discord server).
+                        Long Loading Times Fix has its own set of issues and it performs worse than High FPS Physics Fix configured according to the guide, as shown by these results</a>:
+                        <textarea readonly="readonly" style="height: 40em; width: 95%;">
+All results can have a variance up to 1s run to run.
+The speeds ups are DisableBlackLoadingScreens and DisableAnimationOnLoadingScreens.
+P41 Plus Gen 4 NVME SSD - 5800X3D - 6700XT - WIN11 10.0.22631 Build 22631 - 32GB 3600Mbps
+
+
+60 lock loading and no speed ups from HFPF:
+Main menu -> Outside DC 15.57s
+Outside DC -> DC 20.90s
+DC - Outside DC 23.16s
+
+350 lock loading and no speed ups from HFPF:
+Main menu -> Outside DC 9.91s
+Outside DC -> DC 6.92s
+DC - Outside DC 9.16s
+
+No lock loading and no speed ups from HFPF:
+Main menu -> Outside DC 9.30s
+Outside DC -> DC 17.20s
+DC - Outside DC 29.91s
+
+Loading breaks if uncapped for some reason, so always use 350 ^
+
+350 lock loading + speed ups from HFPF:
+Main menu -> Outside DC 9.21s
+Outside DC -> DC 3.25s
+DC - Outside DC 5.79s
+
+350 lock loading + speed ups from HFPF + Long Loading Times Fix:
+Main menu -> Outside DC 9.10s
+Outside DC -> DC 4.25s
+DC - Outside DC 6.83s
+</textarea>
                     </p>
                 </div>
 
@@ -256,16 +289,30 @@
                     <p>
                         This could happen for <strong>various reasons</strong>:
                     <ul>
+                        <li>Make sure the latest VC++ Redistributables are installed:
+                            <ul>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
+                                <li>
+                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> (not always up to date, making the 2 files above a requirement):
+                                    <ol>
+                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
+                                    </ol>
+                                </li>
+                                <li>Restart your PC.</li>
+                            </ul>
+                        </li>
                         <li>You have incompatible mods lingering in your game's Data folder, this is why <a href="./setup.html#Uninstall" target="_blank">a clean slate</a> is required.</li>
                         <li>If you are using a third-party antivirus, add exclusions to the folder Mod Organizer 2 is in. If that doesn't work, try disabling the antivirus completely and rely solely on Windows Defender (which should work fine once exclusions are present).</li>
                         <li>Make sure you have both files from <a href="./bugfix.html#PRP">PRP</a>.</li>
                         <li>Missing masters, check the big red triangle icon on the top right corner of Mod Organizer 2:
                             <ul>
                                 <li>If you're missing one of the mods in TMR, install it or get rid of the mod that requires it (for example if you erronesouly downloaded a patch for a mod you don't want in TMR Extended).</li>
-                                <li>If you're missing Creation Club content, verify your game files on Steam and run the <a href="./utilities.html#Downgrader">downgrader</a>.</li>
+                                <li>If you're missing the vanilla Creation Club content, verify your game files on Steam and run the <a href="./utilities.html#Downgrader">downgrader</a>.</li>
                             </ul>
                         </li>
                         <li>Most programs that ship with pre-built computers or laptops (such as OMEN Gaming Hub for HP OMEN systems) will be prone to issues and should be uninstalled or temporarily closed.</li>
+                        <li>Update your graphics driver (either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/search.html#q=&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Graphics]" target="_blank">Intel</a>).</li>
                     </ul>
                     </p>
                 </div>
@@ -281,7 +328,7 @@
                         As MO2 is the only supported manager, instructions for other managers will not be provided:
                     <ol>
                         <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 Folders"> folders list in the top of MO2.</li>
-                        <li>Click <b>Open Profile Folder</b></li>
+                        <li>Click <b>Open Profile Folder</b>.</li>
                         <li>The modlist will be written in <strong>modlist.txt</strong> (written in reverse order but you can reverse this easily with text editors) and the load order is in <strong>loadorder.txt</strong>.</li>
                     </ol>
                     </p>
@@ -390,12 +437,19 @@
                 </div>
                 <div class="expander-bottom" id="troubleshootingquestion10expander">
                     <p>
-                    <ol>
-                        <li>Download the <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
-                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                        <li>Restart your PC.</li>
-                        <li>If that doesn't work, also install <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">this</a> and retry running MO2.</li>
-                    </ol>
+                        <li>Make sure the latest VC++ Redistributables are installed:
+                            <ul>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
+                                <li>
+                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> (not always up to date, making the 2 files above a requirement):
+                                    <ol>
+                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
+                                    </ol>
+                                </li>
+                                <li>Restart your PC.</li>
+                            </ul>
+                        </li>
                     </p>
                 </div>
 
@@ -529,6 +583,18 @@
                 <div class="expander-bottom" id="troubleshootingquestion19expander">
                     <p>
                         Make sure <b>Text Language</b> is set to <strong>English</strong> both in <a href="./mo2.html#GameSettings">BethINI Pie</a> and on Steam (other languages are not supported by the guide).
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion20expander)" id="troubleshootingquestion20">
+                    <p>
+                    <h3>Missing NPC heads</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion20expander">
+                    <p>
+                        The vanilla game generates missing FaceGen on runtime if it's missing, which can cause stuttering. X-Cell removes this feature and restricts it to using pre-generated FaceGen, which means that you have to fix NPCs that are missing it by using <a href="https://www.nexusmods.com/fallout4/mods/86374" target="_blank">VEFS</a>, or find a patch that provides the files. This is not required in TMR nor TMRE, but should be kept in mind when installing other mods.
                     </p>
                 </div>
 

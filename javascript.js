@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     createRightSidebar();
     createImageHandlers();
     markActivePage();
+    resizeAllTextAreas();
 });
 window.onscroll = updateProgressBarAndFadeIn;
 
@@ -25,7 +26,10 @@ function sizeChanged() {
             document.getElementsByClassName("left-sidebar")[0].style.width = "";
         }
     }
+
+    resizeAllTextAreas();
 }
+
 function toggleNav() {
     var sidbear = document.getElementsByClassName("sidebar left-sidebar")[0];
     if (sidbear.style.width == 0) {
@@ -59,7 +63,29 @@ function expandCard(thisObj, $open, $dontReset) {
         rotate(chevron, 180);
         $open.style.display = "block";
         thisObj.classList.add('active');
+
+        const textareas = $open.querySelectorAll('.auto-resize');
+        if (textareas) {
+            console.log("Found textareas: " + textareas.length);
+            for (var i = 0; i < textareas.length; i++) {
+                autoResize(textareas[i]);
+            }
+        }
     }
+}
+
+function resizeAllTextAreas() {
+    const textareas = document.querySelectorAll('.auto-resize');
+    if (textareas) {
+        for (var i = 0; i < textareas.length; i++) {
+            autoResize(textareas[i]);
+        }
+    }
+}
+
+function autoResize(textarea) {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
 }
 
 function emToPixels(em) {
@@ -190,7 +216,7 @@ function markActivePage() {
             link.classList.add("active");
             currentIndex = index;
 
-            if (link.classList.contains("sublink")){
+            if (link.classList.contains("sublink")) {
                 link.setAttribute('style', 'display:flex !important');
             }
         }
