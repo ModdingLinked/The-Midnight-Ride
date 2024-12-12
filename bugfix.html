@@ -218,7 +218,7 @@
                     </p>
                 </div>
 
-                <div class="card" id="Misc Anim Tweaks and Fixes">
+                <div class="card" id="AnimFixes">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/53597" target="_blank">Misc Anim Tweaks and Fixes</a></h3>
                     Small animation tweaks and fixes.
@@ -229,7 +229,7 @@
                     </p>
                 </div>
 
-                <div class="card" id="Weapon Mod Fixes">
+                <div class="card" id="WeaponModFixes">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/11130" target="_blank">Weapon Mod Fixes</a></h3>
                     Fixes a number of bugs in weapon modifications.
@@ -246,7 +246,7 @@
                     </p>
                 </div>
 
-                <div class="card" id="Buffout 4">
+                <div class="card" id="Buffout4">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/64880" target="_blank">Buffout 4 NG with PDB support</a></h3>
                     Fixes engine bugs and adds a crash logger.
@@ -266,28 +266,30 @@
                             </ul>
                         </ol>
                     </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="InteriorNavCutFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/72904" target="_blank">Interior NavCut Fix</a></h3>
+                    Fixes the engine bug that causes workshop navmesh cuts to persist throughout all interior cells.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Interior NavCut Fix</li>
+                    </ul>
 
                     <div class="card-red">
                         <p>
                             <b>IMPORTANT:</b>
                             <br>
-                            Mac and Linux users will need to disable the Interior NavCut Fix in Buffout and use the No Multithreading version of the original mod by following these steps:
-                        <ul>
-                            <li>Once the mod has been installed, double-click it in the left pane of MO2</li>
-                            <li>In the <strong>Text Files</strong> tab, select <span class="card-basic">F4SE/Plugins/Buffout4.toml</span></li>
-                            <li>Change the following options:</li>
-                            <ul>
-                                <li>Set <strong>InteriorNavCut</strong> to <b>false</b> (line 9)</li>
-                            </ul>
-                            <li>Download and install <a href="https://www.nexusmods.com/fallout4/mods/72904" target="_blank">Interior NavCut Fix</a> (No Multithreading)</li>
-                        </ul>
+                            Mac and Linux users will need to use the <b>No Multithreading</b> version instead!
                         </p>
                     </div>
 
                     </p>
                 </div>
 
-                <div class="card" id="Sprint Stuttering Fix">
+                <div class="card" id="SprintStutteringFix">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/47760?tab=files&file_id=196371&nmm=1" target="_blank">Sprint Stuttering Fix</a></h3>
                     Fixes camera stutter when sprinting on uneven surfaces.
@@ -368,6 +370,26 @@
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li><b>Main Files</b> - Magic Effect and Spell Engine Fixes</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ExpressionFixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/89732" target="_blank">Facial Expression and Eyetracking Engine Fixes - F4SE</a></h3>
+                    Fixes various facial expression and eyetracking engine bugs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Facial Expr. and Eyetr. Engine Fixes</li>
+                        <ol>
+                            <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
+                            <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">F4SE/Plugins/FacialExpressionAndEyeTrackingEngineFixes.ini</span></li>
+                            <li>Change the following option:</li>
+                            <ul>
+                                <li>Set <strong>bBrownFace</strong> to <b>1</b> (line 5).</li>
+                                <!-- <li>Set <strong>bPlayerEyesStuckAtDialogueTarget</strong> to <b>1</b> (line 6).</li> -->
+                            </ul>
+                        </ol>
                     </ul>
                     </p>
                 </div>
@@ -475,7 +497,7 @@
 
                     <div class="card-red">
                         <p>
-                            Not installing the PRP Resources file will lead to crashing!
+                            Not installing the PRP Resources file will lead to crashing, make sure both files are installed!
                         </p>
                     </div>
 
@@ -492,13 +514,6 @@
                     </ul>
                     </p>
                 </div>
-            </span>
-
-            <span id="NVidiaFixes" class="section">
-                <h2 onclick="location.href='#NVidiaFixes'">NVidia Fixes</h2>
-                <p>
-                    These last 2 mods <strong>should be installed only by users of Nvidia graphics cards</strong>. If you are unsure of what graphics card you are using, you can find that information in Task Manager's performance tab.
-                </p>
 
                 <div class="card" id="WeaponDebrisCrashFix">
                     <p>
@@ -512,24 +527,6 @@
                     <div class="card-yellow">
                         <p>
                             This fix is needed only by users of Nvidia GPUs newer than Pascal (10 series).
-                        </p>
-                    </div>
-
-                    </p>
-                </div>
-
-                <div class="card" id="GodraysPerformanceFix">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/80942" target="_blank">Godrays Performance Fix Redux</a></h3>
-                    Optimizes the performance of vanilla godrays.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Godrays Performance Fix Redux - ESPless</li>
-                    </ul>
-
-                    <div class="card-yellow">
-                        <p>
-                            This fix is recommended only to Nvidia users because its visual changes do not translate well to AMD hardware, leading to visual problems and a different performance gain.
                         </p>
                     </div>
 

@@ -306,6 +306,7 @@
                         <li>Close the launcher.</li>
                         <li>Still in the Executables menu of MO2, <strong>select BethINI Pie</strong>.</li>
                         <li>Click <b>Fallout 4</b> then press <strong>Select Game</strong>.</li>
+                        <li>If you get a <b>Setup</b> prompt press <strong>OK</strong>. You don't need to redirect the INI path to MO2's profile folder because MO2's VFS already handles the redirection.</li>
                         <li>Apply the following settings:</li>
                         <ol>
                             <li>Select a BethINI <strong>preset</strong> depending on your hardware.</li>
@@ -343,7 +344,7 @@
                         </ul>
 
                         <div class="card-yellow">
-                            <p>Enabling <b>AllowTearing</b> allows the mod to disable VSync during loading in order to make it faster, since the game loading time is largely limited by current framerate (up to a certain point). Enabling it will <b>NOT</b> lead to any tearing during gameplay. This setting is also a requirement for VRR.</p>
+                            <p>Enabling <b>AllowTearing</b> allows the mod to disable V-Sync during loading in order to make it faster, since the game loading time is largely limited by current framerate (up to a certain point). It is also a requirement for VRR and enabling it will not lead to any tearing because V-Sync is being used.</p>
                         </div>
 
                         <ul>
@@ -389,21 +390,6 @@
                     </p>
                 </div>
 
-                <div class="card" id="NVidiaFixes" title="NVidia Fixes">
-                    <p>
-                    <h3 onclick="location.href='#NVidiaFixes'">NVidia Fixes</h3>
-                    <strong>If you have an NVidia GPU</strong>, enable <b>Godrays Performance Fix Redux - ESPless</b> under the <b>NVidia Fixes</b> separator.
-                    <br>
-                    <br>
-                    If your NVidia GPU is from the Turing generation (2000) or newer, also enable <b>Weapon Debris Crash Fix</b>.
-                    <div class="card-yellow">
-                        <p>
-                            You won't need the Weapon Debris Crash Fix if you kept NVFlex (the debris feature) off when using BethINI Pie previously.
-                        </p>
-                    </div>
-                    </p>
-                </div>
-
                 <div class="card" id="LaunchingTheGame">
                     <p>
                     <h3 onclick="location.href='#LaunchingTheGame'">Launching The Game</h3>
@@ -432,7 +418,7 @@
                 <div class="card" id="MCMConfiguration" title="MCM Configuration">
                     <p>
                     <h3 onclick="location.href='#MCMConfiguration'">MCM Configuration</h3>
-                    Once you are in the game, head to the <b>Mod Configuration</b> menu, then the <strong>MCM Settings Manager</strong> menu and click <b>Apply</b>.
+                    Once you are in the game, head to the <b>Mod Configuration</b> menu and edit the various settings to your liking.
                     <br>
                     <br>
                     You have now installed the The Midnight Ride Wabbajack list. If you don't want to mod your game further, <strong>you can now start playing</strong>. Have fun!
