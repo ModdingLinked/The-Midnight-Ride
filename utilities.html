@@ -92,11 +92,11 @@
             </p>
             <hr>
             <p class="pageLinks">
-                <a href="./tweaks.html" title="Tweaks">
-                    Tweaks
-                </a>
                 <a href="./hud.html" title="User Interface">
                     User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
                 </a>
                 <a href="./gameplay.html" title="Gameplay">
                     Gameplay
@@ -195,7 +195,7 @@
                     <ul>
                         <li><b>Main Files</b> - Fallout 4 Script Extender (F4SE) <strong>0.6.23</strong></li>
                         <ol>
-                            <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                            <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
                         </ol>
 
                         <div class="card-yellow">
@@ -249,7 +249,7 @@
                     <ul>
                         <li><b>Main Files</b> - xSE PluginPreloader F4 <strong>0.2.5.1</strong></li>
                         <ol>
-                            <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                            <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
                         </ol>
                     </ul>
                     </p>
@@ -263,7 +263,7 @@
                     <ul>
                         <li><b>Main Files</b> - Simple Fallout 4 Downgrader - for v1.10.984</li>
                         <ol>
-                            <li>From the downloaded archive, extract <strong>everything</strong> to the game's <b>Root</b> folder.</li>
+                            <li>Open the downloaded archive and extract <strong>everything</strong> to the game's <b>Root</b> folder.</li>
                             <li>Double-click on <strong>fo4downgrader.exe</strong> to run it.</li>
                             <li>
                                 A command prompt window will open and it should say:
@@ -342,7 +342,7 @@
 
                 <div class="card" id="PhysicsFix">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/44798?tab=files&file_id=242328&nmm=1" target="_blank">High FPS Physics Fix</a></h3>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/44798?tab=files&file_id=342948&nmm=1" target="_blank">High FPS Physics Fix</a></h3>
                     All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and reduces loading times massively.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
@@ -350,59 +350,48 @@
                         <ol>
                             <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
                             <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">F4SE/Plugins/HighFPSPhysicsFix.ini</span></li>
-                            <li>Change the following options:</li>
+                            <li>Change only the following options<sup><a title="Warning" href="#annotation1">[1]</a></sup>:</li>
                             <ul>
-                                <li>Set <strong>AllowTearing</strong> to <b>true</b> (line 26).</li>
-                            </ul>
-
-                            <div class="card-yellow">
-                                <p>Enabling <b>AllowTearing</b> allows the mod to disable V-Sync during loading in order to make it faster, since the game loading time is largely limited by current framerate (up to a certain point). It is also a requirement for VRR and enabling it will not lead to any tearing because V-Sync is being used.</p>
-                            </div>
-
-                            <ul>
-                                <li>Set <strong>DisableBlackLoadingScreens</strong> to <b>true</b> (line 37).</li>
-                            </ul>
-
-                            <div class="card-green">
-                                <p>
-                                    Enabling <b>DisableAnimationOnLoadingScreens</b> will freeze loading screens and any overlay you use, this is intended and will lead to faster loading times (about 40%, the biggest difference in loading times remains the 350 lock that HPFP ships with). You can keep it off if you prefer looking at animated loading screens or run into issues when it's enabled.
-                                </p>
-                            </div>
-
-                            <ul>
-                                <li>Set <strong>PostloadingMenuSpeed</strong> to <b>3.0</b> (line 51).</li>
-                                <li>Set <strong>NumOfThreadsWhileLoadingNewGame</strong> to <b>0</b> (line 83).</li>
-                                <li>If you use <strong>VRR</strong> (G-Sync/FreeSync), set <strong>InGameFPS</strong> (line 58) to any value between the start of your monitor's VRR range (usually 48) and not exceeding your <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span>
-                                    <br>
-                                    <br>
-                                    More precisely, you want to set your limiter close to your lowest FPS in heavier areas for the game so that you'll have a consistent experience. This also means lower lag and better power efficiency thanks to not being bound by hardware.
+                                <li>Set <b>DisableBlackLoadingScreens</b> to <b>true</b> (line 37).</li>
+                                <li>Set <b>PostloadingMenuSpeed</b> to <b>3.0</b> (line 51).</li>
+                                <li>Set <b>OneThreadWhileLoading</b> to <b>false</b> (line 84).</li>
+                                <li>If you use <strong>VRR</strong><sup><a title="VRR" href="#annotation2">[2]</a></sup>, set <b>InGameFPS</b> (line 58) to a number you can reach across the majority of the game<sup><a title="Bound" href="#annotation3">[3]</a></sup>, it has to be between 48<sup><a title="Range" href="#annotation4">[4]</a></sup> and <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span>
                                 </li>
-                            </ul>
-
-                            <div class="card-yellow">
-                                <p>
-                                    You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the G-Sync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in OSD.
-                                </p>
-                            </div>
-
-                            <div class="card-red">
-                                <p>
-                                    <b>NVIDIA USERS ONLY</b>:
-                                    <br>
-                                    Make sure that <strong>G-Sync is set to Fullscreen</strong> and that <strong>Display Specific settings are enabled</strong> in the Control Panel, the Windowed option is problematic due to it being a hacky method. Both of the settings are wrongly named so they do not actually directly refer to the display method.
-                                </p>
-                            </div>
-
-                            <ul>
-                                <li>If you use <strong>fixed refresh rate</strong> (meaning no VRR), set <strong>InGameFPS</strong> (line 58) to your <span class="card-basic">refresh rate - 0.005</span> or fractions of your refresh rate. For example on 60hz you can lock to 59.995 or 30. Just like on VRR, choose whether to lock to a fraction or <span class="card-basic">RR-0.005</span> based on which is closest to your lowest FPS.</li>
-                                <li>If you set InGameFPS to a value higher than 60, do the following as well:</li>
+                                <li>If you use <strong>fixed refresh rate</strong> (no VRR), set <b>InGameFPS</b> (line 59) to your <span class="card-basic">refresh rate - 0.005</span> or fractions of your refresh rate - choose based on which is <strong>closest to your lowest FPS</strong>.</li>
+                                <li>If you set <b>InGameFPS</b> to a value higher than 60, do the following as well:</li>
                                 <ul>
-                                    <li>Set <strong>DynamicUpdateBudget</strong> to <b>true</b> (line 264).</li>
-                                    <li>Set <strong>BudgetMaxFPS</strong> to the same value as <b>InGameFPS</b> (line 283).</li>
+                                    <li>Set <b>DynamicUpdateBudget</b> to <b>true</b> (line 291).</li>
+                                    <li>Set <b>BudgetMaxFPS</b> to the same value as <b>InGameFPS</b> (line 310).</li>
                                 </ul>
                             </ul>
                         </ol>
                     </ul>
+
+                    <hr>
+
+                    <span class="annotations">
+                        <ol start="1">
+                            <li id="annotation1">
+                                <strong>Do not touch other settings</strong> unless you know what you are doing! For example you should know that:
+                                <ul>
+                                    <li><b>AllowTearing</b> needs to stay enabled, it's a requirement for VRR and won't lead to tearing during gameplay - the mod turns off V-Sync only during loading (making it faster).</li>
+                                    <li>Enabling <b>DisableAnimationOnLoadingScreens</b> will freeze loading screens and any overlay you use, this is intended and will speed up loading by about 40%. You can enable it if you don't mind frozen loading screens.</li>
+                                </ul>
+                            </li>
+                            <li id="annotation2">
+                                You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the G-Sync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in the OSD.
+                                <br>
+                                <br>
+                                Nvidia users need to make sure that G-Sync is set to <b>Fullscreen</b> and that <b>Display Specific settings</b> are enabled, the <b>Windowed</b> option is problematic due to it being a hacky method. Both of the settings are wrongly named so they do not actually directly refer to the display method.
+                            </li>
+                            <li id="annotation3">
+                                You always want your FPS capped by a <strong>limiter instead of being hardware bound</strong>, this will reduce lag and increase power efficiency. It is also less jarring for the player when visual smoothness is the same across all scenes.
+                            </li>
+                            <li id="annotation4">
+                                The VRR range on most monitors starts at 48, but it might also start at 30 or 1. You can check this on <a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/specs/" target="_blank">Nvidia's page</a> or from your monitor's specifications.
+                            </li>
+                        </ol>
+                    </span>
                     </p>
                 </div>
 
@@ -418,7 +407,7 @@
                             <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">F4SE/Plugins/x-cell.ini</span></li>
                             <li>Change the following option:</li>
                             <ul>
-                                <li>Set <strong>threads</strong> to <b>false</b> (line 8).</li>
+                                <li>Set <b>threads</b> to <b>false</b> (line 8).</li>
                             </ul>
                         </ol>
                     </ul>

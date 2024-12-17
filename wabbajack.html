@@ -90,11 +90,11 @@
             </p>
             <hr>
             <p class="pageLinks">
-                <a href="./tweaks.html" title="Tweaks">
-                    Tweaks
-                </a>
                 <a href="./hud.html" title="User Interface">
                     User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
                 </a>
                 <a href="./gameplay.html" title="Gameplay">
                     Gameplay
@@ -263,7 +263,7 @@
                     <h3 onclick="location.href='#RootMods'">Root Mods</h3>
                     <ol>
                         <li>In your <b>Installation Location</b>, open the <strong>Files Requiring Manual Install</strong> folder.</li>
-                        <li>Copy <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                        <li>Copy <strong>everything</strong> to the game's <b>Root</b> folder.</li>
                         <li>Still in the game's Root folder, double-click on <strong>fo4downgrader.exe</strong> to run it.</li>
                         <li>
                             A command prompt window will open and it should say:
@@ -338,55 +338,7 @@
                     <ol>
                         <li><strong>Locate High FPS Physics Fix</strong> in the Utilities separator, then double-click it.</li>
                         <li>In the <strong>INI-Files</strong> tab, open <span class="card-basic">F4SE/Plugins/HighFPSPhysicsFix.ini</span></li>
-                        <li>Change the following options:</li>
-                        <ul>
-                            <li>Set <strong>AllowTearing</strong> to <b>true</b> (line 26)</li>
-                        </ul>
-
-                        <div class="card-yellow">
-                            <p>Enabling <b>AllowTearing</b> allows the mod to disable V-Sync during loading in order to make it faster, since the game loading time is largely limited by current framerate (up to a certain point). It is also a requirement for VRR and enabling it will not lead to any tearing because V-Sync is being used.</p>
-                        </div>
-
-                        <ul>
-                            <li>Set <strong>DisableBlackLoadingScreens</strong> to <b>true</b> (line 37).</li>
-                            <li>Set <strong>DisableAnimationOnLoadingScreens</strong> to <b>true</b> (line 44).</li>
-                        </ul>
-
-                        <div class="card-yellow">
-                            <p>
-                                Enabling <b>DisableAnimationOnLoadingScreens</b> will freeze loading screens and any overlay you use, this is intended and will lead to way faster loading times. You can omit it if you prefer looking at animated loading screens.
-                            </p>
-                        </div>
-
-                        <ul>
-                            <li>Set <strong>PostloadingMenuSpeed</strong> to <b>3.0</b> (line 51).</li>
-                            <li>Set <strong>NumOfThreadsWhileLoadingNewGame</strong> to <b>0</b> (line 83).</li>
-                            <li>If you use <strong>VRR</strong> (G-Sync/FreeSync), set <strong>InGameFPS</strong> (line 58) to any value close to your lowest FPS and not exceeding your <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span></li>
-                            </li>
-                        </ul>
-
-                        <div class="card-yellow">
-                            <p>
-                                You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the G-Sync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in OSD.
-                            </p>
-                        </div>
-
-                        <div class="card-red">
-                            <p>
-                                <b>NVIDIA USERS ONLY</b>:
-                                <br>
-                                Make sure that <strong>G-Sync is set to Fullscreen</strong> and that <strong>Display Specific settings are enabled</strong> in the Control Panel, the Windowed option is problematic due to it being a hacky method. Both of the settings are wrongly named so they do not actually directly refer to the display method.
-                            </p>
-                        </div>
-
-                        <ul>
-                            <li>If you use <strong>fixed refresh rate</strong> (meaning no VRR), set <strong>InGameFPS</strong> (line 58) to your <span class="card-basic">refresh rate - 0.005</span> or fractions of your refresh rate. For example on 60hz you can lock to 59.995 or 30. Just like on VRR, choose whether to lock to a fraction or <span class="card-basic">RR-0.005</span> based on which is closest to your lowest FPS.</li>
-                            <li>If you set InGameFPS to a value higher than 60, do the following as well:</li>
-                            <ul>
-                                <li>Set <strong>DynamicUpdateBudget</strong> to <b>true</b> (line 264).</li>
-                                <li>Set <strong>BudgetMaxFPS</strong> to the same value as <b>InGameFPS</b> (line 283).</li>
-                            </ul>
-                        </ul>
+                        <li>Follow <a href="./utilities.html#PhysicsFix" target="_blank">the steps</a> in the manual guide, then return to this page.</li>
                     </ol>
                     </p>
                 </div>

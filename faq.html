@@ -90,11 +90,11 @@
             </p>
             <hr>
             <p class="pageLinks">
-                <a href="./tweaks.html" title="Tweaks">
-                    Tweaks
-                </a>
                 <a href="./hud.html" title="User Interface">
                     User Interface
+                </a>
+                <a href="./tweaks.html" title="Tweaks">
+                    Tweaks
                 </a>
                 <a href="./gameplay.html" title="Gameplay">
                     Gameplay
@@ -288,7 +288,14 @@ DC - Outside DC 6.83s
                 </div>
                 <div class="expander-bottom" id="generalquestion7expander">
                     <p>
-                        You may have noticed that when playing the game through MO2, your save files will not appear in the Documents folder like normal. This is because the guide (and Wabbajack) makes use of <b>profile-specific saves</b>, an MO2 feature that redirects where the game looks for saves and where it creates them. This is located in the instance's profile folder, you can access all of them quickly by selecting the <strong>Saves tab of MO2</strong> on the right pane.
+                        You may have noticed that when playing the game through MO2, your save files will not appear in the Documents folder like normal. This is because the guide (and Wabbajack) makes use of <b>profile-specific saves</b>, a feature that redirects them to the profile folder of your instance. You can access all of them quickly by selecting the <strong>Saves tab of MO2</strong> on the right pane.
+
+                    <div class="card-red">
+                        <p>
+                            <strong>Do not re-use vanilla saves</strong> or any save from different mod setups! A new character is required for a functional game.
+                        </p>
+                    </div>
+
                     </p>
                 </div>
 
@@ -526,7 +533,7 @@ DC - Outside DC 6.83s
                 </div>
                 <div class="expander-bottom" id="troubleshootingquestion14expander">
                     <p>
-                        Just like in the <a href="./utilities.html#PhysicsFix">High FPS Physics Fix</a> section, open up the configuration file and change <strong>NumOfThreadsWhileLoadingNewGame</strong> to 2 (line 83). If the issue persists, increase the value until the game manages to load normally.
+                        Just like in the <a href="./utilities.html#PhysicsFix">High FPS Physics Fix</a> section, open up the configuration file and change <strong>OneThreadWhileLoading</strong> to false (line 84).
                     </p>
                 </div>
 
@@ -622,7 +629,7 @@ DC - Outside DC 6.83s
                 </div>
                 <div class="expander-bottom" id="configquestion1expander">
                     <p>
-                        Changing FOV through the game INIs is bugged (even through Bethini Pie), so it won't work. You can use the <a href="https://www.nexusmods.com/fallout4/mods/36768" target="_blank">FOV Slider mod</a> or do it through a plugin-loaded INI file.
+                        Use <a href="https://www.nexusmods.com/fallout4/mods/90072" target="_blank">Simple FOV Slider</a>.
                     </p>
                 </div>
 
