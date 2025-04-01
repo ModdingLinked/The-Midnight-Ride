@@ -33,7 +33,7 @@
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/lod.html</loc>
 		<priority>0.70</priority>
-		<lastmod>2025-02-01</lastmod>
+		<lastmod>2025-04-01</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/setup.html</loc>
@@ -78,7 +78,7 @@
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/finish.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2025-02-01</lastmod>
+		<lastmod>2025-04-01</lastmod>
 	</url>
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/changelog.html</loc>
@@ -98,6 +98,6 @@
 	<url>
 		<loc>https://themidnightride.moddinglinked.com/basefinish.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-02-01</lastmod>
+		<lastmod>2025-04-01</lastmod>
 	</url>
 </urlset>
