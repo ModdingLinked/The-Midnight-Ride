@@ -7,7 +7,8 @@ body {
 }
 
 .sidebar,
-.header {
+.header,
+.popup {
   background: #292c35 !important;
 }
 
