@@ -360,7 +360,22 @@
                                 <li>Set <b>OneThreadWhileLoading</b> to <b>false</b> (line 84).</li>
                                 <li>If you use <strong>VRR</strong><sup><a title="VRR" href="#annotation2">[2]</a></sup>, set <b>InGameFPS</b> (line 59) to a number you can reach across the majority of the game<sup><a title="Bound" href="#annotation3">[3]</a></sup>, it has to be between 48<sup><a title="Range" href="#annotation4">[4]</a></sup> and <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span>
                                 </li>
-                                <li>If you use <strong>fixed refresh rate</strong> (no VRR), set <b>InGameFPS</b> (line 59) to your <span class="card-basic">refresh rate - 0.005</span> or fractions of your refresh rate (choose based on which is <strong>closest to your lowest FPS</strong>).</li>
+                                <li>If you use <strong>fixed refresh rate</strong> (no VRR), set <b>InGameFPS</b> (line 59) to your <span class="card-basic">refresh rate - 0.005</span> or divisors of your refresh rate, based on which is <strong>closest to your lowest FPS</strong>.</li>
+                                <ul>
+
+                                    <div class="card-yellow">
+                                        <p>Some examples:
+                                        <ul>
+                                            <li>60Hz: 59.995 (VRR wouldn't be a thing)</li>
+                                            <li>144Hz: any value between 48 and 134 if VRR is enabled, 72 or 143.995 if using fixed refresh rate.</li>
+                                            <li>165Hz: anywhere between 48 and 154 if VRR is enabled, changing<a title="CustomResolution" href="#annotation5">[5]</a></sup> the refresh rate to 144 is recommened if using fixed refresh rate.</li>
+                                            <li>240Hz: anywhere between 48 and 224 if VRR is enabled, 60 or 119.995 if using fixed refresh rate.</li>
+                                        </ul>
+                                        Obviously, when using 240Hz as example, you wouldn't lock it as high as 180 or 239.995 if you cannot reach those FPS in most of the game. The goal is to have a smooth experience, not to be hardware bound.
+                                        </p>
+                                    </div>
+
+                                </ul>
                                 <li>If you set <b>InGameFPS</b> to a value higher than 60, do the following as well:</li>
                                 <ul>
                                     <li>Set <b>DynamicUpdateBudget</b> to <b>true</b> (line 291).</li>
@@ -392,6 +407,9 @@
                             </li>
                             <li id="annotation4">
                                 The VRR range on most monitors starts at 48, but it might also start at 30 or 1. You can check this on <a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/specs/" target="_blank">Nvidia's page</a> or from your monitor's specifications.
+                            </li>
+                            <li id="annotation5">
+                                You can set a <strong>custom resolution (and refresh rate)</strong> in the <b>Nvidia Control Panel</b> or <b>Adrenalin</b> settings. This is useful for monitors that don't have an evenly divisible refresh rate and if VRR is not available. For example, if your monitor has a refresh rate of 165Hz, you can set it to 144Hz and use 72 as limiter instead of 55.
                             </li>
                         </ol>
                     </span>
