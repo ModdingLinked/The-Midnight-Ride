@@ -44,6 +44,7 @@
     <script src="js/popup.js"></script>
     <script src="js/javascript.js"></script>
     <script src="js/responsiveTitle.js"></script>
+    <script src="js/imageSlider.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/header.css">
@@ -55,6 +56,7 @@
     <link rel="stylesheet" href="css/images.css">
     <link rel="stylesheet" href="css/coco.css">
     <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="css/imageSlider.css">
 </head>
 
 <body class="theme">
@@ -72,8 +74,9 @@
                 <a href="./index.html" id="headerTitle">The Midnight Ride</a>
             </div>
             <div class="guideLinks" id="headerLinks">
-                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
+                <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim SE</a>
                 <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
             </div>
         </div>
 
@@ -244,6 +247,34 @@
                     </p>
                 </div>
 
+                <!-- <div class="card" id="LODComparison" title="LOD Comparison">
+                    <p>
+                    <h3>LOD Comparison</h3>
+                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
+                    </p>
+
+                    <div class="image-slider">
+                        <div class="slider-select-container">
+                            <select class="slider-select">
+                                <option value="comparison-1">Comparison 1</option>
+                                <option value="comparison-2">Comparison 2</option>
+                                <option value="comparison-3">Comparison 3</option>
+                                <option value="comparison-4">Comparison 4</option>
+                            </select>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider-before">
+                                <img class="slider-img" src="./img/LOD/Comparison/1 - Before.webp" alt="Before image">
+                            </div>
+                            <img class="slider-img slider-after" src="./img/LOD/Comparison/1 - After.webp" alt="After image">
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="slider-labels">
+                            <span class="slider-label-before">Vanilla Game</span>
+                            <span class="slider-label-after">Generated LOD</span>
+                        </div>
+                    </div>
+                </div> -->
             </span>
 
             <span id="Preparation" class="section">
@@ -459,17 +490,17 @@
                             </p>
                         </div>
 
-                        <div class="expander-top clickable" onclick="expandCard(this, landLODExpander)" id="landLOD">
+                        <div class="expander-top">
                             <p>
                             <h3>Terrain LOD Generation instructions (Optional but Recommended)</h3>
                             <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
-                        <div class="expander-bottom" id="landLODExpander">
+                        <div class="expander-bottom">
 
                             <div class="card-red">
                                 <p>
-                                    Generating Terrain LOD is <strong>very</strong> time consuming and CPU intensive.
+                                    Generating Terrain LOD is <strong>very</strong> CPU intensive and can take a long time depending on the settings and your CPU's multithreaded performance.
                                     <br>
                                     <br>
                                     It's needed <u>only</u> if you have mods that edit the landscape or landscape textures. But the visual improvement is big regardless.
@@ -516,13 +547,13 @@
                             </ol>
                         </div>
 
-                        <div class="expander-top clickable" onclick="expandCard(this, settingsDetailsExpander)" id="settingsDetails">
+                        <div class="expander-top">
                             <p>
                             <h3>Settings Explanation</h3>
                             <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
-                        <div class="expander-bottom" id="settingsDetailsExpander">
+                        <div class="expander-bottom">
                             <h3>Objects:</h3>
                             <ul>
                                 <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution.
@@ -571,7 +602,6 @@
                             If it happens to be overwritten by any mod, the LOD in-game will be <strong>broken</strong>.
                         </p>
                     </div>
-
                 </div>
 
                 <div class="card" id="FOLIPAfterGeneration" title="FOLIP After Generation">
