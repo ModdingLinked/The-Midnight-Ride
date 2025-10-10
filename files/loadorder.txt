@@ -17,27 +17,27 @@ ccSBJFO4003-Grenade.esl
 ccOTMFO4001-Remnants.esl
 unofficial fallout 4 patch.esp
 REFramework.esm
-Ownership Fixes.esp
 community fixes merged.esp
 TMR_GlitchfinderAIO.esm
 fakeInt.esp
 fakeInt_Boston.esp
 fakeInt_DLC.esp
+BloodFixes.esm
 Dynamic Activation Key.esp
 Hit Those Objects.esm
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
 ppf.esm
-WeaponModFixes-GOTY.esp
-CFM - Weapon Mod Fixes Patch.esp
 RAW INPUT.esp
-GeneralAtomicsMrGutsyGuards.esp
-GA Galleria Gutsy Voice Fix - UFO4P Patch.esp
+WeaponModFixes-GOTY.esp
+Weapon Mod Fixes - CFM Patch.esp
 Wetness Shader Fix.esp
 Fixed Gobo Effects.esp
 Flutter Flicker Fixer For Foliage.esp
 Extended Fake Interior - CC Enclave Remnants Patch.esp
 MidnightCultFix.esp
+GeneralAtomicsMrGutsyGuards.esp
+GA Galleria Gutsy Voice Fix - UFO4P Patch.esp
 Workshop Highlight Fix.esp
 Alternative Activation Prompts.esp
 Simple FOV Slider.esp
@@ -45,7 +45,8 @@ Less Annoying Berry Mentats.esp
 Dogmeat Follow Behind.esp
 mr Loot Logic and Reduction.esp
 Loot Logic and Reduction - UFO4P Patch.esp
-Complex Vendors.esp
+Barter.esp
+Barter - CFM Patch.esp
 Simple Everyone's Best Friend.esp
 SimplePowerArmorReductionSystem.esp
 IntegratedAddons.esp
@@ -61,8 +62,6 @@ Lightweight Lighting.esp
 Gloomy Glass.esp
 Targeted Textures.esp
 FO4ParticlePatch.esp
-WET.esp
-WAVE.esp
 ScopeOverlayDOF.esp
 DiamondCityBillboards.esp
 GoodneighborView.esp
