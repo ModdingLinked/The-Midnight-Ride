@@ -45,8 +45,7 @@ Less Annoying Berry Mentats.esp
 Dogmeat Follow Behind.esp
 mr Loot Logic and Reduction.esp
 Loot Logic and Reduction - UFO4P Patch.esp
-Barter.esp
-Barter - CFM Patch.esp
+Complex Vendors.esp
 Simple Everyone's Best Friend.esp
 SimplePowerArmorReductionSystem.esp
 IntegratedAddons.esp
