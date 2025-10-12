@@ -43,7 +43,6 @@
     <script src="js/popup.js"></script>
     <script src="js/javascript.js"></script>
     <script src="js/responsiveTitle.js"></script>
-    <script src="js/fpsCalculator.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
@@ -217,11 +216,11 @@
 
                 <div class="card" id="F4SE" title="F4SE">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/42147" target="_blank">Fallout 4 Script Extender (F4SE)</a></h3>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/42147?tab=files&file_id=253313" target="_blank">Fallout 4 Script Extender (F4SE)</a></h3>
                     Extends the scripting capabilities of the game.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Fallout 4 Script Extender (F4SE)</li>
+                        <li><b>Main Files</b> - Fallout 4 Script Extender (F4SE) <strong>0.6.23</strong></li>
                         <ol>
                             <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
                         </ol>
@@ -229,6 +228,15 @@
                         <div class="card-yellow">
                             <p>
                                 If you do not know what the <b>Root</b> folder is, read the <a href="./setup.html#Terminology" target="_blank">Key Terminology</a>.</p>
+                        </div>
+
+                        <div class="card-red">
+                            <p>
+                                <strong>The direct link to an older version is intentional</strong> to grant compatibility with the downgraded EXE.
+                                <br>
+                                <br>
+                                Downloading through the link button above is especially important when the guide specifies the exact version, like for this mod and more later.
+                            </p>
                         </div>
 
                         <ol start="2">
@@ -263,13 +271,33 @@
 
                 <div class="card" id="PluginPreloader">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/33946" target="_blank">xSE PluginPreloader F4</a></h3>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/33946?tab=files&file_id=221778" target="_blank">xSE PluginPreloader F4</a></h3>
                     Allows preloading F4SE plugins before the game initializes.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - xSE PluginPreloader F4 0.3</li>
+                        <li><b>Main Files</b> - xSE PluginPreloader F4 <strong>0.2.5.1</strong></li>
                         <ol>
                             <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                        </ol>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="Downgrader">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/81933" target="_blank">Simple Fallout 4 Downgrader</a></h3>
+                    A simple one-click downgrader that doesn't require any login credentials.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Simple Fallout 4 Downgrader - for v1.10.984</li>
+                        <ol>
+                            <li>Open the downloaded archive and extract <strong>everything</strong> to the game's <b>Root</b> folder.</li>
+                            <li>Double-click on <strong>fo4downgrader.exe</strong> to run it.</li>
+                            <li>
+                                A command prompt window will open and it should say:
+                                <div class="card-basic">Patching successful</div>
+                            </li>
+                            <li>Close the command prompt and backups with <strong>_downgradeBackup</strong> appended to their name should appear in the game's <b>Root</b> folder.</li>
                         </ol>
                     </ul>
                     </p>
@@ -307,6 +335,17 @@
                     </p>
                 </div>
 
+                <div class="card" id="BASS" title="BASS">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/81859" target="_blank">Backported Archive2 Support System</a></h3>
+                    Allows the downgraded executable to use the updated BA2 files.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - BackportedBA2Support-1_0</li>
+                    </ul>
+                    </p>
+                </div>
+
                 <div class="card" id="BetterConsole">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/26582" target="_blank">Better Console - F4SE</a></h3>
@@ -320,45 +359,43 @@
 
                 <div class="card" id="PhysicsFix">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank">High FPS Physics Fix</a></h3>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/44798?tab=files&file_id=342948&nmm=1" target="_blank">High FPS Physics Fix</a></h3>
                     All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and reduces loading times massively.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - High FPS Physics Fix (1st file)</li>
+                        <li><b>Main Files</b> - High FPS Physics Fix <strong>0.8.11</strong> (2nd file)</li>
                         <ol>
                             <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
                             <li>In the <strong>INI Files</strong> tab, open <span class="card-basic">F4SE/Plugins/HighFPSPhysicsFix.ini</span></li>
                             <li>Change only the following options<sup><a title="Warning" href="#annotation1">[1]</a></sup>:</li>
                             <ul>
-                                <li>Set <b>DisableBlackLoadingScreens</b> to <strong>true</strong> (line 37).</li>
-                                <li>Set <b>PostloadingMenuSpeed</b> to <strong>3.0</strong> (line 51).</li>
-                                <li>Set <b>OneThreadWhileLoading</b> to <strong>false</strong> (line 84).</li>
-                                <li>Use the calculator below to determine your optimal FPS limit<sup><a title="Warning" href="#annotation2">[2]</a></sup> setting:</li>
+                                <li>Set <b>DisableBlackLoadingScreens</b> to <b>true</b> (line 37).</li>
+                                <li>Set <b>PostloadingMenuSpeed</b> to <b>3.0</b> (line 51).</li>
+                                <li>Set <b>OneThreadWhileLoading</b> to <b>false</b> (line 84).</li>
+                                <li>If you use <strong>VRR</strong><sup><a title="VRR" href="#annotation2">[2]</a></sup>, set <b>InGameFPS</b> (line 59) to a number you can reach across the majority of the game<sup><a title="Bound" href="#annotation3">[3]</a></sup>, it has to be between 48<sup><a title="Range" href="#annotation4">[4]</a></sup> and <span class="card-basic">refresh rate - (refresh rate x 6.8%)</span>
+                                </li>
+                                <li>If you use <strong>fixed refresh rate</strong> (no VRR), set <b>InGameFPS</b> (line 59) to your <span class="card-basic">refresh rate - 0.005</span> or divisors of your refresh rate, based on which is <strong>closest to your lowest FPS</strong>.</li>
+                                <ul>
 
-                                <div class="card-basic">
-                                    <div class="center" style="margin: 10px;">
-                                        <button id="fixedButton" onclick="setMode('fixed')" class="active">Fixed Refresh</button>
-                                        <button id="vrrButton" onclick="setMode('vrr')">VRR</button>
-                                        <input type="hidden" id="refreshMode" value="fixed">
+                                    <div class="card-yellow">
+                                        <p>Some examples:
+                                        <ul>
+                                            <li>60Hz: 59.995, as it most likely won't have VRR.</li>
+                                            <li>144Hz: any value between 48 and 134 if VRR is enabled, 72 or 143.995 if using fixed refresh rate.</li>
+                                            <li>165Hz: anywhere between 48 and 154 if VRR is enabled, changing the refresh rate<a title="CustomResolution" href="#annotation5">[5]</a></sup> to 144 is recommened if using fixed refresh rate.</li>
+                                            <li>240Hz: anywhere between 48 and 224 if VRR is enabled, 60 or 119.995 if using fixed refresh rate.</li>
+                                        </ul>
+                                        Obviously, when using 240Hz as example, you wouldn't lock it as high as 180 or 239.995 if you cannot reach those FPS in most of the game. The goal is to have a smooth experience, not to be hardware bound.
+                                        </p>
                                     </div>
 
-                                    <div class="center" style="margin: 10px;">
-                                        <label for="refreshRate">Monitor refresh rate: </label>
-                                        <input id="refreshRate" type="number" step="1" placeholder="e.g. 60, 144" min="60">
-                                        <button onclick="calculateFPS()">Calculate</button>
-                                    </div>
-
-                                    <div id="fpsResults" style="display: none;"></div>
-                                </div>
-
-                                <li>Set <b>InGameFPS</b> (line 59) to the recommended value from the calculator above.</li>
+                                </ul>
                                 <li>If you set <b>InGameFPS</b> to a value higher than 60, do the following as well:</li>
                                 <ul>
-                                    <li>Set <b>DynamicUpdateBudget</b> to <strong>true</strong> (line 288).</li>
-                                    <li>Set <b>BudgetMaxFPS</b> to the same value as <b>InGameFPS</b> (line 307).</li>
+                                    <li>Set <b>DynamicUpdateBudget</b> to <b>true</b> (line 291).</li>
+                                    <li>Set <b>BudgetMaxFPS</b> to the same value as <b>InGameFPS</b> (line 310).</li>
                                 </ul>
                             </ul>
-                            <li>Save your changes.</li>
                         </ol>
                     </ul>
 
@@ -367,13 +404,26 @@
                     <span class="annotations">
                         <ol>
                             <li id="annotation1">
+                                <strong>Do not touch other settings</strong> unless you know what you are doing! For example you should know that:
+                                <ul>
+                                    <li><b>AllowTearing</b> needs to stay enabled, it won't lead to tearing during gameplay as the mod turns off V-Sync only during loading, making it <a href="https://moddinglinked.com/benchmarks.html" target="_blank">faster</a>.</li>
+                                    <li>Enabling <b>DisableAnimationOnLoadingScreens</b> will freeze loading screens and any overlay you use, this is intended and will speed up loading by about 40% (also shown in the table linked above). You can enable it if you don't mind frozen loading screens.</li>
+                                </ul>
+                            </li>
+                            <li id="annotation2">
                                 You can <strong>check if you are using VRR</strong> by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the G-Sync tab is missing from NVCP, your display doesn't support it or doesn't have the feature enabled in the OSD.
                                 <br>
                                 <br>
                                 Nvidia users need to make sure that G-Sync is set to <b>Fullscreen</b> and that <b>Display Specific settings</b> are enabled, the <b>Windowed</b> option is problematic due to it being a hacky method. Both of the settings are wrongly named so they do not actually directly refer to the display method.
                             </li>
-                            <li id="annotation2">
+                            <li id="annotation3">
                                 You always want your FPS capped by a <strong>limiter instead of being hardware bound</strong>, this will reduce lag and increase power efficiency. It is also less jarring for the player when visual smoothness is the same across all scenes.
+                            </li>
+                            <li id="annotation4">
+                                The VRR range on most monitors starts at 48, but it might also start at 30 or 1. You can check this on <a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/specs/" target="_blank">Nvidia's page</a> or from your monitor's specifications. Windows 11 users can also check <b>Display information</b> in the <b>Advanced display</b> settings page.
+                            </li>
+                            <li id="annotation5">
+                                You can set a <strong>custom resolution (and refresh rate)</strong> in the <b>Nvidia Control Panel</b> or <b>Adrenalin</b> settings. This is useful for monitors that don't have an evenly divisible refresh rate and if VRR is not available. For example, if your monitor has a refresh rate of 165Hz, you can set it to 144Hz and use 72 as limiter instead of 55.
                             </li>
                         </ol>
                     </span>
@@ -397,7 +447,7 @@
                     Adds new scripting functions.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Garden of Eden Papyrus Script Extender - Next-Gen</li>
+                        <li><b>Main Files</b> - Garden of Eden Papyrus Script Extender</li>
                     </ul>
                     </p>
                 </div>
@@ -442,13 +492,13 @@
                     </p>
                 </div>
 
-                <div class="card" id="EscapeFreezeNG">
+                <div class="card" id="EscapeFreeze">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/95712" target="_blank">Escape Freeze NG (F4SE)</a></h3>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/75216" target="_blank">Escape Freeze F4SE</a></h3>
                     Unfreezes your game from certain freezes caused by a deadlock during condition checks.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - EscapeFreezeNG1.0.0-MainFile</li>
+                        <li><b>Main Files</b> - Escape Freeze</li>
                     </ul>
                     </p>
                 </div>

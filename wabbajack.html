@@ -191,7 +191,7 @@
 
             <span id="Wabbajack" class="section">
 
-                <div class="card-red center important-notice">
+                <div class="card-red center" style="display: flex; align-items: center; margin-top: 30px;">
                     <p>
                         <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
                     <div>
@@ -302,6 +302,12 @@
                         <li>In the Wabbajack UI, click <strong>Open in File Explorer</strong>.</li>
                         <li>Open the <strong>Files Requiring Manual Install</strong> folder.</li>
                         <li>Copy <strong>everything</strong> to the game's <b>Root</b> folder.</li>
+                        <li>Still in the game's Root folder, double-click on <strong>fo4downgrader.exe</strong> to run it.</li>
+                        <li>
+                            A command prompt window will open and it should say:
+                            <div class="card-basic">Patching successful</div>
+                        </li>
+                        <li>Close the command prompt and backups with <strong>_downgradeBackup</strong> appended to their name should appear in the game's <b>Root</b> folder.</li>
                     </ol>
                     </p>
                 </div>
@@ -433,14 +439,16 @@
                 <div class="card" id="UpdatingTheList">
                     <p>
                     <h3 onclick="location.href='#UpdatingTheList'">Updating The List</h3>
-                    Whenever a new version of the list is released, simply <strong>run Wabbajack again</strong> and point it to the same folder where the list is currently installed.
+                    Whenever a new version of the list is released, you can update your current installation by following these steps:
+                    <ol>
+                        <li>If you added any mods to the list after installation, add the <span class="card-basic">[NoDelete]</span> prefix to their name in the left pane. Note that they might be moved and/or disabled after updating the list.</li>
+                        <li><strong>Verify files</strong> on Steam.</li>
+                        <li>Re-run the Downgrader <a href="./wabbajack.html#RootMods">as instructed above</a>.</li>
+                    </ol>
 
                     <div class="card-red">
                         <p>
-                        <ol>
-                            <li>Make sure that the update is marked as <b>Safe Mid-Game</b> before playing with the same character!</li>
-                            <li>If you added any mods to the list after installation, add the <span class="card-basic">[NoDelete]</span> prefix to their name in the left pane. Note that they might be moved and/or disabled after updating the list.</li>
-                        </ol>
+                            Make sure that the update is marked as <b>Safe Mid-Game</b> before playing with the same character!
                         </p>
                     </div>
 
