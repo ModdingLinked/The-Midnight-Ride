@@ -424,10 +424,10 @@
                         <li>Once everything has loaded, right-click any of them and <b>Apply Script...</b>, then select the <strong>FOLIP - Before Generation.pas</strong> file and click <b>OK</b>.</li>
                         <li>Optionally, enable <b>Force LOD8</b> for better visuals at a small performance cost.</li>
                         <li>Click <b>Start</b>.</li>
-                        <li>When complete, you will see a message saying "<b>Patch generated successfully!</b>", click <b>OK</b>.</li>
-                        <li>Exit xEdit and save the plugin when prompted.</li>
-                        <li>An Explorer window should have opened showing the output file. Take it and drag it to the bottom of your LOD separator in your modlist to install it.</li>
-                        <li>Make sure the output's plugin is enabled in your load order.</li>
+                        <li>Let the script finish then exit xEdit and save the plugin when prompted.</li>
+                        <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
+                        <li>Title the mod <strong>FOLIP - Before Generation</strong>.</li>
+                        <li>Double-click <i>Overwrite</i> and drag FOLIP - Before Generation.esp to the newly created mod, then enable it (both in the modlist and load order).</li>
                     </ol>
                     </p>
                 </div>
@@ -444,7 +444,7 @@
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-FO4</span></li>
                         <li>Select TexGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                         <li>Once the program has loaded, click <strong>Start</strong>.</li>
-                        <li>When complete, you will see a message saying "<b>TexGen completed successfully</b>", click <strong>Zip and Exit</strong>.</li>
+                        <li>When complete, you will see a message saying "TexGen completed successfully", click <strong>Zip and Exit</strong>.</li>
                         <li>Install the TexGen output by clicking the <img src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
                         <li>From the new window, navigate to the DynDOLOD folder you installed in step 2, then double-click <b>TexGen_Output.zip</b> and install it.</li>
                     </ol>
@@ -572,7 +572,7 @@
                             </ul>
                         </div>
                         <li>Click <strong>Generate</strong>.</li>
-                        <li>When complete, the log will stop and at the end you will see a message saying "<b>LOD generation done</b>", you can now close xLODGen.</li>
+                        <li>When complete, the log will stop and at the end you will see a message saying "LOD generation done", you can now close xLODGen.</li>
                     </ol>
                     </p>
                 </div>
@@ -615,6 +615,13 @@
                         <li>Title the mod <strong>FOLIP - After Generation</strong>.</li>
                         <li>Double-click <i>Overwrite</i> and drag FOLIP - After Generation.esp to the newly created mod, then enable it (both in the modlist and load order).</li>
                     </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="LoadOrder">
+                    <p>
+                    <h3>Load Order</h3>
+                    Move <strong>prp.esp to the bottom</strong> of your load order.
                     </p>
                 </div>
             </span>
