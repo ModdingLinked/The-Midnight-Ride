@@ -86,7 +86,7 @@ function calculateFPS() {
         const usableDivisors = getLargestDivisors(rr).filter(d => d >= 60);
         let recommendations = usableDivisors.map(d =>
             d === rr ? `${(d - 0.05).toFixed(2)}` : d
-        ).join(' / ');
+        ).join(' or ');
 
         let warning = '';
         if (!commonRates.includes(rr) && rr > 75) {
@@ -103,7 +103,7 @@ function calculateFPS() {
 
         results.innerHTML = `
             <div class="card card-basic">
-                <p>Recommended FPS ${usableDivisors.length === 1 ? 'Limit' : 'Limits'}: ${recommendations}</p>
+                <p>Recommended FPS ${usableDivisors.length === 1 ? 'Limit' : 'Limits'}: ${recommendations} (choose one)</p>
             </div>
             ${warning}
             <div class="card card-green">
