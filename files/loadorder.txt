@@ -27,6 +27,7 @@ Dynamic Activation Key.esp
 Hit Those Objects.esm
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
+Enhanced Vanilla Water.esm
 ppf.esm
 RAW INPUT.esp
 WeaponModFixes-GOTY.esp
@@ -56,6 +57,7 @@ LegendariesTheyCanUse.esp
 No Sneaking in Power Armor.esp
 dcc-molotov-nerf.esp
 MoreWeathervanes.esp
+MoreDCBounties.esp
 Legendary Mutation Messages Fix.esp
 Lightweight Lighting.esp
 Gloomy Glass.esp
