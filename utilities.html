@@ -202,6 +202,77 @@
                 </p>
             </div>
 
+            <span id="PerformancePreamble" class="section">
+                <h2 onclick="location.href='#PerformancePreamble'">Performance Preamble</h2>
+
+                <div class="card">
+                    <p>
+                    Limiting framerate is very important for overall stability, as it <strong>smooths out framepacing</strong>, which is the most important thing for the overall feel of fluidity.
+                    <br>
+                    <br>
+                    More advanced limiters can also <strong>reduce latency</strong> or CPU power consumption (it's difficult to have both at the same time).
+                    <br>
+                    <br>
+                    For a limiter to do anything, you want to set it to <u>a framerate you can actually achieve regularly</u> enough. This will prevent the GPU load from maxing out and further reduce latency, while reducing power usage, often considerably.
+
+                    <h3>Setup</h3>
+                    <ol>
+                        <li>Make sure <strong>V-Sync</strong><sup><a title="V-Sync" href="#annotation1">[1]</a></sup> is enabled, you can do this through <a href="mo2#GameSettings">BethINI Pie</a>. Your driver settings shouldn't override this<sup><a title="V-Sync" href="#annotation2">[2]</a></sup>.</li>
+                        <li>If your monitor supports it, enable <strong>Variable Refresh Rate</strong><sup><a title="Enabling VRR" href="#annotation3">[3]</a></sup>.</li>
+                        <div class="card-yellow">
+                            <p>
+                                <u>Do not disable V-Sync when using VRR</u>! The latter expects the former<sup><a title="V-Sync + VRR" href="#annotation4">[4]</a></sup>.
+                            </p>
+                        </div>
+                        <li>In Fallout 4, specifically, <u>do not use any external limiter</u>. The steps below will use High FPS Physics Fix to configure one. This exception is born from Fallout 4's loading speed being tied to framerate, meaning that an external limiter cannot dynamically switch value, missing out on the speed-up.</li>
+                    </ol>
+
+                    <div class="expander-top">
+                        <p>
+                        <h3>Details</h3>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                        </p>
+                    </div>
+                    <div class="expander-bottom">
+                        <p>
+                        <ol>
+                            <li id="annotation1">
+                                V-Sync will <strong>prevent tearing</strong> as result of syncing the monitor's VBLANK to the GPU output. This will limit your framerate from going over the refresh rate.
+
+                                <div class="card-red">
+                                    <p>
+                                        Even though it acts as one, V-Sync on its own is <i><u>NOT</u></i> a limiter. Using it without a dedicated limiter will result in a <b>massive</b> latency penalty.
+                                    </p>
+                                </div>
+                            </li>
+                            <li id="annotation2">
+                                Generally, <strong>default settings</strong> for both the <b>Nvidia Control Panel</b> and AMD's <b>Adrenalin</b> will work. Reset them if you're unsure and <u>don't change settings unless you are sure of what they do</u>.
+                            </li>
+                            <li id="annotation3">
+                                You can enable VRR by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the setting isn't there, your display doesn't support the feature or it's not enabled in its OSD.
+
+                                <div class="card-yellow">
+                                    <p>
+                                        Nvidia users need to make sure that G-Sync is set to <b>Fullscreen</b> and that <b>Display Specific settings</b> are enabled, the <b>Windowed</b> option is problematic due to it being a hacky method.
+                                        <br><br>
+                                        Both of the settings are wrongly named! They do not actually directly refer to the display method.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                Despite popular misinformation, <u>VRR alone doesn't get rid of tearing</u>. It can minimize the rolling tear however, but that varies between displays. Additionally, the latency reduction applies only at framerates below the display's refresh rate.
+                                <br>
+                                <br>
+                                Once the framerate reaches refresh rate, VRR will engage V-Sync emulation. To account for this, VRR users should configure their limiter with a <strong>slight bias below refresh rate</strong> (to cover spikes).
+                            </li>
+                        </ol>
+                        This section is purely informative, the calculator below will take all of this information into consideration.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
             <span id="ManualDownloads" class="section">
                 <h2 onclick="location.href='#ManualDownloads'">Manual Downloads</h2>
 
@@ -320,73 +391,6 @@
 
                 <div class="card" id="PhysicsFix">
                     <p>
-                    <h2>Performance Preamble</h2>
-                    Limiting framerate is very important for overall stability, as it <strong>smooths out framepacing</strong>, which is the most important thing for the overall feel of fluidity.
-                    <br>
-                    <br>
-                    More advanced limiters can also <strong>reduce latency</strong> or CPU power consumption (it's difficult to have both at the same time).
-                    <br>
-                    <br>
-                    For a limiter to do anything, you want to set it to <u>a framerate you can actually achieve regularly</u> enough. This will prevent the GPU load from maxing out and further reduce latency, while reducing power usage, often considerably.
-
-                    <h3>Setup</h3>
-                    <ol>
-                        <li>Make sure <strong>V-Sync</strong><sup><a title="V-Sync" href="#annotation1">[1]</a></sup> is enabled, you can do this through <a href="mo2#GameSettings">BethINI Pie</a>. Your driver settings shouldn't override this<sup><a title="V-Sync" href="#annotation2">[2]</a></sup>.</li>
-                        <li>If your monitor supports it, enable <strong>Variable Refresh Rate</strong><sup><a title="Enabling VRR" href="#annotation3">[3]</a></sup>.</li>
-                        <div class="card-yellow">
-                            <p>
-                                <u>Do not disable V-Sync when using VRR</u>! The latter expects the former<sup><a title="V-Sync + VRR" href="#annotation4">[4]</a></sup>.
-                            </p>
-                        </div>
-                        <li>In Fallout 4, specifically, <u>do not use any external limiter</u>. The steps below will use High FPS Physics Fix to configure one. This exception is born from Fallout 4's loading speed being tied to framerate, meaning that an external limiter cannot dynamically switch value, missing out on the speed-up.</li>
-                    </ol>
-
-                    <div class="expander-top">
-                        <p>
-                        <h3>Details</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                        </p>
-                    </div>
-                    <div class="expander-bottom">
-                        <p>
-                        <ol>
-                            <li id="annotation1">
-                                V-Sync will <strong>prevent tearing</strong> as result of syncing the monitor's VBLANK to the GPU output. This will limit your framerate from going over the refresh rate.
-
-                                <div class="card-red">
-                                    <p>
-                                        Even though it acts as one, V-Sync on its own is <i><u>NOT</u></i> a limiter. Using it without a dedicated limiter will result in a <b>massive</b> latency penalty.
-                                    </p>
-                                </div>
-                            </li>
-                            <li id="annotation2">
-                                Generally, <strong>default settings</strong> for both the <b>Nvidia Control Panel</b> and AMD's <b>Adrenalin</b> will work. Reset them if you're unsure and <u>don't change settings unless you are sure of what they do</u>.
-                            </li>
-                            <li id="annotation3">
-                                You can enable VRR by going to the <b>Nvidia Control Panel</b> if you're on Nvidia or <b>Adrenalin's Display Settings</b> if you're on AMD. If the setting isn't there, your display doesn't support the feature or it's not enabled in its OSD.
-
-                                <div class="card-yellow">
-                                    <p>
-                                        Nvidia users need to make sure that G-Sync is set to <b>Fullscreen</b> and that <b>Display Specific settings</b> are enabled, the <b>Windowed</b> option is problematic due to it being a hacky method.
-                                        <br><br>
-                                        Both of the settings are wrongly named! They do not actually directly refer to the display method.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                Despite popular misinformation, <u>VRR alone doesn't get rid of tearing</u>. It can minimize the rolling tear however, but that varies between displays. Additionally, the latency reduction applies only at framerates below the display's refresh rate.
-                                <br>
-                                <br>
-                                Once the framerate reaches refresh rate, VRR will engage V-Sync emulation. To account for this, VRR users should configure their limiter with a <strong>slight bias below refresh rate</strong> (to cover spikes).
-                            </li>
-                        </ol>
-                        This section is purely informative, the calculator below will take all of this information into consideration.
-                        </p>
-                    </div>
-
-                    <br>
-                    <hr>
-
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank">High FPS Physics Fix</a></h3>
                     All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and <a href="https://moddinglinked.com/benchmarks.html#expander-3" target="_blank">reduces loading times massively</a>.
                     <h3 class="install">Installation instructions</h3>
