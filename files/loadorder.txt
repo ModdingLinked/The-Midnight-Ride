@@ -25,10 +25,12 @@ fakeInt_DLC.esp
 BloodFixes.esm
 Dynamic Activation Key.esp
 Hit Those Objects.esm
+No Sneaking in Power Armor.esp
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
 Enhanced Vanilla Water.esm
 ppf.esm
+ppf-modt.esm
 RAW INPUT.esp
 WeaponModFixes-GOTY.esp
 Weapon Mod Fixes - CFM Patch.esp
@@ -54,7 +56,6 @@ Keep Radiants In Commonwealth.esp
 WhoIsTheGeneral.esp
 WTG - KRIC Patch.esp
 LegendariesTheyCanUse.esp
-No Sneaking in Power Armor.esp
 dcc-molotov-nerf.esp
 MoreWeathervanes.esp
 MoreDCBounties.esp
@@ -66,10 +67,11 @@ FO4ParticlePatch.esp
 ScopeOverlayDOF.esp
 DiamondCityBillboards.esp
 GoodneighborView.esp
+TerrainFrecklesBeGone.esp
 FO4LODGen.esp
 FOLIP - New LODs.esp
 Far Harbor 3d Tree LODs.esp
 Optimized Vanilla Tree LODs.esp
 NF_Rocks_Fix.esp
-prp.esp
 TMR Pre-Generated LOD.esp
+prp.esp
