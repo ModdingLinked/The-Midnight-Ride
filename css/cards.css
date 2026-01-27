@@ -100,7 +100,7 @@ span.card-basic {
   background-color: rgba(255, 255, 255, 0.0512);
 }
 
-.expander-top.active {
+.expander-top[aria-expanded="true"] {
   background-color: rgba(255, 255, 255, 0.0612);
 }
 
@@ -117,18 +117,59 @@ span.card-basic {
   background-color: rgba(255, 255, 255, 0.03);
 }
 
-.expander-bottom {
-  background-color: rgba(255, 255, 255, 0.0512);
-  display: none;
-  animation: slide-up 0.4s;
-  z-index: 0;
+.expander-top.important {
   position: relative;
-  overflow-y: hidden;
-  margin-top: 0 !important;
 }
 
-.expander-opened {
-  animation: slide-down 2s;
+.expander-top.important::before {
+  padding: 0 1em;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid transparent;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+
+  content: "IMPORTANT";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  background: rgb(68, 39, 38);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  min-width: 70px;
+  justify-content: center;
+}
+
+.expander-top.important h3 {
+  margin-left: 110px;
+}
+
+.expander-top.important.clickable:hover {
+  background-color: rgba(68, 39, 38, 0.4);
+}
+
+.expander-bottom {
+  background-color: rgba(255, 255, 255, 0.0512);
+  margin-top: 0 !important;
+  max-height: 0;
+  opacity: 0;
+  overflow-y: hidden;
+  transition: max-height 300ms ease, opacity 300ms ease;
+}
+
+.expander-top[aria-expanded="true"]~.expander-bottom {
+  opacity: 1;
+}
+
+.expander-top[aria-expanded="true"] .chevron {
+  transform: rotate(180deg) !important;
+}
+
+.chevron {
+  transition: transform 300ms ease;
 }
 
 /* Chevron icon */
