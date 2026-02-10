@@ -206,12 +206,12 @@
                 <h2 onclick="location.href='#ManualDownloads'">Manual Downloads</h2>
 
                 <div class="card">
-                    <p>
                     <h3>Root Mods</h3>
-                    The following mods, unlike most others, need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
-                    <br>
-                    <br>
-                    Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
+                    <p>
+                        The following mods, unlike most others, need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                        <br>
+                        <br>
+                        Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
                     </p>
                 </div>
 
@@ -275,8 +275,8 @@
                 </div>
 
                 <div class="card">
-                    <p>
                     <h3>Making MO2 Detect F4SE</h3>
+                    <p>
                     <ol>
                         <li>
                             Once F4SE is installed as instructed above, <strong>restart MO2</strong> and you should see a new option in the top right drop-down:
@@ -309,15 +309,15 @@
                 <h2 onclick="location.href='#MO2Downloads'">Mod Organizer Downloads</h2>
 
                 <div class="card">
-                    <p>
                     <h3>Managed</h3>
-                    From now on, select <strong>Mod Manager Download</strong> to download mods - this will make the file appear in MO2's <b>Downloads</b> tab, ready to be installed according to the <a href="./mo2.html#Instructions" target="_blank">instructions</a> earlier in the guide.
+                    <p>
+                        From now on, select <strong>Mod Manager Download</strong> to download mods - this will make the file appear in MO2's <b>Downloads</b> tab, ready to be installed according to the <a href="./mo2.html#Instructions" target="_blank">instructions</a> earlier in the guide.
                     </p>
                 </div>
 
                 <div class="card">
-                    <p>
                     <h3>Creating a Separator in MO2</h3>
+                    <p>
                     <ol>
                         <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                         <li>Name the separator <strong>Utilities</strong>.</li>
@@ -359,15 +359,15 @@
                 </div>
 
                 <div class="card" id="PhysicsFix">
-                    <p>
                     <h3>Performance Preamble</h3>
-                    Limiting framerate is very important for overall stability, as it <strong>smooths out framepacing</strong>, which is the most important thing for the overall feel of fluidity.
-                    <br>
-                    <br>
-                    More advanced limiters can also <strong>reduce latency</strong> or CPU power consumption (it's difficult to have both at the same time).
-                    <br>
-                    <br>
-                    For a limiter to do anything, you want to set it to <u>a framerate you can actually achieve regularly</u> enough. This will prevent the GPU load from maxing out and further reduce latency, while reducing power usage, often considerably.
+                    <p>
+                        Limiting framerate is very important for overall stability, as it <strong>smooths out framepacing</strong>, which is the most important thing for the overall feel of fluidity.
+                        <br>
+                        <br>
+                        More advanced limiters can also <strong>reduce latency</strong> or CPU power consumption (it's difficult to have both at the same time).
+                        <br>
+                        <br>
+                        For a limiter to do anything, you want to set it to <u>a framerate you can actually achieve regularly</u> enough. This will prevent the GPU load from maxing out and further reduce latency, while reducing power usage, often considerably.
 
                     <h3>Setup</h3>
                     <ol>
@@ -382,9 +382,9 @@
                     </ol>
 
                     <div class="expander-top">
-                        <p>
                         <h3>Details</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                        <p>
+                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                         </p>
                     </div>
                     <div class="expander-bottom">
@@ -437,9 +437,9 @@
                             <li>In the <strong>INI Files</strong> tab, open <span class="card-basic">F4SE/Plugins/HighFPSPhysicsFix.ini</span></li>
                             <li>Change only the following options:</li>
                             <ul>
-                                <li>Set <b>DisableBlackLoadingScreens</b> to <strong>true</strong> (line 48).</li>
-                                <li>Set <b>PostloadingMenuSpeed</b> to <strong>3.0</strong> (line 62).</li>
-                                <li>Set <b>OneThreadWhileLoading</b> to <strong>false</strong> (line 99).</li>
+                                <li>Set <b>DisableBlackLoadingScreens</b> to <strong>true</strong>.</li>
+                                <li>Set <b>PostloadingMenuSpeed</b> to <strong>3.0</strong>.</li>
+                                <li>Set <b>OneThreadWhileLoading</b> to <strong>false</strong>.</li>
                                 <li>Use the calculator below to determine your <strong>optimal FPS limit</strong> setting. You can find your exact refresh rate <b><a href="https://www.testufo.com/refreshrate" target="_blank">here</a></b>.</li>
 
                                 <div class="card-basic">
@@ -458,11 +458,11 @@
                                     <div id="fpsResults" style="display: none;"></div>
                                 </div>
 
-                                <li>Set <b>InGameFPS</b> (line 70) to the recommended value from the calculator above.</li>
+                                <li>Set <b>InGameFPS</b> to the recommended value from the calculator above.</li>
                                 <li>If you set <b>InGameFPS</b> to a value higher than 60, do the following as well:</li>
                                 <ul>
-                                    <li>Set <b>DynamicUpdateBudget</b> to <strong>true</strong> (line 306).</li>
-                                    <li>Set <b>BudgetMaxFPS</b> to the same value as <b>InGameFPS</b> (line 325).</li>
+                                    <li>Set <b>DynamicUpdateBudget</b> to <strong>true</strong>.</li>
+                                    <li>Set <b>BudgetMaxFPS</b> to the same value as <b>InGameFPS</b>.</li>
                                 </ul>
                             </ul>
                             <li>Save your changes.</li>

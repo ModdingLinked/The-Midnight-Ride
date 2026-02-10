@@ -198,14 +198,14 @@
                 <h2 onclick="location.href='#Overview'">Overview</h2>
 
                 <div class="card" id="UnderstandingLOD" title="Understanding LOD">
-                    <p>
                     <h3>Understanding LOD</h3>
-                    LOD stands for <strong>Level Of Detail</strong> - a system used to represent distant objects with simplified meshes and textures to improve performance. In Bethesda games, LOD primarily refers to <strong>Cell LOD</strong>, which represents whole "chunks" of land in the distance.
-                    <br>
-                    <br>
-                    Cell LOD is not based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
-                    <br>
-                    This means that you will see LOD pop-in at the same distance regardless of the settings.
+                    <p>
+                        LOD stands for <strong>Level Of Detail</strong> - a system used to represent distant objects with simplified meshes and textures to improve performance. In Bethesda games, LOD primarily refers to <strong>Cell LOD</strong>, which represents whole "chunks" of land in the distance.
+                        <br>
+                        <br>
+                        Cell LOD is not based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
+                        <br>
+                        This means that you will see LOD pop-in at the same distance regardless of the settings.
 
                     <p>Cell LOD is divided into three main categories:</p>
                     <ol>
@@ -227,9 +227,9 @@
                 </div>
 
                 <div class="card" id="WhyGenerate" title="Why Generate Custom LOD?">
-                    <p>
                     <h3>Why Generate Custom LOD?</h3>
-                    The vanilla game's LOD is pre-generated and static, which means it can't reflect changes made by mods to terrain or objects. Custom LOD generation creates meshes that match your modded game, providing:
+                    <p>
+                        The vanilla game's LOD is pre-generated and static, which means it can't reflect changes made by mods to terrain or objects. Custom LOD generation creates meshes that match your modded game, providing:
 
                     <ul>
                         <li>Increased visual consistency between nearby and distant objects.</li>
@@ -254,9 +254,9 @@
                 </div>
 
                 <div class="card" id="LODComparison" title="LOD Comparison">
-                    <p>
                     <h3>LOD Comparison</h3>
-                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.<!--  You can also find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>. -->
+                    <p>
+                        Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.<!--  You can also find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>. -->
                     </p>
 
                     <div class="image-slider" data-image-path="./img/LOD/Comparisons" data-sets="Sanctuary|Charles River|Four Leaf Fishpacking Plant|Nuka World" data-images="Before|After">
@@ -279,8 +279,8 @@
                 <h2 onclick="location.href='#Preparation'">Preparation</h2>
 
                 <div class="card">
-                    <p>
                     <h3>Creating a Separator in MO2</h3>
+                    <p>
                     <ol>
                         <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                         <li>Name the separator <strong>LOD</strong>.</li>
@@ -289,9 +289,9 @@
                 </div>
 
                 <div class="card" id="InstallingResources" title="Installing LOD Resources">
-                    <p>
                     <h3>Installing LOD Resources</h3>
-                    Install in the following order:
+                    <p>
+                        Install in the following order:
                     <ol>
                         <li>
                             <b class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/80276" target="_blank">FO4LODGen Resources</a></b>
@@ -409,8 +409,8 @@
                 <h2 onclick="location.href='#GeneratingLOD'">Generating LOD</h2>
 
                 <div class="card" id="FOLIPBeforeGeneration" title="FOLIP Before Generation">
-                    <p>
                     <h3>FOLIP Before Generation</h3>
+                    <p>
                     <ol>
                         <li><strong>Setup xEdit</strong> according to the ModdingLinked Setup instructions <a href="https://moddinglinked.com/xedit.html#setup" target="_blank">here</a>.</li>
                         <li>Launch xEdit with any plugin loaded, then go in the settings and <strong>disable Simple Records</strong>.</li>
@@ -428,8 +428,8 @@
                 </div>
 
                 <div class="card" id="TexGen" title="TexGen">
-                    <p>
                     <h3>TexGen</h3>
+                    <p>
                     <ol>
                         <li>Download the latest <a href="https://www.nexusmods.com/skyrimspecialedition/mods/68518?" target="_blank">DynDOLOD 3 Alpha</a>.</li>
                         <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
@@ -448,9 +448,9 @@
                 </div>
 
                 <div class="card" id="xLODGen" title="xLODGen">
-                    <p>
                     <h3>xLODGen</h3>
-                    xLODGen is an xEdit-based tool that allows you to generate LOD meshes for your game. Similarly to xEdit, it has a single executable that can be be turned into a game specific version by adding arguments.
+                    <p>
+                        xLODGen is an xEdit-based tool that allows you to generate LOD meshes for your game. Similarly to xEdit, it has a single executable that can be be turned into a game specific version by adding arguments.
                     <ol>
                         <li>Download the latest <strong>xLODGen</strong> from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
                         <li>Once the download has finished, extract the contents of the archive anywhere outside of the default Windows folders.</li>
@@ -485,9 +485,9 @@
                         </div>
 
                         <div class="expander-top">
-                            <p>
                             <h3>Terrain LOD generation instructions (Optional but Recommended)</h3>
-                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            <p>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
                         <div class="expander-bottom">
@@ -542,9 +542,9 @@
                         </div>
 
                         <div class="expander-top">
-                            <p>
                             <h3>Settings Explanation</h3>
-                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            <p>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
                         <div class="expander-bottom">
@@ -574,8 +574,8 @@
                 </div>
 
                 <div class="card" id="InstallingLOD" title="Installing LOD">
-                    <p>
                     <h3>Installing the LOD</h3>
+                    <p>
                     <ol>
                         <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
                         <li>Title the mod <strong>FO4LODGen Output</strong>.</li>
@@ -601,8 +601,8 @@
                 </div>
 
                 <div class="card" id="FOLIPAfterGeneration" title="FOLIP After Generation">
-                    <p>
                     <h3>FOLIP After Generation</h3>
+                    <p>
                     <ol>
                         <li>Just like before, open xEdit and load all of the plugins.</li>
                         <li>Once everything has loaded, right-click any of them and <b>Apply Script...</b>, then select the <strong>FOLIP - After Generation.pas</strong> file and click <b>OK</b>.</li>
