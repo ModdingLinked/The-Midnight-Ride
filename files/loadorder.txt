@@ -16,6 +16,8 @@ ccBGSFO4046-TesCan.esl
 ccSBJFO4003-Grenade.esl
 ccOTMFO4001-Remnants.esl
 unofficial fallout 4 patch.esp
+ppf.esm
+ppf-modt.esm
 REFramework.esm
 community fixes merged.esp
 TMR_GlitchfinderAIO.esm
@@ -29,8 +31,6 @@ No Sneaking in Power Armor.esp
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
 Enhanced Vanilla Water.esm
-ppf.esm
-ppf-modt.esm
 RAW INPUT.esp
 WeaponModFixes-GOTY.esp
 Weapon Mod Fixes - CFM Patch.esp
