@@ -16,6 +16,7 @@ ccBGSFO4046-TesCan.esl
 ccSBJFO4003-Grenade.esl
 ccOTMFO4001-Remnants.esl
 unofficial fallout 4 patch.esp
+ppf.esm
 REFramework.esm
 community fixes merged.esp
 TMR_GlitchfinderAIO.esm
@@ -24,13 +25,11 @@ fakeInt_Boston.esp
 fakeInt_DLC.esp
 BloodFixes.esm
 Dynamic Activation Key.esp
-Hit Those Objects.esm
 No Sneaking in Power Armor.esp
+Hit Those Objects.esm
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
 Enhanced Vanilla Water.esm
-ppf.esm
-ppf-modt.esm
 RAW INPUT.esp
 WeaponModFixes-GOTY.esp
 Weapon Mod Fixes - CFM Patch.esp
@@ -73,5 +72,5 @@ FOLIP - New LODs.esp
 Far Harbor 3d Tree LODs.esp
 Optimized Vanilla Tree LODs.esp
 NF_Rocks_Fix.esp
-TMR Pre-Generated LOD.esp
 prp.esp
+TMR Pre-Generated LOD.esp
