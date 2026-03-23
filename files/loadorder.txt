@@ -31,8 +31,6 @@ YouAndWhatArmy2.esm
 Diamond City Supplements.esm
 Enhanced Vanilla Water.esm
 RAW INPUT.esp
-WeaponModFixes-GOTY.esp
-Weapon Mod Fixes - CFM Patch.esp
 Wetness Shader Fix.esp
 Fixed Gobo Effects.esp
 Flutter Flicker Fixer For Foliage.esp
@@ -58,6 +56,7 @@ LegendariesTheyCanUse.esp
 dcc-molotov-nerf.esp
 MoreWeathervanes.esp
 MoreDCBounties.esp
+MoreDiamondCityBounties_AlternativeActivationPrompts_Patch.esp
 Legendary Mutation Messages Fix.esp
 Lightweight Lighting.esp
 Gloomy Glass.esp
