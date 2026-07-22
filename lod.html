@@ -395,7 +395,12 @@
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">Pre-Generated LOD</a></h3>
                     If you use a <strong>TMRE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using this file. It includes both Object and Terrain LOD and was generated with <b>Force LOD8</b> enabled.
                     <br><br>
-                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need), then move <strong>prp.esp to the bottom</strong> of your load order.
+                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need). Lastly, make sure the following plugins are enabled in your load order:
+                    <ul>
+                        <li>FOLIP - Master.esm (as last ESM)</li>
+                        <li>FOLIP - Patch.esp (at the very bottom)</li>
+                    </ul>
+                    </li>
                     </p>
                 </div>
             </span>
@@ -403,21 +408,26 @@
             <span id="GeneratingLOD" class="section">
                 <h2 onclick="location.href='#GeneratingLOD'">Generating LOD</h2>
 
-                <div class="card" id="FOLIPBeforeGeneration" title="FOLIP Before Generation">
-                    <h3>FOLIP Before Generation</h3>
+                <div class="card" id="FOLIPPatch" title="FOLIP Patch">
+                    <h3>FOLIP Patch</h3>
                     <p>
                     <ol>
                         <li><strong>Setup xEdit</strong> according to the ModdingLinked Setup instructions <a href="https://moddinglinked.com/xedit.html#setup" target="_blank">here</a>.</li>
                         <li>Launch xEdit with any plugin loaded, then go in the settings and <strong>disable Simple Records</strong>.</li>
                         <li>Download <a href="https://www.nexusmods.com/fallout4/mods/61884" target="_blank">FOLIP xEdit Scripts</a> and drag the archive's contents into xEdit's <b>Edit Scripts</b> folder.</li>
                         <li>Restart xEdit and load all of the plugins.</li>
-                        <li>Once everything has loaded, right-click any of them and <b>Apply Script...</b>, then select the <strong>FOLIP - Before Generation.pas</strong> file and click <b>OK</b>.</li>
+                        <li>Once everything has loaded, right-click any of them and <b>Apply Script...</b>, then select <strong>FOLIP</strong> and click <b>OK</b>.</li>
                         <li>Optionally, enable <b>Force LOD8</b> for better visuals at a small performance cost.</li>
                         <li>Click <b>Start</b>.</li>
                         <li>When complete, you will see a message saying "<b>Patch generated successfully!</b>", click <b>OK</b>.</li>
                         <li>Exit xEdit and save the plugin when prompted.</li>
-                        <li>An Explorer window should have opened showing the output file. Take it and drag it to the bottom of your LOD separator in your modlist to install it.</li>
-                        <li>Make sure the output's plugin is enabled in your load order.</li>
+                        <li>An Explorer window should have opened showing the <b>.zip output file</b>. Take it and drag it to the bottom of your LOD separator in your modlist to install it.</li>
+                        <li>Once the output is installed, make sure the following plugins are enabled in your load order:
+                            <ul>
+                                <li>FOLIP - Master.esm (as last ESM)</li>
+                                <li>FOLIP - Patch.esp (at the very bottom)</li>
+                            </ul>
+                        </li>
                     </ol>
                     </p>
                 </div>
@@ -548,7 +558,7 @@
                                     <br>
                                     Keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).
                                 </li>
-                                <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
+                                <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, 1024 suffices.</li>
                             </ul>
 
                             <h3>Landscape</h3>
@@ -592,20 +602,6 @@
                             If it happens to be overwritten by any mod, the LOD in-game will be broken.
                         </p>
                     </div>
-                </div>
-
-                <div class="card" id="FOLIPAfterGeneration" title="FOLIP After Generation">
-                    <h3>FOLIP After Generation</h3>
-                    <p>
-                    <ol>
-                        <li>Just like before, open xEdit and load all of the plugins.</li>
-                        <li>Once everything has loaded, right-click any of them and <b>Apply Script...</b>, then select the <strong>FOLIP - After Generation.pas</strong> file and click <b>OK</b>.</li>
-                        <li>Let the script finish then exit xEdit and save the plugin when prompted.</li>
-                        <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
-                        <li>Title the mod <strong>FOLIP - After Generation</strong>.</li>
-                        <li>Double-click <i>Overwrite</i> and drag FOLIP - After Generation.esp to the newly created mod, then enable it (both in the modlist and load order).</li>
-                    </ol>
-                    </p>
                 </div>
             </span>
 

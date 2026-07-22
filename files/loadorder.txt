@@ -16,7 +16,6 @@ ccBGSFO4046-TesCan.esl
 ccSBJFO4003-Grenade.esl
 ccOTMFO4001-Remnants.esl
 unofficial fallout 4 patch.esp
-ppf.esm
 REFramework.esm
 community fixes merged.esp
 TMR_GlitchfinderAIO.esm
@@ -24,12 +23,14 @@ fakeInt.esp
 fakeInt_Boston.esp
 fakeInt_DLC.esp
 BloodFixes.esm
-Dynamic Activation Key.esp
 No Sneaking in Power Armor.esp
 Hit Those Objects.esm
+Safe Travels.esm
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
 Enhanced Vanilla Water.esm
+ppf.esm
+FOLIP - Master.esm
 RAW INPUT.esp
 Wetness Shader Fix.esp
 Fixed Gobo Effects.esp
@@ -39,8 +40,6 @@ MidnightCultFix.esp
 GeneralAtomicsMrGutsyGuards.esp
 GA Galleria Gutsy Voice Fix - UFO4P Patch.esp
 Workshop Highlight Fix.esp
-Alternative Activation Prompts.esp
-Simple FOV Slider.esp
 Less Annoying Berry Mentats.esp
 Dogmeat Follow Behind.esp
 mr Loot Logic and Reduction.esp
@@ -56,7 +55,6 @@ LegendariesTheyCanUse.esp
 dcc-molotov-nerf.esp
 MoreWeathervanes.esp
 MoreDCBounties.esp
-MoreDiamondCityBounties_AlternativeActivationPrompts_Patch.esp
 Legendary Mutation Messages Fix.esp
 Lightweight Lighting.esp
 Gloomy Glass.esp
@@ -72,4 +70,5 @@ Far Harbor 3d Tree LODs.esp
 Optimized Vanilla Tree LODs.esp
 NF_Rocks_Fix.esp
 prp.esp
+FOLIP - Patch.esp
 TMR Pre-Generated LOD.esp
