@@ -23,6 +23,7 @@ fakeInt.esp
 fakeInt_Boston.esp
 fakeInt_DLC.esp
 BloodFixes.esm
+Dogmeat Lags Behind.esp
 No Sneaking in Power Armor.esp
 Hit Those Objects.esm
 Safe Travels.esm
@@ -41,7 +42,6 @@ GeneralAtomicsMrGutsyGuards.esp
 GA Galleria Gutsy Voice Fix - UFO4P Patch.esp
 Workshop Highlight Fix.esp
 Less Annoying Berry Mentats.esp
-Dogmeat Follow Behind.esp
 mr Loot Logic and Reduction.esp
 Loot Logic and Reduction - UFO4P Patch.esp
 Complex Vendors.esp
@@ -60,7 +60,6 @@ Lightweight Lighting.esp
 Gloomy Glass.esp
 Targeted Textures.esp
 FO4ParticlePatch.esp
-ScopeOverlayDOF.esp
 DiamondCityBillboards.esp
 GoodneighborView.esp
 TerrainFrecklesBeGone.esp
