@@ -25,7 +25,6 @@ fakeInt_DLC.esp
 BloodFixes.esm
 Dogmeat Lags Behind.esp
 No Sneaking in Power Armor.esp
-Hit Those Objects.esm
 Safe Travels.esm
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
@@ -42,6 +41,7 @@ GeneralAtomicsMrGutsyGuards.esp
 GA Galleria Gutsy Voice Fix - UFO4P Patch.esp
 Workshop Highlight Fix.esp
 Less Annoying Berry Mentats.esp
+RefreshingCheckpoints.esp
 mr Loot Logic and Reduction.esp
 Loot Logic and Reduction - UFO4P Patch.esp
 Complex Vendors.esp
@@ -53,6 +53,7 @@ WhoIsTheGeneral.esp
 WTG - KRIC Patch.esp
 LegendariesTheyCanUse.esp
 dcc-molotov-nerf.esp
+ReinforcementsAndRetribution.esp
 MoreWeathervanes.esp
 MoreDCBounties.esp
 Legendary Mutation Messages Fix.esp
