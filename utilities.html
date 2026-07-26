@@ -39,23 +39,22 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/imageViewer.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
-    <script src="js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/coco.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="theme">
@@ -364,13 +363,13 @@
                     </ol>
 
                     <div class="expander-top">
-                        <h3>Details</h3>
+                        <h3>Annotations</h3>
                         <p>
                             <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                         </p>
                     </div>
+
                     <div class="expander-bottom">
-                        <p>
                         <ol>
                             <li id="annotation1">
                                 V-Sync will <strong>prevent tearing</strong> as result of syncing the monitor's VBLANK to the GPU output. This will limit your framerate from going over the refresh rate.
@@ -402,8 +401,8 @@
                                 Once the framerate reaches refresh rate, VRR will engage V-Sync emulation. To account for this, VRR users should configure their limiter with a <strong>slight bias below refresh rate</strong> (to cover spikes).
                             </li>
                         </ol>
-                        This section is purely informative, the calculator below will take all of this information into consideration.
-                        </p>
+
+                        <p>This section is purely informative, the calculator below will take all of this information into consideration.</p>
                     </div>
 
                     <br>
@@ -425,15 +424,15 @@
                                 <li>Use the calculator below to determine your <strong>optimal FPS limit</strong> setting. You can find your exact refresh rate <b><a href="https://www.testufo.com/refreshrate" target="_blank">here</a></b>.</li>
 
                                 <div class="card-basic">
-                                    <div class="center" style="margin: 10px;">
+                                    <div style="margin: 10px;">
                                         <button id="fixedButton" onclick="setMode('fixed')" class="active">Fixed Refresh</button>
                                         <button id="vrrButton" onclick="setMode('vrr')">VRR</button>
                                         <input type="hidden" id="refreshMode" value="fixed">
                                     </div>
 
-                                    <div class="center" style="margin: 10px;">
+                                    <div style="margin: 10px;">
                                         <label for="refreshRate">Monitor refresh rate: </label>
-                                        <input id="refreshRate" type="number" step="1" placeholder="e.g. 60, 144" min="60">
+                                        <input id="refreshRate" type="number" step="1" placeholder="e.g. 60, 144" min="60" autocomplete="off">
                                         <button onclick="calculateFPS()">Calculate</button>
                                     </div>
 
