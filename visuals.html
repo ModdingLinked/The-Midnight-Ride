@@ -318,15 +318,137 @@
                 </div>
             </span>
 
-            <!-- <span id="Upscaling" class="section">
+            <span id="Upscaling" class="section">
                 <h2 onclick="location.href='#Upscaling'">Upscaling</h2>
-                <div class="card" id="Upscaling">
+                <div class="card">
                     <p>
-                        x
+                        Upscaling is a technology aimed at improving the flexibility of a game's performance and visuals.
+
+                        <br><br>
+
+                        The internal resolution of your game is expressed as a preset that ranges from <b>Native</b> to <b>Ultra Performance</b>. Each preset progressively lowers the internal resolution that is fed to the upscaler. The upscaler then uses machine learning to reconstruct it back to the game's resolution. Native mode is the exception, improving the image without lowering internal resolution.
+
+                    <div class="card-green center">
+                        <p>For example, running a 4K game in Performance mode renders it at 1080p before upscaling it back to 4K for display.</p>
+                    </div>
+
+                    <div class="card-red center">
+                        <p>
+                            Upscaling requires a <strong>DX11.1 compatible GPU</strong>, you can check if yours is compatible by looking it up <a href="https://www.techpowerup.com/gpu-specs/" target="_blank">here</a>, then refer to the <b>Graphics Features</b> list.
+                        </p>
+                    </div>
+
+                    <br>
+
+                    All 3 of the main GPU vendors have their own implementation of this same idea:
+                    </p>
+
+                    <ul>
+                        <li><span style="color: rgb(118, 185, 0);">DLSS</span> from Nvidia - the most advanced one, but locked to RTX GPUs.</li>
+                        <li><span style="color: rgb(237, 28, 36);">FSR</span> from AMD, GPU agnostic up until its latest iteration, FSR 4 (RDNA 3 and RDNA 4 only).</li>
+                        <li><span style="color: rgb(0, 113, 197)">XeSS</span> from Intel - GPU agnostic, although it favours Intel's Arc GPUs and is not as widely supported.</li>
+                    </ul>
+
+                    <p>
+                        Input your game resolution below and hit Apply. The table's color coding will indicate how viable the various presets of a given upscaler are. Green would indicate that the upscaler has enough pixels to reconstruct a stable and accurate image. Orange and red entries should be considered only if performance is paramount - DLSS 4 in particular can get away with those lower sources if you don't pixel peep.
+                    </p>
+
+                    <div class="card-basic center">
+                        <div class="center" style="margin: 10px;">
+                            <label for="res-width">Width: </label>
+                            <input id="res-width" placeholder="e.g. 1920" style="margin-right: 15px;" autocomplete="off">
+                            <label for="res-height">Height: </label>
+                            <input id="res-height" placeholder="e.g. 1080" style="margin-right: 15px;" autocomplete="off">
+                            <button onclick="reccomendPreset()">Apply</button>
+                        </div>
+                    </div>
+
+                    <table class="center" id="upscale-matrix">
+                        <tr>
+                            <th>Internal Resolution</th>
+                            <th>Native</th>
+                            <th>Ultra Quality Plus</th>
+                            <th>Ultra Quality</th>
+                            <th>Quality</th>
+                            <th>Balanced</th>
+                            <th>Performance</th>
+                            <th>Ultra Perf.</th>
+                        </tr>
+                        <tr data-upscaler="DLSS 4">
+                            <td>DLSS 4</td>
+                            <td data-percent="100">100% (Native aka DLAA)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="58">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="FSR 4">
+                            <td>FSR 4</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="58">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="FSR 3">
+                            <td>FSR 3</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="58">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="XeSS &ge;v1.3">
+                            <td>XeSS &ge;v1.3</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="77">77%</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="59">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="43">43%</td>
+                            <td data-percent="33">33%</td>
+                        </tr>
+                        <tr data-upscaler="XeSS <v1.3">
+                            <td>XeSS &lt;v1.3</td>
+                            <td data-percent="100">100% (Native)</td>
+                            <td data-percent="0">N/A</td>
+                            <td data-percent="77">77%</td>
+                            <td data-percent="66">66%</td>
+                            <td data-percent="59">58%</td>
+                            <td data-percent="50">50%</td>
+                            <td data-percent="0">N/A</td>
+                        </tr>
+                    </table>
+
+                    <br><br>
+
+                    <p>
+                        In numerous games, including Skyrim and Fallout 4 with the respective upscaling integration, upscaling has become a no-brainer. Compared to these games' traditional <a href="https://www.pcgamingwiki.com/wiki/Glossary:Anti-aliasing_(AA)" target="_blank">AA</a> options (mostly <a href="https://www.pcgamingwiki.com/wiki/Glossary:Anti-aliasing_(AA)#Temporal_methods" target="_blank">TAA</a>), upscaling massively improves visual clarity, fine detail resolve, sharpness, and performance (if not running in native mode).
+                    </p>
+
+                    <hr>
+
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/99130" target="_blank">Upscaling</a></h3>
+                    Implements the latest DLSS 4 and FSR 3.1 (upgradable to FSR 4 with OptiScaler), but not XeSS. The presets mentioned earlier are in the Mod Configuration menu, accessible when pausing the game.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Upscaling</li>
+                        <li>
+                            <a href="https://www.nexusmods.com/fallout4/mods/98935" target="_blank">This Made My Spline Stiff</a>
+                            <ul>
+                                <li><b>Main Files</b> - This Made My Spline Stiff</li>
+                            </ul>
+                        </li>
+                    </ul>
                     </p>
                 </div>
-
-            </span> -->
+            </span>
 
             <span id="DistantObjects" class="section">
                 <h2 onclick="location.href='#DistantObjects'">Distant Objects</h2>
