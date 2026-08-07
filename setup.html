@@ -192,7 +192,7 @@
 
                 <div class="card" id="CPPRedists" title="Installing Redistributables">
                     <h3>Installing VC++ Redistributables</h3>
-                    <p>Most engine mods and tools require latest Visual C++ Redistributables to be installed. <strong>Winget</strong> provides a quick and safe way to update all of them.</p>
+                    <p>Most engine mods and tools require latest Visual C++ Redistributables to be installed. Windows' official package manager, <strong>Winget</strong>, provides a quick and safe way to update all of them. We use the Microsoft Store to update it to the latest version and to make sure that the script works.</p>
 
                     <div class="card-red">
                         <p>
@@ -209,18 +209,7 @@
                         <li><b>Check for updates</b>, then let everything update.</li>
                         <li>Once finished, open the Command Prompt and enter the following:</li>
                         <textarea readonly="readonly" style="height: 16em; width: 95%;" onclick="this.focus();this.select()">
-winget install --id=Microsoft.VCRedist.2005.x86 -e  &&
-winget install --id=Microsoft.VCRedist.2005.x64 -e  &&
-winget install --id=Microsoft.VCRedist.2008.x86 -e  &&
-winget install --id=Microsoft.VCRedist.2008.x64 -e  &&
-winget install --id=Microsoft.VCRedist.2010.x86 -e  &&
-winget install --id=Microsoft.VCRedist.2010.x64 -e  &&
-winget install --id=Microsoft.VCRedist.2012.x86 -e  &&
-winget install --id=Microsoft.VCRedist.2012.x64 -e  &&
-winget install --id=Microsoft.VCRedist.2013.x86 -e  &&
-winget install --id=Microsoft.VCRedist.2013.x64 -e  &&
-winget install --id=Microsoft.VCRedist.2015+.x86 -e  &&
-winget install --id=Microsoft.VCRedist.2015+.x64 -e</textarea>
+winget install --id=Microsoft.VCRedist.2005.x86 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2005.x64 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2008.x86 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2008.x64 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2010.x86 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2010.x64 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2012.x86 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2012.x64 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2013.x86 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2013.x64 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2015+.x86 -e -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2015+.x64 -e -h --accept-package-agreements</textarea>
                         <li>Restart your PC.</li>
                     </ol>
                 </div>
