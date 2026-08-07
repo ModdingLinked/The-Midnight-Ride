@@ -192,8 +192,8 @@
 
                 <div class="card" id="CPPRedists" title="Installing Redistributables">
                     <h3>Installing VC++ Redistributables</h3>
-                    <p>
-                        Most engine mods and tools require latest Visual C++ Redistributables to be installed. We will use an all-in-one package that will install all possible versions.
+                    <p>Most engine mods and tools require latest Visual C++ Redistributables to be installed. <strong>Winget</strong> provides a quick and safe way to update all of them.</p>
+
                     <div class="card-red">
                         <p>
                             Failure to have latest versions installed will result in an immediate crash when launching the game or modding tools.
@@ -202,12 +202,27 @@
                             Please install the redistributables even if you have them installed already, as they are often outdated.
                         </p>
                     </div>
+
                     <ol>
-                        <li>Download <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> from TechPowerUp.</li>
-                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as <b>an administrator</b>.</li>
+                        <li>Open the <a href="ms-windows-store://home" target="_blank">Microsoft Store</a>.</li>
+                        <li>Head to the <b>Updates & downloads</b> section.</li>
+                        <li><b>Check for updates</b>, then let everything update.</li>
+                        <li>Once finished, open the Command Prompt and enter the following:</li>
+                        <textarea readonly="readonly" style="height: 16em; width: 95%;" onclick="this.focus();this.select()">
+winget install --id=Microsoft.VCRedist.2005.x86 -e  &&
+winget install --id=Microsoft.VCRedist.2005.x64 -e  &&
+winget install --id=Microsoft.VCRedist.2008.x86 -e  &&
+winget install --id=Microsoft.VCRedist.2008.x64 -e  &&
+winget install --id=Microsoft.VCRedist.2010.x86 -e  &&
+winget install --id=Microsoft.VCRedist.2010.x64 -e  &&
+winget install --id=Microsoft.VCRedist.2012.x86 -e  &&
+winget install --id=Microsoft.VCRedist.2012.x64 -e  &&
+winget install --id=Microsoft.VCRedist.2013.x86 -e  &&
+winget install --id=Microsoft.VCRedist.2013.x64 -e  &&
+winget install --id=Microsoft.VCRedist.2015+.x86 -e  &&
+winget install --id=Microsoft.VCRedist.2015+.x64 -e</textarea>
                         <li>Restart your PC.</li>
                     </ol>
-                    </p>
                 </div>
 
                 <div class="card" id="FileExtensions" title="Enabling File Extensions">

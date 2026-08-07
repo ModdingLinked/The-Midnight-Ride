@@ -218,17 +218,11 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
-                        <strong>We cannot provide support</strong> for Linux as we don't use it, therefore we cannot troubleshoot issues specific to it.
-                        <br>
-                        <br>
-                        Assuming you already know your way around Linux, here's <strong>some information that might help you</strong>:
-                    <ul>
-                        <li>Use Proton (for Steam) or Wine TKG or Wine-Bottles fork & Lutris (for non-Steam).</li>
-                        <li>You need Gstreamer codec suite for the game music to play.</li>
-                        <li>Direct the game so it uses a portable MO2 instance (installed in the game prefix, made by either Steam or Lutris).</li>
-                        <li>Stock Wine won't work, since stock Wine has issues with the bundled FOMOD installer.</li>
-                        <li>Install Nvidia drivers if you have an Nvidia GPU.</li>
-                    </ul>
+                        <strong>Linux support is planned</strong> but not near. For now, support is limited to the <a href="https://discord.com/channels/1135527122849497149/1230468498011062353" target="_blank">dedicated channel</a> in our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord server</a>.
+
+                        <br><br>
+
+                        Things are already in a fairly good state thanks to projects such as <a href="https://github.com/SulfurNitride/Fluorine-Manager" target="_blank">Fluorine</a> and <a href="https://github.com/ChrisDKN/Amethyst-Mod-Manager" target="_blank">Amethyst</a>. The experience with these should be streamlined enough to not need any particular instructions, assuming you're familiar with basic Linux operation.
                     </p>
                 </div>
 
@@ -289,19 +283,7 @@
                     <p>
                         This could happen for <strong>various reasons</strong>:
                     <ul>
-                        <li>Make sure the latest VC++ Redistributables are installed:
-                            <ul>
-                                <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
-                                    <ol>
-                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                                    </ol>
-                                </li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
-                                <li>Restart your PC.</li>
-                            </ul>
-                        </li>
+                        <li>Make sure the latest VC++ Redistributables are installed by following the steps <a href="./setup.html#CPPRedists" target="_blank">here</a>.</li>
                         <li>You have incompatible mods lingering in your game's Data folder, this is why <a href="./setup.html#Uninstall" target="_blank">a clean slate</a> is required.</li>
                         <li>If you are using a third-party antivirus, add exclusions to the folder Mod Organizer 2 is in. If that doesn't work, try disabling the antivirus completely and rely solely on Windows Defender (which should work fine once exclusions are present).</li>
                         <li>Make sure you have both files from <a href="./bugfix.html#PRP">PRP</a>.</li>
@@ -422,21 +404,7 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
-                    <ul>
-                        <li>Make sure the latest VC++ Redistributables are installed:
-                            <ol>
-                                <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
-                                    <ul>
-                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
-                                <li>Restart your PC.</li>
-                            </ol>
-                        </li>
-                    </ul>
+                        Make sure the latest VC++ Redistributables are installed by following the steps <a href="./setup.html#CPPRedists" target="_blank">here</a>.
                     </p>
                 </div>
 
