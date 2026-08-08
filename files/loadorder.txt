@@ -64,6 +64,7 @@ FO4ParticlePatch.esp
 DiamondCityBillboards.esp
 GoodneighborView.esp
 TerrainFrecklesBeGone.esp
+Stiff Splines.esp
 FO4LODGen.esp
 FOLIP - New LODs.esp
 Far Harbor 3d Tree LODs.esp
