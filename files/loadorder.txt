@@ -22,10 +22,11 @@ TMR_GlitchfinderAIO.esm
 fakeInt.esp
 fakeInt_Boston.esp
 fakeInt_DLC.esp
-BloodFixes.esm
 Dogmeat Lags Behind.esp
-No Sneaking in Power Armor.esp
+BloodFixes.esm
+Hit Those Objects.esm
 Safe Travels.esm
+No Sneaking in Power Armor.esp
 YouAndWhatArmy2.esm
 Diamond City Supplements.esm
 Enhanced Vanilla Water.esm
@@ -40,6 +41,7 @@ MidnightCultFix.esp
 GeneralAtomicsMrGutsyGuards.esp
 GA Galleria Gutsy Voice Fix - UFO4P Patch.esp
 Workshop Highlight Fix.esp
+Simple FOV Slider.esp
 Less Annoying Berry Mentats.esp
 RefreshingCheckpoints.esp
 mr Loot Logic and Reduction.esp
@@ -51,7 +53,6 @@ IntegratedAddons.esp
 Keep Radiants In Commonwealth.esp
 WhoIsTheGeneral.esp
 WTG - KRIC Patch.esp
-LegendariesTheyCanUse.esp
 dcc-molotov-nerf.esp
 ReinforcementsAndRetribution.esp
 MoreWeathervanes.esp
@@ -65,11 +66,12 @@ DiamondCityBillboards.esp
 GoodneighborView.esp
 TerrainFrecklesBeGone.esp
 Stiff Splines.esp
+prp.esp
 FO4LODGen.esp
 FOLIP - New LODs.esp
 Far Harbor 3d Tree LODs.esp
 Optimized Vanilla Tree LODs.esp
 NF_Rocks_Fix.esp
-prp.esp
+TMR Pre-Generated Terrain LOD.esp
 FOLIP - Patch.esp
-TMR Pre-Generated LOD.esp
+TMR Pre-Generated Object LOD.esp

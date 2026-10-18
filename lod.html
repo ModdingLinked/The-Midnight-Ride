@@ -364,12 +364,12 @@
                 <div class="card" id="PreGen" title="Pre-Generated LOD">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">Pre-Generated LOD</a></h3>
-                    If you use a <strong>TMRE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using this file. It includes both Object and Terrain LOD and was generated with <b>Force LOD8</b> enabled.
+                    If you use a <strong>TMRE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using these files. Note that the Object LOD file was generated with FOLIP's <b>Force LOD8</b> enabled.
                     <br><br>
-                    Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need). Lastly, make sure the following plugins are enabled in your load order:
+                    Simply install <strong>both the Object and Terrain Pre-Generated LOD</strong> as normal mods in MO2 and put them under the resources listed in the previous section (which you still need), then set up the load order as follows:
                     <ul>
-                        <li>FOLIP - Master.esm (as last ESM)</li>
-                        <li>FOLIP - Patch.esp (at the very bottom)</li>
+                        <li><span class="card-basic">FOLIP - Master.esm (as last ESM)</span> should be the <strong>last ESM</strong> plugin (written in bold).</li>
+                        <li><span class="card-basic">FOLIP - Patch.esp</span> at the bottom.</li>
                     </ul>
                     </li>
                     </p>
@@ -411,7 +411,7 @@
                         <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
                         <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
                         <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                        <li>From the pop-up, navigate to where TexGen is installed and select <strong>TexGenx64.exe</strong>.</li>
+                        <li>From the pop-up, navigate to where the tool is and select <strong>TexGenx64.exe</strong>.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-FO4</span></li>
                         <li>Select TexGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                         <li>Once the program has loaded, make sure that <strong>Base Size</strong> is set to <strong>256 (1440p)</strong>. Higher resolutions are unsupported due to game engine mipmap bugs associated with exceeding the Object LOD atlas.</li>
@@ -432,7 +432,7 @@
                         <li>Once the download has finished, extract the contents of the archive anywhere outside of the default Windows folders.</li>
                         <li>In MO2, select the <img src="./img/MO2/Executables.webp" alt="MO2 executables" class="mo2-icon"> button at the top of MO2 to open the executables menu.</li>
                         <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                        <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
+                        <li>From the pop-up, navigate to where the tool is and select <strong>xLODGenx64.exe</strong>.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-FO4 -O:"C:\Output"</span></li>
 
                         <div class="card-green">
@@ -573,6 +573,58 @@
                             If it happens to be overwritten by any mod, the LOD in-game will be broken.
                         </p>
                     </div>
+                </div>
+
+                <div class="card" id="PackingTerrainLOD" title="Packing Terrain LOD">
+                    <h3>Packing LOD</h3>
+                    <p>
+                        This step is not necessary, but will reduce loading time of LOD assets by the game by packing them into optimized archive files (BA2s). This translates to less stuttering when entering new areas.
+                        <br>
+                    <ol>
+                        <li>Download <a href="https://www.nexusmods.com/skyrimspecialedition/mods/23316" target="_blank">Cathedral Assets Optimizer</a>.</li>
+                        <li>Once the download has finished, extract the contents of the archive.</li>
+                        <li>Run <strong>Cathedral_Assets_Optimizer.exe</strong>.</li>
+                        <li>Switch to the <b>FO4</b> profile</li>
+                        <li>Tick the <b>Create BSA</b> box.</li>
+                        <li>In Mod Organizer 2, right-click on your <strong>FO4LODGen Output</strong> mod and select <b>Open in Explorer</b>.</li>
+                        <li>From from newly opened window, copy the file path, then paste it into CAO (right below the profile drop-down).</li>
+                        <li>Click the <strong>Run</strong> button.</li>
+                        <li>Once the process is complete, you will see a message saying "<b>Done</b>" at the bottom.</li>
+                        <li>Click <strong>F5</strong> while you are on MO2 without any menu open, and make sure the new plugin (it loads the archives) is enabled in your load order.</li>
+                    </ol>
+
+                    <div class="expander-top clickable important" onclick="expandCard(this)">
+                        <h3>BA2 Usage Information</h3>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </div>
+                    <div class="expander-bottom">
+                        <p>
+                            To properly use BA2 files, you must <strong>keep the following in mind</strong>:
+                        <ul>
+                            <li>
+                                BA2 files are loaded by plugins they share their name with - hence why BA2s created here start with "<b>FO4LODGen Output</b>".
+                                <br>
+                                This also means that BA2s are loaded in the same order as their plugins.
+                            </li>
+                            <li>BA2s belonging to the same plugin are loaded in an alphanumeric order, same one you will get when sorting by <b>Name</b> in <b>File Explorer</b>.</li>
+                            <li>
+                                Due to <b>Archive Invalidation</b>, loose files will always override files in BA2s.
+                                <br>
+                                <br>
+                                Because of this, you must pay attention to files added by other mods. Watch out for following folders:
+                                <ul>
+                                    <li><span class="card-basic">meshes\terrain</span></li>
+                                    <li><span class="card-basic">textures\terrain</span></li>
+                                </ul>
+                                You can hide them in MO2 to prevent them from being loaded.
+                                <br>
+                                <br>
+                                You can enable <b>Enable archives parsing</b> in <b>Mod Organizer 2 -> Settings -> Workarounds</b> to see which mods are overwriting your BA2s.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    </p>
                 </div>
             </span>
 
